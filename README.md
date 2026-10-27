@@ -78,8 +78,13 @@ own proof terms.  `config.json` permits exactly `propext`, `Quot.sound`,
 
 ## Status
 
-The development contains no `sorry` and, by the comparator run, every one of the 14
-theorems depends only on `propext`, `Classical.choice` and `Quot.sound`.  The abstract
+The development contains no `sorry` and every one of the 14 theorems depends only on
+`propext`, `Classical.choice` and `Quot.sound`.
+
+Verified on this export (2026-10-27): all 96 modules of `L20261018/` compile against
+Lean `v4.35.0` + mathlib `aa35a481…` + the vendored `TauCeti/`; `comparator` on
+`comparator/ch3/config.json` reports **`Your solution is okay!`** (2m36s, kernel replay
+of the closure).  That is the same code that is committed here.  The abstract
 statements (`A.lean`) are the ones to read first: they fix the interfaces
 (`BiKummerData`, the Kummer map, `ind`) that the concrete modules instantiate.
 

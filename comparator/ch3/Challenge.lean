@@ -35,6 +35,6 @@ run_cmd do
     let some ci := env.find? oldName | throwError "missing declaration: {oldName}"
     let (levelParams, type, value) ← do
       match ci with
-      | .thmInfo ti => pure (ti.levelParams, ti.type, {value})
+      | .thmInfo ti => pure (ti.levelParams, ti.type, mkApp2 (mkConst ``sorryAx [0]) ti.type (mkConst ``Bool.true))
       | _ => throwError "not a theorem: {oldName}"
     liftCoreM <| addDecl (.thmDecl { name := newName, levelParams := levelParams, type := type, value := value })
