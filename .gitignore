@@ -1,0 +1,7 @@
+.lake/
+out/
+build-*.log
+order.txt
+lake-manifest.json
+*.olean
+*.ilean

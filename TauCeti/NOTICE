@@ -1,0 +1,15 @@
+The Lean modules under `TauCeti/` are copied from TauCeti
+(https://github.com/TauCetiProject/TauCeti), Apache-2.0, see `TauCeti/LICENSE`.
+
+Provenance
+* snapshot used: the 2026-10-22 HEAD recorded in the development environment
+  (15,662 `.lean` files in the full library; this directory keeps the subset that the
+  Chapter-3 development actually imports, 542 files);
+* the subset was extracted by following the import closure of the modules listed in
+  `README.md`; module paths and the license header of each file are unchanged;
+* the only edit is that the surrounding Lake project pins mathlib to
+  `aa35a481e5f0cdb3b04a899ead15d6ca7305a624` (the commit the development was checked
+  against) instead of depending on the library's own manifest.
+
+TauCeti is Apache-2.0 licensed; redistribution here keeps the license text and this
+notice.  No TauCeti module is modified mathematically.

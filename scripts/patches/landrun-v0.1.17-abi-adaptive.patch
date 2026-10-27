@@ -1,0 +1,164 @@
+diff --git a/internal/sandbox/sandbox.go b/internal/sandbox/sandbox.go
+index 2487567..ae0b174 100644
+--- a/internal/sandbox/sandbox.go
++++ b/internal/sandbox/sandbox.go
+@@ -28,40 +28,84 @@ type Config struct {
+ 	DisableLogSubdomains  bool
+ }
+ 
+-// fullFSAccess is the union of every filesystem access right supported by
+-// Landlock V9. It is used as the Config's handled access set so that every
++// kernelLandlockABI is the Landlock ABI version supported by the running
++// kernel (0 when Landlock is unavailable).
++//
++// The sandbox targets exactly this version instead of the build-time version:
++// go-landlock v0.9 (and therefore upstream landrun >= v0.1.17) hard-codes
++// Landlock ABI v9, i.e. Linux >= 7.1, and refuses to start on older kernels
++// that still provide a perfectly usable ABI v7 (Linux 6.15 - 6.17).
++//
++// Patch: landrun-v0.1.17-abi-adaptive.patch (local build, 2026-10-27).
++var kernelLandlockABI = detectLandlockABI()
++
++func detectLandlockABI() int {
++	v, err := syscall.LandlockGetABIVersion()
++	if err != nil {
++		return 0
++	}
++	return v
++}
++
++// fsRightsFor returns the union of every filesystem access right supported
++// by the given Landlock ABI version.
++func fsRightsFor(abi int) landlock.AccessFSSet {
++	s := landlock.AccessFSSet(
++		syscall.AccessFSExecute |
++			syscall.AccessFSWriteFile |
++			syscall.AccessFSReadFile |
++			syscall.AccessFSReadDir |
++			syscall.AccessFSRemoveDir |
++			syscall.AccessFSRemoveFile |
++			syscall.AccessFSMakeChar |
++			syscall.AccessFSMakeDir |
++			syscall.AccessFSMakeReg |
++			syscall.AccessFSMakeSock |
++			syscall.AccessFSMakeFifo |
++			syscall.AccessFSMakeBlock |
++			syscall.AccessFSMakeSym |
++			syscall.AccessFSRefer,
++	)
++	if abi >= 2 {
++		s |= landlock.AccessFSSet(syscall.AccessFSTruncate)
++	}
++	if abi >= 5 {
++		s |= landlock.AccessFSSet(syscall.AccessFSIoctlDev)
++	}
++	if abi >= 9 {
++		s |= landlock.AccessFSSet(syscall.AccessFSResolveUnix)
++	}
++	return s
++}
++
++// netRightsFor returns the network access rights supported by abi (V4+).
++func netRightsFor(abi int) landlock.AccessNetSet {
++	if abi < 4 {
++		return 0
++	}
++	return landlock.AccessNetSet(syscall.AccessNetBindTCP | syscall.AccessNetConnectTCP)
++}
++
++// scopedRightsFor returns the IPC scopes supported by abi (V6+).
++func scopedRightsFor(abi int) landlock.ScopedSet {
++	if abi < 6 {
++		return 0
++	}
++	return landlock.ScopedSet(syscall.ScopeAbstractUnixSocket | syscall.ScopeSignal)
++}
++
++// fullFSAccess is the union of every filesystem access right supported by the
++// running kernel. It is used as the Config's handled access set so that every
+ // per-path rule we build stays within its bounds.
+-const fullFSAccess = landlock.AccessFSSet(
+-	syscall.AccessFSExecute |
+-		syscall.AccessFSWriteFile |
+-		syscall.AccessFSReadFile |
+-		syscall.AccessFSReadDir |
+-		syscall.AccessFSRemoveDir |
+-		syscall.AccessFSRemoveFile |
+-		syscall.AccessFSMakeChar |
+-		syscall.AccessFSMakeDir |
+-		syscall.AccessFSMakeReg |
+-		syscall.AccessFSMakeSock |
+-		syscall.AccessFSMakeFifo |
+-		syscall.AccessFSMakeBlock |
+-		syscall.AccessFSMakeSym |
+-		syscall.AccessFSRefer |
+-		syscall.AccessFSTruncate |
+-		syscall.AccessFSIoctlDev |
+-		syscall.AccessFSResolveUnix,
+-)
++var fullFSAccess = fsRightsFor(kernelLandlockABI)
+ 
+-// fullNetAccess is the union of every network access right supported by
+-// Landlock V9 (available since V4).
+-const fullNetAccess = landlock.AccessNetSet(
+-	syscall.AccessNetBindTCP | syscall.AccessNetConnectTCP,
+-)
++// fullNetAccess is the union of every network access right supported by the
++// running kernel (available since ABI V4).
++var fullNetAccess = netRightsFor(kernelLandlockABI)
+ 
+-// fullScoped is the union of every IPC scope supported by Landlock V9
+-// (available since V6).
+-const fullScoped = landlock.ScopedSet(
+-	syscall.ScopeAbstractUnixSocket | syscall.ScopeSignal,
+-)
++// fullScoped is the union of every IPC scope supported by the running kernel
++// (available since ABI V6).
++var fullScoped = scopedRightsFor(kernelLandlockABI)
+ 
+ // getReadWriteExecutableRights returns a full set of permissions including execution
+ func getReadWriteExecutableRights(dir bool) landlock.AccessFSSet {
+@@ -158,6 +202,11 @@ func isDirectory(path string) bool {
+ // optionally applying the IgnoreIfMissing modifier so that referencing a
+ // non-existing path does not lead to a runtime error.
+ func pathRule(rights landlock.AccessFSSet, path string, ignoreMissing bool) landlock.Rule {
++	// Clip to the rights the running kernel actually supports, otherwise a
++	// rule built from a newer ABI would be rejected as incompatible with the
++	// handled access set (and a best-effort downgrade would silently drop the
++	// whole rule).
++	rights &= fullFSAccess
+ 	rule := landlock.PathAccess(rights, path)
+ 	if ignoreMissing {
+ 		return rule.IgnoreIfMissing()
+@@ -168,6 +217,18 @@ func pathRule(rights landlock.AccessFSSet, path string, ignoreMissing bool) land
+ func Apply(cfg Config) error {
+ 	log.Info("Sandbox config: %+v", cfg)
+ 
++	if kernelLandlockABI == 0 {
++		return fmt.Errorf("landlock is not supported by the running kernel")
++	}
++	log.Info("Kernel Landlock ABI v%d (filesystem %v, network %v, scoped %v)",
++		kernelLandlockABI, fullFSAccess, fullNetAccess, fullScoped)
++	if len(cfg.UnixSocketPaths) > 0 && kernelLandlockABI < 9 {
++		return fmt.Errorf("--unix requires Landlock ABI v9 (Linux 7.1+); running kernel provides ABI v%d", kernelLandlockABI)
++	}
++	if (cfg.DisableLogOriginating || cfg.EnableLogSubprocesses || cfg.DisableLogSubdomains) && kernelLandlockABI < 7 {
++		return fmt.Errorf("Landlock audit logging options require ABI v7+; running kernel provides ABI v%d", kernelLandlockABI)
++	}
++
+ 	if cfg.UnrestrictedFilesystem {
+ 		log.Info("Unrestricted filesystem access enabled.")
+ 	}
+@@ -184,10 +245,10 @@ func Apply(cfg Config) error {
+ 	if !cfg.UnrestrictedFilesystem {
+ 		configArgs = append(configArgs, fullFSAccess)
+ 	}
+-	if !cfg.UnrestrictedNetwork {
++	if !cfg.UnrestrictedNetwork && fullNetAccess != 0 {
+ 		configArgs = append(configArgs, fullNetAccess)
+ 	}
+-	if !cfg.UnrestrictedScoped {
++	if !cfg.UnrestrictedScoped && fullScoped != 0 {
+ 		configArgs = append(configArgs, fullScoped)
+ 	}
+ 

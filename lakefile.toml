@@ -1,0 +1,26 @@
+name = "l20261018ch3"
+defaultTargets = ["TauCeti", "L20261018", "comparator"]
+
+# mathlib is fetched from GitHub at a pinned commit.  Prebuilt oleans are available:
+#     lake exe cache get
+[[require]]
+name = "mathlib"
+git = "https://github.com/leanprover-community/mathlib4"
+rev = "aa35a481e5f0cdb3b04a899ead15d6ca7305a624"
+
+# The TauCeti modules used by this development are vendored under `TauCeti/`
+# (Apache-2.0, see TauCeti/NOTICE).  Nothing else has to be installed.
+[[lean_lib]]
+name = "TauCeti"
+
+# The development.  One namespace, one module per step; new chapters are added as
+# further `Hyp*` modules (the campaign numbered them consecutively) plus their own
+# `comparator/chN/` directory.
+[[lean_lib]]
+name = "L20261018"
+
+# Per-chapter comparator inputs: comparator/ch3/{Challenge,Solution,config.json}.
+# Adding Chapter 4 later = add `comparator/ch4/` and regenerate; no lakefile change needed.
+[[lean_lib]]
+name = "comparator"
+globs = ["comparator", "comparator.+"]

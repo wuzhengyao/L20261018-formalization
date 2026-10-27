@@ -1,0 +1,4 @@
+{"challenge_module": "comparator.ch3.Challenge", "solution_module": "comparator.ch3.Solution",
+ "theorem_names": ["tm_3_1_1", "tm_3_1_2", "tm_3_1_3", "tm_3_2_1", "tm_3_2_2", "tm_3_3_1", "tm_nrd_inc", "tm_3_3_2", "tm_3_3_3", "tm_3_4", "tm_3_5_1a", "tm_3_5_1b", "tm_3_5_2", "tm_3_6"],
+ "permitted_axioms": ["propext", "Quot.sound", "Classical.choice"],
+ "enable_nanoda": false}
