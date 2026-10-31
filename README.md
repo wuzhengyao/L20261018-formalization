@@ -49,6 +49,27 @@ Each comparator run replays the proof terms in the Lean kernel and checks the
 statement against a `sorry`-challenge module with the same types, under the permitted
 axioms `propext`, `Quot.sound`, `Classical.choice`.
 
+## What the comparator does **not** check
+
+`comparator` is a **proof** checker, not a **specification** checker. It verifies that, for each
+名字 in `comparator/*/config.json`, the `Challenge` and `Solution` modules carry the same statement,
+that the solution's proof term is accepted by the Lean kernel, and that the axioms used are within
+`permitted_axioms`. It does **not**:
+
+* check **coverage** — a statement that is not listed is invisible to it (the lists were built by
+  hand; 4.3(2) was missing from an earlier revision for exactly this reason);
+* check whether the **hypotheses are discharged** — 4.2 / 4.3 / 4.4 take
+  `prop:prelim-residue(1)`'s two properties (`hd_infl`, `hd_cup_pi`) as hypotheses, on both sides,
+  so a conditional theorem passes exactly like an unconditional one. This is faithful to the paper
+  (which quotes those properties from GS 6.8.8 rather than proving them), but the comparator cannot
+  tell the difference;
+* check whether the hypothesis class is **inhabited** — the only machine-checked inhabitant in the
+  source development needs `[Finite ResidueField]` and `[IsDiscreteValuationRing]`, i.e. it is a
+  *conditional* witness, not an unconditional one.
+
+Coverage and fidelity were checked separately against the paper text (see the source project's
+`S62-CH4-FINAL.md` / `S62-CH4-FIDELITY.md`).
+
 ## Recorded verification (2026-11-01)
 
 ```
