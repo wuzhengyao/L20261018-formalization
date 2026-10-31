@@ -1,6 +1,7 @@
 import Hyp108
 import Hyp149
 import Hyp710
+import Hyp711
 
 open Lean Elab Command
 
@@ -14,6 +15,7 @@ run_cmd do
     (`tm_4_1b, ``L20261018.basis_change_brauer),
     (`tm_4_2, ``L20261018.orth_eq_bot_paper),
     (`tm_4_3_1, ``L20261018.thm_ramified_1_paper),
+    (`tm_4_3_2, ``L20261018.thm_ramified_2_paper),
     (`tm_4_4, ``L20261018.corollary_4_4_paper)
   ]
   for (newName, oldName) in specs do

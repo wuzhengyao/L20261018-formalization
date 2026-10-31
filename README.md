@@ -12,7 +12,7 @@ development (the campaign project); everything needed to build and to run the
 `3.1(1)(2)(3)`, `3.2(1)(2)`, `3.3(1)(2)(3)`, `3.4`,
 `3.5(1)` (abstract form + Galois form), `3.5(2)`, `3.6`.
 
-### Chapter 4 — 5 theorems, **at the paper's own hypothesis level** (`comparator/ch4`)
+### Chapter 4 — 6 theorems (**the whole chapter**), at the paper's own hypothesis level (`comparator/ch4`)
 
 | paper item | Lean declaration |
 |---|---|
@@ -20,6 +20,7 @@ development (the campaign project); everything needed to build and to run the
 | 4.1-1b `lem:basis-change` | `L20261018.basis_change_brauer` |
 | 4.2 `lem:ramified-vanishing` | `L20261018.orth_eq_bot_paper` |
 | 4.3(1) `thm:ramified` | `L20261018.thm_ramified_1_paper` |
+| 4.3(2) `thm:ramified` | `L20261018.thm_ramified_2_paper` |
 | 4.4 `§4` corollary | `L20261018.corollary_4_4_paper` |
 
 4.2 / 4.3(1) / 4.4 all take the **same** entry point: a linear map `d` together with
@@ -27,7 +28,9 @@ development (the campaign project); everything needed to build and to run the
 finiteness of the residue field, **no** `FiniteDimensional` of `H¹`, and do **not**
 use the Merkurjev–Suslin theorem (which the paper states in §2 but never cites).
 
-**Known gap**: 4.3(2) (`rank Φ ≥ 3`) is **not** formalised here.
+4.3(2) (`rank Φ ≥ 3`) is a thin wrapper over the Chapter 3 rank-barrier theorem
+(`theorem_3_2_2_kummer'`), exactly as in the paper's proof ("substitute ind(D)=p² into
+thm:rank-barrier(2)").
 
 ## Build and run the comparator
 
@@ -50,7 +53,7 @@ axioms `propext`, `Quot.sound`, `Classical.choice`.
 
 ```
 Chapter 3 : "Your solution is okay!"   (exit 0, 14/14)
-Chapter 4 : "Your solution is okay!"   (exit 0,  5/5)
+Chapter 4 : "Your solution is okay!"   (exit 0,  6/6)  -- including 4.3(2)
 ```
 
 Both were produced by `lake env comparator` in a wrapper project whose

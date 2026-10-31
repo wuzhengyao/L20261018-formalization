@@ -1,4 +1,4 @@
 {"challenge_module": "comparator.ch4.Challenge", "solution_module": "comparator.ch4.Solution",
- "theorem_names": ["tm_4_1a", "tm_4_1b", "tm_4_2", "tm_4_3_1", "tm_4_4"],
+ "theorem_names": ["tm_4_1a", "tm_4_1b", "tm_4_2", "tm_4_3_1", "tm_4_3_2", "tm_4_4"],
  "permitted_axioms": ["propext", "Quot.sound", "Classical.choice"],
  "enable_nanoda": false}
