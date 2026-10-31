@@ -1,9 +1,4 @@
+# build artefacts / caches (rebuild with `lake exe cache get && lake build`)
 .lake/
 out/
-build-*.log
-order.txt
-lake-manifest.json
-*.olean
-*.ilean
-.cmp-test/
-.tools/
+*.log

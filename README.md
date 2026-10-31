@@ -1,110 +1,84 @@
-# L20261018 — Chapter 3, Lean 4 formalization
+# L20261018 — Chapters 3 & 4, Lean 4 formalisation (minimal snapshot)
 
-Lean 4 + [mathlib](https://github.com/leanprover-community/mathlib4) formalization of
-**Chapter 3** of the paper `L20261018` (*bi-Kummer data, the rank barrier, and the
-Hochschild–Serre computation*).  Twelve numbered statements (3.1(1)–3.6) are formalized
-as **14 Lean theorems**; the abstract layer lives in `L20261018/A.lean`, the concrete
-objects (Kummer classes, crossed products, cup-product transport, local fields) in the
-numbered `Hyp*` modules.
+This repository is a **minimal, source-closed** snapshot of the Lean 4 formalisation of
+Chapters 3 and 4 of the paper `L20261018.tex`. It is extracted from a larger private
+development (the campaign project); everything needed to build and to run the
+**comparator** check is vendored here.
 
-Nothing else is needed to read or build this: mathlib is fetched by Lake, and the
-TauCeti modules that the development imports are vendored under `TauCeti/`.
+## What is covered
 
-## Contents
+### Chapter 3 — 14 theorems (`comparator/ch3`)
 
-```
-lakefile.toml, lean-toolchain    build configuration (toolchain v4.35.0, mathlib pinned)
-L20261018/*.lean                 96 modules: the Chapter-3 development
-TauCeti/*.lean                   542 vendored TauCeti modules (Apache-2.0, see TauCeti/NOTICE)
-comparator/ch3/                  comparator inputs for Chapter 3: Challenge.lean,
-                                 Solution.lean, config.json (14 theorems)
-run-comparator.sh                build + run the comparator check of one chapter
-scripts/gen-comparator.py        regenerates comparator/ch3/{Challenge,Solution,config.json}
-scripts/install-comparator-tools.sh, scripts/validate-comparator-tools.sh
-scripts/patches/…                landrun ABI patch (see the install script's header)
-```
+`3.1(1)(2)(3)`, `3.2(1)(2)`, `3.3(1)(2)(3)`, `3.4`,
+`3.5(1)` (abstract form + Galois form), `3.5(2)`, `3.6`.
 
-`L20261018/` is flat on purpose: the modules were developed incrementally as
-`Hyp1`, `Hyp2`, … and import each other by those names
-(`import L20261018.Hyp22`, …).  `A.lean` holds the abstract statements; the `Hyp*`
-files contain the concrete instances and the auxiliary lemmas they need.
+### Chapter 4 — 5 theorems, **at the paper's own hypothesis level** (`comparator/ch4`)
 
-## Build
-
-```bash
-# toolchain: leanprover/lean4:v4.35.0 (elan installs it from lean-toolchain)
-lake exe cache get     # download prebuilt mathlib oleans (recommended)
-lake build             # TauCeti (vendored) + L20261018 + comparator/ch3
-```
-
-Pins: mathlib `aa35a481e5f0cdb3b04a899ead15d6ca7305a624` (see `lakefile.toml`), Lean
-`v4.35.0` (see `lean-toolchain`).  If you already have mathlib checked out at that
-commit, you can replace the `[[require]]` block by a `path = "…/mathlib4"` requirement.
-
-## Comparator check
-
-[`comparator`](https://github.com/leanprover/comparator) replays the proof terms in an
-independent kernel and checks them against separately generated statements.
-
-```bash
-bash scripts/install-comparator-tools.sh   # comparator + lean4export + landrun into .tools/
-source .tools/env.sh                       # puts them on PATH
-./run-comparator.sh                        # regenerates comparator/ch3, builds, runs comparator
-```
-
-Expected last line: `Your solution is okay!`  The two modules `comparator/ch3/Challenge.lean`
-and `comparator/ch3/Solution.lean` clone the same declarations out of the imported environment (same
-`levelParams`, same `type` expression), so the statements agree by construction; the
-challenge side replaces every proof by `sorryAx`, the solution side replays the project's
-own proof terms.  `config.json` permits exactly `propext`, `Quot.sound`,
-`Classical.choice`.
-
-## Statement map (paper → Lean)
-
-| Paper | Lean declaration (module) |
+| paper item | Lean declaration |
 |---|---|
-| 3.1(1) `U ∩ U^⊥ = 0` | `L20261018.lemma_3_1_1_kummer` (`Hyp22`) |
-| 3.1(2) `res|_{U^⊥}` injective | `L20261018.BiKummerData.lemma_3_1_2` (`A`); Galois form `lemma_3_1_2_galo` (`Hyp42`) |
-| 3.1(3) `rank Φ ≥ 2` | `L20261018.lemma_3_1_3_kummer` (`Hyp22`) |
-| 3.2(1) `rank Φ = 2 ⇒ ind ≤ p` | `L20261018.theorem_3_2_1_kummer'` (`Hyp86`) |
-| 3.2(2) `ind = p² ⇒ rank Φ ≥ 3` | `L20261018.theorem_3_2_2_kummer'` (`Hyp86`) |
-| 3.3(1) `N ⊆ S` | `CrossedProductNrd.hNrd_crossedProduct` (`Hyp23`) + `nrd_inc` (`Hyp21`) |
-| 3.3(2) `N ⊆ U^⊥` | `explicitCup_projection_res_right` (`Hyp10`); continuous form in `Hyp11` |
-| 3.3(3) `U^⊥ ⊆ R` | `L20261018.lemma_3_3_3_kummer` (`Hyp22`) |
-| 3.4 (first three items) | `L20261018.prop_3_4_first_three` (`A`) |
-| 3.5(1) | `L20261018.three_five_one_add` (`Hyp12`) + `GaloFive.theorem_3_5_1_galo` (`Hyp13`) |
-| 3.5(2) | `L20261018.BiKummerData.theorem_3_5_2` (`A`) |
-| 3.6 | `L20261018.BiKummerData.theorem_3_6` (`A`) |
+| 4.1-1a `lem:basis-change` | `L20261018.cup_basis_change` |
+| 4.1-1b `lem:basis-change` | `L20261018.basis_change_brauer` |
+| 4.2 `lem:ramified-vanishing` | `L20261018.orth_eq_bot_paper` |
+| 4.3(1) `thm:ramified` | `L20261018.thm_ramified_1_paper` |
+| 4.4 `§4` corollary | `L20261018.corollary_4_4_paper` |
 
-## Status
+4.2 / 4.3(1) / 4.4 all take the **same** entry point: a linear map `d` together with
+`prop:prelim-residue(1)`'s two properties (`hd_infl`/`hd_cup_pi`). They assume **no**
+finiteness of the residue field, **no** `FiniteDimensional` of `H¹`, and do **not**
+use the Merkurjev–Suslin theorem (which the paper states in §2 but never cites).
 
-The development contains no `sorry` and every one of the 14 theorems depends only on
-`propext`, `Classical.choice` and `Quot.sound`.
+**Known gap**: 4.3(2) (`rank Φ ≥ 3`) is **not** formalised here.
 
-Verified on this export (2026-10-27): all 96 modules of `L20261018/` compile against
-Lean `v4.35.0` + mathlib `aa35a481…` + the vendored `TauCeti/`; `comparator` on
-`comparator/ch3/config.json` reports **`Your solution is okay!`** (2m36s, kernel replay
-of the closure).  That is the same code that is committed here.  The abstract
-statements (`A.lean`) are the ones to read first: they fix the interfaces
-(`BiKummerData`, the Kummer map, `ind`) that the concrete modules instantiate.
+## Build and run the comparator
 
-## Chapters
+Prerequisites: `elan` (Lean `v4.35.0`, see `lean-toolchain`), network for the first
+`lake exe cache get`, and the comparator toolchain on `PATH`
+(`landrun`, `lean4export`, `comparator`).
 
-| Chapter | Status | Where |
-|---|---|---|
-| 3 | **included** — 12 statements (3.1–3.6), 14 Lean theorems | `L20261018/`, `comparator/ch3/` |
-| 4, 5, … | planned; each will be added once its formalization is complete | future `Hyp*` modules + `comparator/chN/` |
+```bash
+lake exe cache get          # prebuilt mathlib oleans (pinned commit in lakefile.toml)
+lake build                  # TauCeti (vendored subset) + L20261018 + comparator modules
+./run-comparator.sh ch3     # Chapter 3 : 14 theorems
+./run-comparator.sh ch4     # Chapter 4 :  5 theorems
+```
 
-The layout is meant to grow: a new chapter adds its Lean modules under `L20261018/`
-(the campaign numbered them consecutively, so imports keep working) and its own
-`comparator/chN/` directory; `lakefile.toml` needs no change, and
-`./run-comparator.sh chN` runs its check.
+Each comparator run replays the proof terms in the Lean kernel and checks the
+statement against a `sorry`-challenge module with the same types, under the permitted
+axioms `propext`, `Quot.sound`, `Classical.choice`.
 
-Not included: the paper sources (kept in the author's repository), the Chapter-4
-development so far, and the campaign's working notes.  `.lake/` and `lake-manifest.json` are
-build products and are ignored.
+## Recorded verification (2026-11-01)
 
-## License
+```
+Chapter 3 : "Your solution is okay!"   (exit 0, 14/14)
+Chapter 4 : "Your solution is okay!"   (exit 0,  5/5)
+```
 
-The `L20261018` development: MIT.  The vendored `TauCeti/` files: Apache-2.0 (see
-`TauCeti/LICENSE` and `TauCeti/NOTICE`).
+Both were produced by `lake env comparator` in a wrapper project whose
+`.lake/build/lib/lean` is a symlink farm over the compiled closure; the same
+mechanism is used by `run-comparator.sh` here.
+
+> Note. An earlier record (2026-10-27) of the Chapter 3 check was **not**
+> reproducible on 2026-11-01: `lean4export` aborted with
+> `Constant GaloBase.instSemigroupVZModAbsoluteGaloisGroupMuP_scratch not found in
+> environment`. Root cause: one compiled artefact (`Hyp14.olean`) had been produced
+> under a module named `scratch`, so its anonymous instance carried the suffix
+> `_scratch` instead of `_Hyp14`; the name no longer existed, which is invisible to
+> `#check`/`#print axioms` but fatal to a kernel replay. Recompiling `Hyp14` from
+> source fixed it and the Chapter 3 check then passed. This is why the snapshot
+> ships **sources** and asks you to build them.
+
+## Layout
+
+```
+TauCeti/            vendored subset of TauCeti (Apache-2.0, see TauCeti/NOTICE)
+L20261018/          the development: one module per proof step (`A`, `Galo`, `Hyp*`)
+comparator/ch3/     Challenge.lean (proofs = sorry), Solution.lean (real proofs), config.json
+comparator/ch4/     idem for Chapter 4
+lakefile.toml       mathlib pinned to aa35a481e5f0cdb3b04a899ead15d6ca7305a624
+run-comparator.sh   build + run the comparator of one chapter
+```
+
+## Licence
+
+`TauCeti/` is Apache-2.0 (see `TauCeti/NOTICE`). The `L20261018/` sources are part of
+the paper's formalisation; no separate licence is granted here.

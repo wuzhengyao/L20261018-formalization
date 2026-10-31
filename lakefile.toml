@@ -1,4 +1,4 @@
-name = "l20261018ch3"
+name = "l20261018ch34"
 defaultTargets = ["TauCeti", "L20261018", "comparator"]
 
 # mathlib is fetched from GitHub at a pinned commit.  Prebuilt oleans are available:
@@ -19,8 +19,8 @@ name = "TauCeti"
 [[lean_lib]]
 name = "L20261018"
 
-# Per-chapter comparator inputs: comparator/ch3/{Challenge,Solution,config.json}.
-# Adding Chapter 4 later = add `comparator/ch4/` and regenerate; no lakefile change needed.
+# Per-chapter comparator inputs: comparator/ch{3,4}/{Challenge,Solution,config.json}.
+# Chapter 3: 14 theorems; Chapter 4: 5 theorems (paper hypothesis level).
 [[lean_lib]]
 name = "comparator"
 globs = ["comparator", "comparator.+"]
