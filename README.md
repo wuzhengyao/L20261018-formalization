@@ -28,6 +28,12 @@ No module was merged into another: one module per proof step, as before the reor
 only names and locations changed. The invariant that was checked is that the set of
 `(declaration, line)` pairs is *identical* before and after (2 636 of them).
 
+Merging each directory into one module was tried and does not work: the topic directories are
+not dependency layers, so the merged modules would import each other in a cycle (19 of the 20
+directories form one strongly connected component of the import graph). `scripts/dependency-layers.py`
+prints that verdict with witness modules; `scripts/merge-directory.py` is the merge tool that a
+cycle-free group would use, and it records the scope rules a merge has to respect.
+
 ## Chapter 4 — unconditional
 
 ```bash

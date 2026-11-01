@@ -113,6 +113,19 @@
    **文件名必须是合法的标识符分量**：`[A-Za-z0-9_]`，**不得含连字符**（`zz-test-hyphen.lean` 被解析成
    模块 `zz`，`import` 直接坏），**不得以数字开头** ⟹ `Step017_…` 的前缀不是装饰，它让名字成为标识符。
    **根模块的 `/-! … -/` 必须放在 `import` 之后**（`import` 只能在文件最前）。
+   * **阶段 B（按主题目录合并）在本项目被证明不可行**（实跑）：把每个主题目录合并成一个模块，
+     机制上是可行的（`Ch2/Rost` 试合并后 `lake build` 全绿），但**一合并全部目录就出现 import 环**
+     —— Lean 不允许模块间成环，而**主题目录不是依赖层**：把 576 个模块按主题目录取商，
+     **20 个目录里 19 个落在同一个强连通分量**（唯一例外是 `Core`）。实例：
+     `Ch2/Brauer.Step033` import `Ch2/Kummer.Step016`，而 `Ch2/Kummer.Step012` import
+     `Ch2/Brauer.Step027`。⟹ **无环的合并只有两种**：① 一个都不合；② 把整个强连通分量合成一个
+     ~68k 行的大模块（增量编译粒度尽失）。**判据**：动手前先跑 `scripts/dependency-layers.py`
+     算**主题目录图的 SCC 与层高**（本项目层高 = 2）；SCC 非平凡时不要按目录合并。
+   * **合并的机制（若某组目录确实无环）**：`scripts/merge-directory.py` —— 每段前 `/- === 原名 === -/`、
+     段用 `section … end` 包住（复现该文件原来的 `open`/`set_option`/`variable` 作用域，
+     即 §2 失败的直接修法）、`import` 提到文件最前、**结尾留的 `namespace`/`section` 要显式补齐
+     `end`**（否则下一段被套进上一段的 namespace，声明名会变成 `L20261018.L20261018.foo`）。
+     注释处理必须**按字符流**（块注释可同行开闭、可嵌套）——按行扫会多算 `end`，本项目实测多补了 3 个。
 8. **索引器要能 Ctrl-F**：`DECLARATIONS.md` = `declaration | module | line | paper locator`。
    正则须允许**前置 attribute**（`@[simp] lemma Foo_apply` —— 只认行首关键字的版本会静默漏掉 29 条，
    而那恰好是最常被 grep 的 `_apply` 族）；**匿名 `instance : Foo` 无名字可索引**，只能计数，
