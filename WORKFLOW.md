@@ -164,4 +164,6 @@
 收口:  build 0 err 0 warn ｜ axioms 恰三条 ｜ comparator 全绿 ｜ commit（含文档）
 闸门:  `bash scripts/check-all.sh` 一条命令全跑（build／三组 comparator／工具自证／索引／链接），
        逐项 PASS/FAIL；`--fast` 只跑文档闸门；「跑不了」报 SKIP 且不算通过
+离线:  `python3 scripts/use-local-mathlib.py on <mathlib4>` 一条命令改 `require` ＋ 写 path manifest，
+       **先核 toolchain 与 pin**（不符即拒）；`off` 从 git 复原。改过的 `lakefile.toml` 不得提交
 ```

@@ -114,8 +114,16 @@ L20261018.lean               root module: imports every submodule
   needed because the root module `L20261018.lean` exists.
 
 All three groups were rebuilt from these sources and pass (Lean `v4.35.0`, mathlib
-`aa35a481`). If the pinned mathlib is already built locally, point `require mathlib` at it by
-path and `lake build` works offline.
+`aa35a481`). If that exact mathlib commit is already built on your machine, the repository
+compiles fully offline; one command makes the two edits that takes (the `require` stanza and a
+path `lake-manifest.json`) after checking the toolchain and the pin:
+
+```bash
+python3 scripts/use-local-mathlib.py on /path/to/mathlib4    # → lake build works offline
+python3 scripts/use-local-mathlib.py off                    # restore the committed lakefile
+```
+
+`lakefile.toml` is tracked, so do not commit the `on` state.
 
 One command runs every gate -- build, the three comparator groups, the toolchain self-test
 and the generated documentation -- and prints PASS/FAIL per gate:
