@@ -162,4 +162,6 @@
 索引:  每个目录一份生成式 README ＋ 一份 paper→模块＋comparator 目标→模块的总表；两处都 --check，
        且 comparator 目标缺失即索引器失败（文档兼作闸门）
 收口:  build 0 err 0 warn ｜ axioms 恰三条 ｜ comparator 全绿 ｜ commit（含文档）
+闸门:  `bash scripts/check-all.sh` 一条命令全跑（build／三组 comparator／工具自证／索引／链接），
+       逐项 PASS/FAIL；`--fast` 只跑文档闸门；「跑不了」报 SKIP 且不算通过
 ```

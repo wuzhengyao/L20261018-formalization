@@ -117,5 +117,12 @@ All three groups were rebuilt from these sources and pass (Lean `v4.35.0`, mathl
 `aa35a481`). If the pinned mathlib is already built locally, point `require mathlib` at it by
 path and `lake build` works offline.
 
+One command runs every gate -- build, the three comparator groups, the toolchain self-test
+and the generated documentation -- and prints PASS/FAIL per gate:
+
+```bash
+bash scripts/check-all.sh          # ~15 min from cold;  --fast for the doc gates only
+```
+
 `TauCeti/` is Apache-2.0 (see `TauCeti/NOTICE`); the `L20261018/` sources are part of the
 paper's formalisation and carry no separate licence.
