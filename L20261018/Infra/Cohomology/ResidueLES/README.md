@@ -2,13 +2,13 @@
 
 33 modules.  Part of the development's [index](../../../README.md); see also [`DECLARATIONS.md`](../../../../DECLARATIONS.md) and [`RENAME-MAP.tsv`](../../../../RENAME-MAP.tsv).
 
-Paper items formalised here: `prop-residue-map-long-exact`; 1 raw line anchor.
+Source items formalised here: `GS2017/prop-residue-map-long-exact`; 1 line anchor.
 
-| module | paper | declarations | lines |
+| module | source item | declarations | lines |
 |---|---|---|---|
-| [`Step001_f2_delta_zero_vanishes`](Step001_f2_delta_zero_vanishes.lean) | `prop-residue-map-long-exact` | `dimShiftSES`, `dimShiftSES_X₁`, `dimShiftSES_X₃`, `deltaZero_coindBot_comp_coind` (+2 more) | 128 |
+| [`Step001_f2_delta_zero_vanishes`](Step001_f2_delta_zero_vanishes.lean) | `GS2017/prop-residue-map-long-exact` | `dimShiftSES`, `dimShiftSES_X₁`, `dimShiftSES_X₃`, `deltaZero_coindBot_comp_coind` (+2 more) | 128 |
 | [`Step002_t_cokernel_constructed`](Step002_t_cokernel_constructed.lean) |  | `qSES`, `qSES_X₁`, `qSES_X₂`, `qSES_X₃` (+6 more) | 113 |
-| [`Step003_f1_square`](Step003_f1_square.lean) | `prop-residue-map-long-exact` | `f1Sq`, `delta_dimShiftUpSES_eq`, `f1Sq_τ₁_eq`, `f1Sq_τ₃_eq` (+1 more) | 138 |
+| [`Step003_f1_square`](Step003_f1_square.lean) | `GS2017/prop-residue-map-long-exact` | `f1Sq`, `delta_dimShiftUpSES_eq`, `f1Sq_τ₁_eq`, `f1Sq_τ₃_eq` (+1 more) | 138 |
 | [`Step004_i_star_delta_zero_bar`](Step004_i_star_delta_zero_bar.lean) |  | `cokerSES_X₂`, `qSES_g_comp_deltaZeroBar`, `iTame_comp_deltaZeroBar`, `mono_δ_cokerSES` | 96 |
 | [`Step005_delta_two_comp_inf_zero`](Step005_delta_two_comp_inf_zero.lean) |  | `deltaTwo_firstHalf'_hom_eq`, `inflationIso_hom_eq`, `epi_δ_cokerSES`, `delta_coind_comp_infl'` (+2 more) | 126 |
 | [`Step006_mu_p_smooth_discrete`](Step006_mu_p_smooth_discrete.lean) |  | `carrier_V`, `carrier_H2`, `carrier_cup`, `isSmoothDiscrete_muP` | 99 |
@@ -17,8 +17,8 @@ Paper items formalised here: `prop-residue-map-long-exact`; 1 raw line anchor.
 | [`Step009_continuous_dim_shift_ses`](Step009_continuous_dim_shift_ses.lean) |  | `contCoindSES`, `contDimShiftSES`, `contDeltaZeroBar` | 53 |
 | [`Step010_continuous_f2`](Step010_continuous_f2.lean) |  | `contDeltaZeroBar_kills_proj` | 45 |
 | [`Step011_continuous_res_delta_square`](Step011_continuous_res_delta_square.lean) |  | `contDelta_res_naturality`, `contDeltaZeroBar_eq_delta` | 52 |
-| [`Step012_continuous_t_carrier`](Step012_continuous_t_carrier.lean) | `line:9528` | `contB`, `contC`, `contInvA`, `contInvB` (+12 more) | 174 |
-| [`Step013_continuous_f1`](Step013_continuous_f1.lean) | `prop-residue-map-long-exact` | `contProjInv`, `contProjInv_coe`, `contProjInv_smul`, `contKI_le_ker_contProjInv` (+8 more) | 208 |
+| [`Step012_continuous_t_carrier`](Step012_continuous_t_carrier.lean) | `GS2017/line:9528` | `contB`, `contC`, `contInvA`, `contInvB` (+12 more) | 174 |
+| [`Step013_continuous_f1`](Step013_continuous_f1.lean) | `GS2017/prop-residue-map-long-exact` | `contProjInv`, `contProjInv_coe`, `contProjInv_smul`, `contKI_le_ker_contProjInv` (+8 more) | 208 |
 | [`Step014_continuous_d_two_blocks`](Step014_continuous_d_two_blocks.lean) |  | `isIso_contCoindSES_delta`, `epi_contCoindSES_delta`, `contPairITame`, `contPairSubtypeC` (+4 more) | 162 |
 | [`Step015_vkg_kummer_decomposition`](Step015_vkg_kummer_decomposition.lean) |  | `exists_unit_kummerClass_of_mem_ker`, `forall_VKG_cup_eq_zero_of_units`, `residueSpan_le_ker_of_units`, `VKG_cup_eq_zero_of_residueSpan_le` | 104 |
 | [`Step016_delta_t_iso`](Step016_delta_t_iso.lean) |  | `isIso_contInvSES_delta`, `epi_contInvSES_delta`, `contInvSES_X₂` | 77 |

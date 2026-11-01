@@ -2,9 +2,9 @@
 
 16 modules.  Part of the development's [index](../../../README.md); see also [`DECLARATIONS.md`](../../../../DECLARATIONS.md) and [`RENAME-MAP.tsv`](../../../../RENAME-MAP.tsv).
 
-Paper items formalised here: `eq:prelim-tame`; 2 raw line anchors.
+Source items formalised here: `eq:prelim-tame`; 2 line anchors.
 
-| module | paper | declarations | lines |
+| module | source item | declarations | lines |
 |---|---|---|---|
 | [`Step001_tame_symbol_general_formula`](Step001_tame_symbol_general_formula.lean) | `eq:prelim-tame` | `cup_pi_pi_eq_zero`, `res_cup_eq` | 97 |
 | [`Step002_tame_symbol_formula`](Step002_tame_symbol_formula.lean) | `eq:prelim-tame` | `val_eq_of_split`, `val_eq_of_split'`, `infl_eq_of_split'`, `res_cup_infl_pi` (+7 more) | 175 |

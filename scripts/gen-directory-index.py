@@ -48,7 +48,9 @@ def render_dir(directory, mods, depth):
     theme = K.THEMES.get(directory, "")
     files = sorted((m for m in mods if m["directory"] == directory),
                    key=lambda m: step_key(m["module"]))
-    papers = sorted({p for m in files for p in m["paper"]})
+    shown = sorted({K.display_locator(src) for m in files for src in m["sources"]})
+    labels = [p for p in shown if not p.startswith("line:") and "/line:" not in p]
+    anchors = [p for p in shown if p not in labels]
     title = f"# `L20261018/{directory}`"
     out = [title + (f" — {theme}" if theme else "") + "\n",
            "\n",
@@ -57,28 +59,48 @@ def render_dir(directory, mods, depth):
            f"[`DECLARATIONS.md`]({up}DECLARATIONS.md) and "
            f"[`RENAME-MAP.tsv`]({up}RENAME-MAP.tsv).\n",
            "\n"]
-    labels = [p for p in papers if not p.startswith("line:")]
-    anchors = [p for p in papers if p.startswith("line:")]
     if labels or anchors:
         bits = ", ".join(f"`{p}`" for p in labels)
         if anchors:
-            bits += ("; " if bits else "") + f"{len(anchors)} raw line anchor" \
+            bits += ("; " if bits else "") + f"{len(anchors)} line anchor" \
                     f"{'s' if len(anchors) != 1 else ''}"
-        out.append("Paper items formalised here: " + bits + ".\n")
+        out.append("Source items formalised here: " + bits + ".\n")
         out.append("\n")
-    out.append("| module | paper | declarations | lines |\n")
+    out.append("| module | source item | declarations | lines |\n")
     out.append("|---|---|---|---|\n")
     for m in files:
         base = os.path.basename(m["path"])
         names = [d[0] for d in m["decls"]]
-        shown = ", ".join(f"`{n}`" for n in names[:4])
+        cell = ", ".join(f"`{n}`" for n in names[:4])
         if len(names) > 4:
-            shown += f" (+{len(names) - 4} more)"
+            cell += f" (+{len(names) - 4} more)"
         if not names:
-            shown = "—"
-        paper = ", ".join(f"`{p}`" for p in m["paper"]) or ""
-        out.append(f"| [`{base[:-5]}`]({base}) | {paper} | {shown} | {m['lines']} |\n")
+            cell = "—"
+        src = ", ".join(f"`{K.display_locator(x)}`" for x in m["sources"])
+        out.append(f"| [`{base[:-5]}`]({base}) | {src} | {cell} | {m['lines']} |\n")
     return "".join(out)
+
+
+def provenance_summary():
+    """One paragraph from PROVENANCE.tsv, or an honest note that it is not here."""
+    path = os.path.join(K.ROOT, "PROVENANCE.tsv")
+    if not os.path.exists(path):
+        return ("*`PROVENANCE.tsv` is not present*, so the provenance of the `@source` "
+                "annotations has not been checked in this checkout.\n")
+    rows = [l.split("\t") for l in
+            io.open(path, encoding="utf-8").read().splitlines()[1:] if l]
+    ok = sum(1 for r in rows if r[3] == "annotated-file")
+    elsewhere = [r for r in rows if r[3] == "elsewhere"]
+    missing = [r for r in rows if r[3] == "not-found"]
+    anchors = sum(1 for r in rows if r[3] == "line-anchor")
+    gone = [r for r in rows if r[2] == "MISSING"]
+    bits = [f"{ok} labelled items are present in the file their annotation names",
+            f"{len(elsewhere)} labelled elsewhere", f"{len(missing)} not found",
+            f"{anchors} line anchors (which a label search cannot check)",
+            f"{len(gone)} annotation whose file is absent"]
+    return ("Every `@source` annotation is checked against the sources in `raw/` by "
+            "`scripts/check-provenance.py`, whose verdict is `PROVENANCE.tsv`: " +
+            "; ".join(bits) + ".\n")
 
 
 def render_dev(recs):
@@ -88,7 +110,7 @@ def render_dev(recs):
     out = ["# `L20261018/` — the development, organised by the paper\n", "\n",
            f"{len(recs)} modules in {len(dirs)} directories.  "
            "[Root README](../README.md) · [`DECLARATIONS.md`](../DECLARATIONS.md) · "
-           "[`RENAME-MAP.tsv`](../RENAME-MAP.tsv) · "
+           "[`RENAME-MAP.tsv`](../RENAME-MAP.tsv) · [`PROVENANCE.tsv`](../PROVENANCE.tsv) · "
            "[`WORKFLOW.md`](../WORKFLOW.md)\n", "\n",
            "Every module is a `StepNNN_<slug>` whose number is order preserving inside its\n"
            "directory (so reading upwards reads the proof in the order it was built) and whose\n"
@@ -101,69 +123,69 @@ def render_dev(recs):
         nd = sum(len(m["decls"]) for m in dirs[d])
         out.append(f"| [`{d}/`]({d}/README.md) | {n} | {nd} | {K.THEMES.get(d, '')} |\n")
 
-    # paper locator -> modules
-    by_label = {}
+    # group the annotations by the file they name
+    by_file = {}
     for m in recs:
-        for p in m["paper"]:
-            by_label.setdefault(p, []).append(m)
+        for src in m["sources"]:
+            by_file.setdefault(src[0], {}).setdefault(src[1], []).append(m)
 
-    def links(label):
+    def links(items):
         return ", ".join(
             f"[`{os.path.basename(mm['path'])[:-5]}`]"
             f"({mm['directory']}/{os.path.basename(mm['path'])})"
-            for mm in sorted(by_label[label], key=lambda x: step_key(x["module"])))
+            for mm in sorted(items, key=lambda x: step_key(x["module"])))
 
-    section_of = {}
-    for section, labels in K.PAPER_ORDER:
-        for label in labels:
-            section_of[label] = section
-    named = [p for p in by_label if not p.startswith("line:")]
-    if not by_label:
-        raise SystemExit("no @source locator found at all -- refusing to write empty tables")
-    if not named:
-        raise SystemExit("no labelled paper item found -- the `label:` prefix is probably "
-                         "not being stripped (an empty table must not pass silently)")
-    ordered = [l for _s, ls in K.PAPER_ORDER for l in ls if l in by_label]
-    ordered += sorted(p for p in named if p not in ordered)
+    def label_table(file, order=None):
+        labels = by_file.get(file, {})
+        ordered = [l for l in (order or []) if l in labels]
+        ordered += sorted(l for l in labels if l not in ordered)
+        rows = []
+        for label in ordered:
+            if label.startswith("line:"):
+                rows.append(f"| `{label}` | {links(labels[label])} |\n")
+            else:
+                rows.append(f"| `{label}` | {links(labels[label])} |\n")
+        return "".join(rows), labels
 
-    out.append("\n## Paper items -> modules\n")
+    out.append("\n## Items of `raw/L20261018.tex`\n")
     out.append("\n")
-    out.append("The locator is the label of the statement in `raw/L20261018.tex`; a module\n"
-               "carries it when it formalises that statement.  Rows for labelled statements\n"
-               "come in the paper's own order, then the raw line anchors (statements the paper\n"
-               "leaves unnumbered or that a module picks up mid-paragraph).\n")
+    out.append("The paper's own statements, in the paper's order (the section is the one the\n"
+               "label lives in).  A module appears here when its `@source` annotation names\n"
+               "that label.  Raw `line:` anchors come last -- statements the paper leaves\n"
+               "unnumbered.\n")
     out.append("\n")
-    out.append("### Labelled statements\n")
-    out.append("\n")
-    out.append("| paper | section | modules |\n")
-    out.append("|---|---|---|\n")
-    for label in ordered:
-        sec = section_of.get(label, "")
-        out.append(f"| `{label}` | {sec} | {links(label)} |\n")
-    anchors = sorted((p for p in by_label if p.startswith("line:")),
-                     key=lambda p: int(p.split(":")[1]))
-    if anchors:
-        out.append("\n### Line anchors into `raw/L20261018.tex`\n")
-        out.append("\n")
-        out.append("| anchor | modules |\n")
-        out.append("|---|---|\n")
-        for label in anchors:
-            out.append(f"| `{label}` | {links(label)} |\n")
-
-    out.append("\n## Locators that are not in `raw/L20261018.tex`\n")
-    out.append("\n")
-    out.append("`grep` over the whole of `raw/L20261018.tex` gives 0 hits for each of these,\n"
-               "while the docstrings of the modules below name them as Gille-Soule (`GS`) items:\n"
-               "the `file=` field of those `@source` annotations is wrong, not the label.  They\n"
-               "are recorded here rather than edited away (`∅-citation-needed`).\n")
-    out.append("\n")
-    out.append("| locator | modules |\n")
+    out.append("| paper label | modules |\n")
     out.append("|---|---|\n")
-    for label in K.NOT_IN_PAPER:
-        if label in by_label:
-            out.append(f"| `{label}` | {links(label)} |\n")
+    order = [l for _s, ls in K.PAPER_ORDER for l in ls]
+    table, labels = label_table(K.PAPER, order)
+    out.append(table)
+    section_of = {l: s for s, ls in K.PAPER_ORDER for l in ls}
+    # the section column would be useful; emit it as a separate ordered list instead
+    out.append("\nSection of each labelled item: " +
+               "; ".join(f"`{l}` ({section_of[l]})"
+                         for l in order if l in labels and l in section_of) + ".\n")
 
-    # comparator targets
+    for file in sorted(by_file):
+        if file == K.PAPER:
+            continue
+        out.append(f"\n## Items of `{file}`\n")
+        out.append("\n")
+        alias = K.SOURCE_ALIASES.get(file)
+        out.append("Statements the development quotes from this source rather than from the\n"
+                   "paper.  The label is shown bare here; in `DECLARATIONS.md` and in the\n"
+                   "per-directory tables it is prefixed with the source"
+                   + (f", `{alias}/<label>`," if alias else "") +
+                   " so that it cannot be\nconfused with a paper label.\n")
+        out.append("\n")
+        out.append("| label | modules |\n")
+        out.append("|---|---|\n")
+        table, labels = label_table(file)
+        out.append(table)
+
+    out.append("\n## Provenance of the annotations\n")
+    out.append("\n")
+    out.append(provenance_summary())
+
     out.append("\n## What the comparators check, and where it lives\n")
     out.append("\n")
     out.append("Taken from the `specs` list of each `comparator/*/Solution.lean`, so this table\n"

@@ -2,32 +2,32 @@
 
 40 modules.  Part of the development's [index](../../../README.md); see also [`DECLARATIONS.md`](../../../../DECLARATIONS.md) and [`RENAME-MAP.tsv`](../../../../RENAME-MAP.tsv).
 
-Paper items formalised here: `cons-residue-map-finite-coefficients-2`, `sec:cohomology-complete-dv`; 11 raw line anchors.
+Source items formalised here: `GS2017/cons-residue-map-finite-coefficients-2`, `GS2017/sec:cohomology-complete-dv`; 11 line anchors.
 
-| module | paper | declarations | lines |
+| module | source item | declarations | lines |
 |---|---|---|---|
 | [`Step001_inertia_exact_sequence_first`](Step001_inertia_exact_sequence_first.lean) |  | `inertiaSubgroup_normal`, `decompToResidue`, `decompQuotEquivRange`, `decompQuotToResidue_injective` | 66 |
 | [`Step002_knr_definition`](Step002_knr_definition.lean) |  | `inertiaAbs`, `Knr`, `inertiaAbs_le_fixingSubgroup_Knr`, `Knr_def` | 65 |
-| [`Step003_knr_galois_quotient`](Step003_knr_galois_quotient.lean) | `sec:cohomology-complete-dv` | `inertiaAbs_le_decompositionSubgroup`, `inertiaAbs_normal_of_decomp_eq_top`, `isGalois_Knr`, `isGalois_Knr_of_decomp_eq_top` (+8 more) | 218 |
-| [`Step004_knr_galois_zhat`](Step004_knr_galois_zhat.lean) | `sec:cohomology-complete-dv` | `KnrLoc`, `inertiaLoc`, `isGalois_KnrLoc`, `normal_KnrLoc` (+13 more) | 175 |
-| [`Step005_knr_explicit_laurent`](Step005_knr_explicit_laurent.lean) | `line:8162`, `line:8165` | `ZMod0`, `knrUnit`, `knrVal`, `knrUnit_coe` (+10 more) | 226 |
-| [`Step006_knr_coefficient_action`](Step006_knr_coefficient_action.lean) | `line:8156`, `line:8160` | `knrMap`, `knrMap_apply`, `knrMap_coeff`, `knrMap_id` (+4 more) | 205 |
-| [`Step007_knr_correct_carrier`](Step007_knr_correct_carrier.lean) | `line:8152` | `coeffIncl`, `coeffIncl_coeff`, `FinInt`, `finInt_sup` (+5 more) | 134 |
-| [`Step008_gs61_on_correct_knr`](Step008_gs61_on_correct_knr.lean) | `line:8162`, `line:8163` | `knrUnit_mem`, `knrUnitOn`, `knrUnitOn_coe`, `knrUnitIncl` (+13 more) | 193 |
-| [`Step009_galois_preserves_knr`](Step009_galois_preserves_knr.lean) | `line:8156`, `line:8160` | `mapField`, `mapField_finite`, `coeffAlg`, `coeffIncl_knrMap` (+9 more) | 171 |
-| [`Step010_knr_continuous_smul`](Step010_knr_continuous_smul.lean) | `line:8160`, `line:8162` | `knrMap_eq_self_of_mem_fixing`, `fixingSubgroup_le_stabilizer`, `isOpen_stabilizer`, `knrSubfieldTopologicalSpace` (+2 more) | 126 |
-| [`Step011_kummer_coeff_to_knr`](Step011_kummer_coeff_to_knr.lean) | `line:8152`, `line:8160` | `rootsOfUnity_isIntegral`, `kummerSeries_mem_Knr`, `kummerUnitOn`, `kummerUnitOn_coe` (+1 more) | 128 |
-| [`Step012_kummer_coeff_equivariant`](Step012_kummer_coeff_equivariant.lean) | `line:8176` | `knrMap_single_zero`, `kummerCoeffToKnrUnits_equivariant`, `kummerCoeffToKnr`, `kummerResidueMap` | 112 |
-| [`Step013_inertia_pro_p_sylow_data`](Step013_inertia_pro_p_sylow_data.lean) | `line:9625`, `line:9627` | `InertiaProPSylowData`, `cohomologicalDimensionAt_le_padicInt`, `cohomologicalDimensionAt_le_one`, `cdLE` (+5 more) | 157 |
-| [`Step014_cd_p_inertia_instance`](Step014_cd_p_inertia_instance.lean) | `cons-residue-map-finite-coefficients-2`, `line:9627` | `inertia_cohomologicalDimensionAt_le_one`, `inertia_cdLE`, `inertia_subsingleton_Hq`, `inertia_subsingleton_H2_zmod` (+1 more) | 126 |
-| [`Step015_cd_p_procyclic_criterion`](Step015_cd_p_procyclic_criterion.lean) | `line:8` | `padicEquiv_of_procyclic`, `inertiaProPSylowData_of_procyclic`, `cdLE_of_procyclic`, `subsingleton_H2_of_procyclic` (+2 more) | 132 |
-| [`Step016_inertia_loc_carrier_alignment`](Step016_inertia_loc_carrier_alignment.lean) | `line:8` | `inertiaLoc_eq_map_inertiaSubgroup`, `map_inertiaSubgroup_eq_inertiaLoc` | 76 |
-| [`Step017_tame_module_procyclic`](Step017_tame_module_procyclic.lean) | `line:8` | `residueChar`, `exists_generator_primeToPTateModule` | 68 |
-| [`Step018_procyclic_l_part_sylow`](Step018_procyclic_l_part_sylow.lean) | `line:9626` | `isProPSylow_closedZpowers_zpowHat_idem`, `padicEquiv_closedZpowers_zpowHat_idem`, `inertiaProPSylowData_of_procyclic_group`, `cdLE_of_procyclic_group` | 175 |
+| [`Step003_knr_galois_quotient`](Step003_knr_galois_quotient.lean) | `GS2017/sec:cohomology-complete-dv` | `inertiaAbs_le_decompositionSubgroup`, `inertiaAbs_normal_of_decomp_eq_top`, `isGalois_Knr`, `isGalois_Knr_of_decomp_eq_top` (+8 more) | 218 |
+| [`Step004_knr_galois_zhat`](Step004_knr_galois_zhat.lean) | `GS2017/sec:cohomology-complete-dv` | `KnrLoc`, `inertiaLoc`, `isGalois_KnrLoc`, `normal_KnrLoc` (+13 more) | 175 |
+| [`Step005_knr_explicit_laurent`](Step005_knr_explicit_laurent.lean) | `GS2017/line:8162`, `GS2017/line:8165` | `ZMod0`, `knrUnit`, `knrVal`, `knrUnit_coe` (+10 more) | 226 |
+| [`Step006_knr_coefficient_action`](Step006_knr_coefficient_action.lean) | `GS2017/line:8156`, `GS2017/line:8160` | `knrMap`, `knrMap_apply`, `knrMap_coeff`, `knrMap_id` (+4 more) | 205 |
+| [`Step007_knr_correct_carrier`](Step007_knr_correct_carrier.lean) | `GS2017/line:8152` | `coeffIncl`, `coeffIncl_coeff`, `FinInt`, `finInt_sup` (+5 more) | 134 |
+| [`Step008_gs61_on_correct_knr`](Step008_gs61_on_correct_knr.lean) | `GS2017/line:8162`, `GS2017/line:8163` | `knrUnit_mem`, `knrUnitOn`, `knrUnitOn_coe`, `knrUnitIncl` (+13 more) | 193 |
+| [`Step009_galois_preserves_knr`](Step009_galois_preserves_knr.lean) | `GS2017/line:8156`, `GS2017/line:8160` | `mapField`, `mapField_finite`, `coeffAlg`, `coeffIncl_knrMap` (+9 more) | 171 |
+| [`Step010_knr_continuous_smul`](Step010_knr_continuous_smul.lean) | `GS2017/line:8160`, `GS2017/line:8162` | `knrMap_eq_self_of_mem_fixing`, `fixingSubgroup_le_stabilizer`, `isOpen_stabilizer`, `knrSubfieldTopologicalSpace` (+2 more) | 126 |
+| [`Step011_kummer_coeff_to_knr`](Step011_kummer_coeff_to_knr.lean) | `GS2017/line:8152`, `GS2017/line:8160` | `rootsOfUnity_isIntegral`, `kummerSeries_mem_Knr`, `kummerUnitOn`, `kummerUnitOn_coe` (+1 more) | 128 |
+| [`Step012_kummer_coeff_equivariant`](Step012_kummer_coeff_equivariant.lean) | `GS2017/line:8176` | `knrMap_single_zero`, `kummerCoeffToKnrUnits_equivariant`, `kummerCoeffToKnr`, `kummerResidueMap` | 112 |
+| [`Step013_inertia_pro_p_sylow_data`](Step013_inertia_pro_p_sylow_data.lean) | `GS2017/line:9625`, `GS2017/line:9627` | `InertiaProPSylowData`, `cohomologicalDimensionAt_le_padicInt`, `cohomologicalDimensionAt_le_one`, `cdLE` (+5 more) | 157 |
+| [`Step014_cd_p_inertia_instance`](Step014_cd_p_inertia_instance.lean) | `GS2017/cons-residue-map-finite-coefficients-2`, `GS2017/line:9627` | `inertia_cohomologicalDimensionAt_le_one`, `inertia_cdLE`, `inertia_subsingleton_Hq`, `inertia_subsingleton_H2_zmod` (+1 more) | 126 |
+| [`Step015_cd_p_procyclic_criterion`](Step015_cd_p_procyclic_criterion.lean) | `serre-p67-prop7-cors.txt/line:8` | `padicEquiv_of_procyclic`, `inertiaProPSylowData_of_procyclic`, `cdLE_of_procyclic`, `subsingleton_H2_of_procyclic` (+2 more) | 132 |
+| [`Step016_inertia_loc_carrier_alignment`](Step016_inertia_loc_carrier_alignment.lean) | `serre-p67-prop7-cors.txt/line:8` | `inertiaLoc_eq_map_inertiaSubgroup`, `map_inertiaSubgroup_eq_inertiaLoc` | 76 |
+| [`Step017_tame_module_procyclic`](Step017_tame_module_procyclic.lean) | `serre-p67-prop7-cors.txt/line:8` | `residueChar`, `exists_generator_primeToPTateModule` | 68 |
+| [`Step018_procyclic_l_part_sylow`](Step018_procyclic_l_part_sylow.lean) | `GS2017/line:9626` | `isProPSylow_closedZpowers_zpowHat_idem`, `padicEquiv_closedZpowers_zpowHat_idem`, `inertiaProPSylowData_of_procyclic_group`, `cdLE_of_procyclic_group` | 175 |
 | [`Step019_tame_module_l_part_infinite`](Step019_tame_module_l_part_infinite.lean) |  | `TameModel`, `proj_surjective_primeToPTateModule`, `infinite_tameModel_pPart`, `inertiaProPSylowData_tameModel` | 168 |
 | [`Step020_inertia_sylow_mod_ramification`](Step020_inertia_sylow_mod_ramification.lean) |  | `toTameInertia`, `toTameInertia_surjective`, `isProPSylow_map_toTameInertia`, `inf_wildInertia_eq_bot` (+1 more) | 155 |
 | [`Step021_inertia_sylow_z_l`](Step021_inertia_sylow_z_l.lean) |  | `continuousMulEquivOfBijective`, `inertiaSubgroup_compactSpace`, `tameInertia_compactSpace`, `tameModelEquivTameInertia` (+4 more) | 246 |
-| [`Step022_cd_p_inertia_unconditional`](Step022_cd_p_inertia_unconditional.lean) | `line:9627` | `inertiaEquivInertiaLoc`, `InertiaProPSylowData.congrContinuousMulEquiv`, `inertiaProPSylowData_inertiaLoc`, `inertiaLoc_cohomologicalDimensionAt_le_one` (+4 more) | 166 |
+| [`Step022_cd_p_inertia_unconditional`](Step022_cd_p_inertia_unconditional.lean) | `GS2017/line:9627` | `inertiaEquivInertiaLoc`, `InertiaProPSylowData.congrContinuousMulEquiv`, `inertiaProPSylowData_inertiaLoc`, `inertiaLoc_cohomologicalDimensionAt_le_one` (+4 more) | 166 |
 | [`Step023_b1_hom_inertia_mu_p`](Step023_b1_hom_inertia_mu_p.lean) |  | `inertiaLoc_Hq_eq_zero`, `inertiaLoc_Hq_zmod_eq_zero`, `continuousZModDual_wildInertia_subsingleton` | 164 |
 | [`Step024_hom_inertia_tame`](Step024_hom_inertia_tame.lean) |  | `wildInertia_le_ker_zmodDual`, `restrictTameInertia`, `restrictTameInertia_injective`, `restrictTameInertia_surjective` (+5 more) | 244 |
 | [`Step025_h1_inertia_finite`](Step025_h1_inertia_finite.lean) |  | `hom_cont_eval_injective`, `finite_hom_cont_tameModel_zmod`, `natCard_hom_cont_tameModel_zmod_le`, `equivTameModelInertia` (+3 more) | 164 |

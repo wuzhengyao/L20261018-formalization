@@ -2,7 +2,7 @@
 
 14 modules.  Part of the development's [index](../../../README.md); see also [`DECLARATIONS.md`](../../../../DECLARATIONS.md) and [`RENAME-MAP.tsv`](../../../../RENAME-MAP.tsv).
 
-| module | paper | declarations | lines |
+| module | source item | declarations | lines |
 |---|---|---|---|
 | [`Step001_m_conj_equivariant`](Step001_m_conj_equivariant.lean) |  | `contDeltaZeroBar_conjNormal`, `contDeltaZeroBar_conjNormal_apply` | 68 |
 | [`Step002_m_carrier_bridge_beta`](Step002_m_carrier_bridge_beta.lean) |  | `conjNormal_coe_eq_inverseConjugationHom`, `conjNormal_hequiv`, `conjNormalMap_comp_explicitH1`, `contH1_iso_conjNormal` (+1 more) | 132 |

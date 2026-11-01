@@ -2,9 +2,9 @@
 
 51 modules.  Part of the development's [index](../../README.md); see also [`DECLARATIONS.md`](../../../DECLARATIONS.md) and [`RENAME-MAP.tsv`](../../../RENAME-MAP.tsv).
 
-Paper items formalised here: `cor:symbol-cup`, `prop:prelim-kummer-valuation`.
+Source items formalised here: `cor:symbol-cup`, `prop:prelim-kummer-valuation`.
 
-| module | paper | declarations | lines |
+| module | source item | declarations | lines |
 |---|---|---|---|
 | [`Step001_cup_projection_res_right`](Step001_cup_projection_res_right.lean) |  | `explicitCup_projection_res_right` | 32 |
 | [`Step002_projection_formula_continuous`](Step002_projection_formula_continuous.lean) |  | `continuousCup_projection_res_right` | 84 |

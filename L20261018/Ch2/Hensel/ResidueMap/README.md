@@ -2,9 +2,9 @@
 
 84 modules.  Part of the development's [index](../../../README.md); see also [`DECLARATIONS.md`](../../../../DECLARATIONS.md) and [`RENAME-MAP.tsv`](../../../../RENAME-MAP.tsv).
 
-Paper items formalised here: `lem:ramified-vanishing`, `lemma-residue-cup-product`, `prop-units-cohomology`, `prop:prelim-kummer-valuation`, `prop:prelim-residue`; 10 raw line anchors.
+Source items formalised here: `GS2017/lemma-residue-cup-product`, `GS2017/prop-units-cohomology`, `lem:ramified-vanishing`, `prop:prelim-kummer-valuation`, `prop:prelim-residue`; 10 line anchors.
 
-| module | paper | declarations | lines |
+| module | source item | declarations | lines |
 |---|---|---|---|
 | [`Step001_open_residual_advance`](Step001_open_residual_advance.lean) | `line:1017` | `principalUnit_pow_surjective`, `principalUnit_pow_surjective_prime`, `toyHenselResidueData`, `toyHenselResidueData_nonempty` (+1 more) | 125 |
 | [`Step002_unit_reduction_principal_units`](Step002_unit_reduction_principal_units.lean) | `lem:ramified-vanishing`, `line:1017`, `prop:prelim-kummer-valuation` | `principalUnits_le_pow_range`, `principalUnit_exists_pow_eq`, `unitPow_iff_residuePow`, `unit_pow_of_residue_pow` | 87 |
@@ -41,7 +41,7 @@ Paper items formalised here: `lem:ramified-vanishing`, `lemma-residue-cup-produc
 | [`Step033_residue_sequence_exact_split`](Step033_residue_sequence_exact_split.lean) | `prop:prelim-residue` | `ker_val_eq_range_infl`, `exact_infl_val`, `res_surjective`, `isCompl_range_infl_span_pi` (+1 more) | 109 |
 | [`Step034_delta_two_replaces_finite_residue`](Step034_delta_two_replaces_finite_residue.lean) |  | `tameResidueFacts_of_residueMap` | 102 |
 | [`Step035_hens_residue_data_no_finite`](Step035_hens_residue_data_no_finite.lean) |  | `VKern`, `exists_henselResidueData_noFinite` | 49 |
-| [`Step036_residue_cup_product_interface`](Step036_residue_cup_product_interface.lean) | `lemma-residue-cup-product`, `line:1608`, `line:1636`, `line:1648` | `VKG`, `tameResidueFacts_Galo_of_residueMap`, `orth_eq_bot_noFinite`, `thm_ramified_1_noFinite` (+2 more) | 205 |
+| [`Step036_residue_cup_product_interface`](Step036_residue_cup_product_interface.lean) | `GS2017/lemma-residue-cup-product`, `line:1608`, `line:1636`, `line:1648` | `VKG`, `tameResidueFacts_Galo_of_residueMap`, `orth_eq_bot_noFinite`, `thm_ramified_1_noFinite` (+2 more) | 205 |
 | [`Step037_exists_d_iff_tame_residue_facts`](Step037_exists_d_iff_tame_residue_facts.lean) |  | `exists_residueMap_iff_tameResidueFacts` | 63 |
 | [`Step038_ker_v_finrank_pos`](Step038_ker_v_finrank_pos.lean) |  | `kc_two_ne_zero_G`, `kc_two_mem_ker`, `finrank_ker_valLinOf_pos` | 75 |
 | [`Step039_residue_classes_linear_dependent`](Step039_residue_classes_linear_dependent.lean) |  | `residueUnitsEquiv`, `chi`, `chi_surjective`, `zmod7_cube_dependent_closed` (+1 more) | 76 |
@@ -49,7 +49,7 @@ Paper items formalised here: `lem:ramified-vanishing`, `lemma-residue-cup-produc
 | [`Step041_residue_map_single_hypothesis`](Step041_residue_map_single_hypothesis.lean) | `line:1023` | `UnitsCupVanish`, `tameResidueFacts_Galo_of_unitsCupVanish`, `exists_residueMap_of_unitsCupVanish`, `exists_henselResidueData_of_unitsCupVanish` (+2 more) | 170 |
 | [`Step042_residue_span_subset_ker_res`](Step042_residue_span_subset_ker_res.lean) |  | `residueSpan_le_ker_res`, `disjoint_range_residuePhi`, `tameResidueFacts_of_data`, `faithfulR2_of_span_eq_bot` (+2 more) | 181 |
 | [`Step043_units_mod_pth_powers_paper_level`](Step043_units_mod_pth_powers_paper_level.lean) | `line:992`, `prop:prelim-kummer-valuation` | `mem_subring_of_pow_mem`, `exists_unit_pow_eq`, `residue_pow_of_pow`, `unit_pow_iff_residue_pow_of_hensel` | 153 |
-| [`Step044_residue_map_unramified_units`](Step044_residue_map_unramified_units.lean) | `line:8160`, `line:8163` | `continuous_smul_of_stabilizer_isOpen`, `knrUUnitsTopology`, `knrUUnitsDiscrete`, `knrUKerTopology` (+16 more) | 291 |
+| [`Step044_residue_map_unramified_units`](Step044_residue_map_unramified_units.lean) | `GS2017/line:8160`, `GS2017/line:8163` | `continuous_smul_of_stabilizer_isOpen`, `knrUUnitsTopology`, `knrUUnitsDiscrete`, `knrUKerTopology` (+16 more) | 291 |
 | [`Step045_residue_prop_two_literal`](Step045_residue_prop_two_literal.lean) | `line:1052` | `PaperTameResidueFormulas`, `paperFormulas_iff_obligation` | 87 |
 | [`Step046_knr_residue_map_int`](Step046_knr_residue_map_int.lean) |  | `knrResidueMapInt`, `knrResidueMapInt_apply` | 70 |
 | [`Step047_integral_bockstein_range`](Step047_integral_bockstein_range.lean) |  | `integralBockstein_available` | 76 |
@@ -57,7 +57,7 @@ Paper items formalised here: `lem:ramified-vanishing`, `lemma-residue-cup-produc
 | [`Step049_integral_bockstein_usable`](Step049_integral_bockstein_usable.lean) |  | `integralBockstein_one_range_nsmul`, `h2KummerToUnits_range_available` | 69 |
 | [`Step050_delta_two_additive`](Step050_delta_two_additive.lean) |  | `dimShiftAdd`, `knrProjCoeffAdd`, `kummerCoeffToKnrAdd`, `kummerResidueAdd` (+8 more) | 218 |
 | [`Step051_h1_z_equiv_galo_v`](Step051_h1_z_equiv_galo_v.lean) | `line:1050` | `uliftZModCoeffIso`, `restrictScalarsH1`, `muPCoeffIso`, `h1ZModBridge` (+6 more) | 225 |
-| [`Step052_delta_two_candidate_zero`](Step052_delta_two_candidate_zero.lean) | `line:8160`, `prop-units-cohomology` | `knrProjOn_kummerCoeffToKnrUnits`, `kummerCoeffToKnrUnits_mem_ker`, `kummerCoeffToUnits`, `kummerCoeffToUnits_apply` | 143 |
+| [`Step052_delta_two_candidate_zero`](Step052_delta_two_candidate_zero.lean) | `GS2017/line:8160`, `GS2017/prop-units-cohomology` | `knrProjOn_kummerCoeffToKnrUnits`, `kummerCoeffToKnrUnits_mem_ker`, `kummerCoeffToUnits`, `kummerCoeffToUnits_apply` | 143 |
 | [`Step053_exists_d_three_properties`](Step053_exists_d_three_properties.lean) | `line:1050` | `knrResidueObligation_of_three`, `knrResidueObligation_iff_exists_three`, `knrResidueObligation_of_reduced_regression` | 116 |
 | [`Step054_delta_two_candidate_refuted`](Step054_delta_two_candidate_refuted.lean) |  | `resolutionMap_zero_eq`, `cochainsMap_zero_eq`, `map_zero_eq`, `coeffMap_zero_eq` (+9 more) | 216 |
 | [`Step055_r2_exact_boundary`](Step055_r2_exact_boundary.lean) |  | `cup_self_eq_zero`, `residueSpan_eq_bot_of_isCyclic`, `tameResidueFacts_of_residueSpan_eq_bot`, `tameResidueFacts_of_isCyclic` (+3 more) | 196 |

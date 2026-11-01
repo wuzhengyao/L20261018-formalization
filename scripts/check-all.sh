@@ -12,6 +12,8 @@
 #   4  DECLARATIONS.md                 current (gen-declarations.py --check)
 #   5  directory indexes               current (gen-directory-index.py --check)
 #   6  links in the generated pages    resolve, and `#Lnn` is inside the file
+#   7  @source provenance              each label is in the file the annotation names
+#                                      (SKIP when the knowledge-base `raw/` is not here)
 #
 # Exit code 0 iff every gate that ran passed.  A gate that cannot run at all is reported
 # as SKIP with the reason -- never silently dropped (a skip is not a pass).
@@ -100,6 +102,15 @@ if out=$(python3 scripts/gen-directory-index.py --check-links 2>&1); then
 else
   bad "broken links -- ${out}"
 fi
+
+# ---------------------------------------------------------------- provenance
+echo "== gate 7: @source provenance =="
+out=$(python3 scripts/check-provenance.py --check 2>&1)
+case $? in
+  0) ok "provenance of the @source annotations" ;;
+  3) miss "provenance (needs the knowledge-base raw/ directory, not shipped here)" ;;
+  *) bad "provenance -- ${out}" ;;
+esac
 
 # ---------------------------------------------------------------- summary
 printf '\n%d passed, %d failed, %d skipped\n' "$pass" "$fail" "$skip"

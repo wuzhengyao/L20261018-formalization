@@ -2,7 +2,7 @@
 
 35 modules.  Part of the development's [index](../../README.md); see also [`DECLARATIONS.md`](../../../DECLARATIONS.md) and [`RENAME-MAP.tsv`](../../../RENAME-MAP.tsv).
 
-| module | paper | declarations | lines |
+| module | source item | declarations | lines |
 |---|---|---|---|
 | [`Step001_index_le_degree`](Step001_index_le_degree.lean) |  | `instIsInvariant`, `deg_crossedProduct`, `index_crossedProduct_le`, `index_crossedProduct_le_of_finrank` | 66 |
 | [`Step002_reduced_norm_maximal_subfield`](Step002_reduced_norm_maximal_subfield.lean) |  | `alone.`, `mulRight`, `mulRight_inc`, `toMatrix_mulRight_inc` (+5 more) | 110 |

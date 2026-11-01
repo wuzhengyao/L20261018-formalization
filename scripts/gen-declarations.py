@@ -39,7 +39,7 @@ def scan():
     for mod in K.modules().values():
         modules_by_dir.setdefault(mod["directory"], set()).add(mod["module"])
         anon += mod["anon"]
-        paper = "; ".join(mod["paper"])
+        paper = "; ".join(K.display_locator(src) for src in mod["sources"])
         rel = os.path.relpath(mod["path"], K.ROOT).replace(os.sep, "/")
         for name, lineno, kind in mod["decls"]:
             rows.append((name, mod["module"], lineno, mod["directory"], kind, paper, rel))

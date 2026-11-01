@@ -76,21 +76,45 @@ PAPER_ORDER = [
     ("sec. 4.4 (unnumbered)", ["line:1646"]),
 ]
 
-# Locators used in `@source` annotations that do not occur anywhere in `raw/L20261018.tex`
-# (`grep` over the whole file: 0 hits).  Their modules' docstrings name them as Gille-Soule
-# (`GS`) items, so the likely truth is that the `file=` field is wrong, not the label.
-NOT_IN_PAPER = [
-    "sec:cohomology-complete-dv", "lemma-residue-cup-product", "lemma-additive-hilbert90",
-    "prop-units-cohomology", "prop-cd-Z-hat", "cons-residue-map-finite-coefficients-2",
-    "prop-residue-map-long-exact",
-]
-
 # Comparator groups: which paper items the official tool actually re-checks.
 COMPARATOR_GROUPS = [
     ("ch3", "chapter 3, 14 declarations: the statements plus the general algebraic layer"),
     ("ch3u", "chapter 3, 8 declarations, unconditional at the paper's hypothesis level"),
     ("ch4u", "chapter 4, 7 declarations, unconditional (`d` is constructed)"),
 ]
+
+
+PAPER = "raw/L20261018.tex"
+
+
+def sources(text):
+    """[(annotated file, locator)] -- the `file=` field is kept, it is part of the claim."""
+    out = set()
+    for m in SRC.finditer(text):
+        loc = m.group(2)
+        out.add((m.group(1), loc[len("label:"):] if loc.startswith("label:") else loc))
+    return sorted(out)
+
+
+# Short names for the sources the development quotes besides the paper itself.  The full
+# path is always in `PROVENANCE.tsv`; these are for the tables.
+SOURCE_ALIASES = {
+    "raw/GilleSzamuely2017.tex": "GS2017",
+}
+
+
+def source_stem(file):
+    """`raw/GilleSzamuely2017.tex` -> `GilleSzamuely2017`;  the paper stays implicit."""
+    base = os.path.basename(file)
+    return base[:-4] if base.endswith(".tex") else base
+
+
+def display_locator(src):
+    """How a locator is shown: bare for the paper, `Source/label` for anything else."""
+    file, loc = src
+    if file == PAPER:
+        return loc
+    return f"{SOURCE_ALIASES.get(file, source_stem(file))}/{loc}"
 
 
 def paper_locators(text):
@@ -122,8 +146,9 @@ def doc_heading(text):
 def modules():
     """{module: record} for every `.lean` file under `L20261018/`.
 
-    A record is a dict with module, directory, path, lines, paper (list), heading,
-    ns (list of namespaces), decls (list of (name, line, kind)) and anon (int).
+    A record is a dict with module, directory, path, lines, paper (locators only),
+    sources (list of (file, locator)), heading, ns (list of namespaces),
+    decls (list of (name, line, kind)) and anon (int).
     """
     out = {}
     for dirpath, _dirnames, filenames in os.walk(DEV):
@@ -144,6 +169,7 @@ def modules():
                 path=path,
                 lines=len(text.splitlines()),
                 paper=paper_locators(text),
+                sources=sources(text),
                 heading=doc_heading(text),
                 ns=NS.findall(text),
                 decls=decls,

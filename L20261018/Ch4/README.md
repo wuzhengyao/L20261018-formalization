@@ -2,9 +2,9 @@
 
 48 modules.  Part of the development's [index](../README.md); see also [`DECLARATIONS.md`](../../DECLARATIONS.md) and [`RENAME-MAP.tsv`](../../RENAME-MAP.tsv).
 
-Paper items formalised here: `lem:basis-change`, `lem:ramified-vanishing`, `prop:prelim-residue`, `thm:ramified`; 9 raw line anchors.
+Source items formalised here: `lem:basis-change`, `lem:ramified-vanishing`, `prop:prelim-residue`, `thm:ramified`; 9 line anchors.
 
-| module | paper | declarations | lines |
+| module | source item | declarations | lines |
 |---|---|---|---|
 | [`Step001_basis_change_first_slot`](Step001_basis_change_first_slot.lean) | `lem:basis-change` | `cup_sum_sum`, `cup_basis_change`, `basis_change_kummer` | 142 |
 | [`Step002_residue_cup_data_shape`](Step002_residue_cup_data_shape.lean) | `lem:ramified-vanishing` | `ResidueCupData`, `plane`, `commonCupMap`, `orth` (+9 more) | 299 |

@@ -2,9 +2,9 @@
 
 17 modules.  Part of the development's [index](../../README.md); see also [`DECLARATIONS.md`](../../../DECLARATIONS.md) and [`RENAME-MAP.tsv`](../../../RENAME-MAP.tsv).
 
-Paper items formalised here: `lem:basic-inclusions`, `lem:orthogonal`, `thm:rank-barrier`.
+Source items formalised here: `lem:basic-inclusions`, `lem:orthogonal`, `thm:rank-barrier`.
 
-| module | paper | declarations | lines |
+| module | source item | declarations | lines |
 |---|---|---|---|
 | [`Step001_bi_kummer_data_from_kummer`](Step001_bi_kummer_data_from_kummer.lean) |  | `biKummerDataKummer`, `biKummerDataKummer_a1`, `biKummerDataKummer_a2`, `neZero_two_zmod` | 63 |
 | [`Step002_basic_inclusions_paper_objects`](Step002_basic_inclusions_paper_objects.lean) | `lem:basic-inclusions`, `lem:orthogonal` | `lemma_3_1_1_kummer`, `lemma_3_1_3_kummer`, `lemma_3_3_3_kummer` | 71 |

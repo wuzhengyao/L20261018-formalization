@@ -2,7 +2,7 @@
 
 41 modules.  Part of the development's [index](../../../README.md); see also [`DECLARATIONS.md`](../../../../DECLARATIONS.md) and [`RENAME-MAP.tsv`](../../../../RENAME-MAP.tsv).
 
-| module | paper | declarations | lines |
+| module | source item | declarations | lines |
 |---|---|---|---|
 | [`Step001_units_cup_vanish_complete`](Step001_units_cup_vanish_complete.lean) |  | `kummerClass_isUnit_proof_irrel`, `unitsCupVanish_complete`, `unitsCupVanish_of_residueSpan_eq_bot` | 132 |
 | [`Step002_units_cup_vanish_reduction`](Step002_units_cup_vanish_reduction.lean) |  | `normGroup`, `pow_mem_normGroup`, `PowClassGen`, `mem_normGroup_of_powClassGen` (+1 more) | 119 |

@@ -2,9 +2,9 @@
 
 40 modules.  Part of the development's [index](../../../README.md); see also [`DECLARATIONS.md`](../../../../DECLARATIONS.md) and [`RENAME-MAP.tsv`](../../../../RENAME-MAP.tsv).
 
-Paper items formalised here: `prop:prelim-kummer-valuation`; 5 raw line anchors.
+Source items formalised here: `prop:prelim-kummer-valuation`; 5 line anchors.
 
-| module | paper | declarations | lines |
+| module | source item | declarations | lines |
 |---|---|---|---|
 | [`Step001_residue_valuation_without_completeness`](Step001_residue_valuation_without_completeness.lean) | `line:1608`, `line:1636`, `line:1648`, `prop:prelim-kummer-valuation` | `valOfUnitOf`, `valOfUnitOf_mul`, `valOfUnitOf_one`, `valOfUnitOf_eq_of_kummerClass_eq` (+9 more) | 264 |
 | [`Step002_principal_units_without_completeness`](Step002_principal_units_without_completeness.lean) | `line:1017`, `line:1622` | `principalUnit_pow_surjective_of_hensel`, `sub_one_mem_maximalIdeal_of_residue_eq_one`, `unit_pow_of_residue_pow_of_hensel`, `residuePhi_injective_iff_kummer` | 216 |

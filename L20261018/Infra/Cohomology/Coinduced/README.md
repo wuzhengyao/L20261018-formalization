@@ -2,7 +2,7 @@
 
 41 modules.  Part of the development's [index](../../../README.md); see also [`DECLARATIONS.md`](../../../../DECLARATIONS.md) and [`RENAME-MAP.tsv`](../../../../RENAME-MAP.tsv).
 
-| module | paper | declarations | lines |
+| module | source item | declarations | lines |
 |---|---|---|---|
 | [`Step001_coind_subgroup_acyclic_hyp`](Step001_coind_subgroup_acyclic_hyp.lean) |  | `CoindSubgroupAcyclic`, `coindSubgroupAcyclic_bot`, `coindShortExactSubgroup`, `subsingleton_cohomology_quot_subgroup` | 124 |
 | [`Step002_coind_subgroup_acyclic_carrier`](Step002_coind_subgroup_acyclic_carrier.lean) |  | `inertia_Q_subsingleton_Hq` | 104 |

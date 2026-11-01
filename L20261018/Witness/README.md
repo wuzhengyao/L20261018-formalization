@@ -2,9 +2,9 @@
 
 40 modules.  Part of the development's [index](../README.md); see also [`DECLARATIONS.md`](../../DECLARATIONS.md) and [`RENAME-MAP.tsv`](../../RENAME-MAP.tsv).
 
-Paper items formalised here: `prop:prelim-residue`; 3 raw line anchors.
+Source items formalised here: `prop:prelim-residue`; 3 line anchors.
 
-| module | paper | declarations | lines |
+| module | source item | declarations | lines |
 |---|---|---|---|
 | [`Step001_bi_kummer_data_nonempty`](Step001_bi_kummer_data_nonempty.lean) |  | `toyCup`, `toyBiKummer`, `biKummerData_nonempty`, `HasNonzeroKummerCup` (+1 more) | 102 |
 | [`Step002_nonzero_local_symbol_reduction`](Step002_nonzero_local_symbol_reduction.lean) |  | `cup_ne_zero_of_localSymbol_ne_zero`, `cup_kummerClass_ne_zero_of_localSymbol_ne_zero`, `cupFp_ne_zero_of_localSymbol_ne_zero` | 79 |

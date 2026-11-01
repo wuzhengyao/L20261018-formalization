@@ -2,9 +2,9 @@
 
 35 modules.  Part of the development's [index](../../../README.md); see also [`DECLARATIONS.md`](../../../../DECLARATIONS.md) and [`RENAME-MAP.tsv`](../../../../RENAME-MAP.tsv).
 
-Paper items formalised here: 4 raw line anchors.
+Source items formalised here: 4 line anchors.
 
-| module | paper | declarations | lines |
+| module | source item | declarations | lines |
 |---|---|---|---|
 | [`Step001_acyclicity_short_exact`](Step001_acyclicity_short_exact.lean) |  | `subsingleton_cohomology_three_of_acyclic`, `subsingleton_cohomology_three_of_coind` | 90 |
 | [`Step002_coinduced_embedding`](Step002_coinduced_embedding.lean) |  | `coindIncl`, `coindIncl_apply`, `coindIncl_injective`, `coindIncl_equivariant` | 78 |
@@ -20,10 +20,10 @@ Paper items formalised here: 4 raw line anchors.
 | [`Step012_inner_conj_trivial_hyp`](Step012_inner_conj_trivial_hyp.lean) |  | `InnerConjTrivial`, `innerConjTrivial_iff`, `innerConjTrivial_of_subsingleton` | 68 |
 | [`Step013_inner_conj_trivial_in`](Step013_inner_conj_trivial_in.lean) |  | `innerConjTrivialIn`, `innerConjTrivialIn_iff`, `innerConjTrivialIn_of_subsingleton`, `innerConjTrivialIn_of_forall` | 76 |
 | [`Step014_conj_action_foundations`](Step014_conj_action_foundations.lean) |  | `conjCoeffHom_apply`, `conjSubtypeHom_one`, `conjSubtypeHom_mul`, `conjMap_comp` | 67 |
-| [`Step015_rep_quotient_structure`](Step015_rep_quotient_structure.lean) | `line:9497` | `conjCoeffHom_comp_toLinearMap`, `conjMap_mul`, `conjMap_one`, `conjEndHom` (+6 more) | 174 |
-| [`Step016_delta_zero_naturality`](Step016_delta_zero_naturality.lean) | `line:3585` | `dimShiftSES_S`, `dimShiftSES_S_eq`, `cochainSES_S`, `cochainSES_S_eq` (+5 more) | 164 |
-| [`Step017_h0_conj_compatibility`](Step017_h0_conj_compatibility.lean) | `line:3580` | `cochainsMap_apply`, `H0Iso_inv_eq_pi`, `iCocycles_cocyclesMap`, `iCocycles_cocyclesIso₀_inv` (+1 more) | 136 |
-| [`Step018_delta_two_conditional`](Step018_delta_two_conditional.lean) | `line:9498` | `quotientToInvariants_ρ_mk`, `deltaZeroBar`, `deltaTwo`, `deltaTwo_eq` (+2 more) | 143 |
+| [`Step015_rep_quotient_structure`](Step015_rep_quotient_structure.lean) | `GS2017/line:9497` | `conjCoeffHom_comp_toLinearMap`, `conjMap_mul`, `conjMap_one`, `conjEndHom` (+6 more) | 174 |
+| [`Step016_delta_zero_naturality`](Step016_delta_zero_naturality.lean) | `GS2017/line:3585` | `dimShiftSES_S`, `dimShiftSES_S_eq`, `cochainSES_S`, `cochainSES_S_eq` (+5 more) | 164 |
+| [`Step017_h0_conj_compatibility`](Step017_h0_conj_compatibility.lean) | `GS2017/line:3580` | `cochainsMap_apply`, `H0Iso_inv_eq_pi`, `iCocycles_cocyclesMap`, `iCocycles_cocyclesIso₀_inv` (+1 more) | 136 |
+| [`Step018_delta_two_conditional`](Step018_delta_two_conditional.lean) | `GS2017/line:9498` | `quotientToInvariants_ρ_mk`, `deltaZeroBar`, `deltaTwo`, `deltaTwo_eq` (+2 more) | 143 |
 | [`Step019_prism_identity_n1`](Step019_prism_identity_n1.lean) |  | `conj_one_cochain`, `conj_one_cochain_sub` | 102 |
 | [`Step020_conj_one_cocycle`](Step020_conj_one_cocycle.lean) |  | `conj_ρ_comm`, `conj_isCocycle`, `conjCocycle`, `conjCocycle_sub_mem` (+1 more) | 117 |
 | [`Step021_n1_reduction`](Step021_n1_reduction.lean) |  | `iCycles_cyclesMap`, `conjMap_one_eq_one_of`, `innerConjTrivialIn_one_of` | 105 |

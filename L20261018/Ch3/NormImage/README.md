@@ -2,9 +2,9 @@
 
 22 modules.  Part of the development's [index](../../README.md); see also [`DECLARATIONS.md`](../../../DECLARATIONS.md) and [`RENAME-MAP.tsv`](../../../RENAME-MAP.tsv).
 
-Paper items formalised here: `prop:hs-special`, `thm:dimension`, `thm:hs-tate-exact-sequences`.
+Source items formalised here: `prop:hs-special`, `thm:dimension`, `thm:hs-tate-exact-sequences`.
 
-| module | paper | declarations | lines |
+| module | source item | declarations | lines |
 |---|---|---|---|
 | [`Step001_galo_five_term`](Step001_galo_five_term.lean) |  | `galo_five_term` | 41 |
 | [`Step002_five_term_mg_k2_data`](Step002_five_term_mg_k2_data.lean) |  | `MG`, `resMG`, `d2`, `K2` (+2 more) | 51 |

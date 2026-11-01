@@ -1,6 +1,6 @@
 # `L20261018/` — the development, organised by the paper
 
-576 modules in 20 directories.  [Root README](../README.md) · [`DECLARATIONS.md`](../DECLARATIONS.md) · [`RENAME-MAP.tsv`](../RENAME-MAP.tsv) · [`WORKFLOW.md`](../WORKFLOW.md)
+576 modules in 20 directories.  [Root README](../README.md) · [`DECLARATIONS.md`](../DECLARATIONS.md) · [`RENAME-MAP.tsv`](../RENAME-MAP.tsv) · [`PROVENANCE.tsv`](../PROVENANCE.tsv) · [`WORKFLOW.md`](../WORKFLOW.md)
 
 Every module is a `StepNNN_<slug>` whose number is order preserving inside its
 directory (so reading upwards reads the proof in the order it was built) and whose
@@ -31,46 +31,29 @@ slug says what the step proves.  `import L20261018` pulls in everything.
 | [`Infra/Galois/`](Infra/Galois/README.md) | 2 | 5 | absolute Galois group carriers and subgroup plumbing |
 | [`Witness/`](Witness/README.md) | 40 | 188 | concrete witnesses (Q_7, F_7((t)), ...) for the nonemptiness obligations |
 
-## Paper items -> modules
+## Items of `raw/L20261018.tex`
 
-The locator is the label of the statement in `raw/L20261018.tex`; a module
-carries it when it formalises that statement.  Rows for labelled statements
-come in the paper's own order, then the raw line anchors (statements the paper
-leaves unnumbered or that a module picks up mid-paragraph).
+The paper's own statements, in the paper's order (the section is the one the
+label lives in).  A module appears here when its `@source` annotation names
+that label.  Raw `line:` anchors come last -- statements the paper leaves
+unnumbered.
 
-### Labelled statements
-
-| paper | section | modules |
-|---|---|---|
-| `cor:symbol-cup` | sec. 2.2 | [`Step012_symbol_cup`](Ch2/Kummer/Step012_symbol_cup.lean) |
-| `prop:prelim-kummer-valuation` | sec. 2.4 | [`Step002_unit_reduction_principal_units`](Ch2/Hensel/ResidueMap/Step002_unit_reduction_principal_units.lean), [`Step003_residue_valuation_h1`](Ch2/Hensel/ResidueMap/Step003_residue_valuation_h1.lean), [`Step004_valuation_decomposition_unique`](Ch2/Hensel/ResidueMap/Step004_valuation_decomposition_unique.lean), [`Step008_exists_unit_rep`](Ch2/Hensel/ResidueMap/Step008_exists_unit_rep.lean), [`Step043_units_mod_pth_powers_paper_level`](Ch2/Hensel/ResidueMap/Step043_units_mod_pth_powers_paper_level.lean), [`Step056_kummer_valuation_abstract_hensel`](Ch2/Hensel/ResidueMap/Step056_kummer_valuation_abstract_hensel.lean), [`Step001_residue_valuation_without_completeness`](Ch2/Hensel/Valuation/Step001_residue_valuation_without_completeness.lean), [`Step017_kummer_class_pow_identities`](Ch2/Kummer/Step017_kummer_class_pow_identities.lean) |
-| `prop:prelim-residue` | sec. 2.4 | [`Step012_bridge_kc_unit_cup_zero`](Ch2/Hensel/ResidueMap/Step012_bridge_kc_unit_cup_zero.lean), [`Step013_huu_reduced_to_linear_dependence`](Ch2/Hensel/ResidueMap/Step013_huu_reduced_to_linear_dependence.lean), [`Step017_hdep_huu_are_theorems`](Ch2/Hensel/ResidueMap/Step017_hdep_huu_are_theorems.lean), [`Step029_model_field_from_hypothesis`](Ch2/Hensel/ResidueMap/Step029_model_field_from_hypothesis.lean), [`Step032_hskew_discharged`](Ch2/Hensel/ResidueMap/Step032_hskew_discharged.lean), [`Step033_residue_sequence_exact_split`](Ch2/Hensel/ResidueMap/Step033_residue_sequence_exact_split.lean), [`Step003_ramified_vanishing_paper_objects`](Ch4/Step003_ramified_vanishing_paper_objects.lean), [`Step034_exists_d_unconditional`](Ch4/Step034_exists_d_unconditional.lean), [`Step008_tame_residue_facts_q7`](Witness/Step008_tame_residue_facts_q7.lean) |
-| `eq:prelim-tame` | sec. 2.4 | [`Step001_tame_symbol_general_formula`](Ch2/Hensel/TameSymbol/Step001_tame_symbol_general_formula.lean), [`Step002_tame_symbol_formula`](Ch2/Hensel/TameSymbol/Step002_tame_symbol_formula.lean), [`Step006_tame_symbol_explicit`](Ch2/Hensel/TameSymbol/Step006_tame_symbol_explicit.lean), [`Step007_tame_symbol_triviality`](Ch2/Hensel/TameSymbol/Step007_tame_symbol_triviality.lean), [`Step008_tame_symbol_bilinear`](Ch2/Hensel/TameSymbol/Step008_tame_symbol_bilinear.lean) |
-| `lem:orthogonal` | sec. 3.1 | [`Step002_basic_inclusions_paper_objects`](Ch3/BiKummer/Step002_basic_inclusions_paper_objects.lean), [`Step013_orthogonal_roots_trivial`](Ch3/BiKummer/Step013_orthogonal_roots_trivial.lean) |
-| `thm:rank-barrier` | sec. 3.1 | [`Step017_rank_barrier_unconditional`](Ch3/BiKummer/Step017_rank_barrier_unconditional.lean) |
-| `lem:basic-inclusions` | sec. 3.1 | [`Step002_basic_inclusions_paper_objects`](Ch3/BiKummer/Step002_basic_inclusions_paper_objects.lean), [`Step012_basic_inclusions_cor_subset`](Ch3/BiKummer/Step012_basic_inclusions_cor_subset.lean), [`Step015_h_nrd_kummer_form`](Ch3/BiKummer/Step015_h_nrd_kummer_form.lean) |
-| `prop:hs-special` | sec. 3.2 | [`Step006_hs_special_five_term`](Ch3/NormImage/Step006_hs_special_five_term.lean) |
-| `thm:hs-tate-exact-sequences` | sec. 3.2 | [`Step005_three_five_one_first_ses`](Ch3/NormImage/Step005_three_five_one_first_ses.lean), [`Step007_three_five_two_real_objects`](Ch3/NormImage/Step007_three_five_two_real_objects.lean), [`Step008_three_five_u_wiring`](Ch3/NormImage/Step008_three_five_u_wiring.lean), [`Step001_bi_kummer_data`](Core/Step001_bi_kummer_data.lean) |
-| `thm:dimension` | sec. 3.2 | [`Step022_dimension_paper_objects`](Ch3/NormImage/Step022_dimension_paper_objects.lean), [`Step001_bi_kummer_data`](Core/Step001_bi_kummer_data.lean) |
-| `lem:basis-change` | sec. 4 | [`Step001_basis_change_first_slot`](Ch4/Step001_basis_change_first_slot.lean), [`Step010_basis_change_brauer_class`](Ch4/Step010_basis_change_brauer_class.lean) |
-| `lem:ramified-vanishing` | sec. 4 | [`Step002_unit_reduction_principal_units`](Ch2/Hensel/ResidueMap/Step002_unit_reduction_principal_units.lean), [`Step005_residue_cup_data_fields_reduced`](Ch2/Hensel/ResidueMap/Step005_residue_cup_data_fields_reduced.lean), [`Step006_tame_pi_u_of`](Ch2/Hensel/ResidueMap/Step006_tame_pi_u_of.lean), [`Step018_huu_discharged`](Ch2/Hensel/ResidueMap/Step018_huu_discharged.lean), [`Step022_ramified_vanishing_no_tame_symbol`](Ch2/Hensel/ResidueMap/Step022_ramified_vanishing_no_tame_symbol.lean), [`Step002_residue_cup_data_shape`](Ch4/Step002_residue_cup_data_shape.lean), [`Step003_ramified_vanishing_paper_objects`](Ch4/Step003_ramified_vanishing_paper_objects.lean) |
-| `thm:ramified` | sec. 4 | [`Step004_thm_ramified_assembly`](Ch4/Step004_thm_ramified_assembly.lean), [`Step006_thm_ramified_no_d`](Ch4/Step006_thm_ramified_no_d.lean) |
-| `line:1646` | sec. 4.4 (unnumbered) | [`Step005_corollary_four_four_dimension`](Ch4/Step005_corollary_four_four_dimension.lean), [`Step007_corollary_four_four_no_d`](Ch4/Step007_corollary_four_four_no_d.lean), [`Step008_rank_contradiction_single_phi`](Ch4/Step008_rank_contradiction_single_phi.lean), [`Step009_dk_eq_one_is_a_theorem`](Ch4/Step009_dk_eq_one_is_a_theorem.lean), [`Step040_corollary_four_four_paper_level`](Ch4/Step040_corollary_four_four_paper_level.lean) |
-| `cons-residue-map-finite-coefficients-2` |  | [`Step014_cd_p_inertia_instance`](Ch2/Hensel/Inertia/Step014_cd_p_inertia_instance.lean) |
-| `lemma-additive-hilbert90` |  | [`Step007_additive_hilbert90`](Infra/Cohomology/Step007_additive_hilbert90.lean) |
-| `lemma-residue-cup-product` |  | [`Step036_residue_cup_product_interface`](Ch2/Hensel/ResidueMap/Step036_residue_cup_product_interface.lean) |
-| `prop-cd-Z-hat` |  | [`Step001_cd_p_z_p_le_one`](Ch2/Rost/Step001_cd_p_z_p_le_one.lean) |
-| `prop-residue-map-long-exact` |  | [`Step001_f2_delta_zero_vanishes`](Infra/Cohomology/ResidueLES/Step001_f2_delta_zero_vanishes.lean), [`Step003_f1_square`](Infra/Cohomology/ResidueLES/Step003_f1_square.lean), [`Step013_continuous_f1`](Infra/Cohomology/ResidueLES/Step013_continuous_f1.lean) |
-| `prop-units-cohomology` |  | [`Step052_delta_two_candidate_zero`](Ch2/Hensel/ResidueMap/Step052_delta_two_candidate_zero.lean) |
-| `sec:cohomology-complete-dv` |  | [`Step003_knr_galois_quotient`](Ch2/Hensel/Inertia/Step003_knr_galois_quotient.lean), [`Step004_knr_galois_zhat`](Ch2/Hensel/Inertia/Step004_knr_galois_zhat.lean), [`Step005_cont_integral_dual_shift`](Infra/Cohomology/Step005_cont_integral_dual_shift.lean) |
-
-### Line anchors into `raw/L20261018.tex`
-
-| anchor | modules |
+| paper label | modules |
 |---|---|
-| `line:8` | [`Step015_cd_p_procyclic_criterion`](Ch2/Hensel/Inertia/Step015_cd_p_procyclic_criterion.lean), [`Step016_inertia_loc_carrier_alignment`](Ch2/Hensel/Inertia/Step016_inertia_loc_carrier_alignment.lean), [`Step017_tame_module_procyclic`](Ch2/Hensel/Inertia/Step017_tame_module_procyclic.lean) |
-| `line:739` | [`Step014_tame_steinberg_relation`](Ch2/Hensel/TameSymbol/Step014_tame_steinberg_relation.lean) |
-| `line:992` | [`Step043_units_mod_pth_powers_paper_level`](Ch2/Hensel/ResidueMap/Step043_units_mod_pth_powers_paper_level.lean) |
+| `cor:symbol-cup` | [`Step012_symbol_cup`](Ch2/Kummer/Step012_symbol_cup.lean) |
+| `prop:prelim-kummer-valuation` | [`Step002_unit_reduction_principal_units`](Ch2/Hensel/ResidueMap/Step002_unit_reduction_principal_units.lean), [`Step003_residue_valuation_h1`](Ch2/Hensel/ResidueMap/Step003_residue_valuation_h1.lean), [`Step004_valuation_decomposition_unique`](Ch2/Hensel/ResidueMap/Step004_valuation_decomposition_unique.lean), [`Step008_exists_unit_rep`](Ch2/Hensel/ResidueMap/Step008_exists_unit_rep.lean), [`Step043_units_mod_pth_powers_paper_level`](Ch2/Hensel/ResidueMap/Step043_units_mod_pth_powers_paper_level.lean), [`Step056_kummer_valuation_abstract_hensel`](Ch2/Hensel/ResidueMap/Step056_kummer_valuation_abstract_hensel.lean), [`Step001_residue_valuation_without_completeness`](Ch2/Hensel/Valuation/Step001_residue_valuation_without_completeness.lean), [`Step017_kummer_class_pow_identities`](Ch2/Kummer/Step017_kummer_class_pow_identities.lean) |
+| `prop:prelim-residue` | [`Step012_bridge_kc_unit_cup_zero`](Ch2/Hensel/ResidueMap/Step012_bridge_kc_unit_cup_zero.lean), [`Step013_huu_reduced_to_linear_dependence`](Ch2/Hensel/ResidueMap/Step013_huu_reduced_to_linear_dependence.lean), [`Step017_hdep_huu_are_theorems`](Ch2/Hensel/ResidueMap/Step017_hdep_huu_are_theorems.lean), [`Step029_model_field_from_hypothesis`](Ch2/Hensel/ResidueMap/Step029_model_field_from_hypothesis.lean), [`Step032_hskew_discharged`](Ch2/Hensel/ResidueMap/Step032_hskew_discharged.lean), [`Step033_residue_sequence_exact_split`](Ch2/Hensel/ResidueMap/Step033_residue_sequence_exact_split.lean), [`Step003_ramified_vanishing_paper_objects`](Ch4/Step003_ramified_vanishing_paper_objects.lean), [`Step034_exists_d_unconditional`](Ch4/Step034_exists_d_unconditional.lean), [`Step008_tame_residue_facts_q7`](Witness/Step008_tame_residue_facts_q7.lean) |
+| `eq:prelim-tame` | [`Step001_tame_symbol_general_formula`](Ch2/Hensel/TameSymbol/Step001_tame_symbol_general_formula.lean), [`Step002_tame_symbol_formula`](Ch2/Hensel/TameSymbol/Step002_tame_symbol_formula.lean), [`Step006_tame_symbol_explicit`](Ch2/Hensel/TameSymbol/Step006_tame_symbol_explicit.lean), [`Step007_tame_symbol_triviality`](Ch2/Hensel/TameSymbol/Step007_tame_symbol_triviality.lean), [`Step008_tame_symbol_bilinear`](Ch2/Hensel/TameSymbol/Step008_tame_symbol_bilinear.lean) |
+| `lem:orthogonal` | [`Step002_basic_inclusions_paper_objects`](Ch3/BiKummer/Step002_basic_inclusions_paper_objects.lean), [`Step013_orthogonal_roots_trivial`](Ch3/BiKummer/Step013_orthogonal_roots_trivial.lean) |
+| `thm:rank-barrier` | [`Step017_rank_barrier_unconditional`](Ch3/BiKummer/Step017_rank_barrier_unconditional.lean) |
+| `lem:basic-inclusions` | [`Step002_basic_inclusions_paper_objects`](Ch3/BiKummer/Step002_basic_inclusions_paper_objects.lean), [`Step012_basic_inclusions_cor_subset`](Ch3/BiKummer/Step012_basic_inclusions_cor_subset.lean), [`Step015_h_nrd_kummer_form`](Ch3/BiKummer/Step015_h_nrd_kummer_form.lean) |
+| `prop:hs-special` | [`Step006_hs_special_five_term`](Ch3/NormImage/Step006_hs_special_five_term.lean) |
+| `thm:hs-tate-exact-sequences` | [`Step005_three_five_one_first_ses`](Ch3/NormImage/Step005_three_five_one_first_ses.lean), [`Step007_three_five_two_real_objects`](Ch3/NormImage/Step007_three_five_two_real_objects.lean), [`Step008_three_five_u_wiring`](Ch3/NormImage/Step008_three_five_u_wiring.lean), [`Step001_bi_kummer_data`](Core/Step001_bi_kummer_data.lean) |
+| `thm:dimension` | [`Step022_dimension_paper_objects`](Ch3/NormImage/Step022_dimension_paper_objects.lean), [`Step001_bi_kummer_data`](Core/Step001_bi_kummer_data.lean) |
+| `lem:basis-change` | [`Step001_basis_change_first_slot`](Ch4/Step001_basis_change_first_slot.lean), [`Step010_basis_change_brauer_class`](Ch4/Step010_basis_change_brauer_class.lean) |
+| `lem:ramified-vanishing` | [`Step002_unit_reduction_principal_units`](Ch2/Hensel/ResidueMap/Step002_unit_reduction_principal_units.lean), [`Step005_residue_cup_data_fields_reduced`](Ch2/Hensel/ResidueMap/Step005_residue_cup_data_fields_reduced.lean), [`Step006_tame_pi_u_of`](Ch2/Hensel/ResidueMap/Step006_tame_pi_u_of.lean), [`Step018_huu_discharged`](Ch2/Hensel/ResidueMap/Step018_huu_discharged.lean), [`Step022_ramified_vanishing_no_tame_symbol`](Ch2/Hensel/ResidueMap/Step022_ramified_vanishing_no_tame_symbol.lean), [`Step002_residue_cup_data_shape`](Ch4/Step002_residue_cup_data_shape.lean), [`Step003_ramified_vanishing_paper_objects`](Ch4/Step003_ramified_vanishing_paper_objects.lean) |
+| `thm:ramified` | [`Step004_thm_ramified_assembly`](Ch4/Step004_thm_ramified_assembly.lean), [`Step006_thm_ramified_no_d`](Ch4/Step006_thm_ramified_no_d.lean) |
+| `line:1646` | [`Step005_corollary_four_four_dimension`](Ch4/Step005_corollary_four_four_dimension.lean), [`Step007_corollary_four_four_no_d`](Ch4/Step007_corollary_four_four_no_d.lean), [`Step008_rank_contradiction_single_phi`](Ch4/Step008_rank_contradiction_single_phi.lean), [`Step009_dk_eq_one_is_a_theorem`](Ch4/Step009_dk_eq_one_is_a_theorem.lean), [`Step040_corollary_four_four_paper_level`](Ch4/Step040_corollary_four_four_paper_level.lean) |
 | `line:1017` | [`Step001_open_residual_advance`](Ch2/Hensel/ResidueMap/Step001_open_residual_advance.lean), [`Step002_unit_reduction_principal_units`](Ch2/Hensel/ResidueMap/Step002_unit_reduction_principal_units.lean), [`Step002_principal_units_without_completeness`](Ch2/Hensel/Valuation/Step002_principal_units_without_completeness.lean) |
 | `line:1023` | [`Step041_residue_map_single_hypothesis`](Ch2/Hensel/ResidueMap/Step041_residue_map_single_hypothesis.lean), [`Step016_d_witness_finite_residue`](Witness/Step016_d_witness_finite_residue.lean) |
 | `line:1050` | [`Step024_delta_two_refined`](Ch2/Hensel/ResidueMap/Step024_delta_two_refined.lean), [`Step051_h1_z_equiv_galo_v`](Ch2/Hensel/ResidueMap/Step051_h1_z_equiv_galo_v.lean), [`Step053_exists_d_three_properties`](Ch2/Hensel/ResidueMap/Step053_exists_d_three_properties.lean), [`Step004_tame_symbol_hyp_divisible_residue`](Ch2/Hensel/TameSymbol/Step004_tame_symbol_hyp_divisible_residue.lean), [`Step006_tame_symbol_explicit`](Ch2/Hensel/TameSymbol/Step006_tame_symbol_explicit.lean), [`Step016_tame_symbol_hyp_merkurjev_suslin`](Ch2/Hensel/TameSymbol/Step016_tame_symbol_hyp_merkurjev_suslin.lean), [`Step033_ch4_three_and_exists_d`](Ch4/Step033_ch4_three_and_exists_d.lean), [`Step039_ch4_four_without_finite_residue`](Ch4/Step039_ch4_four_without_finite_residue.lean) |
@@ -82,8 +65,24 @@ leaves unnumbered or that a module picks up mid-paragraph).
 | `line:1635` | [`Step041_thm_ramified_two_rank_barrier`](Ch4/Step041_thm_ramified_two_rank_barrier.lean) |
 | `line:1636` | [`Step024_delta_two_refined`](Ch2/Hensel/ResidueMap/Step024_delta_two_refined.lean), [`Step036_residue_cup_product_interface`](Ch2/Hensel/ResidueMap/Step036_residue_cup_product_interface.lean), [`Step001_residue_valuation_without_completeness`](Ch2/Hensel/Valuation/Step001_residue_valuation_without_completeness.lean), [`Step015_thm_ramified_1_sec_2_4_only`](Ch4/Step015_thm_ramified_1_sec_2_4_only.lean), [`Step017_thm_ramified_and_corollary_class_free`](Ch4/Step017_thm_ramified_and_corollary_class_free.lean), [`Step018_single_carrier_thm_ramified`](Ch4/Step018_single_carrier_thm_ramified.lean), [`Step031_ch4_closed_units_cup_vanish`](Ch4/Step031_ch4_closed_units_cup_vanish.lean), [`Step033_ch4_three_and_exists_d`](Ch4/Step033_ch4_three_and_exists_d.lean), [`Step037_ch4_without_finite_dimensional_v`](Ch4/Step037_ch4_without_finite_dimensional_v.lean), [`Step039_ch4_four_without_finite_residue`](Ch4/Step039_ch4_four_without_finite_residue.lean), [`Step047_ch4_three_d_free`](Ch4/Step047_ch4_three_d_free.lean), [`Step036_f7t_thm_ramified_witness_paper_objects`](Witness/Step036_f7t_thm_ramified_witness_paper_objects.lean) |
 | `line:1637` | [`Step018_single_carrier_thm_ramified`](Ch4/Step018_single_carrier_thm_ramified.lean) |
-| `line:1646` | [`Step005_corollary_four_four_dimension`](Ch4/Step005_corollary_four_four_dimension.lean), [`Step007_corollary_four_four_no_d`](Ch4/Step007_corollary_four_four_no_d.lean), [`Step008_rank_contradiction_single_phi`](Ch4/Step008_rank_contradiction_single_phi.lean), [`Step009_dk_eq_one_is_a_theorem`](Ch4/Step009_dk_eq_one_is_a_theorem.lean), [`Step040_corollary_four_four_paper_level`](Ch4/Step040_corollary_four_four_paper_level.lean) |
 | `line:1648` | [`Step024_delta_two_refined`](Ch2/Hensel/ResidueMap/Step024_delta_two_refined.lean), [`Step036_residue_cup_product_interface`](Ch2/Hensel/ResidueMap/Step036_residue_cup_product_interface.lean), [`Step040_ker_v_finrank_le_one`](Ch2/Hensel/ResidueMap/Step040_ker_v_finrank_le_one.lean), [`Step001_residue_valuation_without_completeness`](Ch2/Hensel/Valuation/Step001_residue_valuation_without_completeness.lean), [`Step016_corollary_four_four_sec_2_4_only`](Ch4/Step016_corollary_four_four_sec_2_4_only.lean), [`Step017_thm_ramified_and_corollary_class_free`](Ch4/Step017_thm_ramified_and_corollary_class_free.lean), [`Step031_ch4_closed_units_cup_vanish`](Ch4/Step031_ch4_closed_units_cup_vanish.lean), [`Step033_ch4_three_and_exists_d`](Ch4/Step033_ch4_three_and_exists_d.lean), [`Step039_ch4_four_without_finite_residue`](Ch4/Step039_ch4_four_without_finite_residue.lean), [`Step047_ch4_three_d_free`](Ch4/Step047_ch4_three_d_free.lean) |
+| `line:739` | [`Step014_tame_steinberg_relation`](Ch2/Hensel/TameSymbol/Step014_tame_steinberg_relation.lean) |
+| `line:992` | [`Step043_units_mod_pth_powers_paper_level`](Ch2/Hensel/ResidueMap/Step043_units_mod_pth_powers_paper_level.lean) |
+
+Section of each labelled item: `cor:symbol-cup` (sec. 2.2); `prop:prelim-kummer-valuation` (sec. 2.4); `prop:prelim-residue` (sec. 2.4); `eq:prelim-tame` (sec. 2.4); `lem:orthogonal` (sec. 3.1); `thm:rank-barrier` (sec. 3.1); `lem:basic-inclusions` (sec. 3.1); `prop:hs-special` (sec. 3.2); `thm:hs-tate-exact-sequences` (sec. 3.2); `thm:dimension` (sec. 3.2); `lem:basis-change` (sec. 4); `lem:ramified-vanishing` (sec. 4); `thm:ramified` (sec. 4); `line:1646` (sec. 4.4 (unnumbered)).
+
+## Items of `raw/GilleSzamuely2017.tex`
+
+Statements the development quotes from this source rather than from the
+paper.  The label is shown bare here; in `DECLARATIONS.md` and in the
+per-directory tables it is prefixed with the source, `GS2017/<label>`, so that it cannot be
+confused with a paper label.
+
+| label | modules |
+|---|---|
+| `cons-residue-map-finite-coefficients-2` | [`Step014_cd_p_inertia_instance`](Ch2/Hensel/Inertia/Step014_cd_p_inertia_instance.lean) |
+| `lemma-additive-hilbert90` | [`Step007_additive_hilbert90`](Infra/Cohomology/Step007_additive_hilbert90.lean) |
+| `lemma-residue-cup-product` | [`Step036_residue_cup_product_interface`](Ch2/Hensel/ResidueMap/Step036_residue_cup_product_interface.lean) |
 | `line:3580` | [`Step017_h0_conj_compatibility`](Infra/Cohomology/Boundary/Step017_h0_conj_compatibility.lean) |
 | `line:3585` | [`Step016_delta_zero_naturality`](Infra/Cohomology/Boundary/Step016_delta_zero_naturality.lean) |
 | `line:8152` | [`Step007_knr_correct_carrier`](Ch2/Hensel/Inertia/Step007_knr_correct_carrier.lean), [`Step011_kummer_coeff_to_knr`](Ch2/Hensel/Inertia/Step011_kummer_coeff_to_knr.lean) |
@@ -99,23 +98,25 @@ leaves unnumbered or that a module picks up mid-paragraph).
 | `line:9625` | [`Step013_inertia_pro_p_sylow_data`](Ch2/Hensel/Inertia/Step013_inertia_pro_p_sylow_data.lean), [`Step001_cd_p_z_p_le_one`](Ch2/Rost/Step001_cd_p_z_p_le_one.lean) |
 | `line:9626` | [`Step018_procyclic_l_part_sylow`](Ch2/Hensel/Inertia/Step018_procyclic_l_part_sylow.lean) |
 | `line:9627` | [`Step013_inertia_pro_p_sylow_data`](Ch2/Hensel/Inertia/Step013_inertia_pro_p_sylow_data.lean), [`Step014_cd_p_inertia_instance`](Ch2/Hensel/Inertia/Step014_cd_p_inertia_instance.lean), [`Step022_cd_p_inertia_unconditional`](Ch2/Hensel/Inertia/Step022_cd_p_inertia_unconditional.lean), [`Step001_cd_p_z_p_le_one`](Ch2/Rost/Step001_cd_p_z_p_le_one.lean) |
-
-## Locators that are not in `raw/L20261018.tex`
-
-`grep` over the whole of `raw/L20261018.tex` gives 0 hits for each of these,
-while the docstrings of the modules below name them as Gille-Soule (`GS`) items:
-the `file=` field of those `@source` annotations is wrong, not the label.  They
-are recorded here rather than edited away (`∅-citation-needed`).
-
-| locator | modules |
-|---|---|
-| `sec:cohomology-complete-dv` | [`Step003_knr_galois_quotient`](Ch2/Hensel/Inertia/Step003_knr_galois_quotient.lean), [`Step004_knr_galois_zhat`](Ch2/Hensel/Inertia/Step004_knr_galois_zhat.lean), [`Step005_cont_integral_dual_shift`](Infra/Cohomology/Step005_cont_integral_dual_shift.lean) |
-| `lemma-residue-cup-product` | [`Step036_residue_cup_product_interface`](Ch2/Hensel/ResidueMap/Step036_residue_cup_product_interface.lean) |
-| `lemma-additive-hilbert90` | [`Step007_additive_hilbert90`](Infra/Cohomology/Step007_additive_hilbert90.lean) |
-| `prop-units-cohomology` | [`Step052_delta_two_candidate_zero`](Ch2/Hensel/ResidueMap/Step052_delta_two_candidate_zero.lean) |
 | `prop-cd-Z-hat` | [`Step001_cd_p_z_p_le_one`](Ch2/Rost/Step001_cd_p_z_p_le_one.lean) |
-| `cons-residue-map-finite-coefficients-2` | [`Step014_cd_p_inertia_instance`](Ch2/Hensel/Inertia/Step014_cd_p_inertia_instance.lean) |
 | `prop-residue-map-long-exact` | [`Step001_f2_delta_zero_vanishes`](Infra/Cohomology/ResidueLES/Step001_f2_delta_zero_vanishes.lean), [`Step003_f1_square`](Infra/Cohomology/ResidueLES/Step003_f1_square.lean), [`Step013_continuous_f1`](Infra/Cohomology/ResidueLES/Step013_continuous_f1.lean) |
+| `prop-units-cohomology` | [`Step052_delta_two_candidate_zero`](Ch2/Hensel/ResidueMap/Step052_delta_two_candidate_zero.lean) |
+| `sec:cohomology-complete-dv` | [`Step003_knr_galois_quotient`](Ch2/Hensel/Inertia/Step003_knr_galois_quotient.lean), [`Step004_knr_galois_zhat`](Ch2/Hensel/Inertia/Step004_knr_galois_zhat.lean), [`Step005_cont_integral_dual_shift`](Infra/Cohomology/Step005_cont_integral_dual_shift.lean) |
+
+## Items of `scratch/lean-l20261018/serre-p67-prop7-cors.txt`
+
+Statements the development quotes from this source rather than from the
+paper.  The label is shown bare here; in `DECLARATIONS.md` and in the
+per-directory tables it is prefixed with the source so that it cannot be
+confused with a paper label.
+
+| label | modules |
+|---|---|
+| `line:8` | [`Step015_cd_p_procyclic_criterion`](Ch2/Hensel/Inertia/Step015_cd_p_procyclic_criterion.lean), [`Step016_inertia_loc_carrier_alignment`](Ch2/Hensel/Inertia/Step016_inertia_loc_carrier_alignment.lean), [`Step017_tame_module_procyclic`](Ch2/Hensel/Inertia/Step017_tame_module_procyclic.lean) |
+
+## Provenance of the annotations
+
+Every `@source` annotation is checked against the sources in `raw/` by `scripts/check-provenance.py`, whose verdict is `PROVENANCE.tsv`: 20 labelled items are present in the file their annotation names; 0 labelled elsewhere; 0 not found; 31 line anchors (which a label search cannot check); 0 annotation whose file is absent.
 
 ## What the comparators check, and where it lives
 
