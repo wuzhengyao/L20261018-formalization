@@ -118,6 +118,11 @@ def render_dev(recs):
         for label in labels:
             section_of[label] = section
     named = [p for p in by_label if not p.startswith("line:")]
+    if not by_label:
+        raise SystemExit("no @source locator found at all -- refusing to write empty tables")
+    if not named:
+        raise SystemExit("no labelled paper item found -- the `label:` prefix is probably "
+                         "not being stripped (an empty table must not pass silently)")
     ordered = [l for _s, ls in K.PAPER_ORDER for l in ls if l in by_label]
     ordered += sorted(p for p in named if p not in ordered)
 
@@ -219,6 +224,32 @@ def build_short_index(recs):
             BY_SHORT.setdefault(name, []).append((m, line))
 
 
+LINK = re.compile(r"\]\(([^)#\s]+)(#[^)]*)?\)")
+
+
+def check_links(paths):
+    bad = []
+    for path in paths:
+        text = io.open(path, encoding="utf-8").read()
+        base = os.path.dirname(path)
+        for m in LINK.finditer(text):
+            target = m.group(1)
+            if target.startswith(("http://", "https://", "mailto:")):
+                continue
+            full = os.path.normpath(os.path.join(base, target))
+            if not os.path.exists(full):
+                bad.append(f"{os.path.relpath(path, K.ROOT)}: {target} (no such file)")
+                continue
+            anchor = m.group(2) or ""
+            if anchor.startswith("#L") and anchor[2:].isdigit():
+                want = int(anchor[2:])
+                got = len(io.open(full, encoding="utf-8").read().splitlines())
+                if want < 1 or want > got:
+                    bad.append(f"{os.path.relpath(path, K.ROOT)}: {target}{anchor} "
+                               f"(file has {got} lines)")
+    return bad
+
+
 def main(argv):
     recs = list(K.modules().values())
     build_short_index(recs)
@@ -228,6 +259,15 @@ def main(argv):
         files[os.path.join(K.DEV, d, "README.md")] = render_dir(d, recs, d.count("/") + 1)
     files[os.path.join(K.DEV, "README.md")] = render_dev(recs)
 
+    if "--check-links" in argv:
+        bad = check_links(list(files) + [os.path.join(K.ROOT, "DECLARATIONS.md"),
+                                         os.path.join(K.ROOT, "README.md"),
+                                         os.path.join(K.ROOT, "WORKFLOW.md")])
+        if bad:
+            print("broken links:\n  " + "\n  ".join(bad), file=sys.stderr)
+            return 1
+        print("all internal links resolve")
+        return 0
     if "--report" in argv:
         print(f"{len(recs)} modules in {len(dirs)} directories; {len(files)} README files")
         return 0

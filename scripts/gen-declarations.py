@@ -40,15 +40,16 @@ def scan():
         modules_by_dir.setdefault(mod["directory"], set()).add(mod["module"])
         anon += mod["anon"]
         paper = "; ".join(mod["paper"])
+        rel = os.path.relpath(mod["path"], K.ROOT).replace(os.sep, "/")
         for name, lineno, kind in mod["decls"]:
-            rows.append((name, mod["module"], lineno, mod["directory"], kind, paper))
+            rows.append((name, mod["module"], lineno, mod["directory"], kind, paper, rel))
     return rows, modules_by_dir, anon
 
 
 def render(rows, historical=None, modules_by_dir=None, anon=0):
     all_modules = sorted({m for ms in (modules_by_dir or {}).values() for m in ms})
     dirs = {}
-    for name, module, _line, directory, _kind, _paper in rows:
+    for name, module, _line, directory, _kind, _paper, _rel in rows:
         d = dirs.setdefault(directory, [0, set()])
         d[0] += 1
         d[1].add(module)
@@ -109,10 +110,11 @@ def render(rows, historical=None, modules_by_dir=None, anon=0):
     out.append("\n")
     out.append("| declaration | module | line | paper |\n")
     out.append("|---|---|---|---|\n")
-    for name, module, line, _directory, _kind, paper in sorted(
+    for name, module, line, _directory, _kind, paper, rel in sorted(
             rows, key=lambda r: (r[0], r[1], r[2])):
         cell = "" if not paper else "`" + paper + "`"
-        out.append(f"| `{name}` | `L20261018.{module}` | {line} | {cell} |\n")
+        out.append(f"| `{name}` | [`L20261018.{module}`]({rel}) | "
+                   f"[{line}]({rel}#L{line}) | {cell} |\n")
     return "".join(out)
 
 
@@ -126,7 +128,7 @@ def main(argv):
               f"{anon} anonymous instances, {historical} at the historical column-0 scan")
         return 0
     if "--pairs" in argv:
-        for name, module, line, _directory, _kind, _paper in sorted(rows):
+        for name, module, line, _directory, _kind, _paper, _rel in sorted(rows):
             print(f"{name}\t{line}\t{module}")
         return 0
     if "--check" in argv:
