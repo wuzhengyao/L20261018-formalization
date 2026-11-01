@@ -30,15 +30,22 @@ Kummer classes of field elements, and the hypotheses left are the paper's own:
 ## Chapter 3
 
 ```bash
-./run-comparator.sh         # ch3: 14 theorems, 3.1–3.6
+./run-comparator.sh ch3u    # 8 declarations: the paper's own statements, unconditional
+./run-comparator.sh         # 14 declarations: also the general algebraic layer
 ```
 
-Chapter 3 is unconditional at the paper's hypothesis level: the abstract hypotheses of the
-source development are all discharged — `hker` by `RootsOfUnityExists.lemma_3_1_2_galo'`,
-`ind`+`hind` by `H2Bridge.hind_kummer`, `hNrd` by `hNrd_crossedProduct` (crossed products).
-What is left are the paper's own hypotheses (`p` odd, `(a₁)∪(a₂) ≠ 0`, `N ⊆ U^⊥`) plus, for
-3.4/3.5/3.6, the carriers of the general algebraic layer (`BiKummerData`, the two short exact
-sequences), which are parameters there by design.
+`ch3u` is the chapter's own statements, and they are unconditional at the paper's hypothesis
+level: the abstract hypotheses of the source development are all discharged — `hker` by
+`RootsOfUnityExists.lemma_3_1_2_galo'`, `ind`+`hind` by `H2Bridge.hind_kummer`, `hNrd` by
+`hNrd_crossedProduct` (crossed products). What is left are the paper's own hypotheses
+(`p` odd, `(a₁)∪(a₂) ≠ 0`). The default `ch3` list additionally covers the general algebraic
+layer (`BiKummerData`, `three_five_one_add`, the two short exact sequences), where the
+carriers are parameters by design.
+
+## Where things are
+
+* **`DECLARATIONS.md`** — every declaration, its module and line. Find a result there first.
+* **`WORKFLOW.md`** — the formalisation workflow distilled from this project (reusable).
 
 ## Layout
 
@@ -46,7 +53,10 @@ sequences), which are parameters there by design.
 TauCeti/          vendored subset of TauCeti (Apache-2.0)
 L20261018/        the development: one module per proof step (A, Galo, Hyp*)
 comparator/ch3/   Challenge.lean (proofs = sorry) + Solution.lean + config.json
+comparator/ch3u/  idem, chapter 3 unconditional
 comparator/ch4u/  idem, chapter 4 unconditional
+DECLARATIONS.md   declaration -> module index
+WORKFLOW.md       the reusable formalisation workflow
 lakefile.toml     mathlib pinned to aa35a481e5f0cdb3b04a899ead15d6ca7305a624
 ```
 
