@@ -116,7 +116,7 @@
 8. **索引器要能 Ctrl-F**：`DECLARATIONS.md` = `declaration | module | line | paper locator`。
    正则须允许**前置 attribute**（`@[simp] lemma Foo_apply` —— 只认行首关键字的版本会静默漏掉 29 条，
    而那恰好是最常被 grep 的 `_apply` 族）；**匿名 `instance : Foo` 无名字可索引**，只能计数，
-   且**必须在表头报出这个数**（本项目 42 条），不许静默丢。
+   且**必须在表头报出这个数**（本项目迁移后 38 条，去重前 42），不许静默丢。
    迁移后 `DECLARATIONS.md` 与代码**同批提交**。
 
 **工艺**：任何脚本写文件，若内容含非 BMP 字符，**先构造内容并 `encode('utf-8')` 校验，再原子替换**；
