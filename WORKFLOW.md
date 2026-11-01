@@ -117,7 +117,15 @@
    正则须允许**前置 attribute**（`@[simp] lemma Foo_apply` —— 只认行首关键字的版本会静默漏掉 29 条，
    而那恰好是最常被 grep 的 `_apply` 族）；**匿名 `instance : Foo` 无名字可索引**，只能计数，
    且**必须在表头报出这个数**（本项目迁移后 38 条，去重前 42），不许静默丢。
+   同名声明（不同 namespace）也要报数（本项目 17 条）——索引只记短名。
    迁移后 `DECLARATIONS.md` 与代码**同批提交**。
+9. **目录也要有索引，且索引要能当闸门用**：每个目录一份 `README.md`（模块 → 它证什么 → paper
+   locator → 贡献的声明），加上一份 `L20261018/README.md`（paper 条目 → 模块、**每组 comparator
+   到底在重检哪条声明 ↔ 它在哪个模块**）。两处都由脚本生成、都带 `--check`（否则 `git status`
+   永不干净）。**判据复用**：把 `comparator/*/Solution.lean` 的 `specs` 列当数据源 ——
+   索引器一旦发现某个 comparator 目标不是本仓声明（或短名歧义），**直接失败**；
+   于是「文档」同时成了「验证过的交叉引用」。本项目实弹：`theorem_3_2_1_kummer'` 在**同一模块**
+   两处（不同 namespace）声明，短名歧义须按「模块相同即不算歧义」处理。
 
 **工艺**：任何脚本写文件，若内容含非 BMP 字符，**先构造内容并 `encode('utf-8')` 校验，再原子替换**；
 禁先 `open(path,"w")`（会立即截断，随后异常即静默毁件）。
@@ -147,5 +155,7 @@
 交付:  源码自足、globs 与根模块同在、import 前缀一致、闭包含 public import、拆脚手架、README 三段
 库形态: 只重命名不合并（重命名零语义风险；合并要重放 open）；文件名须合法标识符（禁连字符／首数字）；
        判据 = (declaration, line) 逐条不变；DECLARATIONS.md 带 module+line+paper，且报匿名 instance 数
+索引:  每个目录一份生成式 README ＋ 一份 paper→模块＋comparator 目标→模块的总表；两处都 --check，
+       且 comparator 目标缺失即索引器失败（文档兼作闸门）
 收口:  build 0 err 0 warn ｜ axioms 恰三条 ｜ comparator 全绿 ｜ commit（含文档）
 ```
