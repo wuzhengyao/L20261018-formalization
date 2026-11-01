@@ -1,8 +1,7 @@
 #!/usr/bin/env bash
 # Build the development and run the comparator check of one chapter.
 #
-#   ./run-comparator.sh ch4u       # Chapter 4, UNCONDITIONAL level (7 declarations)
-#   ./run-comparator.sh ch4        # Chapter 4 at the paper hypothesis level (takes `d`)
+#   ./run-comparator.sh ch4u       # Chapter 4, unconditional (7 declarations)  <-- main
 #   ./run-comparator.sh            # chapter 3 (default, 14 theorems)
 #   SKIP_BUILD=1 ./run-comparator.sh ch4u
 #

@@ -29,15 +29,16 @@ as an argument; `d` is built inside. They quantify over arbitrary `a₁ a₂ : G
 (not only Kummer classes of field elements), and the hypotheses left are the paper's own:
 `char K ≠ p`, `p ≠ 2`, `v(π) = 1`, `(a₁)∪(a₂) ≠ 0`, `v̄|_U ≠ 0`.
 
-## The other groups (same checker, different target lists)
+## Chapter 3 (the other group, same checker)
 
-| group | chapter | status |
-|---|---|---|
-| `./run-comparator.sh ch4` | 4, 6 theorems | full statements, **conditional**: 4.2/4.3(1)/4.4 take `d` + `hd_infl` + `hd_cup_pi` (the paper's own `prop:prelim-residue`(1)) |
-| `./run-comparator.sh` (ch3) | 3, 14 theorems | 3.1–3.6 with the named hypotheses still open (`hker`, `ind`+`hind`, `hNrd`, `hproj`, `hcoh`+`hcyc`, `hkerd2`+`hd2surj`) — **not** unconditional |
+```bash
+./run-comparator.sh           # ch3: 14 theorems, 3.1-3.6
+```
 
-So `ch4` = full statement, conditional; `ch4u` = full statement, unconditional. The checker
-cannot tell the two apart — the difference is *which list you run*.
+Chapter 3 is **not** unconditional: its statements still carry the named hypotheses
+`hker`, `ind`+`hind`, `hNrd`, `hproj`, `hcoh`+`hcyc`, `hkerd2`+`hd2surj`. The checker cannot
+tell a conditional theorem from an unconditional one — the difference is which target list
+you run.
 
 ## What the comparator checks, and what it does not
 
@@ -51,18 +52,17 @@ Per name in `comparator/*/config.json` it checks: (1) `Challenge` (`sorry` proof
 **accepts** the solution; (3) axioms ⊆ `{propext, Quot.sound, Classical.choice}`.
 
 It does **not** check coverage (unlisted statements are invisible — 4.3(2) was once
-missing from `ch4`), whether the hypotheses are discharged, or whether the hypothesis
-classes are inhabited (the Hensel setup is assumed; a concrete instance
+missing from the Chapter 4 list), whether the hypotheses are discharged, or whether the
+hypothesis classes are inhabited (the Hensel setup is assumed; a concrete instance
 `L20261018.FqXt.orth_eq_bot_uncond`, `ZMod 7((t))` with `p = 3`, lives in the sources).
 
-Recorded passes, all three **rebuilt from the shipped sources** on 2026-11-08 with Lean
+Recorded passes, both groups **rebuilt from the shipped sources** on 2026-11-08 with Lean
 `v4.35.0` (`lake build` → 10260 jobs; then one comparator run per group):
 
 | group | targets | |
 |---|---|---|
-| `ch3` | 14 | `Your solution is okay!` |
-| `ch4` | 6 | `Your solution is okay!` |
 | `ch4u` | 7 | `Your solution is okay!` |
+| `ch3` | 14 | `Your solution is okay!` |
 
 (An earlier `ch3` record was **not** reproducible: one artefact had been compiled under a
 module named `scratch`, leaving a `_scratch` instance suffix that `#check` cannot see but a
@@ -74,7 +74,6 @@ kernel replay cannot survive. Hence: ships sources, you build.)
 TauCeti/          vendored subset of TauCeti (Apache-2.0)
 L20261018/        the development: one module per proof step (A, Galo, Hyp*)
 comparator/ch3/   Challenge.lean (proofs = sorry) + Solution.lean + config.json
-comparator/ch4/   idem, chapter 4 at the paper hypothesis level
 comparator/ch4u/  idem, chapter 4 unconditional
 lakefile.toml     mathlib pinned to aa35a481e5f0cdb3b04a899ead15d6ca7305a624
 ```

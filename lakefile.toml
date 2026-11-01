@@ -26,10 +26,9 @@ globs = ["TauCeti.+"]
 name = "L20261018"
 globs = ["L20261018.+"]
 
-# Comparator inputs: comparator/{ch3,ch4,ch4u}/{Challenge,Solution,config.json}.
+# Comparator inputs: comparator/{ch3,ch4u}/{Challenge,Solution,config.json}.
 #   ch3   chapter 3, 14 theorems
-#   ch4   chapter 4, 6 theorems, paper hypothesis level (takes `d`)
-#   ch4u  chapter 4, 7 theorems, unconditional (`d` is constructed)
+#   ch4u  chapter 4, 7 theorems, unconditional (`d` is constructed, not assumed)
 [[lean_lib]]
 name = "comparator"
 globs = ["comparator.+"]
