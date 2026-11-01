@@ -33,8 +33,12 @@ Kummer classes of field elements, and the hypotheses left are the paper's own:
 ./run-comparator.sh         # ch3: 14 theorems, 3.1–3.6
 ```
 
-Not unconditional: its statements still carry the named hypotheses `hker`, `ind`+`hind`,
-`hNrd`, `hproj`, `hcoh`+`hcyc`, `hkerd2`+`hd2surj`.
+Chapter 3 is unconditional at the paper's hypothesis level: the abstract hypotheses of the
+source development are all discharged — `hker` by `RootsOfUnityExists.lemma_3_1_2_galo'`,
+`ind`+`hind` by `H2Bridge.hind_kummer`, `hNrd` by `hNrd_crossedProduct` (crossed products).
+What is left are the paper's own hypotheses (`p` odd, `(a₁)∪(a₂) ≠ 0`, `N ⊆ U^⊥`) plus, for
+3.4/3.5/3.6, the carriers of the general algebraic layer (`BiKummerData`, the two short exact
+sequences), which are parameters there by design.
 
 ## Layout
 
