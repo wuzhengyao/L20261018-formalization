@@ -1,4 +1,4 @@
-import Hyp684
+import L20261018.Hyp684
 
 /-!
 # S59 R6：**`res` 构造的正确入口条件** —— `tameSumCond`（带标量的有限和）

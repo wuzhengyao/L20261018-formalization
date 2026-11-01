@@ -1,11 +1,11 @@
-import Hyp108
-import Hyp110
-import Hyp111
-import Hyp695
-import Hyp710
+import L20261018.Hyp108
+import L20261018.Hyp110
+import L20261018.Hyp111
+import L20261018.Hyp695
+import L20261018.Hyp710
 -- 下面这条**不是**第 4 章的一部分，只为让 `routes_check.py` 的「最新模块」验 evidence 时
 -- 能解析到 S69–S72 的声明（`Hyp757`–`Hyp762` 与本件在 DAG 的不同分支上）。
-import Hyp762
+import L20261018.Hyp762
 
 /-!
 # S72 R3：**第 4 章闭合证书** —— `raw/L20261018.tex` §4「Hensel 赋值与第一槽分歧」

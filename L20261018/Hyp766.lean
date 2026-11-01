@@ -1,4 +1,4 @@
-import Hyp765
+import L20261018.Hyp765
 
 /-!
 # S72 R7：`H-conj1` 的两个**载体侧**输入（`RECON-tauceti-lcft.md` §5 路线 (c) 的前置）

@@ -1,5 +1,5 @@
-import Hyp382
-import Hyp344
+import L20261018.Hyp382
+import L20261018.Hyp344
 
 /-!
 # R1297（S37 第 5 轮）：`prop:prelim-residue` (1) 的**单一具名假设**分解

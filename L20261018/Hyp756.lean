@@ -1,7 +1,7 @@
-import Hyp755
-import Hyp750
-import Hyp744
-import Hyp749
+import L20261018.Hyp755
+import L20261018.Hyp750
+import L20261018.Hyp744
+import L20261018.Hyp749
 
 /-!
 # S69 R2：**A-2 的代数内核** —— `∂² (cup y z) = 0`（`y z ∈ VKG`）

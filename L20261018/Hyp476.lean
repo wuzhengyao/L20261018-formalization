@@ -1,4 +1,4 @@
-import Hyp475
+import L20261018.Hyp475
 
 /-!
 # S40 R16：系数桥 ① —— `ZMod p ≃+ KummerCoeff F p`（`μ_p ⊂ F`）

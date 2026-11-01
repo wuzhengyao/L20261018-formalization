@@ -1,4 +1,4 @@
-import Hyp560
+import L20261018.Hyp560
 
 /-!
 # S46 R9：★★★ **同构的两条互逆律之一**：`descend ∘ pull = id` ⟹ `pull` 单射

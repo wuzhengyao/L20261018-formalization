@@ -1,5 +1,5 @@
-import Hyp776
-import Hyp134
+import L20261018.Hyp776
+import L20261018.Hyp134
 
 /-!
 # S74 R3：**(甲1) 的"≤"那一半**无条件成立 —— `hne` 从 `finrank VKG ≤ 1` 上摘掉

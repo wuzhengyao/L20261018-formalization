@@ -1,4 +1,4 @@
-import Hyp796
+import L20261018.Hyp796
 
 /-!
 # S77 R5：第 5 步 (b) 的**代数内核** —— 有「左逆系数映射」⟹ `explicitCup01` 非零

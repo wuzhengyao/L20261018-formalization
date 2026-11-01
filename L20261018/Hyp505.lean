@@ -1,5 +1,5 @@
-import Hyp504
-import Hyp380
+import L20261018.Hyp504
+import L20261018.Hyp380
 
 /-!
 # S42 R3：把（★）条件定理**实例化到战役真实载体** —— `I = Gal(K_s/K_nr) = inertiaLoc`

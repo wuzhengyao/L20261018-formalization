@@ -1,4 +1,4 @@
-import Hyp234
+import L20261018.Hyp234
 
 /-!
 # R1105（**共轭作用的地基三条：底层映射公式 ＋ `conjSubtypeHom` 的乘法 ＋ `conjMap` 的因子性方向**）

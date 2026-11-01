@@ -1,4 +1,4 @@
-import Hyp138
+import L20261018.Hyp138
 
 /-!
 # R981：**论文 `lem:ramified-vanishing` 成为无驯符号假设的定理**

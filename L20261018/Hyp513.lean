@@ -1,5 +1,5 @@
-import Hyp512
-import Hyp508
+import L20261018.Hyp512
+import L20261018.Hyp508
 import TauCeti.Topology.Algebra.Group.Profinite.Procyclic
 import TauCeti.Topology.Algebra.Group.Profinite.Sylow.Basic
 import TauCeti.Topology.Algebra.Group.Profinite.Sylow.Containment

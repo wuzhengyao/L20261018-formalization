@@ -1,4 +1,4 @@
-import Hyp239
+import L20261018.Hyp239
 
 /-!
 # R1111（**(R2)-2 开局：解除 `innerConjTrivialIn` —— `n = 1` 的棱柱恒等式**）

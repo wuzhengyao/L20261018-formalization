@@ -1,4 +1,4 @@
-import Hyp304
+import L20261018.Hyp304
 
 /-!
 # R1196（`ValCompat` 非完备见证 · 第 2 块：`a = x/y` 与阶差的良定义性）

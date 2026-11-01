@@ -1,5 +1,5 @@
-import Hyp132
-import Hyp123
+import L20261018.Hyp132
+import L20261018.Hyp123
 
 /-!
 # R976：`hdep` 的最后一段（域论抬回）—— 单位类的幂依赖性

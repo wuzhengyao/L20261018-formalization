@@ -1,4 +1,4 @@
-import Hyp559
+import L20261018.Hyp559
 
 /-!
 # S46 R8：★★ **反向映射 `DiscreteCoind (Γ⧸I) ⊥ μ_p → Bᴵ`**（`h ↦ h ∘ mk`）

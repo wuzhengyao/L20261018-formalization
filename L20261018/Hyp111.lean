@@ -1,5 +1,5 @@
-import Hyp110
-import Hyp86
+import L20261018.Hyp110
+import L20261018.Hyp86
 
 /-!
 # 第 4 章 T4：`thm:ramified`（4.3）—— 纯装配

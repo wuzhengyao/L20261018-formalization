@@ -1,5 +1,5 @@
-import Hyp320
-import Hyp288
+import L20261018.Hyp320
+import L20261018.Hyp288
 
 /-!
 # R1223–R1225（S34）：**(R1-σ) 与 (R1) 去掉 `hbridge`／完备性**

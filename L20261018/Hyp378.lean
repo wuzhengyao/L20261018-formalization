@@ -1,4 +1,4 @@
-import Hyp377
+import L20261018.Hyp377
 
 /-!
 # R1292（S37 · GS §6.8 战役 **S1**）：`K_nr` 的伽罗瓦性与 `Gal(K_nr/K)` 的商描述

@@ -1,4 +1,4 @@
-import Hyp479
+import L20261018.Hyp479
 
 /-!
 # S40 R20：★ **论文 `prop:prelim-residue`(2) 的逐字读法** ＋ 缺口 (ii) 登记

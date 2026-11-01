@@ -1,4 +1,4 @@
-import Hyp180
+import L20261018.Hyp180
 
 /-!
 # R1034（路径 A · **·b·iii ②（二）预备**）：`Fin p`-索引的显式基 `B i = sⁱ`

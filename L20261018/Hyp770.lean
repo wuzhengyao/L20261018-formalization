@@ -1,4 +1,4 @@
-import Hyp769
+import L20261018.Hyp769
 import TauCeti.RepresentationTheory.Homological.ContCohomology.ConjInvariants
 
 /-!

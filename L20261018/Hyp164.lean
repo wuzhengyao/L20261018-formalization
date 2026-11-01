@@ -1,6 +1,6 @@
-import Hyp163
-import Hyp81
-import Hyp162
+import L20261018.Hyp163
+import L20261018.Hyp81
+import L20261018.Hyp162
 import TauCeti.NumberTheory.ClassFieldTheory.Local.CyclicClass
 
 /-!

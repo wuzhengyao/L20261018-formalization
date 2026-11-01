@@ -1,4 +1,4 @@
-import Hyp447
+import L20261018.Hyp447
 
 /-!
 # S39 第 22 轮（B 第 18 步）：**`TgSection` 的存在性**（`Hyp448`）

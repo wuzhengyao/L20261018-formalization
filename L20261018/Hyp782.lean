@@ -1,4 +1,4 @@
-import Hyp781
+import L20261018.Hyp781
 
 /-!
 # S74 R8：`∂²` 三段因子的双射性 API（`Hyp781` 的补全）

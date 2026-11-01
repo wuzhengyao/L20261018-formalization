@@ -1,4 +1,4 @@
-import Hyp370
+import L20261018.Hyp370
 
 /-!
 # R1284（S36 C 项 · `hK1` 下界）：`0 < finrank (ker v̄)`

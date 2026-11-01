@@ -1,4 +1,4 @@
-import Hyp155
+import L20261018.Hyp155
 
 /-!
 # R1004：**4.3(1) 与 4.4 完全去类**（论文层级：只留 `[Field F] [Fact p.Prime] [μ_p ⊂ F]`）

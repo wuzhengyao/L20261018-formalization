@@ -1,4 +1,4 @@
-import Hyp467
+import L20261018.Hyp467
 
 /-!
 # S40 R7：`G = Gal(K_s/K)` **保 `K_nr`**（`RECON-R3` §84.3 第 3 步）

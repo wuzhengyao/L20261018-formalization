@@ -1,4 +1,4 @@
-import Hyp216
+import L20261018.Hyp216
 
 /-!
 # R1087（**T1 第二轮归约**：`explicitMap1` 对系数映射的标量线性性 ＋ `bridgeKc` 链的第一次望远镜化）

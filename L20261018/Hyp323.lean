@@ -1,4 +1,4 @@
-import Hyp322
+import L20261018.Hyp322
 
 /-!
 # R1228（S34）：**`hskew` 也消去** —— `kummerCupPairing` 的斜对称性是库内定理

@@ -1,4 +1,4 @@
-import Hyp115
+import L20261018.Hyp115
 
 /-!
 # R946：`prop:prelim-kummer-valuation`(2) 的**分解式** `x = x₀ + m·(π)`（分解 ＋ 唯一性）

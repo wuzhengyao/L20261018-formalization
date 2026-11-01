@@ -1,5 +1,5 @@
-import Hyp196
-import Hyp189
+import L20261018.Hyp196
+import L20261018.Hyp189
 import TauCeti.NumberTheory.LocalField.Uniformizer
 
 /-!

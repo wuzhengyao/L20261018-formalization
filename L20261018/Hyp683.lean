@@ -1,4 +1,4 @@
-import Hyp682
+import L20261018.Hyp682
 
 /-!
 # S59 R4：**A1 的易向 ＋ 求和必要条件** —— `TameSymbolFactors` 的「下降」已压成一条求和判据

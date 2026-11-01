@@ -1,4 +1,4 @@
-import Hyp202
+import L20261018.Hyp202
 
 /-!
 # R1059（**载体桥 `hbridge` 的第一块基建**）：`coeffMap` 与「限制纯量」交换

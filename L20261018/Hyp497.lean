@@ -1,4 +1,4 @@
-import Hyp496
+import L20261018.Hyp496
 import TauCeti.RepresentationTheory.Homological.ContCohomology.Inflation.Basic
 
 /-!

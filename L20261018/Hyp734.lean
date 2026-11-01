@@ -1,4 +1,4 @@
-import Hyp733
+import L20261018.Hyp733
 
 /-!
 # S66 R3：分片 **4c-v（第一格）** —— `map φ fC` 的**分解**

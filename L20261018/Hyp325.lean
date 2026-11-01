@@ -1,5 +1,5 @@
-import Hyp324
-import Hyp110
+import L20261018.Hyp324
+import L20261018.Hyp110
 
 /-!
 # R1231（S34 第 3 轮）：`∂₂` 面两条 —— 一条**冗余性**（论文的 `tame_pi_u` 可导出）＋ `TameResidueFacts` 的 `ℚ_[7]` 见证

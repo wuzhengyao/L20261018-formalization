@@ -1,5 +1,5 @@
-import Hyp607
-import Hyp610
+import L20261018.Hyp607
+import L20261018.Hyp610
 
 /-!
 # S51 R2：**第 4 章证明结构索引 ＋ 六档归一**（`residueSpan = ⊥` 是唯一正规形）

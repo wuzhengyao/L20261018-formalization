@@ -3,6 +3,9 @@ defaultTargets = ["TauCeti", "L20261018", "comparator"]
 
 # mathlib is fetched from GitHub at a pinned commit.  Prebuilt oleans are available:
 #     lake exe cache get
+# If that commit is already built on your machine, replace the two lines below by
+#     path = "/path/to/mathlib4"
+# and `lake build` then works fully offline.
 [[require]]
 name = "mathlib"
 git = "https://github.com/leanprover-community/mathlib4"
@@ -10,17 +13,23 @@ rev = "aa35a481e5f0cdb3b04a899ead15d6ca7305a624"
 
 # The TauCeti modules used by this development are vendored under `TauCeti/`
 # (Apache-2.0, see TauCeti/NOTICE).  Nothing else has to be installed.
+#
+# NOTE on `globs`: these libraries contain only submodules, so the root entry must NOT
+# be listed -- a bare `"TauCeti"` points at the nonexistent root module `TauCeti.lean`
+# and `lake build` then fails with "no such file or directory".
 [[lean_lib]]
 name = "TauCeti"
+globs = ["TauCeti.+"]
 
-# The development.  One namespace, one module per step; new chapters are added as
-# further `Hyp*` modules (the campaign numbered them consecutively) plus their own
-# `comparator/chN/` directory.
+# The development.  One namespace, one module per proof step (`A`, `Galo`, `Hyp*`).
 [[lean_lib]]
 name = "L20261018"
+globs = ["L20261018.+"]
 
 # Comparator inputs: comparator/{ch3,ch4,ch4u}/{Challenge,Solution,config.json}.
-# Chapter 3: 14 theorems; chapter 4: 6 (paper hypothesis level) and 7 (unconditional).
+#   ch3   chapter 3, 14 theorems
+#   ch4   chapter 4, 6 theorems, paper hypothesis level (takes `d`)
+#   ch4u  chapter 4, 7 theorems, unconditional (`d` is constructed)
 [[lean_lib]]
 name = "comparator"
-globs = ["comparator", "comparator.+"]
+globs = ["comparator.+"]

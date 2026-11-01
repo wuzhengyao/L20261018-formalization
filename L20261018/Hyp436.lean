@@ -1,4 +1,4 @@
-import Hyp435
+import L20261018.Hyp435
 
 /-!
 # S39 第 10 轮（B 第 6 步）：**`tg` 的定义层 ＋ NSW 的 (i)(ii)**（`Hyp436`）

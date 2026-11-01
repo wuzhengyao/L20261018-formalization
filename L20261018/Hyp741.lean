@@ -1,5 +1,5 @@
-import Hyp737
-import Hyp740
+import L20261018.Hyp737
+import L20261018.Hyp740
 
 /-!
 # S67 R1：分片 **4d 组装收官** —— `∂² ∘ Inf₂ = 0`（C4 的核心）

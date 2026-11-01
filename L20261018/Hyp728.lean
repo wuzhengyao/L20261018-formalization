@@ -1,4 +1,4 @@
-import Hyp727
+import L20261018.Hyp727
 
 /-!
 # S65 R1：分片 **4b** —— GS `lemma-coinduced-invariants`

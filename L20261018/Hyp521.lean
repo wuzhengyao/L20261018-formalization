@@ -1,4 +1,4 @@
-import Hyp520
+import L20261018.Hyp520
 import TauCeti.RingTheory.RootsOfUnity.ZMod
 
 /-!

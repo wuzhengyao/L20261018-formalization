@@ -1,5 +1,5 @@
-import Hyp526
-import Hyp319
+import L20261018.Hyp526
+import L20261018.Hyp319
 
 /-!
 # S49 R14：**唯一缺口 `(R2)` 的精确边界** —— 残余恰为 `dim ker v̄ ≥ 2`

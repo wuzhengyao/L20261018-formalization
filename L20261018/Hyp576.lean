@@ -1,4 +1,4 @@
-import Hyp575
+import L20261018.Hyp575
 import TauCeti.RepresentationTheory.Homological.ContCohomology.ContinuousCohomologyIso
 import TauCeti.RepresentationTheory.Homological.ContCohomology.DegreeZero
 

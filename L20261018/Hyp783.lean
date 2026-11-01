@@ -1,4 +1,4 @@
-import Hyp782
+import L20261018.Hyp782
 
 /-!
 # S74 R9：`∂²` 单射的机检归约 —— **只需 `ker contM_coeffMap = 0`**

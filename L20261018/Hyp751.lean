@@ -1,5 +1,5 @@
-import Hyp750
-import Hyp743
+import L20261018.Hyp750
+import L20261018.Hyp743
 
 /-!
 # S68 R8：A-1 第二半 —— 系数桥 `ZMod p → M^I`

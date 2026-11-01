@@ -1,4 +1,4 @@
-import Hyp756
+import L20261018.Hyp756
 
 /-!
 # S69 R3：A-2 **收口** —— `hd_infl` 的最终形态（不再带 `hpq`）

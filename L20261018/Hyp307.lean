@@ -1,4 +1,4 @@
-import Hyp306
+import L20261018.Hyp306
 
 /-!
 # R1198（`ValCompat` 非完备见证 · **收官**：`∃ v, ValCompat v`）

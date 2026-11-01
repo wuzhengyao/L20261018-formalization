@@ -1,5 +1,5 @@
-import Hyp383
-import Hyp429
+import L20261018.Hyp383
+import L20261018.Hyp429
 
 /-!
 # S39 第 4 轮：**去掉 `[Finite (ResidueField)]`** —— `UnitsCupVanish` 的真陈述（`Hyp430`）

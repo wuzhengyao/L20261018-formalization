@@ -1,10 +1,10 @@
-import Hyp156
-import Hyp153
-import Hyp117
-import Hyp119
-import Hyp135
-import Hyp137
-import Hyp138
+import L20261018.Hyp156
+import L20261018.Hyp153
+import L20261018.Hyp117
+import L20261018.Hyp119
+import L20261018.Hyp135
+import L20261018.Hyp137
+import L20261018.Hyp138
 
 /-!
 # R1013：`∂₂` 的**精确化** —— 11 字段结构 ⟺ **两条剩余事实**

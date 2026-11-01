@@ -1,4 +1,4 @@
-import Hyp557
+import L20261018.Hyp557
 
 /-!
 # S46 R6：★★★ **`contInvB` 的逐点形态** ＋ **下降映射的良定义性**

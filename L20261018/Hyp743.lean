@@ -1,5 +1,5 @@
-import Hyp742
-import Hyp724
+import L20261018.Hyp742
+import L20261018.Hyp724
 
 /-!
 # S67 R2：**C4 战役级收口** —— `deltaTwoCarrierInertia ∘ Inf₂ = 0`

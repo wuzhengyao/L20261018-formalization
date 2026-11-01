@@ -1,4 +1,4 @@
-import Hyp568
+import L20261018.Hyp568
 
 /-!
 # S46 R17：★★★ **`hK` 的内容层**：`e (contInvIncl a) = unit a`

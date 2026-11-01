@@ -1,4 +1,4 @@
-import Hyp802
+import L20261018.Hyp802
 import TauCeti.FieldTheory.GaloisCohomology.Hilbert90
 import TauCeti.FieldTheory.GaloisCohomology.Kummer
 

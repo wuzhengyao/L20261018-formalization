@@ -1,4 +1,4 @@
-import Hyp482
+import L20261018.Hyp482
 
 /-!
 # S40 R23：★ **动作 A 第三段完成** —— `integralBockstein` 的 range 引理

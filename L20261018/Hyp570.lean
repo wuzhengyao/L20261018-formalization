@@ -1,4 +1,4 @@
-import Hyp569
+import L20261018.Hyp569
 
 /-!
 # S46 R18：★★★★ **右格收口** —— `hK` 已证 ⟹ `T ≅ CoindQuotient (Γ⧸I) ⊥ μ_p` 无条件

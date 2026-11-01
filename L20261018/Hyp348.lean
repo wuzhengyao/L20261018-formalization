@@ -1,4 +1,4 @@
-import Hyp347
+import L20261018.Hyp347
 import Mathlib.Algebra.Field.ZMod
 
 /-!

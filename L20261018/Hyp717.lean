@@ -1,4 +1,4 @@
-import Hyp716
+import L20261018.Hyp716
 
 /-!
 # S64 R4：**C2-D 步** —— `Inf : H¹(G⧸H, C^H) ≅ H¹(G, C)`（C 步之后去假设）

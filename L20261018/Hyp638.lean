@@ -1,4 +1,4 @@
-import Hyp637
+import L20261018.Hyp637
 import TauCeti.FieldTheory.GaloisCohomology.Kummer
 
 /-!

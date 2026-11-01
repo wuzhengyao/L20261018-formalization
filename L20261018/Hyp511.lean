@@ -1,4 +1,4 @@
-import Hyp505
+import L20261018.Hyp505
 import TauCeti.NumberTheory.LocalField.Unramified.Inertia.SeparableClosure
 
 /-!

@@ -1,5 +1,5 @@
-import Hyp361
-import Hyp355
+import L20261018.Hyp361
+import L20261018.Hyp355
 
 /-!
 # R1273（S36 C 项）：`FiniteDimensional (GaloBase.V 𝔽₇((t)) 3)` ⟹ **4.2 无条件**

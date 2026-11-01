@@ -1,4 +1,4 @@
-import Hyp519
+import L20261018.Hyp519
 
 /-!
 # S43 R25（**B1 闭合**）：`Finite (H¹(I, μ_p))` —— 目标里的 B1 原话

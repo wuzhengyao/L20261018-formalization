@@ -1,5 +1,5 @@
-import Hyp201
-import Hyp167
+import L20261018.Hyp201
+import L20261018.Hyp167
 
 /-!
 # R1055（**S29 · ④.2 收口（去假设）**）：模型域性从假设变定理

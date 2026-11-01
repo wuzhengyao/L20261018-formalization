@@ -1,4 +1,4 @@
-import Hyp472
+import L20261018.Hyp472
 
 /-!
 # S40 R12：Kummer 系数映射的 `G`-等变性 ＋ `ofDiscreteModule` 包装 ⟹ **`∂₂`-候选**

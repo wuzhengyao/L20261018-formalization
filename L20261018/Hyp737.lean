@@ -1,5 +1,5 @@
-import Hyp736
-import Hyp733
+import L20261018.Hyp736
+import L20261018.Hyp733
 
 /-!
 # S66 R6：4d 的**代数收尾格** —— `contM_coeffMap` 杀死 `coeffMap ι` 的像

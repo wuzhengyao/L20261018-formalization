@@ -1,4 +1,4 @@
-import Hyp777
+import L20261018.Hyp777
 
 /-!
 # S74 R4：**(甲1) 的输入降为「`H¹(Γ⧸I,ℤ/p)` 非零」**——`inflToVKG` 单射

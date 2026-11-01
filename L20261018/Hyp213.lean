@@ -1,5 +1,5 @@
-import Hyp212
-import Hyp210
+import L20261018.Hyp212
+import L20261018.Hyp210
 
 /-!
 # R1077（**★ (R2) 建造 H-5-1 完成**）：GS 6.8.5 的短正合列 `0 → A → M^G(A) → C → 0` 与其零调性

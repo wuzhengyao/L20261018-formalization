@@ -1,4 +1,4 @@
-import Hyp761
+import L20261018.Hyp761
 
 /-!
 # S72 R2：W4 的**具名假设登记**（`PROMPT-S72` §0bis 第 4 条授权的回退）

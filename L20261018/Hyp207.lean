@@ -1,7 +1,7 @@
-import Hyp205
-import Hyp126
-import Hyp81
-import Hyp84
+import L20261018.Hyp205
+import L20261018.Hyp126
+import L20261018.Hyp81
+import L20261018.Hyp84
 
 /-!
 # R1063（**★ 结构统一**）：`(R1-σ)` 的残余 **就是** R970 的 T1 桥

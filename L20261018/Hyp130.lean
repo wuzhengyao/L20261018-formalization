@@ -1,5 +1,5 @@
-import Hyp129
-import Hyp123
+import L20261018.Hyp129
+import L20261018.Hyp123
 
 /-!
 # R973：`hUU` 归约到**一条纯线性代数事实**（`\ker\bar v` 内任两元线性相关）

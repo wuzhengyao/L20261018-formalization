@@ -1,4 +1,4 @@
-import Hyp233
+import L20261018.Hyp233
 
 /-!
 # R1104（**★★ 修正 R1103 的具名假设：`InnerConjTrivial` 只能对 `g ∈ S` 陈述**）

@@ -1,4 +1,4 @@
-import Hyp577
+import L20261018.Hyp577
 
 /-!
 # S47 R6：★★★★ **γ 完成** —— `H1` 上的 `(Γ⧸I)`-`DistribMulAction` 与 `M` 的商群等变性

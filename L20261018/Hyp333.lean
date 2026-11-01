@@ -1,4 +1,4 @@
-import Hyp332
+import L20261018.Hyp332
 
 /-!
 # R1239（S34 第 11 轮）：**两套赋值桥** —— `ValCompat (normalizedValuation)` at `ℚ_[7]`

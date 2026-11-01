@@ -1,4 +1,4 @@
-import Hyp715
+import L20261018.Hyp715
 
 /-!
 # S64 R18：GS `lemma-coinduced-invariants` 的**前进侧**

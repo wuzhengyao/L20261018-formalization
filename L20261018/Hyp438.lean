@@ -1,4 +1,4 @@
-import Hyp437
+import L20261018.Hyp437
 
 /-!
 # S39 第 12 轮（B 第 8 步）：**NSW 的 `y` 存在**（`Hyp438`）

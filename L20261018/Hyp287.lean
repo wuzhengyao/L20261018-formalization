@@ -1,6 +1,6 @@
-import Hyp286
-import Hyp201
-import Hyp162
+import L20261018.Hyp286
+import L20261018.Hyp201
+import L20261018.Hyp162
 
 /-!
 # R1170（**残余 A 收口：(R1) 的两载体接线**）

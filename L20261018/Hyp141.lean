@@ -1,4 +1,4 @@
-import Hyp140
+import L20261018.Hyp140
 
 /-!
 # R983：**`HenselResidueData` 的结构搬运**（沿载体等价）

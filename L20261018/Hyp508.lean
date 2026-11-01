@@ -1,4 +1,4 @@
-import Hyp504
+import L20261018.Hyp504
 import TauCeti.Topology.Algebra.Group.Profinite.ProP.Procyclic
 
 /-!

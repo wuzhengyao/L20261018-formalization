@@ -1,4 +1,4 @@
-import Hyp146
+import L20261018.Hyp146
 
 /-!
 # R991：**`∅-carrier-bridge` 消除 —— 论文「`rankΦ=2` 与 `rankΦ≥3` 矛盾」在同一 `Φ` 上合成**

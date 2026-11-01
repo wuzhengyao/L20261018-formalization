@@ -1,4 +1,4 @@
-import Hyp734
+import L20261018.Hyp734
 
 /-!
 # S66 R4：分片 **4c-v（第二格）** —— `h1BridgeQ` 与**系数映射**交换

@@ -1,4 +1,4 @@
-import Hyp799
+import L20261018.Hyp799
 
 /-!
 # S78 R1：把 `prop:prelim-residue`(1) 的 `d` **无条件造出来** —— 第 4 章无条件化的最后一段

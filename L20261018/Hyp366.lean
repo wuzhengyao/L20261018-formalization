@@ -1,4 +1,4 @@
-import Hyp365
+import L20261018.Hyp365
 
 /-!
 # R1277（S36 C 项）：`GaloBase` 层 `(kc 2) ∪ (kc π) ≠ 0`

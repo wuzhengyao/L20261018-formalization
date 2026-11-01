@@ -1,4 +1,4 @@
-import Hyp329
+import L20261018.Hyp329
 
 /-!
 # R1236（S34 第 8 轮）：**`FiniteDimensional (ZMod 3) (GaloBase.V ℚ_[7] 3)`** —— `L1` 残余的最后硬缺口

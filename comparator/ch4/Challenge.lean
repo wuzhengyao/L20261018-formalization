@@ -1,7 +1,7 @@
-import Hyp108
-import Hyp149
-import Hyp710
-import Hyp711
+import L20261018.Hyp108
+import L20261018.Hyp149
+import L20261018.Hyp710
+import L20261018.Hyp711
 
 open Lean Elab Command
 

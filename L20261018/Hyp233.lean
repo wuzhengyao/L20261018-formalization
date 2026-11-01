@@ -1,4 +1,4 @@
-import Hyp232
+import L20261018.Hyp232
 
 /-!
 # R1103（**(R2)：把缺口收敛为单条具名假设 `InnerConjTrivial`**）

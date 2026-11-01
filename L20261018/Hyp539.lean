@@ -1,5 +1,5 @@
-import Hyp536
-import Hyp246
+import L20261018.Hyp536
+import L20261018.Hyp246
 
 /-!
 # S44 R1：★★★★★ **`∂₂` 的假设面清零** —— 只剩 `H²(S,A) = 0`，且等变性无条件

@@ -1,4 +1,4 @@
-import Hyp19
+import L20261018.Hyp19
 
 /-!
 # 第 4 章 T1：`lem:basis-change`（第一槽基变换）

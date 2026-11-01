@@ -1,4 +1,4 @@
-import Hyp161
+import L20261018.Hyp161
 
 /-!
 # R1246（S34 第 17 轮）：**用论文的 `∂₂` 两条性质替换 `[Finite (ResidueField)]`**

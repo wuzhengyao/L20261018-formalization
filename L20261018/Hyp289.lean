@@ -1,5 +1,5 @@
-import Hyp288
-import Hyp162
+import L20261018.Hyp288
+import L20261018.Hyp162
 
 /-!
 # R1172（**第 4 章收口：四条定理的 `hfacts` 已消去，唯一假设 = `UnitsCupVanish`**）

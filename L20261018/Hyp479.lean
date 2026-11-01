@@ -1,6 +1,6 @@
-import Hyp478
-import Hyp342
-import Hyp449
+import L20261018.Hyp478
+import L20261018.Hyp342
+import L20261018.Hyp449
 
 /-!
 # S40 R19：★★ **目标钉死** —— 本战役剩下的**唯一**义务是两个杯积公式

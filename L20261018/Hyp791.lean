@@ -1,4 +1,4 @@
-import Hyp790
+import L20261018.Hyp790
 
 /-!
 # S76 R4：**限制的两个桥** —— 显式 `explicitRes1` ↔ 连续 `res`（第 5 步 (a) 的第一块）

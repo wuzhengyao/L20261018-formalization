@@ -1,4 +1,4 @@
-import Hyp558
+import L20261018.Hyp558
 
 /-!
 # S46 R7：★★★ **下降映射（函数层）** —— `contInvB → (Γ⧸I → μ_p)` 及其单射性

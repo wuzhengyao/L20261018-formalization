@@ -1,4 +1,4 @@
-import Hyp380
+import L20261018.Hyp380
 
 /-!
 # R1295（S37 第 3 轮 · `prop:prelim-residue` (2)）：**一般驯符号公式** `eq:prelim-tame`

@@ -1,4 +1,4 @@
-import Hyp574
+import L20261018.Hyp574
 import TauCeti.RepresentationTheory.Homological.ContCohomology.CohomologyComparison
 import TauCeti.RepresentationTheory.Homological.ContCohomology.Conjugation.ConnectingMap
 

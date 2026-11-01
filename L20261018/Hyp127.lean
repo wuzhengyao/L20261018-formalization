@@ -1,5 +1,5 @@
-import Hyp126
-import Hyp46
+import L20261018.Hyp126
+import L20261018.Hyp46
 import TauCeti.RepresentationTheory.Homological.ContCohomology.Cup.TrivialFp.Basic
 
 /-!

@@ -1,6 +1,6 @@
-import Hyp282
-import Hyp158
-import Hyp77
+import L20261018.Hyp282
+import L20261018.Hyp158
+import L20261018.Hyp77
 
 /-!
 # R1159（**第 3 项收尾：`[D] = (a₁)∪(b₁) + (a₂)∪(b₂)` —— `D` 的代数对象与杯积类完全对齐**）

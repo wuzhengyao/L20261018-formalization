@@ -2,3 +2,4 @@
 .lake/
 out/
 *.log
+lake-manifest.json

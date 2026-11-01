@@ -1,6 +1,6 @@
-import Hyp223
-import Hyp315
-import Hyp207
+import L20261018.Hyp223
+import L20261018.Hyp315
+import L20261018.Hyp207
 
 /-!
 # R1224（S34）：**(T1) 去掉完备性** —— `Hyp223` 的收口搬到一般 Hensel 层级

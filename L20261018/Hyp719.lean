@@ -1,5 +1,5 @@
-import Hyp718
-import Hyp717
+import L20261018.Hyp718
+import L20261018.Hyp717
 
 /-!
 # S64 R7：**`∂²` 的前两因子已装配** —— `H²(G,A) ≃+ H¹(G⧸H, C^H)`

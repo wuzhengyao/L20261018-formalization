@@ -1,5 +1,5 @@
-import Hyp517
-import Hyp518
+import L20261018.Hyp517
+import L20261018.Hyp518
 
 /-!
 # S43 R41：★★★★★ **(★) 直接供给 GS 6.8.5 的输入假设**（`cd_ℓ(I) ≤ 1` ⟹ `H^i(I,·) = 0`, `i ≥ 2`）

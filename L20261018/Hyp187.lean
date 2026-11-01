@@ -1,4 +1,4 @@
-import Hyp186
+import L20261018.Hyp186
 
 /-!
 # R1040（**修复 R1039 的空假设**）：元素级 `ValCompat` ＋ 重述受影响的定理

@@ -1,6 +1,6 @@
-import Hyp775
-import Hyp148
-import Hyp334
+import L20261018.Hyp775
+import L20261018.Hyp148
+import L20261018.Hyp334
 
 /-!
 # S74 R2：(甲1) 归约为**一条非零杯积**——`finrank VKG = 1` 只差 `∃ a₁ a₂, cup a₁ a₂ ≠ 0`

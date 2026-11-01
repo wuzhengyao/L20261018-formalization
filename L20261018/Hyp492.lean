@@ -1,4 +1,4 @@
-import Hyp491
+import L20261018.Hyp491
 import TauCeti.RepresentationTheory.Homological.ContCohomology.Coinduced.Acyclic
 import TauCeti.RepresentationTheory.Homological.ContCohomology.Inflation.Basic
 import TauCeti.RepresentationTheory.Homological.ContCohomology.Inflation.ConnectingMap

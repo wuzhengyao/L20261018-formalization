@@ -1,5 +1,5 @@
-import Hyp213
-import Hyp210
+import L20261018.Hyp213
+import L20261018.Hyp210
 import TauCeti.RepresentationTheory.Homological.ContCohomology.TrivialGroup
 
 /-!

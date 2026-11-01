@@ -1,4 +1,4 @@
-import Hyp789
+import L20261018.Hyp789
 
 /-!
 # S76 R3：**第 4 步 —— `contM` 与杯积的相容**（`GAP3-PLAN` §11.3 的第 4 步）

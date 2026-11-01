@@ -1,4 +1,4 @@
-import Hyp685
+import L20261018.Hyp685
 
 /-!
 # S59 R7：**`res` 构造的两个对象 ＋ 最干净的入口条件**（`Finsupp` 版）

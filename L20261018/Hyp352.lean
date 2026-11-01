@@ -1,4 +1,4 @@
-import Hyp351
+import L20261018.Hyp351
 import Mathlib.Topology.Algebra.Valued.ValuativeRel
 import Mathlib.RingTheory.PowerSeries.Inverse
 import Mathlib.RingTheory.AdicCompletion.Completeness

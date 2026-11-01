@@ -1,4 +1,4 @@
-import Hyp374
+import L20261018.Hyp374
 
 /-!
 # R1288（S36 · GS §6.8 战役 #2）：`K_nr` 的定义（一般 Hensel DVR，不用局部域假设）

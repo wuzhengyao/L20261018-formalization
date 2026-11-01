@@ -1,4 +1,4 @@
-import Hyp792
+import L20261018.Hyp792
 
 /-!
 # S77 R1：第 5 步 (a) **第三块** —— `res_I (e₀ (Inf z)) = e₀_I z`

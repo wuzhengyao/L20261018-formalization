@@ -1,5 +1,5 @@
-import Hyp751
-import Hyp743
+import L20261018.Hyp751
+import L20261018.Hyp743
 
 /-!
 # S68 R9：A-1 第二半 —— **显式模型里的系数桥**（绕开 `TopRep` 系数，见 `S68-HYP744-PLAN.md` §8）

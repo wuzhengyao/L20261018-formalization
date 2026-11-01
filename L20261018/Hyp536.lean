@@ -1,5 +1,5 @@
-import Hyp534
-import Hyp239
+import L20261018.Hyp534
+import L20261018.Hyp239
 
 /-!
 # S43 R48：★★★★★ **`∂₂` 的 `hcd` 是空假设** —— `n = 0` 分支上 `∀ i < 0` 无人可用

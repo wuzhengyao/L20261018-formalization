@@ -1,5 +1,5 @@
-import Hyp139
-import Hyp111
+import L20261018.Hyp139
+import L20261018.Hyp111
 
 /-!
 # R982：两个载体的**桥的第一段** —— Kummer 类在 `h1ToVEquiv` 下的像

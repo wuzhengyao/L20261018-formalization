@@ -1,4 +1,4 @@
-import Hyp731
+import L20261018.Hyp731
 
 /-!
 # S66 R2：分片 **4c-iv** —— `ι : T → Cᴵ` 与 `δ⁰ ∘ proj_* = 0`

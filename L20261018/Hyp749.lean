@@ -1,5 +1,5 @@
-import Hyp748
-import Hyp187
+import L20261018.Hyp748
+import L20261018.Hyp187
 
 /-!
 # S68 R4：★★★ **`UnramifiedKummer` 在论文口径下（`ValCompat` ＋ `v π = 1`，`v` 任意）**

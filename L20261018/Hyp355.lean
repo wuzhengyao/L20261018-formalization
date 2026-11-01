@@ -1,5 +1,5 @@
-import Hyp354
-import Hyp332
+import L20261018.Hyp354
+import L20261018.Hyp332
 
 /-!
 # R1266（S36 C 项第 8 步之二）：`𝔽₇((t))` 上的 `hne`／`hval`（照 `Hyp331`／`Hyp332` 逐条搬）

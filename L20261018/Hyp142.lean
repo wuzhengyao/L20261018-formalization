@@ -1,4 +1,4 @@
-import Hyp141
+import L20261018.Hyp141
 
 /-!
 # R985：**桥第 2b 段的第一步 —— 配对相容**（`zmodMulPairing_eq_muPairing`）

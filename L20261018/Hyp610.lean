@@ -1,6 +1,6 @@
-import Hyp389
-import Hyp449
-import Hyp609
+import L20261018.Hyp389
+import L20261018.Hyp449
+import L20261018.Hyp609
 import TauCeti.RepresentationTheory.Homological.ContCohomology.Cup.Functoriality
 import TauCeti.RepresentationTheory.Homological.ContCohomology.TrivialGroup
 

@@ -1,5 +1,5 @@
-import Hyp197
-import Hyp163
+import L20261018.Hyp197
+import L20261018.Hyp163
 import TauCeti.RingTheory.Norm.Units
 
 /-!

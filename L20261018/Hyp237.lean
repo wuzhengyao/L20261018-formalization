@@ -1,4 +1,4 @@
-import Hyp236
+import L20261018.Hyp236
 
 /-!
 # R1108（**★★★ (R2)-1 第二块：`δ₀` 在共轭作用下的自然性 —— GS `lemma-conjugation-long-exact` 的抽象侧**）

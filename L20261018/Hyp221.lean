@@ -1,4 +1,4 @@
-import Hyp220
+import L20261018.Hyp220
 
 /-!
 # R1090（**T1 第五归约：模型比对 —— 两侧都写成 `muP.OfDiscrete ∘ explicitMap1`**）

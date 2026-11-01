@@ -1,4 +1,4 @@
-import Hyp554
+import L20261018.Hyp554
 
 /-!
 # S46 R4：★★★★ **`VKG` 的 Kummer 分解 ＋ `kills` 的归约接口**

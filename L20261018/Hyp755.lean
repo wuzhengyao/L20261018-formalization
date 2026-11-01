@@ -1,5 +1,5 @@
-import Hyp754
-import Hyp743
+import L20261018.Hyp754
+import L20261018.Hyp743
 
 /-!
 # S69 R1：`Delta` —— **`∂² (map φ (pair φ id) 2 z) = 0`**（A-1 的最后一次装配）

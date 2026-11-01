@@ -1,5 +1,5 @@
-import Hyp688
-import Hyp127
+import L20261018.Hyp688
+import L20261018.Hyp127
 
 /-!
 # S61 R3：**A2 收口** —— `∪(a, 1−a) = 0`（Steinberg 关系，杯积侧）

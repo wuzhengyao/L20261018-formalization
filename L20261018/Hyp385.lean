@@ -1,4 +1,4 @@
-import Hyp383
+import L20261018.Hyp383
 
 /-!
 # R1299（S37 第 7 轮）：**第 4 章三条定理去掉 `[Finite (ResidueField)]`**

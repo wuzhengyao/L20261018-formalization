@@ -1,4 +1,4 @@
-import Hyp235
+import L20261018.Hyp235
 
 /-!
 # R1107（**★★ (R2)-1 第一块：`Rep k (G ⧸ S)` 结构 —— 由 `innerConjTrivialIn` 导出**）

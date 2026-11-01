@@ -1,5 +1,5 @@
-import Hyp222
-import Hyp206
+import L20261018.Hyp222
+import L20261018.Hyp206
 
 /-!
 # R1092（**★ T1 收口**）

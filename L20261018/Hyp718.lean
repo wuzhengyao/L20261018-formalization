@@ -1,4 +1,4 @@
-import Hyp498
+import L20261018.Hyp498
 
 /-!
 # S64 R6：**C2-F 第一半** —— `δ⁰ : C^H → H¹(H,A)` 是 `G⧸H`-模态射

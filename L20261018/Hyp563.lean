@@ -1,4 +1,4 @@
-import Hyp562
+import L20261018.Hyp562
 
 /-!
 # S46 R11：★★★★★ **`hlc` 已证** —— `IsLocallyConstant (contInvBDescend g)`

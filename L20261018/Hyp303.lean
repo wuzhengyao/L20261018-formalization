@@ -1,5 +1,5 @@
-import Hyp302
-import Hyp289
+import L20261018.Hyp302
+import L20261018.Hyp289
 
 /-!
 # R1193（**收口完成：`UnitsCupVanish` 无条件 ⟹ `∃ D` 与第 4 章三条无条件**）

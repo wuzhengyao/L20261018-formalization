@@ -1,6 +1,6 @@
-import Hyp109
-import Hyp101
-import Hyp103
+import L20261018.Hyp109
+import L20261018.Hyp101
+import L20261018.Hyp103
 
 /-!
 # 第 4 章 T3 论文层：`lem:ramified-vanishing` 在论文真实对象上

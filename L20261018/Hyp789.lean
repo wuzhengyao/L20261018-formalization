@@ -1,4 +1,4 @@
-import Hyp788
+import L20261018.Hyp788
 
 /-!
 # S76 R2：**把第 3 步接到 `∂²`** —— `∂²(π ⌣ Inf y) = contM (z₀ ⌣ y)` 的显式取值

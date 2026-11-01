@@ -1,5 +1,5 @@
-import Hyp319
-import Hyp302
+import L20261018.Hyp319
+import L20261018.Hyp302
 
 /-!
 # R1226（S34）：**第四章三条 ＋ `∃D` —— 去掉 `hbridge`，且无完备性**

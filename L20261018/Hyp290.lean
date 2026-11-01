@@ -1,4 +1,4 @@
-import Hyp288
+import L20261018.Hyp288
 import TauCeti.NumberTheory.ClassFieldTheory.Brauer.RootsOfUnity
 
 /-!

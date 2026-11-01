@@ -1,4 +1,4 @@
-import Hyp280
+import L20261018.Hyp280
 
 /-!
 # R1157（**第 5 项第三块：`tame_pi_u` 冗余 ＋ 一般 Hensel 缺口完全归约为 `TameResidueFacts`**）

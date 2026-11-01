@@ -1,7 +1,7 @@
-import Hyp762
+import L20261018.Hyp762
 -- 只为让 `routes_check.py` 的「最新模块」能解析 R4（`Hyp763`／`Hyp764`）的 evidence；
 -- 本件数学上不依赖它们。
-import Hyp764
+import L20261018.Hyp764
 
 /-!
 # S72 R5：`F5` 的第一步 —— **`H¹(I,ℤ/p) ≅ ℤ/p` 作为 `ℤ/p`-模**

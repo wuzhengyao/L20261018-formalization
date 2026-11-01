@@ -1,4 +1,4 @@
-import Hyp563
+import L20261018.Hyp563
 
 /-!
 # S46 R12：★★★★★ **`TopRep` 同构** —— `Bᴵ ≅ DiscreteCoind (Γ⧸I) ⊥ μ_p`（作为 `Γ⧸I`-模）

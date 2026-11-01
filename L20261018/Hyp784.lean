@@ -1,4 +1,4 @@
-import Hyp783
+import L20261018.Hyp783
 import TauCeti.RepresentationTheory.Homological.ContCohomology.Cup.ConnectingMap
 import TauCeti.RepresentationTheory.Homological.ContCohomology.ConnectingMapComparison
 import TauCeti.RepresentationTheory.Homological.ContCohomology.Cup.Comparison

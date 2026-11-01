@@ -1,4 +1,4 @@
-import Hyp471
+import L20261018.Hyp471
 
 /-!
 # S40 R11：Kummer 系数 `μ_p ≅ KummerCoeff K p` **打到 `K_nr^×`** 的系数映射

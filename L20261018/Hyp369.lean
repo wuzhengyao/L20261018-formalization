@@ -1,5 +1,5 @@
-import Hyp368
-import Hyp342
+import L20261018.Hyp368
+import L20261018.Hyp342
 
 /-!
 # R1281（S36 C 项）：4.4 的 `hval` ＋「以 `hK1` 为显式假设」的 4.4

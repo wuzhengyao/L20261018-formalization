@@ -1,4 +1,4 @@
-import Hyp108
+import L20261018.Hyp108
 
 /-!
 # 第 4 章 T2（抽象层）：`ResidueCupData` —— §2.4 工具的形状 —— 与 T3 的抽象内核

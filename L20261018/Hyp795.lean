@@ -1,4 +1,4 @@
-import Hyp794
+import L20261018.Hyp794
 
 /-!
 # S77 R3：第 5 步 (a) 的**结论** —— `contM z` 是 `H¹(I, μ_p)` 的**生成元**

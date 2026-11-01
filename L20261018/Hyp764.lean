@@ -1,4 +1,4 @@
-import Hyp763
+import L20261018.Hyp763
 
 /-!
 # S72 R4：第 4 章**假设去膨胀审计** —— 把 `D` 换成第 2 章 `prop:prelim-residue`

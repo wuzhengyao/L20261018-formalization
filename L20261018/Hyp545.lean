@@ -1,4 +1,4 @@
-import Hyp544
+import L20261018.Hyp544
 
 /-!
 # S45 R5：★★★★★ **(d) 完成** —— `∂₂ ∘ Inf = 0`（`Inf₂ ≫ deltaTwo_minimal = 0`）

@@ -1,5 +1,5 @@
-import Hyp691
-import Hyp449
+import L20261018.Hyp691
+import L20261018.Hyp449
 
 /-!
 # S61 R5：**(G2) 字面闭合** —— `Ch4TameSymbolHyp` 由 `MerkurjevSuslin` 推出

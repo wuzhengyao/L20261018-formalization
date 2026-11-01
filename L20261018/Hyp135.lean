@@ -1,5 +1,5 @@
-import Hyp134
-import Hyp123
+import L20261018.Hyp134
+import L20261018.Hyp123
 
 /-!
 # R977：**T3 的 `hUU` 假设解除** —— `\ker\bar v` 上的杯积直接为零

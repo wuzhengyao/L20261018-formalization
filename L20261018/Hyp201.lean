@@ -1,6 +1,6 @@
-import Hyp200
-import Hyp164
-import Hyp163
+import L20261018.Hyp200
+import L20261018.Hyp164
+import L20261018.Hyp163
 
 /-!
 # R1054（**S29 · ④.2 收口 —— (R1) 机检**）：`residuePhi` 单射

@@ -1,5 +1,5 @@
-import Hyp732
-import Hyp722
+import L20261018.Hyp732
+import L20261018.Hyp722
 
 /-!
 # S66 R2b：分片 **4c-iv 的战役级收口** —— `contM ∘ ι = 0`

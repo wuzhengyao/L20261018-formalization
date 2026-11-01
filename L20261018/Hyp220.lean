@@ -1,4 +1,4 @@
-import Hyp219
+import L20261018.Hyp219
 
 /-!
 # R1089（**T1 第四归约：群变元完全消掉 —— `bridgeKc` 的 `G_m`-绕行被消去**）

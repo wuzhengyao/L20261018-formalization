@@ -1,5 +1,5 @@
-import Hyp730
-import Hyp728
+import L20261018.Hyp730
+import L20261018.Hyp728
 
 /-!
 # S66 R1：分片 **4c-iii** —— `SES1` 的 `(δ¹)` 是**同构**（GS (6.17) 的中项零调）

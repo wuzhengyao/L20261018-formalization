@@ -1,4 +1,4 @@
-import Hyp293
+import L20261018.Hyp293
 
 /-!
 # R1177（**去掉「不可约」输入：Capelli 判据 ⟹ `X^p − C w` 不可约 ⟺ `w` 不是 `p` 次幂**）

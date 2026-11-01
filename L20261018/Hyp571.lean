@@ -1,4 +1,4 @@
-import Hyp570
+import L20261018.Hyp570
 
 /-!
 # S46 R19：★★★ **`Inf_C⁻¹` 的假设**：`Subsingleton (H¹(I, C))`

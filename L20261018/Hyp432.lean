@@ -1,5 +1,5 @@
-import Hyp431
-import Hyp389
+import L20261018.Hyp431
+import L20261018.Hyp389
 
 /-!
 # S39 第 6 轮（B 第 2 步）：**把 B 钉成一条等价**（`Hyp432`）

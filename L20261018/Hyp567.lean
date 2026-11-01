@@ -1,4 +1,4 @@
-import Hyp566
+import L20261018.Hyp566
 
 /-!
 # S46 R15：★★★ **`Aᴵ ≅ A` 的 `TopRep` 层完成**

@@ -55,10 +55,18 @@ missing from `ch4`), whether the hypotheses are discharged, or whether the hypot
 classes are inhabited (the Hensel setup is assumed; a concrete instance
 `L20261018.FqXt.orth_eq_bot_uncond`, `ZMod 7((t))` with `p = 3`, lives in the sources).
 
-Recorded passes: `ch3` 14/14, `ch4` 6/6 (2026-11-01), `ch4u` 7/7 (2026-11-08), all rebuilt
-from the shipped sources. (An earlier `ch3` record was **not** reproducible: one artefact
-had been compiled under a module named `scratch`, leaving a `_scratch` instance suffix that
-`#check` cannot see but a kernel replay cannot survive. Hence: ships sources, you build.)
+Recorded passes, all three **rebuilt from the shipped sources** on 2026-11-08 with Lean
+`v4.35.0` (`lake build` → 10260 jobs; then one comparator run per group):
+
+| group | targets | |
+|---|---|---|
+| `ch3` | 14 | `Your solution is okay!` |
+| `ch4` | 6 | `Your solution is okay!` |
+| `ch4u` | 7 | `Your solution is okay!` |
+
+(An earlier `ch3` record was **not** reproducible: one artefact had been compiled under a
+module named `scratch`, leaving a `_scratch` instance suffix that `#check` cannot see but a
+kernel replay cannot survive. Hence: ships sources, you build.)
 
 ## Layout
 

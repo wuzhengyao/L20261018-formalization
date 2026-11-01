@@ -1,5 +1,5 @@
-import Hyp302
-import Hyp120
+import L20261018.Hyp302
+import L20261018.Hyp120
 
 /-!
 # S59 R2：**`κ` 的两条平凡性** —— `(K1)`（Hensel）＋ `(K2)`（`p` 奇）—— `(R2)` 的 Steinberg 路线的基建

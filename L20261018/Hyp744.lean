@@ -1,5 +1,5 @@
-import Hyp610
-import Hyp743
+import L20261018.Hyp610
+import L20261018.Hyp743
 
 /-!
 # S67 R9：**具名假设 `UnramifiedKummer`**（不通歧 Kummer 理论）—— C3/C4/F5 共用的唯一未形式化件

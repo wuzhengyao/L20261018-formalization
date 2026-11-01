@@ -1,4 +1,4 @@
-import Hyp205
+import L20261018.Hyp205
 import Mathlib.LinearAlgebra.FiniteDimensional.Basic
 import Mathlib.LinearAlgebra.Span.Defs
 

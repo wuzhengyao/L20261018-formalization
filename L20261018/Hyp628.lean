@@ -1,4 +1,4 @@
-import Hyp627
+import L20261018.Hyp627
 import TauCeti.RepresentationTheory.Homological.ContCohomology.RestrictScalars
 import TauCeti.RepresentationTheory.Homological.ContCohomology.CohomologicalDimension.Basic
 

@@ -1,5 +1,5 @@
-import Hyp432
-import Hyp138
+import L20261018.Hyp432
+import L20261018.Hyp138
 
 /-!
 # S39 第 7 轮（B 第 3 步）：**完备情形的真正引擎是一维性，不是有限性**（`Hyp433`）

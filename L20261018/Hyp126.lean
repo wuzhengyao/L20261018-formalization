@@ -1,5 +1,5 @@
-import Hyp125
-import Hyp45
+import L20261018.Hyp125
+import L20261018.Hyp45
 set_option maxHeartbeats 2000000
 open TauCeti ContCohomology ValuativeRel IsLocalRing IsNonarchimedeanLocalField
 namespace L20261018

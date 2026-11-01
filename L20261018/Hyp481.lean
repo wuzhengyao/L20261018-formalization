@@ -1,5 +1,5 @@
-import Hyp480
-import Hyp379
+import L20261018.Hyp480
+import L20261018.Hyp379
 
 /-!
 # S40 R21：**动作 A 的前两步** —— `∂₂` 的 `H²(G,ℤ)` 形式（`knrResidueMapInt`）

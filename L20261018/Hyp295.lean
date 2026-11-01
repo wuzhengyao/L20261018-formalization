@@ -1,4 +1,4 @@
-import Hyp294
+import L20261018.Hyp294
 
 /-!
 # R1178（**`UnitsCupVanish` 的最终形态：唯一假设 = `𝒪^×` 的一条有限性陈述**）

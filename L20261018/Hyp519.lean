@@ -1,5 +1,5 @@
-import Hyp518
-import Hyp517
+import L20261018.Hyp518
+import L20261018.Hyp517
 
 /-!
 # S43 R24（**B1 的第二步**）：`Hom(I, μ_p) ≅ Hom(I_t, μ_p)` —— GMS (7.3) 的第一等号

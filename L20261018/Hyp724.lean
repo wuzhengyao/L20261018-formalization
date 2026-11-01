@@ -1,5 +1,5 @@
-import Hyp723
-import Hyp380
+import L20261018.Hyp723
+import L20261018.Hyp380
 
 /-!
 # S64 R13：**`hC` 在惯性群上兑现**（`Hyp723` 的第一条假设消失）

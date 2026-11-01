@@ -1,4 +1,4 @@
-import Hyp473
+import L20261018.Hyp473
 
 /-!
 # S40 R14：**系数范畴桥的入口** —— `KummerCoeff` 是 `ZMod p`-模 ＋ 桥的可用性锁定

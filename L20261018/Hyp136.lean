@@ -1,6 +1,6 @@
-import Hyp135
-import Hyp110
-import Hyp119
+import L20261018.Hyp135
+import L20261018.Hyp110
+import L20261018.Hyp119
 
 /-!
 # R978：**`HenselResidueData` 的 11 个字段里 9 个由定理供给** —— `tame_uu` 字段摘除

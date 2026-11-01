@@ -1,5 +1,5 @@
-import Hyp200
-import Hyp201
+import L20261018.Hyp200
+import L20261018.Hyp201
 
 /-!
 # R1061（**S29 · ④.2 收口（缩放版）**）：`(R1)` 只需**缩放**载体桥

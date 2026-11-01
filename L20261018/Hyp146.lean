@@ -1,5 +1,5 @@
-import Hyp145
-import Hyp112
+import L20261018.Hyp145
+import L20261018.Hyp112
 
 /-!
 # R990：**T5（`corollary_4_4`）去 `D`** ＋ `d_F = d_K + 1` 的无条件化

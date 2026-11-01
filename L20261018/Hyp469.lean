@@ -1,4 +1,4 @@
-import Hyp468
+import L20261018.Hyp468
 
 /-!
 # S40 R8：`ContinuousSMul G ↥K_nr`（`RECON-R3` §85.4 第 4 步）

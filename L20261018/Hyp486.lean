@@ -1,4 +1,4 @@
-import Hyp485
+import L20261018.Hyp485
 
 /-!
 # S40 R28：动作 A4b 第一步 —— **`GaloBase.H2` 到 `H²(ℤ, μ_p)` 的一条 `AddEquiv`**

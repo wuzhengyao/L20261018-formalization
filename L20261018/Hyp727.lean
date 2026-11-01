@@ -1,4 +1,4 @@
-import Hyp726
+import L20261018.Hyp726
 
 /-!
 # S65 R1：分片 **4a** —— GS `lemma-coinduced-invariants` 的**反向侧 ＋ 打包**

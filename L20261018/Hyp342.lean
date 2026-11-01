@@ -1,5 +1,5 @@
-import Hyp321
-import Hyp341
+import L20261018.Hyp321
+import L20261018.Hyp341
 
 /-!
 # R1251（S35 入口 B）：把 `[Finite (ResidueField)]` 换成论文的 `∂₂` 两条性质

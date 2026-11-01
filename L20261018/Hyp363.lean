@@ -1,5 +1,5 @@
-import Hyp362
-import Hyp145
+import L20261018.Hyp362
+import L20261018.Hyp145
 
 /-!
 # R1274（S36 C 项 基建）：**`θ`-桥去 `[IsNonarchimedeanLocalField]`**

@@ -1,4 +1,4 @@
-import Hyp305
+import L20261018.Hyp305
 
 /-!
 # R1197（`ValCompat` 非完备见证 · 第 3 块：`ℤ`-值函数与它的乘性）

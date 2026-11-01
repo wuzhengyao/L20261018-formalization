@@ -1,4 +1,4 @@
-import Hyp487
+import L20261018.Hyp487
 
 /-!
 # S41 R1（续）：动作 A4b-2 第二段 —— **系数桥 `H¹(ℤ, ℤ/p) ≃+ GaloBase.V`** 与**约化**

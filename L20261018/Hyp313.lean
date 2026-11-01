@@ -1,5 +1,5 @@
-import Hyp312
-import Hyp80
+import L20261018.Hyp312
+import L20261018.Hyp80
 
 /-!
 # R1209（`kc = c • kcCanonical`：标量从系数识别传到 Kummer 类）

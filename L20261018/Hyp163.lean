@@ -1,6 +1,6 @@
-import Hyp161
-import Hyp162
-import Hyp113
+import L20261018.Hyp161
+import L20261018.Hyp162
+import L20261018.Hyp113
 import TauCeti.RingTheory.Henselian.Basic
 
 /-!

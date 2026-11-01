@@ -1,4 +1,4 @@
-import Hyp741
+import L20261018.Hyp741
 
 /-!
 # S67 R1b：**离散码域上的 `ContinuousSMul` 判据**（`ContinuousSMul (G⧸I) (TBI S I)` 的前置）

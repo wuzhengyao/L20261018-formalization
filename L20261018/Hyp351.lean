@@ -1,4 +1,4 @@
-import Hyp350
+import L20261018.Hyp350
 import Mathlib.RingTheory.LaurentSeries
 
 /-!

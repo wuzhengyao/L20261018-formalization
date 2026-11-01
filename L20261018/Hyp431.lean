@@ -1,6 +1,6 @@
-import Hyp389
-import Hyp429
-import Hyp342
+import L20261018.Hyp389
+import L20261018.Hyp429
+import L20261018.Hyp342
 
 /-!
 # S39 第 5 轮（B 第 1 步）：**把 B 归约成一条 `Disjoint`**（`Hyp431`）

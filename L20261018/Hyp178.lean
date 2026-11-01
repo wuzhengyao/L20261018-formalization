@@ -1,4 +1,4 @@
-import Hyp177
+import L20261018.Hyp177
 
 /-!
 # R1031（路径 A · **·b·iii ① 的解锁**）：mathlib 已有范数–基变换桥，`A_𝒪` 的 `Free`/`Finite` 白拿

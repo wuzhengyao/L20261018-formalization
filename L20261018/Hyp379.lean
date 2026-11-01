@@ -1,4 +1,4 @@
-import Hyp378
+import L20261018.Hyp378
 import TauCeti.RepresentationTheory.Homological.ContCohomology.Bockstein.Rational
 
 /-!

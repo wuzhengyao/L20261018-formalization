@@ -1,4 +1,4 @@
-import Hyp288
+import L20261018.Hyp288
 
 /-!
 # R1175（**路线更正后的第一块：把 `UnitsCupVanish` 归约到两条显式范数计算 ＋ 一条 `𝒪^×` 有限性**）

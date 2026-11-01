@@ -1,4 +1,4 @@
-import Hyp484
+import L20261018.Hyp484
 
 /-!
 # S40 R26：`H²(G, μ_p)` 是 `p`-挠（A4a）

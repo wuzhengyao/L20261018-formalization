@@ -1,4 +1,4 @@
-import Hyp541
+import L20261018.Hyp541
 
 /-!
 # S45 R2：★★★★ **造出 GS 的 `T`** —— `T = coker(A^S ↪ (Coind A)^S)`，`i : T ↪ C^S`

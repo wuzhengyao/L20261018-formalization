@@ -1,5 +1,5 @@
-import Hyp617
-import Hyp187
+import L20261018.Hyp617
+import L20261018.Hyp187
 import TauCeti.NumberTheory.LocalField.NormalizedValuation
 
 /-!

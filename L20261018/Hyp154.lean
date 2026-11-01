@@ -1,5 +1,5 @@
-import Hyp153
-import Hyp101
+import L20261018.Hyp153
+import L20261018.Hyp101
 
 /-!
 # R1002：**4.3(1) 只依赖 §2.4** —— `U^⊥ = N = 0`（`D` 作输入，不依赖完备构造）

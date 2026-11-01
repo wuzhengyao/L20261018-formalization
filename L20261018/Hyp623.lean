@@ -1,4 +1,4 @@
-import Hyp622
+import L20261018.Hyp622
 
 /-!
 # S51 R16：`FbarValuationHyp₄`（加「值保持」）＋ **惯性子群 `I ≤ Γ_F` 机检成立**

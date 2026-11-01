@@ -1,4 +1,4 @@
-import Hyp182
+import L20261018.Hyp182
 
 /-!
 # R1036（路径 A · **·b·iii ②（二）b**）：`leftMulMatrix` 的逐元公式（组装完成）

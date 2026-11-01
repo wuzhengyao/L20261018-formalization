@@ -1,4 +1,4 @@
-import Hyp477
+import L20261018.Hyp477
 
 /-!
 # S40 R18：★ **桥链闭合** —— `KummerCoeff F p ≅ μ_p(F)` 系数同构 ＋ `H^i` 层同构

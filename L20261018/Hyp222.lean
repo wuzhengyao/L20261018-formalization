@@ -1,4 +1,4 @@
-import Hyp221
+import L20261018.Hyp221
 
 /-!
 # R1091（**T1 第六归约：`bridgeKc` 侧也写成 `muP.OfDiscrete ∘ explicitMap1`** —— 两侧同形）

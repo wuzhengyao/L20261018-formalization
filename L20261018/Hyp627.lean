@@ -1,4 +1,4 @@
-import Hyp626
+import L20261018.Hyp626
 
 /-!
 # S52 R20：**N1 ＋ N2** —— `φ : Γ_F →* MulAut κ̄` 构造出来，且 `ker φ = I`

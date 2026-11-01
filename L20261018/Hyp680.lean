@@ -1,4 +1,4 @@
-import Hyp161
+import L20261018.Hyp161
 
 /-!
 # S59 R1：**驯符号的显式化 ＋ `(R2)` 严格弱于 `residueSpan = ⊥`**（`Hyp680`）

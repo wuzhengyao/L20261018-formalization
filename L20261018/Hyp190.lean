@@ -1,5 +1,5 @@
-import Hyp189
-import Hyp185
+import L20261018.Hyp189
+import L20261018.Hyp185
 
 /-!
 # R1043（路径 A · **S28 第 2 步**）：`N(y) ≡ a₀^p (mod π)`

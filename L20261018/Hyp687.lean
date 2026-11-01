@@ -1,4 +1,4 @@
-import Hyp686
+import L20261018.Hyp686
 
 /-!
 # S59 R9：★★★ **A1 收口** —— `ker (cupLC) ≤ ker (tameLC)` ⟹ `TameSymbolFactors`

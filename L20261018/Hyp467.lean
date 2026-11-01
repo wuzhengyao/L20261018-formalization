@@ -1,4 +1,4 @@
-import Hyp466
+import L20261018.Hyp466
 
 /-!
 # S40 R6：把 GS (6.1) 搬到**正确的** `K_nr` 载体（`Hyp466.KnrSubfield`）上

@@ -1,4 +1,4 @@
-import Hyp729
+import L20261018.Hyp729
 
 /-!
 # S65 R4：分片 **4c-ii** —— GS (6.17) 的 **SES1** 实体

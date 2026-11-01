@@ -1,4 +1,4 @@
-import Hyp325
+import L20261018.Hyp325
 
 /-!
 # R1232（S34 第 4 轮）：**驯符号一般式**（`eq:prelim-tame` 的锁定版本）

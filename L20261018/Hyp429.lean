@@ -1,6 +1,6 @@
-import Hyp342
-import Hyp162
-import Hyp156
+import L20261018.Hyp342
+import L20261018.Hyp162
+import L20261018.Hyp156
 
 /-!
 # S39 第 3 轮：**4.2／4.3(1) 去掉 `[FiniteDimensional (ZMod p) (GaloBase.V F p)]` 绑定**

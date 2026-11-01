@@ -1,8 +1,8 @@
-import Hyp682
-import Hyp681
-import Hyp301
-import Hyp638
-import Hyp163
+import L20261018.Hyp682
+import L20261018.Hyp681
+import L20261018.Hyp301
+import L20261018.Hyp638
+import L20261018.Hyp163
 
 /-!
 # S61 R1：**A3 ＝ `tame(a, 1−a) = 0`**（具体载体，四情形）—— `(G2)` 的义务格 A3

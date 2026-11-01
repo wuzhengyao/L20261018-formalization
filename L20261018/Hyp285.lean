@@ -1,4 +1,4 @@
-import Hyp284
+import L20261018.Hyp284
 
 /-!
 # R1166（**第 5 项组装第四步：`residueSpan = ⊥` 的逻辑骨架**）

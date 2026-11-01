@@ -1,4 +1,4 @@
-import Hyp218
+import L20261018.Hyp218
 
 /-!
 # R1088（**T1 第三归约：群变元抵消 —— `cohomFpMap` 的群变换被消掉**）

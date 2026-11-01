@@ -1,4 +1,4 @@
-import Hyp86
+import L20261018.Hyp86
 
 /-!
 # S62 R28：**4.3(2)** —— 论文 `thm:ramified` 的**第二条**（`rank Φ ≥ 3`）

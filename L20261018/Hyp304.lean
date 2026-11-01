@@ -1,4 +1,4 @@
-import Hyp301
+import L20261018.Hyp301
 
 /-!
 # R1195（`ValCompat` 非完备见证 · 第 1 块：`𝒪[F]` 上的 ℤ-值阶函数）

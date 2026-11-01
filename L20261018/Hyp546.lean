@@ -1,4 +1,4 @@
-import Hyp545
+import L20261018.Hyp545
 
 /-!
 # S45 R6：★★★★ **连续侧载体的机检锁定** ＋ `muP` 是 smooth-discrete（正确的比较假设**可得**）

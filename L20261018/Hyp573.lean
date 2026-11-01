@@ -1,4 +1,4 @@
-import Hyp572
+import L20261018.Hyp572
 
 /-!
 # S46 R21：★★★ **`RestrictedCoindAcyclic` 的非空见证**（KB 规则 L1／L10①）

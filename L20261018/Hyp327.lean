@@ -1,4 +1,4 @@
-import Hyp326
+import L20261018.Hyp326
 
 /-!
 # R1233（S34 第 5 轮）：`prop:prelim-residue`(3) 的**正合／满射／分裂**段

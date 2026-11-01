@@ -1,4 +1,4 @@
-import Hyp128
+import L20261018.Hyp128
 
 /-!
 # R972：路线 B 的收尾正规形 —— `muNRep` 的 `OfDiscrete` 比较 = 换标量 ∘ 显式比较

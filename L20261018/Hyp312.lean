@@ -1,6 +1,6 @@
-import Hyp311
-import Hyp290
-import Hyp207
+import L20261018.Hyp311
+import L20261018.Hyp290
+import L20261018.Hyp207
 
 /-!
 # R1203（`hbridge` 归约为**不含 `redEquiv1` 的单一等式**）

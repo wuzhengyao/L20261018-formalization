@@ -1,4 +1,4 @@
-import Hyp388
+import L20261018.Hyp388
 
 /-!
 # R1303（S37 第 11 轮）：**(R2) 的忠实形态** —— `residueSpan ⊆ ker res`，而非「字面为零」

@@ -1,4 +1,4 @@
-import Hyp787
+import L20261018.Hyp787
 import TauCeti.RepresentationTheory.Homological.ContCohomology.Cup.Inflation
 import TauCeti.RepresentationTheory.Homological.ContCohomology.Inflation.Basic
 

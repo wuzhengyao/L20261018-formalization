@@ -1,5 +1,5 @@
-import Hyp136
-import Hyp117
+import L20261018.Hyp136
+import L20261018.Hyp117
 
 /-!
 # R979：T2／T3 的**线性代数核** —— `cup (·) (π)` 在 `\ker\bar v` 上**非零且单射**

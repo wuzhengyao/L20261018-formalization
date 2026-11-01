@@ -1,5 +1,5 @@
-import Hyp433
-import Hyp448
+import L20261018.Hyp433
+import L20261018.Hyp448
 
 /-!
 # S39 第 23 轮（B 第 19 步）：**把 `∂₂` 登记为具名假设**（`Hyp449`）

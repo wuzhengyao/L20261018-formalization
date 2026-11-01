@@ -1,5 +1,5 @@
-import Hyp516
-import Hyp511
+import L20261018.Hyp516
+import L20261018.Hyp511
 
 /-!
 # S43 R22（**去条件化 Hyp505**）：把（★）搬到**战役载体** `inertiaLoc F`

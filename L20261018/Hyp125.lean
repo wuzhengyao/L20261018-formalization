@@ -1,4 +1,4 @@
-import Hyp124
+import L20261018.Hyp124
 set_option maxHeartbeats 2000000
 open TauCeti ValuativeRel IsLocalRing IsNonarchimedeanLocalField
 namespace L20261018

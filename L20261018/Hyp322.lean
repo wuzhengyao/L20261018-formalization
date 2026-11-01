@@ -1,5 +1,5 @@
-import Hyp321
-import Hyp310
+import L20261018.Hyp321
+import L20261018.Hyp310
 
 /-!
 # R1227（S34）：**`∃D` 的完全无条件版 —— `hbridge` 也消去**

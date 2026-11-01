@@ -1,5 +1,5 @@
-import Hyp615
-import Hyp187
+import L20261018.Hyp615
+import L20261018.Hyp187
 
 /-!
 # S51 R7：**`μ_p ⊆ F ⟹ μ_p ⊆ κ` 的完整链** ＋ 延拓假设的类型锁定

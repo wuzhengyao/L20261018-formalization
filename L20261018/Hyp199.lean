@@ -1,4 +1,4 @@
-import Hyp198
+import L20261018.Hyp198
 
 /-!
 # R1052（**S29 · ④.2 第二步**）：`v(N y) ≡ 0 (mod p)` ⟹ `N(y)` 是 `p` 次幂

@@ -1,6 +1,6 @@
-import Hyp746
-import Hyp162
-import Hyp511
+import L20261018.Hyp746
+import L20261018.Hyp162
+import L20261018.Hyp511
 
 /-!
 # S68 R2：**`ker v̄ = ker res₁`** —— `UnramifiedKummer` 的代数心

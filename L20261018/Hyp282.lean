@@ -1,5 +1,5 @@
-import Hyp281
-import Hyp161
+import L20261018.Hyp281
+import L20261018.Hyp161
 
 /-!
 # R1158（**第 5 项第四块：一般 Hensel 的缺口**精确归约**为 `TameResidueFacts`（类无关）**）

@@ -1,4 +1,4 @@
-import Hyp773
+import L20261018.Hyp773
 
 /-!
 # S73 R6：★★★★★ **`∂₂` 的机检定义 ＋ `prop:prelim-residue` 归约到「恰好一条方程」**

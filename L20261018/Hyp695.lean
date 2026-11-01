@@ -1,6 +1,6 @@
-import Hyp429
-import Hyp692
-import Hyp680
+import L20261018.Hyp429
+import L20261018.Hyp692
+import L20261018.Hyp680
 
 /-!
 # S62 R1：**第 4 章 4 条断言去 `[Finite 𝓀[F]]`** —— 入口改接 `MerkurjevSuslin`

@@ -1,7 +1,7 @@
-import Hyp310
-import Hyp204
-import Hyp206
-import Hyp80
+import L20261018.Hyp310
+import L20261018.Hyp204
+import L20261018.Hyp206
+import L20261018.Hyp80
 
 /-!
 # R1202（`hbridge` 标量化 · **第 1 块：标量的来源**）

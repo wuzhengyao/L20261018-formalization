@@ -1,4 +1,4 @@
-import Hyp561
+import L20261018.Hyp561
 
 /-!
 # S46 R10：★★★★ **同构的装配（条件于一句 `IsLocallyConstant`）**

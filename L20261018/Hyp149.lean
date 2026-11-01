@@ -1,6 +1,6 @@
-import Hyp148
-import Hyp108
-import Hyp81
+import L20261018.Hyp148
+import L20261018.Hyp108
+import L20261018.Hyp81
 
 /-!
 # R995：**`lem:basis-change` 的第二句** —— 变换不改变 `D` 的 Brauer 类

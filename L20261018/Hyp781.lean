@@ -1,5 +1,5 @@
-import Hyp780
-import Hyp719
+import L20261018.Hyp780
+import L20261018.Hyp719
 
 /-!
 # S74 R7：`∂²` 的**展开 API** —— 把 `deltaTwoShift` 拆成 `δ⁻¹` ＋ 桥 ＋ `Infl⁻¹`

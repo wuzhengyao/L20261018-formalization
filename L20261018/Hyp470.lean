@@ -1,5 +1,5 @@
-import Hyp469
-import Hyp386
+import L20261018.Hyp469
+import L20261018.Hyp386
 
 /-!
 # S40 R9：装 `S : DiscreteShortExact G U_nr (Additive K_nr^×) (ULift ℤ)` 并喂 `Hyp386.residueMap`

@@ -1,4 +1,4 @@
-import Hyp483
+import L20261018.Hyp483
 
 /-!
 # S40 R24：`integralBockstein` range 引理的**可用形式**（`n • x = 0`）＋ A4 机件登记

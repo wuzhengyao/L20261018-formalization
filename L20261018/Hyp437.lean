@@ -1,4 +1,4 @@
-import Hyp436
+import L20261018.Hyp436
 
 /-!
 # S39 第 11 轮（B 第 7 步）：**`tg` 的相容条件 (1) ＋ NSW 的 (iii)**（`Hyp437`）

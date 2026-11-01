@@ -1,5 +1,5 @@
-import Hyp114
-import Hyp36
+import L20261018.Hyp114
+import L20261018.Hyp36
 
 /-!
 # R942：`prop:prelim-kummer-valuation`(2) 的第一字段 —— `\bar v : H¹(F,μ_p) → F_p`

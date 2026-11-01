@@ -1,4 +1,4 @@
-import Hyp797
+import L20261018.Hyp797
 
 /-!
 # S77 R6：第 5 步 (b) 的**最后一块** —— 为 `explicitCup01` 造左逆系数映射

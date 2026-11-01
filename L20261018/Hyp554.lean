@@ -1,4 +1,4 @@
-import Hyp553
+import L20261018.Hyp553
 
 /-!
 # S46 R3：★★★★ **(d) 的两块** —— (I) 右端拆分 `map φ fC = i_* ≫ Inf_C`；(III) `δ_Γ` 是同构

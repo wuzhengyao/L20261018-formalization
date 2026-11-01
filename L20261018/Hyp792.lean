@@ -1,4 +1,4 @@
-import Hyp791
+import L20261018.Hyp791
 
 /-!
 # S76 R5：`contDelta_res_naturality` 的**逐点形态**（第 5 步 (a) 的第二块）

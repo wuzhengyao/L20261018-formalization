@@ -1,4 +1,4 @@
-import Hyp245
+import L20261018.Hyp245
 
 /-!
 # R1117（**★★★★★ (R2)-2 的 `n = 1` 收口完成 —— `innerConjTrivialIn` 被机检消去**）

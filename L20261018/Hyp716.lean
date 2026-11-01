@@ -1,4 +1,4 @@
-import Hyp715
+import L20261018.Hyp715
 
 /-!
 # S64 R3：**B 步收口** —— 任意闭子群上的零调性（`C2-INFRA-2`）

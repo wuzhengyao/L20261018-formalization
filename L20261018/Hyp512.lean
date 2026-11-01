@@ -1,4 +1,4 @@
-import Hyp511
+import L20261018.Hyp511
 import TauCeti.NumberTheory.LocalField.Tame.Quotient
 
 /-!

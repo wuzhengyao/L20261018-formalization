@@ -1,4 +1,4 @@
-import Hyp299
+import L20261018.Hyp299
 
 /-!
 # R1185（**(P) 收口的算术核心：`p ∤ j ⟹ ∃ k, p ∣ i − k·j`**）

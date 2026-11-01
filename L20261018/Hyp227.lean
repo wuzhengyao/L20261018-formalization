@@ -1,4 +1,4 @@
-import Hyp226
+import L20261018.Hyp226
 import TauCeti.RepresentationTheory.Homological.GroupCohomology.LongExactSequence
 import TauCeti.RepresentationTheory.Induction.DimensionShift
 

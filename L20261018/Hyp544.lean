@@ -1,4 +1,4 @@
-import Hyp543
+import L20261018.Hyp543
 
 /-!
 # S45 R4：★★★★ **`i_* ≫ deltaZeroBar = 0`**（把 (F2) 从 `ModuleCat` 层抬到 `Rep k (G⧸S)` 层）＋ `δ_{Y'}` 单

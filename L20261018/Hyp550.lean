@@ -1,4 +1,4 @@
-import Hyp549
+import L20261018.Hyp549
 
 /-!
 # S45 R14：★★★★★ **连续 (F2)** —— `coeffMap(proj) ≫ δ₀ = 0`

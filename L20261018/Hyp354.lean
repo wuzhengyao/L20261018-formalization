@@ -1,6 +1,6 @@
-import Hyp353
-import Hyp294
-import Hyp310
+import L20261018.Hyp353
+import L20261018.Hyp294
+import L20261018.Hyp310
 
 /-!
 # R1265（S36 C 项第 8 步之一）：`2` 与 `π` 都不是立方（Capelli 的输入）

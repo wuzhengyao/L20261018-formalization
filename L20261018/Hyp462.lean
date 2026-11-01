@@ -1,5 +1,5 @@
-import Hyp163
-import Hyp162
+import L20261018.Hyp163
+import L20261018.Hyp162
 
 /-!
 # S40 R1：`𝒪^×/(𝒪^×)^p ≅ κ^×/(κ^×)^p` 在**论文层级**（Hensel，不要完备性）

@@ -1,8 +1,8 @@
-import Hyp343
-import Hyp449
-import Hyp431
-import Hyp479
-import Hyp525
+import L20261018.Hyp343
+import L20261018.Hyp449
+import L20261018.Hyp431
+import L20261018.Hyp479
+import L20261018.Hyp525
 
 /-!
 # S43 R34：★★★★★ **终局等价** —— `Ch4TameSymbolHyp` **恰好**等价于两条残数事实 (R1)＋(R2)

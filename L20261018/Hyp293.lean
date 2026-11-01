@@ -1,4 +1,4 @@
-import Hyp292
+import L20261018.Hyp292
 import Mathlib.FieldTheory.KummerExtension
 
 /-!

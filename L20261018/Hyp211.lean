@@ -1,4 +1,4 @@
-import Hyp210
+import L20261018.Hyp210
 
 /-!
 # R1074（**(R2) 建造 H-5-1c**）：GS 的嵌入 `A ↪ M^G(A)`

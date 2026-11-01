@@ -1,6 +1,6 @@
-import Hyp342
-import Hyp161
-import Hyp338
+import L20261018.Hyp342
+import L20261018.Hyp161
+import L20261018.Hyp338
 
 /-!
 # R1252（S35 入口 A 的第 0 步）：**`∃ d` ⟺ `TameResidueFacts`**

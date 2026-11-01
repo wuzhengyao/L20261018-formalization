@@ -1,5 +1,5 @@
-import Hyp800
-import Hyp449
+import L20261018.Hyp800
+import L20261018.Hyp449
 
 /-!
 # S78 R3：第 4 章**唯一具名假设** `Ch4TameSymbolHyp` 的**第三个非空见证**（且无 `p ≠ 2`）

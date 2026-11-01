@@ -1,5 +1,5 @@
-import Hyp221
-import Hyp314
+import L20261018.Hyp221
+import L20261018.Hyp314
 
 /-!
 # R1215（`Hyp221` 的两条桥**去掉完备性**）

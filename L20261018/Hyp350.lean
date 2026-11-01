@@ -1,4 +1,4 @@
-import Hyp349
+import L20261018.Hyp349
 import Mathlib.RingTheory.RootsOfUnity.PrimitiveRoots
 import Mathlib.RingTheory.RootsOfUnity.EnoughRootsOfUnity
 

@@ -1,4 +1,4 @@
-import Hyp231
+import L20261018.Hyp231
 
 /-!
 # R1102（**(R2)：共轭作用 `conjMap` —— 补上 `conjCoeffHom` ＋ `conjMap`**）

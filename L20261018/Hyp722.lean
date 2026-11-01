@@ -1,5 +1,5 @@
-import Hyp719
-import Hyp578
+import L20261018.Hyp719
+import L20261018.Hyp578
 
 /-!
 # S64 R11：**C2-F 在战役载体上已有机检件**（`Hyp576`／`Hyp578`）—— 本件补最后一块接口

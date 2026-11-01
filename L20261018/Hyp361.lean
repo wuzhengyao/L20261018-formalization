@@ -1,4 +1,4 @@
-import Hyp360
+import L20261018.Hyp360
 
 /-!
 # R1272（S36 C 项 末步之六）：**`Finite (Fˣ/(Fˣ)³)`**

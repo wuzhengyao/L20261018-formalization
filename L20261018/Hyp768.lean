@@ -1,4 +1,4 @@
-import Hyp767
+import L20261018.Hyp767
 
 /-!
 # S72 R11：`H-conj1` 搬进 **TauCeti 的 `H1ConjInvariants` 接口**（解锁路线 (c)）

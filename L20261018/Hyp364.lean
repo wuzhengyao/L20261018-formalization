@@ -1,4 +1,4 @@
-import Hyp363
+import L20261018.Hyp363
 
 /-!
 # R1275（S36 C 项 基建）：θ-桥的**真假设**是 `[LocallyCompactSpace (AbsGal F)]`

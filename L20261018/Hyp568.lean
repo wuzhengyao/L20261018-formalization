@@ -1,4 +1,4 @@
-import Hyp567
+import L20261018.Hyp567
 
 /-!
 # S46 R16：★★★ **右格 `T ≅ CoindQuotient (Γ⧸I) ⊥ μ_p`（商同余，条件于子群对应）**

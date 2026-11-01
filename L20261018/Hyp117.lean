@@ -1,6 +1,6 @@
-import Hyp116
-import Hyp109
-import Hyp103
+import L20261018.Hyp116
+import L20261018.Hyp109
+import L20261018.Hyp103
 
 /-!
 # R948：**把 `ResidueCupData` 的 11 个假设字段压到 4 个**

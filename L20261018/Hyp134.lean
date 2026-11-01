@@ -1,5 +1,5 @@
-import Hyp133
-import Hyp130
+import L20261018.Hyp133
+import L20261018.Hyp130
 
 /-!
 # R976（续）：**`hdep` 与 `hUU` 均为定理**

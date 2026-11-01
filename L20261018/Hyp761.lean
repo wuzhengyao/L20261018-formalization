@@ -1,4 +1,4 @@
-import Hyp760
+import L20261018.Hyp760
 
 /-!
 # S72 R1：**D80 的「mathlib 无」是假阻断** —— 桥在库内，W3 无条件化

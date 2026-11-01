@@ -1,4 +1,4 @@
-import Hyp283
+import L20261018.Hyp283
 import TauCeti.RepresentationTheory.Homological.ContCohomology.CohomologicalDimension.Comparison
 import TauCeti.RepresentationTheory.Homological.ContCohomology.Inflation.ConnectingMap
 

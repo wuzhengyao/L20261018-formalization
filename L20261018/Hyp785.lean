@@ -1,4 +1,4 @@
-import Hyp784
+import L20261018.Hyp784
 
 /-!
 # S75 R2：**连续模型的 `H⁰`-Leibniz**（`PROMPT-S75` §1.1 的靶子）

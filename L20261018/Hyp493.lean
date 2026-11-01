@@ -1,4 +1,4 @@
-import Hyp492
+import L20261018.Hyp492
 import TauCeti.RepresentationTheory.Homological.ContCohomology.Coinduced.Discrete
 import TauCeti.Topology.Algebra.GroupAction.QuotientAddGroup
 

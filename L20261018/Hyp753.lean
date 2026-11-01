@@ -1,5 +1,5 @@
-import Hyp752
-import Hyp743
+import L20261018.Hyp752
+import L20261018.Hyp743
 
 /-!
 # S68 R11：A-1 最后一步（`S68-HYP744-PLAN.md` §9quater）

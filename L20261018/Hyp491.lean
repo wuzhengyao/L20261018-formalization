@@ -1,4 +1,4 @@
-import Hyp490
+import L20261018.Hyp490
 
 /-!
 # S41 R2（动作 Z0）：**零系数映射的 `coeffMap` 为零** ⟹ **S40 的 `∂₂`-候选恒为零（`✗-refuted`）**

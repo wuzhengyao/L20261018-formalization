@@ -1,4 +1,4 @@
-import Hyp555
+import L20261018.Hyp555
 
 /-!
 # S46 R5：★★★★ **`δ_T` 同构（把剩余义务压成一个 `Subsingleton`）** ＋ `T ≅ CoindQuotient` 的落点说明

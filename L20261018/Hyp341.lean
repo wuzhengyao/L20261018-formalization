@@ -1,5 +1,5 @@
-import Hyp339
-import Hyp323
+import L20261018.Hyp339
+import L20261018.Hyp323
 
 /-! # R1250：`∃D` 在战役载体上、无 `[Finite (ResidueField)]`（`VKern` 命名载体避免 whnf 爆炸） -/
 

@@ -1,5 +1,5 @@
-import Hyp614
-import Hyp613
+import L20261018.Hyp614
+import L20261018.Hyp613
 
 /-!
 # S51 R6：`μ_p ⊆ F ⟹ μ_p ⊆ κ`（`isPrimitiveRoot_residue`）＋ 档 ⑦ ＋ 七档索引

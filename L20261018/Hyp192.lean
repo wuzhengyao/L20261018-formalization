@@ -1,4 +1,4 @@
-import Hyp191
+import L20261018.Hyp191
 
 /-!
 # R1045（**S29 · ④.0**）：归一化的 `ValCompat` 版（输出 `sumCoeff` 形式）

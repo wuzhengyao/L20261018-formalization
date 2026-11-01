@@ -1,5 +1,5 @@
-import Hyp758
-import Hyp521
+import L20261018.Hyp758
+import L20261018.Hyp521
 
 /-!
 # S71 R1：墙 1 的第一步 —— **战役载体 `H¹(I,μ_p)` 是一维的**

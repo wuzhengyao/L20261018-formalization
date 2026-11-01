@@ -1,5 +1,5 @@
-import Hyp800
-import Hyp342
+import L20261018.Hyp800
+import L20261018.Hyp342
 
 /-!
 # S78 R2：第 4 章 3 条陈述的 **`d`-假设消除**（`prop:prelim-residue`(1) 已无条件）

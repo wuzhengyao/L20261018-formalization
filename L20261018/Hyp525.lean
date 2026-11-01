@@ -1,6 +1,6 @@
-import Hyp383
-import Hyp430
-import Hyp479
+import L20261018.Hyp383
+import L20261018.Hyp430
+import L20261018.Hyp479
 
 /-!
 # S43 R31：★★★★★★ **`Ch4TameSymbolHyp` 对「`κˣ` `p`-可除」的一般 Hensel 域成立**（**无限剩余域可用**）

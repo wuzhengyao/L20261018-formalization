@@ -1,4 +1,4 @@
-import Hyp386
+import L20261018.Hyp386
 import TauCeti.RepresentationTheory.Homological.ContCohomology.Coinduced.Acyclic
 import Mathlib.FieldTheory.Galois.NormalBasis
 

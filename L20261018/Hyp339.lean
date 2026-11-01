@@ -1,5 +1,5 @@
-import Hyp338
-import Hyp161
+import L20261018.Hyp338
+import L20261018.Hyp161
 
 /-!
 # R1247（S34 第 18 轮）：**无 `[Finite (ResidueField)]` 的 `∃D`**

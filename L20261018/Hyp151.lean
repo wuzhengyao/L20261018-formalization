@@ -1,4 +1,4 @@
-import Hyp150
+import L20261018.Hyp150
 
 /-!
 # R999：**按论文原路线重证 4.2**（`lem:ramified-vanishing`，`raw/L20261018.tex:1613–1626`）

@@ -1,5 +1,5 @@
-import Hyp690
-import Hyp687
+import L20261018.Hyp690
+import L20261018.Hyp687
 
 /-!
 # S61 R4：**(G2) 的收口形态** —— `Ch4TameSymbolHyp` 由**论文自引的 Merkurjev–Suslin** 推出

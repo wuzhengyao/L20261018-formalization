@@ -1,4 +1,4 @@
-import Hyp793
+import L20261018.Hyp793
 
 /-!
 # S77 R2：第 5 步 (a) **收口** —— `contM z = explicitRes1 x`（进而 `= res₁V(kummerClass π)`）

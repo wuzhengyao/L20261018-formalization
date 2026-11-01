@@ -1,4 +1,4 @@
-import Hyp552
+import L20261018.Hyp552
 
 /-!
 # S46 R2：★★★★★ **连续 (F1)** —— `δ_T ≫ Inf_A = (i ≫ Inf_C) ≫ δ_Γ`

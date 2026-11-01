@@ -1,6 +1,6 @@
-import Hyp712
-import Hyp517
-import Hyp380
+import L20261018.Hyp712
+import L20261018.Hyp517
+import L20261018.Hyp380
 
 /-!
 # S63 R2：把 `Hyp712` 的 C 步落到**战役载体**上（`G = G_F`、`H = inertiaLoc F`、`A = ZMod ℓ`）

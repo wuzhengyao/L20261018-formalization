@@ -1,4 +1,4 @@
-import Hyp786
+import L20261018.Hyp786
 
 /-!
 # S75 R4：`e₀` 满射性 ＋ **连续 `H⁰` 类上的 Leibniz** ＋ **`cup11 π y` 的 `δ¹` 原像存在**

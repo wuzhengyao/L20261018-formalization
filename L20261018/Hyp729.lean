@@ -1,4 +1,4 @@
-import Hyp728
+import L20261018.Hyp728
 
 /-!
 # S65 R3：分片 **4c-i** —— GS (6.17) 的**兼容方块**（`delta_infl` 的 `T`-变体）

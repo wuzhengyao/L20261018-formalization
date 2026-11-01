@@ -1,4 +1,4 @@
-import Hyp621
+import L20261018.Hyp621
 
 /-!
 # S51 R15：`𝒪_W` 的 `Γ_F`-稳定性（从 `FbarValuationHyp₃` 导出）＋ **惯性子群需要「值保持」而非仅「环稳定」**
