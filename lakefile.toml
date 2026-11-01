@@ -19,8 +19,8 @@ name = "TauCeti"
 [[lean_lib]]
 name = "L20261018"
 
-# Per-chapter comparator inputs: comparator/ch{3,4}/{Challenge,Solution,config.json}.
-# Chapter 3: 14 theorems; Chapter 4: 5 theorems (paper hypothesis level).
+# Comparator inputs: comparator/{ch3,ch4,ch4u}/{Challenge,Solution,config.json}.
+# Chapter 3: 14 theorems; chapter 4: 6 (paper hypothesis level) and 7 (unconditional).
 [[lean_lib]]
 name = "comparator"
 globs = ["comparator", "comparator.+"]

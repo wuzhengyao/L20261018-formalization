@@ -1,9 +1,10 @@
 #!/usr/bin/env bash
 # Build the development and run the comparator check of one chapter.
 #
-#   ./run-comparator.sh            # chapter 3 (default)
-#   ./run-comparator.sh ch4        # once comparator/ch4/ exists
-#   SKIP_BUILD=1 ./run-comparator.sh
+#   ./run-comparator.sh ch4u       # Chapter 4, UNCONDITIONAL level (7 declarations)
+#   ./run-comparator.sh ch4        # Chapter 4 at the paper hypothesis level (takes `d`)
+#   ./run-comparator.sh            # chapter 3 (default, 14 theorems)
+#   SKIP_BUILD=1 ./run-comparator.sh ch4u
 #
 # Prerequisites
 #   * Lean toolchain v4.35.0 (see lean-toolchain; elan installs it automatically)

@@ -1,0 +1,4 @@
+{"challenge_module": "comparator.ch4u.Challenge", "solution_module": "comparator.ch4u.Solution",
+ "theorem_names": ["tm_u_d", "tm_u_trf", "tm_u_4_2", "tm_u_4_3_1", "tm_u_4_4", "tm_u_hyp", "tm_u_disj"],
+ "permitted_axioms": ["propext", "Quot.sound", "Classical.choice"],
+ "enable_nanoda": false}
