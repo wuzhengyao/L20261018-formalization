@@ -1,0 +1,577 @@
+old_module	old_file	new_module	new_file	lines	paper_locator	heading
+A	L20261018/A.lean	Core.Step001_bi_kummer_data	Core/Step001_bi_kummer_data.lean	733	label:thm:dimension,label:thm:hs-tate-exact-sequences	-
+Galo	L20261018/Galo.lean	Core.Step002_mu_p_carrier_instances	Core/Step002_mu_p_carrier_instances.lean	28	-	Carrier instances for the paper's coefficient object `μ_p`
+Hyp2	L20261018/Hyp2.lean	Ch3.NormImage.Step001_galo_five_term	Ch3/NormImage/Step001_galo_five_term.lean	41	-	-
+Hyp4	L20261018/Hyp4.lean	Ch3.NormImage.Step002_five_term_mg_k2_data	Ch3/NormImage/Step002_five_term_mg_k2_data.lean	51	-	-
+Hyp5	L20261018/Hyp5.lean	Ch3.NormImage.Step003_norm_image_def	Ch3/NormImage/Step003_norm_image_def.lean	52	-	The norm image `N_G(M) = (res ∘ cor)(M)`
+Hyp9	L20261018/Hyp9.lean	Infra.Galois.Step001_explicit_h1_res	Infra/Galois/Step001_explicit_h1_res.lean	21	-	-
+Hyp10	L20261018/Hyp10.lean	Ch2.Kummer.Step001_cup_projection_res_right	Ch2/Kummer/Step001_cup_projection_res_right.lean	32	-	-
+Hyp11	L20261018/Hyp11.lean	Ch2.Kummer.Step002_projection_formula_continuous	Ch2/Kummer/Step002_projection_formula_continuous.lean	84	-	The projection formula in *continuous* cohomology
+Hyp12	L20261018/Hyp12.lean	Ch3.NormImage.Step004_three_five_one_abelian	Ch3/NormImage/Step004_three_five_one_abelian.lean	114	-	Theorem 3.5(1) as a statement about abelian groups
+Hyp13	L20261018/Hyp13.lean	Ch3.NormImage.Step005_three_five_one_first_ses	Ch3/NormImage/Step005_three_five_one_first_ses.lean	78	label:thm:hs-tate-exact-sequences	Theorem 3.5(1) instantiated: the first short exact sequence of `thm:hs-tate-exact-sequences`
+Hyp14	L20261018/Hyp14.lean	Ch2.Kummer.Step003_triple_cup_product	Ch2/Kummer/Step003_triple_cup_product.lean	112	-	The degree-`(1,1,1)` triple cup product, without a chain homotopy
+Hyp15	L20261018/Hyp15.lean	Ch2.Brauer.Step001_index_le_degree	Ch2/Brauer/Step001_index_le_degree.lean	66	-	The index of a crossed-product (symbol) algebra is at most its degree
+Hyp16	L20261018/Hyp16.lean	Ch2.Kummer.Step004_restriction_kummer_kernel	Ch2/Kummer/Step004_restriction_kummer_kernel.lean	45	-	Restriction of Kummer classes: the exact kernel
+Hyp17	L20261018/Hyp17.lean	Ch2.Kummer.Step005_bi_kummer_kernel_field	Ch2/Kummer/Step005_bi_kummer_kernel_field.lean	84	-	`prop:bi-kummer-kernel`, the field-theoretic core
+Hyp18	L20261018/Hyp18.lean	Ch2.Kummer.Step006_bi_kummer_kernel_intersection	Ch2/Kummer/Step006_bi_kummer_kernel_intersection.lean	158	-	`prop:bi-kummer-kernel`: `Eˣ ∩ Fˣ = F^{×p}⟨a₁,a₂⟩`
+Hyp19	L20261018/Hyp19.lean	Ch2.Kummer.Step007_kummer_class_coefficient_bridge	Ch2/Kummer/Step007_kummer_class_coefficient_bridge.lean	103	-	The coefficient bridge: Kummer classes in the paper's `V`
+Hyp20	L20261018/Hyp20.lean	Ch3.BiKummer.Step001_bi_kummer_data_from_kummer	Ch3/BiKummer/Step001_bi_kummer_data_from_kummer.lean	63	-	The paper's bi-Kummer data, from the real Kummer classes
+Hyp21	L20261018/Hyp21.lean	Ch2.Brauer.Step002_reduced_norm_maximal_subfield	Ch2/Brauer/Step002_reduced_norm_maximal_subfield.lean	110	-	The reduced norm of a crossed product, and its value on the maximal subfield
+Hyp22	L20261018/Hyp22.lean	Ch3.BiKummer.Step002_basic_inclusions_paper_objects	Ch3/BiKummer/Step002_basic_inclusions_paper_objects.lean	71	label:lem:basic-inclusions,label:lem:orthogonal	Chapter 3 at the paper's own objects
+Hyp23	L20261018/Hyp23.lean	Ch3.BiKummer.Step003_h_nrd_from_field_norm	Ch3/BiKummer/Step003_h_nrd_from_field_norm.lean	55	-	`(f)` at the paper's level: `hNrd` from the field norm
+Hyp24	L20261018/Hyp24.lean	Ch2.Kummer.Step008_bi_kummer_kernel_restriction	Ch2/Kummer/Step008_bi_kummer_kernel_restriction.lean	89	-	`prop:bi-kummer-kernel`: the kernel of restriction on Kummer classes
+Hyp25	L20261018/Hyp25.lean	Ch3.BiKummer.Step004_h_nrd_well_defined	Ch3/BiKummer/Step004_h_nrd_well_defined.lean	97	-	`(f)`: the reduced-norm image depends only on the cohomology class of the cocycle
+Hyp26	L20261018/Hyp26.lean	Ch3.BiKummer.Step005_kummer_class_generators	Ch3/BiKummer/Step005_kummer_class_generators.lean	99	-	`(a)`: the Kummer class as a homomorphism on `Fˣ`, and restriction of the two generators
+Hyp27	L20261018/Hyp27.lean	Ch3.BiKummer.Step006_explicit_restriction_kernel	Ch3/BiKummer/Step006_explicit_restriction_kernel.lean	151	-	`(a)`: the kernel of the **explicit** restriction map on Kummer classes
+Hyp28	L20261018/Hyp28.lean	Ch3.BiKummer.Step007_restriction_coefficient_change	Ch3/BiKummer/Step007_restriction_coefficient_change.lean	50	-	`(a)`: restriction commutes with a change of coefficients
+Hyp29	L20261018/Hyp29.lean	Ch3.BiKummer.Step008_restriction_canonical_h1	Ch3/BiKummer/Step008_restriction_canonical_h1.lean	71	-	`(a)` at the level of the canonical cohomology of `G_F` with coefficients `ZMod p`
+Hyp32	L20261018/Hyp32.lean	Ch3.BiKummer.Step009_h_nrd_presentation_independent	Ch3/BiKummer/Step009_h_nrd_presentation_independent.lean	157	-	`(f)` gap 2: the reduced norm is independent of the presentation
+Hyp33	L20261018/Hyp33.lean	Ch2.Brauer.Step003_reduced_norm_any_crossed_product	Ch2/Brauer/Step003_reduced_norm_any_crossed_product.lean	91	-	`(f)`: the reduced norm of *any* algebra presented by a crossed product, and the paper's `hNrd`
+Hyp35	L20261018/Hyp35.lean	Ch3.BiKummer.Step010_restriction_kernel_paper_v	Ch3/BiKummer/Step010_restriction_kernel_paper_v.lean	108	-	`(a)` at the paper's own `V`: the restriction kernel on `GaloBase.V F p`
+Hyp36	L20261018/Hyp36.lean	Ch3.BiKummer.Step011_restriction_kernel_eq_u	Ch3/BiKummer/Step011_restriction_kernel_eq_u.lean	188	-	`(a)` 收口：`ker res = U` 在论文的载体上
+Hyp37	L20261018/Hyp37.lean	Ch2.Kummer.Step009_pth_power_field_trivial	Ch2/Kummer/Step009_pth_power_field_trivial.lean	80	-	缺口 1 的核心域论：第一槽是 `p` 次幂时，`K(a^{1/p}) = K`
+Hyp38	L20261018/Hyp38.lean	Witness.Step001_bi_kummer_data_nonempty	Witness/Step001_bi_kummer_data_nonempty.lean	102	-	非空实例义务（C2）：`BiKummerData` 不空洞，且第三章各条在有模型上成立
+Hyp39	L20261018/Hyp39.lean	Ch3.NormImage.Step006_hs_special_five_term	Ch3/NormImage/Step006_hs_special_five_term.lean	59	label:prop:hs-special	3.4 收口：**完整五项正合列**在 `G_F` 上（第 1→5 段全部）
+Hyp40	L20261018/Hyp40.lean	Ch3.BiKummer.Step012_basic_inclusions_cor_subset	Ch3/BiKummer/Step012_basic_inclusions_cor_subset.lean	114	label:lem:basic-inclusions	3.3(2) 收口：`cor H¹(E, μ_p) ⊆ U^⊥`，在显式模型上**无条件**
+Hyp41	L20261018/Hyp41.lean	Ch2.Brauer.Step004_degenerate_crossed_product_trivial	Ch2/Brauer/Step004_degenerate_crossed_product_trivial.lean	109	-	缺口 1 的第四层：退化扩张上的交叉积类是**平凡类**
+Hyp42	L20261018/Hyp42.lean	Ch3.BiKummer.Step013_orthogonal_roots_trivial	Ch3/BiKummer/Step013_orthogonal_roots_trivial.lean	72	label:lem:orthogonal	C1 收口：`hroots` **恒真**（`p` 在基域中可逆即可），故不再是技术前提
+Hyp43	L20261018/Hyp43.lean	Witness.Step002_nonzero_local_symbol_reduction	Witness/Step002_nonzero_local_symbol_reduction.lean	79	-	C2 真实域层：把障碍**精确归约**到「非零局部符号」
+Hyp44	L20261018/Hyp44.lean	Witness.Step003_nondegenerate_nonzero_cup	Witness/Step003_nondegenerate_nonzero_cup.lean	124	-	C2 真实域层：**非退化性给出非零杯积**（差最后一步「`b` 不是 `n` 次幂」）
+Hyp45	L20261018/Hyp45.lean	Ch2.Kummer.Step010_cup_fp_eq_galo_cup	Ch2/Kummer/Step010_cup_fp_eq_galo_cup.lean	98	-	① 收口：`cupFp` 与 `GaloBase.cup` 是同一个杯积（载体搬运）
+Hyp46	L20261018/Hyp46.lean	Ch2.Kummer.Step011_cup_fp_eq_galo_cup_equiv	Ch2/Kummer/Step011_cup_fp_eq_galo_cup_equiv.lean	90	-	① 最后一步：`cupFp` 与 `GaloBase.cup` 在载体同构下**一致**
+Hyp47	L20261018/Hyp47.lean	Ch2.Brauer.Step005_symbol_algebra_normal_form	Ch2/Brauer/Step005_symbol_algebra_normal_form.lean	479	-	缺口 1 的残余（第一半）：**呈现定义的符号代数** `(a,b)_ζ` 与它的正规形
+Hyp48	L20261018/Hyp48.lean	Ch2.Brauer.Step006_symbol_algebra_degenerate	Ch2/Brauer/Step006_symbol_algebra_degenerate.lean	539	-	缺口 1 残余：**退化支** `(a,b)_ζ ≅ M_p(K)`（第一段：模型与三条关系）
+Hyp49	L20261018/Hyp49.lean	Ch3.BiKummer.Step014_splitting_field	Ch3/BiKummer/Step014_splitting_field.lean	102	-	`(f)` 的「`E` 分裂 `D`」一步（用 `(1a)` 解除）
+Hyp50	L20261018/Hyp50.lean	Ch2.Brauer.Step007_brauer_interfaces	Ch2/Brauer/Step007_brauer_interfaces.lean	79	-	Brauer 层的两个接口（`(2)` 的剩余基建，第一段）
+Hyp51	L20261018/Hyp51.lean	Ch2.Brauer.Step008_matrix_elimination_degree	Ch2/Brauer/Step008_matrix_elimination_degree.lean	183	-	`(f)` A 档的最后一块：**矩阵消去与次数簿记**（Wedderburn 方向）
+Hyp52	L20261018/Hyp52.lean	Ch2.Brauer.Step009_h_nrd_from_field_norm_algebra	Ch2/Brauer/Step009_h_nrd_from_field_norm_algebra.lean	63	-	`(f)` 的 `hNrd`（A 档合成）：除代数的约化范数包含极大子域的域范数
+Hyp53	L20261018/Hyp53.lean	Ch3.BiKummer.Step015_h_nrd_kummer_form	Ch3/BiKummer/Step015_h_nrd_kummer_form.lean	133	label:lem:basic-inclusions	`(f)` 的 A 档（Kummer 形式）：余限制的像 ＝ 约化范数的 Kummer 类
+Hyp54	L20261018/Hyp54.lean	Ch2.Brauer.Step010_index_brauer_invariant	Ch2/Brauer/Step010_index_brauer_invariant.lean	75	-	`(3)` 的 `(i)` 环：**`Algebra.index` 对 Brauer 等价不变**（侦察更正）
+Hyp55	L20261018/Hyp55.lean	Ch2.Brauer.Step011_kummer_extension_generator	Ch2/Brauer/Step011_kummer_extension_generator.lean	86	-	`(1b)` 第一阶段：Kummer 扩张 `L = K(a^{1/p})`、生成元 `α` 与 `σ(α) = ζ_p α`
+Hyp56	L20261018/Hyp56.lean	Ch2.Brauer.Step012_carry_cocycle_arithmetic	Ch2/Brauer/Step012_carry_cocycle_arithmetic.lean	46	-	`(1b)` 第二阶段（一）：carry 余环的**算术核心**
+Hyp57	L20261018/Hyp57.lean	Ch2.Brauer.Step013_carry_cocycle_index	Ch2/Brauer/Step013_carry_cocycle_index.lean	74	-	`(1b)` 第二阶段（二）：carry 余环的**指数标号**与**固定的单位**
+Hyp58	L20261018/Hyp58.lean	Ch2.Brauer.Step014_carry_cocycle_two_cocycle	Ch2/Brauer/Step014_carry_cocycle_two_cocycle.lean	76	-	`(1b)` 第二阶段（三）：**carry 余环 `TwoCocycle`**
+Hyp59	L20261018/Hyp59.lean	Ch2.Brauer.Step015_crossed_product_generators	Ch2/Brauer/Step015_crossed_product_generators.lean	53	-	`(1b)` 第三阶段（一）：交叉积里的 `X = inc α`、`Y = u_σ` 与两条关系（**一般 $L$ 版**）
+Hyp60	L20261018/Hyp60.lean	Ch2.Brauer.Step016_power_formula_telescope	Ch2/Brauer/Step016_power_formula_telescope.lean	45	-	`(1b)` 第三阶段（二）：基元素的**幂公式**（望远镜化乘积）
+Hyp61	L20261018/Hyp61.lean	Ch2.Brauer.Step017_carry_exp_gen_pow	Ch2/Brauer/Step017_carry_exp_gen_pow.lean	63	-	`(1b)` 第三阶段（三）：`carryExp (gen ^ i) = i % p` 与 `gen ^ p = 1`
+Hyp62	L20261018/Hyp62.lean	Ch2.Brauer.Step018_product_cocycle_sum	Ch2/Brauer/Step018_product_cocycle_sum.lean	61	-	`(1b)` 第三阶段（四）：`gen ^ p = 1`、乘积求和、以及 `∏ c(gen^i, gen) = b`
+Hyp63	L20261018/Hyp63.lean	Ch2.Brauer.Step019_y_pow_eq_b	Ch2/Brauer/Step019_y_pow_eq_b.lean	72	-	`(1b)` 第三阶段（五）：**`Y ^ p = b`**
+Hyp64	L20261018/Hyp64.lean	Ch2.Brauer.Step020_adjoin_surjectivity_blocks	Ch2/Brauer/Step020_adjoin_surjectivity_blocks.lean	59	-	`(1b)` 第三阶段（六）：满射性的两块砖
+Hyp65	L20261018/Hyp65.lean	Ch2.Brauer.Step021_adjoin_top	Ch2/Brauer/Step021_adjoin_top.lean	83	-	`(1b)` 第三阶段（七）：满射性收口 —— `Algebra.adjoin K {X, Y} = ⊤`
+Hyp66	L20261018/Hyp66.lean	Ch2.Brauer.Step022_adjoin_top_assembly	Ch2/Brauer/Step022_adjoin_top_assembly.lean	69	-	`(1b)` 第三阶段（八）：`Algebra.adjoin K {X, Y} = ⊤`
+Hyp67	L20261018/Hyp67.lean	Ch2.Brauer.Step023_symbol_alg_equiv_crossed_product	Ch2/Brauer/Step023_symbol_alg_equiv_crossed_product.lean	94	-	`(1b)` 收口：**`SymbolAlg K p a b ζ ≃ₐ CrossedProduct (carryCocycle b)`**
+Hyp68	L20261018/Hyp68.lean	Ch2.Brauer.Step024_index_le_degree_symbol	Ch2/Brauer/Step024_index_le_degree_symbol.lean	60	-	`(3)` 的 `hind`：**符号代数的指数 `≤ p`**
+Hyp74	L20261018/Hyp74.lean	Ch2.Brauer.Step025_crossed_product_class_inflation	Ch2/Brauer/Step025_crossed_product_class_inflation.lean	84	-	`(3)(ii)` 第一步：交叉积类 = 循环类的膨胀
+Hyp75	L20261018/Hyp75.lean	Ch2.Brauer.Step026_carry_cocycle_class_cyclic	Ch2/Brauer/Step026_carry_cocycle_class_cyclic.lean	87	-	`(3)(ii)` 第二步：carry 余环的类 = 循环类（一般 `p`）
+Hyp76	L20261018/Hyp76.lean	Ch2.Brauer.Step027_adjoin_root_to_intermediate_field	Ch2/Brauer/Step027_adjoin_root_to_intermediate_field.lean	327	-	`(3)(ii)` 第三步（WIP，第一步已机检）：把 `AdjoinRoot` 载体搬到 `IntermediateField`
+Hyp77	L20261018/Hyp77.lean	Ch2.Kummer.Step012_symbol_cup	Ch2/Kummer/Step012_symbol_cup.lean	95	label:cor:symbol-cup	`cor:symbol-cup` 的逐字形式（去掉 ζ-约定的负号）
+Hyp78	L20261018/Hyp78.lean	Infra.Galois.Step002_absolute_galois_iso_unconditional	Infra/Galois/Step002_absolute_galois_iso_unconditional.lean	65	-	`(4)` 的无条件形式：两个绝对 Galois 群对**任意**域同构（R882 的侦察更正之更正）
+Hyp79	L20261018/Hyp79.lean	Ch2.Kummer.Step013_mu_p_equiv_zmod	Ch2/Kummer/Step013_mu_p_equiv_zmod.lean	56	-	3.2 的系数载体第一半：`μ_p ≅ ℤ/p`（模载体 ＋ 平凡作用）
+Hyp80	L20261018/Hyp80.lean	Ch2.Kummer.Step014_mu_p_linear_equiv	Ch2/Kummer/Step014_mu_p_linear_equiv.lean	61	-	`μ_p ≅ ℤ/p` 作为 `ZMod p`-**线性**同构（③ 第二半的第一步）
+Hyp81	L20261018/Hyp81.lean	Ch2.Brauer.Step028_h2_to_brauer_carrier	Ch2/Brauer/Step028_h2_to_brauer_carrier.lean	212	-	3.2 的 `ind`：`H²(G_F, μ_p)` 到 `Br F` 的载体链（R897）
+Hyp82	L20261018/Hyp82.lean	Ch2.Brauer.Step029_index_function_h2	Ch2/Brauer/Step029_index_function_h2.lean	126	-	`ind` 的**定义**：`H²(G_F, μ_p)` 上的指数函数（R897 第二件）
+Hyp83	L20261018/Hyp83.lean	Ch2.Brauer.Step030_index_le_degree_instances	Ch2/Brauer/Step030_index_le_degree_instances.lean	119	-	符号代数的**实例栈从 `ha` 推出**：`index ≤ p` 的无条件形式（R898）
+Hyp84	L20261018/Hyp84.lean	Ch2.Brauer.Step031_brauer_of_h2_smul	Ch2/Brauer/Step031_brauer_of_h2_smul.lean	122	-	线性性 ＋ `brauerOfH2 (c • (A ∪ B))` 的显式形式（R899）
+Hyp85	L20261018/Hyp85.lean	Ch3.BiKummer.Step016_hind_kummer	Ch3/BiKummer/Step016_hind_kummer.lean	178	-	`hind` 的机检（R900）：`3.2(1)(2)` 的最后一块
+Hyp86	L20261018/Hyp86.lean	Ch3.BiKummer.Step017_rank_barrier_unconditional	Ch3/BiKummer/Step017_rank_barrier_unconditional.lean	84	label:thm:rank-barrier	3.2(1)(2) **消参升档**（R901）：`ind`／`hind` 不再是参数
+Hyp87	L20261018/Hyp87.lean	Ch2.Kummer.Step015_primitive_root_scalar	Ch2/Kummer/Step015_primitive_root_scalar.lean	84	-	两个本原根下的 `zmodEquivRootsOfUnity` 相差一个纯量（R903）
+Hyp88	L20261018/Hyp88.lean	Ch2.Brauer.Step032_brauer_image_p_torsion	Ch2/Brauer/Step032_brauer_image_p_torsion.lean	35	-	`brOfH2` 的像在 `p`-挠内（R907）—— ζ-无关性 (b) 块的前提
+Hyp89	L20261018/Hyp89.lean	Ch2.Kummer.Step016_zeta_independence_carrier	Ch2/Kummer/Step016_zeta_independence_carrier.lean	208	-	ζ-无关性 (a)：载体链在两个本原根下只差整数纯量（R911）
+Hyp90	L20261018/Hyp90.lean	Ch2.Brauer.Step033_index_unit_scalar_invariant	Ch2/Brauer/Step033_index_unit_scalar_invariant.lean	192	-	ζ-无关性 (b)：`index` 在单位纯量乘法下不变（R911，基建任务）
+Hyp91	L20261018/Hyp91.lean	Ch2.Brauer.Step034_index_zeta_independent	Ch2/Brauer/Step034_index_zeta_independent.lean	95	-	**主定理**：`indOfH2` 与 ζ 的选取无关（R911）
+Hyp92	L20261018/Hyp92.lean	Ch3.NormImage.Step007_three_five_two_real_objects	Ch3/NormImage/Step007_three_five_two_real_objects.lean	253	label:thm:hs-tate-exact-sequences	3.5(2) 的真实对象版：`U^⊥/N ↪ V/(U+N) ↠ V/(U+U^⊥)`（R912）
+Hyp93	L20261018/Hyp93.lean	Ch3.NormImage.Step008_three_five_u_wiring	Ch3/NormImage/Step008_three_five_u_wiring.lean	299	label:thm:hs-tate-exact-sequences	`U` 接线的代数基石：显式模型里 Kummer 类的乘法/取逆/闭包像（R913 第一块）
+Hyp94	L20261018/Hyp94.lean	Ch3.NormImage.Step009_three_six_finiteness_k2	Ch3/NormImage/Step009_three_six_finiteness_k2.lean	70	-	3.6 的有限性（一）：`K₂` 与商群（R917）
+Hyp95	L20261018/Hyp95.lean	Ch3.NormImage.Step010_three_six_h0_finite	Ch3/NormImage/Step010_three_six_h0_finite.lean	91	-	3.6 的有限性（二）：`H0 = Ĥ⁰(G,M) = M^G/N_G(M)` 有限（R918）
+Hyp96	L20261018/Hyp96.lean	Ch3.NormImage.Step011_three_six_h1_module	Ch3/NormImage/Step011_three_six_h1_module.lean	81	-	3.6 的载体：`H¹(↥N₀)` 的 `ZMod p`-模结构 ＋ `MG`／`NG` 升子模（R921）
+Hyp97	L20261018/Hyp97.lean	Ch3.NormImage.Step012_three_six_k2_submodule	Ch3/NormImage/Step012_three_six_k2_submodule.lean	67	-	3.6 的载体：`K₂` 升成子模（R922）
+Hyp98	L20261018/Hyp98.lean	Ch3.NormImage.Step013_three_six_assembly_module	Ch3/NormImage/Step013_three_six_assembly_module.lean	50	-	3.6 组装（一）：商上的 `ZMod p`-模结构 ＋ 第一条 SES 的线性化（R924）
+Hyp99	L20261018/Hyp99.lean	Ch3.NormImage.Step014_three_six_assembly_linearize	Ch3/NormImage/Step014_three_six_assembly_linearize.lean	71	-	3.6 组装（二）：`→+` → `→ₗ` 的转换器（R925）
+Hyp100	L20261018/Hyp100.lean	Ch3.NormImage.Step015_three_six_assembly_u_alignment	Ch3/NormImage/Step015_three_six_assembly_u_alignment.lean	95	-	3.6 组装（三）：`U` 的对齐（R926）
+Hyp101	L20261018/Hyp101.lean	Ch3.NormImage.Step016_three_six_hnu	Ch3/NormImage/Step016_three_six_hnu.lean	60	-	3.6 组装（四）：`hNU` 独立成件（R927）
+Hyp102	L20261018/Hyp102.lean	Ch3.NormImage.Step017_three_six_quotient_transport	Ch3/NormImage/Step017_three_six_quotient_transport.lean	61	-	3.6 组装（五）：商沿子群等式搬运（R928）
+Hyp103	L20261018/Hyp103.lean	Ch3.NormImage.Step018_three_six_nezero_two	Ch3/NormImage/Step018_three_six_nezero_two.lean	33	-	3.6 组装（六）：`ZMod p` 的 `NeZero 2` 独立成件（R929）
+Hyp104	L20261018/Hyp104.lean	Ch3.NormImage.Step019_three_six_short_names	Ch3/NormImage/Step019_three_six_short_names.lean	56	-	3.6 组装（七）：`Ĥ⁰`／`K₂` 的短名（R930）
+Hyp105	L20261018/Hyp105.lean	Ch3.NormImage.Step020_three_six_first_ses_paper_u	Ch3/NormImage/Step020_three_six_first_ses_paper_u.lean	76	-	3.6 组装（八）：第一条 SES 直接建在论文的 `U = span{(a₁),(a₂)}` 上（R932）
+Hyp106	L20261018/Hyp106.lean	Ch3.NormImage.Step021_three_six_first_ses_submodule	Ch3/NormImage/Step021_three_six_first_ses_submodule.lean	59	-	3.6 组装（九）：第一条 SES 的**子模商**版本（R933）
+Hyp107	L20261018/Hyp107.lean	Ch3.NormImage.Step022_dimension_paper_objects	Ch3/NormImage/Step022_dimension_paper_objects.lean	101	label:thm:dimension	3.6（`thm:dimension`）真实对象版 —— 最终装配（R934）
+Hyp108	L20261018/Hyp108.lean	Ch4.Step001_basis_change_first_slot	Ch4/Step001_basis_change_first_slot.lean	142	label:lem:basis-change	第 4 章 T1：`lem:basis-change`（第一槽基变换）
+Hyp109	L20261018/Hyp109.lean	Ch4.Step002_residue_cup_data_shape	Ch4/Step002_residue_cup_data_shape.lean	299	label:lem:ramified-vanishing	第 4 章 T2（抽象层）：`ResidueCupData` —— §2.4 工具的形状 —— 与 T3 的抽象内核
+Hyp110	L20261018/Hyp110.lean	Ch4.Step003_ramified_vanishing_paper_objects	Ch4/Step003_ramified_vanishing_paper_objects.lean	193	label:lem:ramified-vanishing,label:prop:prelim-residue	第 4 章 T3 论文层：`lem:ramified-vanishing` 在论文真实对象上
+Hyp111	L20261018/Hyp111.lean	Ch4.Step004_thm_ramified_assembly	Ch4/Step004_thm_ramified_assembly.lean	104	label:thm:ramified	第 4 章 T4：`thm:ramified`（4.3）—— 纯装配
+Hyp112	L20261018/Hyp112.lean	Ch4.Step005_corollary_four_four_dimension	Ch4/Step005_corollary_four_four_dimension.lean	122	line:1646	第 4 章 T5：`raw/L20261018.tex:1646` 的未编号推论（4.4）—— 维数簿记
+Hyp113	L20261018/Hyp113.lean	Ch2.Hensel.ResidueMap.Step001_open_residual_advance	Ch2/Hensel/ResidueMap/Step001_open_residual_advance.lean	125	line:1017	R940：把 `∅-open` 残余 ② 推进两步
+Hyp114	L20261018/Hyp114.lean	Ch2.Hensel.ResidueMap.Step002_unit_reduction_principal_units	Ch2/Hensel/ResidueMap/Step002_unit_reduction_principal_units.lean	87	label:lem:ramified-vanishing,label:prop:prelim-kummer-valuation,line:1017	R941：`prop:prelim-kummer-valuation` 的**第一块**机检 —— 单位约化与主单位 `p`-可除
+Hyp115	L20261018/Hyp115.lean	Ch2.Hensel.ResidueMap.Step003_residue_valuation_h1	Ch2/Hensel/ResidueMap/Step003_residue_valuation_h1.lean	144	label:prop:prelim-kummer-valuation	R942：`prop:prelim-kummer-valuation`(2) 的第一字段 —— `\bar v : H¹(F,μ_p) → F_p`
+Hyp116	L20261018/Hyp116.lean	Ch2.Hensel.ResidueMap.Step004_valuation_decomposition_unique	Ch2/Hensel/ResidueMap/Step004_valuation_decomposition_unique.lean	120	label:prop:prelim-kummer-valuation	R946：`prop:prelim-kummer-valuation`(2) 的**分解式** `x = x₀ + m·(π)`（分解 ＋ 唯一性）
+Hyp117	L20261018/Hyp117.lean	Ch2.Hensel.ResidueMap.Step005_residue_cup_data_fields_reduced	Ch2/Hensel/ResidueMap/Step005_residue_cup_data_fields_reduced.lean	138	label:lem:ramified-vanishing	R948：**把 `ResidueCupData` 的 11 个假设字段压到 4 个**
+Hyp119	L20261018/Hyp119.lean	Ch2.Hensel.ResidueMap.Step006_tame_pi_u_of	Ch2/Hensel/ResidueMap/Step006_tame_pi_u_of.lean	89	label:lem:ramified-vanishing	-
+Hyp120	L20261018/Hyp120.lean	Ch2.Kummer.Step017_kummer_class_pow_identities	Ch2/Kummer/Step017_kummer_class_pow_identities.lean	36	label:prop:prelim-kummer-valuation	-
+Hyp121	L20261018/Hyp121.lean	Ch2.Hensel.ResidueMap.Step007_valuation_to_add_tools	Ch2/Hensel/ResidueMap/Step007_valuation_to_add_tools.lean	36	-	-
+Hyp122	L20261018/Hyp122.lean	Ch2.Hensel.ResidueMap.Step008_exists_unit_rep	Ch2/Hensel/ResidueMap/Step008_exists_unit_rep.lean	71	label:prop:prelim-kummer-valuation	-
+Hyp123	L20261018/Hyp123.lean	Ch2.Hensel.ResidueMap.Step009_tame_uu_of_units	Ch2/Hensel/ResidueMap/Step009_tame_uu_of_units.lean	62	-	-
+Hyp124	L20261018/Hyp124.lean	Ch2.Hensel.ResidueMap.Step010_cup_unit_unit_eq_zero	Ch2/Hensel/ResidueMap/Step010_cup_unit_unit_eq_zero.lean	25	-	-
+Hyp125	L20261018/Hyp125.lean	Ch2.Hensel.ResidueMap.Step011_cup_fp_unit_unit_eq_zero	Ch2/Hensel/ResidueMap/Step011_cup_fp_unit_unit_eq_zero.lean	24	-	-
+Hyp126	L20261018/Hyp126.lean	Ch2.Kummer.Step018_bridge_kc_def	Ch2/Kummer/Step018_bridge_kc_def.lean	31	-	-
+Hyp127	L20261018/Hyp127.lean	Ch2.Hensel.ResidueMap.Step012_bridge_kc_unit_cup_zero	Ch2/Hensel/ResidueMap/Step012_bridge_kc_unit_cup_zero.lean	123	label:prop:prelim-residue	载体桥「第 1.5 段」：`bridgeKc` 上单位-单位杯积为零
+Hyp128	L20261018/Hyp128.lean	Ch2.Kummer.Step019_kummer_class_route_a_normal_form	Ch2/Kummer/Step019_kummer_class_route_a_normal_form.lean	83	-	路线 A 的正规形：`KummerBridge.kummerClass` 落成 `muP` 自己的显式 `H¹` 比较
+Hyp129	L20261018/Hyp129.lean	Ch2.Kummer.Step020_route_b_normal_form	Ch2/Kummer/Step020_route_b_normal_form.lean	52	-	R972：路线 B 的收尾正规形 —— `muNRep` 的 `OfDiscrete` 比较 = 换标量 ∘ 显式比较
+Hyp130	L20261018/Hyp130.lean	Ch2.Hensel.ResidueMap.Step013_huu_reduced_to_linear_dependence	Ch2/Hensel/ResidueMap/Step013_huu_reduced_to_linear_dependence.lean	84	label:prop:prelim-residue	R973：`hUU` 归约到**一条纯线性代数事实**（`\ker\bar v` 内任两元线性相关）
+Hyp131	L20261018/Hyp131.lean	Ch2.Hensel.ResidueMap.Step014_ker_v_one_dim_group_core	Ch2/Hensel/ResidueMap/Step014_ker_v_one_dim_group_core.lean	84	-	R974：`ker\bar v ≤ 1` 维的第 2 步 —— 群论核心（`κˣ/(κˣ)^p` 中任两元成幂关系）
+Hyp132	L20261018/Hyp132.lean	Ch2.Hensel.ResidueMap.Step015_huu_residue_field_power_relation	Ch2/Hensel/ResidueMap/Step015_huu_residue_field_power_relation.lean	55	-	R975：`hdep` 的域论侧 —— 剩余域单位群中任两元成幂关系（模 `p` 次幂）
+Hyp133	L20261018/Hyp133.lean	Ch2.Hensel.ResidueMap.Step016_huu_unit_power_dependence	Ch2/Hensel/ResidueMap/Step016_huu_unit_power_dependence.lean	68	-	R976：`hdep` 的最后一段（域论抬回）—— 单位类的幂依赖性
+Hyp134	L20261018/Hyp134.lean	Ch2.Hensel.ResidueMap.Step017_hdep_huu_are_theorems	Ch2/Hensel/ResidueMap/Step017_hdep_huu_are_theorems.lean	90	label:prop:prelim-residue	R976（续）：**`hdep` 与 `hUU` 均为定理**
+Hyp135	L20261018/Hyp135.lean	Ch2.Hensel.ResidueMap.Step018_huu_discharged	Ch2/Hensel/ResidueMap/Step018_huu_discharged.lean	78	label:lem:ramified-vanishing	R977：**T3 的 `hUU` 假设解除** —— `\ker\bar v` 上的杯积直接为零
+Hyp136	L20261018/Hyp136.lean	Ch2.Hensel.ResidueMap.Step019_hens_residue_data_nine_fields	Ch2/Hensel/ResidueMap/Step019_hens_residue_data_nine_fields.lean	92	-	R978：**`HenselResidueData` 的 11 个字段里 9 个由定理供给** —— `tame_uu` 字段摘除
+Hyp137	L20261018/Hyp137.lean	Ch2.Hensel.ResidueMap.Step020_cup_pi_nonzero_injective	Ch2/Hensel/ResidueMap/Step020_cup_pi_nonzero_injective.lean	65	-	R979：T2／T3 的**线性代数核** —— `cup (·) (π)` 在 `\ker\bar v` 上**非零且单射**
+Hyp138	L20261018/Hyp138.lean	Ch2.Hensel.ResidueMap.Step021_res_and_tame_u_pi_discharged	Ch2/Hensel/ResidueMap/Step021_res_and_tame_u_pi_discharged.lean	135	-	R980：**`res` 与 `tame_u_pi` 一起解除** —— `HenselResidueData` 在真实载体上非空
+Hyp139	L20261018/Hyp139.lean	Ch2.Hensel.ResidueMap.Step022_ramified_vanishing_no_tame_symbol	Ch2/Hensel/ResidueMap/Step022_ramified_vanishing_no_tame_symbol.lean	110	label:lem:ramified-vanishing	R981：**论文 `lem:ramified-vanishing` 成为无驯符号假设的定理**
+Hyp140	L20261018/Hyp140.lean	Ch2.Kummer.Step021_bridge_first_segment	Ch2/Kummer/Step021_bridge_first_segment.lean	47	-	R982：两个载体的**桥的第一段** —— Kummer 类在 `h1ToVEquiv` 下的像
+Hyp141	L20261018/Hyp141.lean	Ch2.Hensel.ResidueMap.Step023_hens_residue_data_transport	Ch2/Hensel/ResidueMap/Step023_hens_residue_data_transport.lean	91	-	R983：**`HenselResidueData` 的结构搬运**（沿载体等价）
+Hyp142	L20261018/Hyp142.lean	Ch2.Kummer.Step022_pairing_compatibility	Ch2/Kummer/Step022_pairing_compatibility.lean	38	-	R985：**桥第 2b 段的第一步 —— 配对相容**（`zmodMulPairing_eq_muPairing`）
+Hyp143	L20261018/Hyp143.lean	Ch2.Kummer.Step023_cup_compatible_mu_p	Ch2/Kummer/Step023_cup_compatible_mu_p.lean	47	-	R986：**桥第 2b 段 —— 杯积相容 `cup_compat_muP` 落成**
+Hyp145	L20261018/Hyp145.lean	Ch4.Step006_thm_ramified_no_d	Ch4/Step006_thm_ramified_no_d.lean	220	label:thm:ramified	R989：**桥的 `≃ₗ` 升级完成（选 (乙) 路）＋ T4 去 `D`**
+Hyp146	L20261018/Hyp146.lean	Ch4.Step007_corollary_four_four_no_d	Ch4/Step007_corollary_four_four_no_d.lean	135	line:1646	R990：**T5（`corollary_4_4`）去 `D`** ＋ `d_F = d_K + 1` 的无条件化
+Hyp147	L20261018/Hyp147.lean	Ch4.Step008_rank_contradiction_single_phi	Ch4/Step008_rank_contradiction_single_phi.lean	166	line:1646	R991：**`∅-carrier-bridge` 消除 —— 论文「`rankΦ=2` 与 `rankΦ≥3` 矛盾」在同一 `Φ` 上合成**
+Hyp148	L20261018/Hyp148.lean	Ch4.Step009_dk_eq_one_is_a_theorem	Ch4/Step009_dk_eq_one_is_a_theorem.lean	187	line:1646	R992：**`d_K = 1` 是定理** —— T5 的最后一条假设 `hK1` 解除
+Hyp149	L20261018/Hyp149.lean	Ch4.Step010_basis_change_brauer_class	Ch4/Step010_basis_change_brauer_class.lean	50	label:lem:basis-change	R995：**`lem:basis-change` 的第二句** —— 变换不改变 `D` 的 Brauer 类
+Hyp150	L20261018/Hyp150.lean	Ch4.Step011_transition_paragraph_4_1_4_2	Ch4/Step011_transition_paragraph_4_1_4_2.lean	201	line:1596,line:1599	R998：**逐字 100% 第 1 步 —— 4.1/4.2 之间过渡段的两句 ＋ 一句前提**（论文 `:1600–1601`）
+Hyp151	L20261018/Hyp151.lean	Ch4.Step012_ramified_vanishing_paper_route	Ch4/Step012_ramified_vanishing_paper_route.lean	222	line:1608	R999：**按论文原路线重证 4.2**（`lem:ramified-vanishing`，`raw/L20261018.tex:1613–1626`）
+Hyp152	L20261018/Hyp152.lean	Ch4.Step013_basis_selection_u	Ch4/Step013_basis_selection_u.lean	114	line:1596	R1000：**过渡段第三句 —— `U` 的基选取**（论文 `:1596`）
+Hyp153	L20261018/Hyp153.lean	Ch4.Step014_ramified_vanishing_hensel_level	Ch4/Step014_ramified_vanishing_hensel_level.lean	263	line:1608	R1001：**4.2 在论文的假设层级（Hensel 层）—— 不假设完备性/局部域**
+Hyp154	L20261018/Hyp154.lean	Ch4.Step015_thm_ramified_1_sec_2_4_only	Ch4/Step015_thm_ramified_1_sec_2_4_only.lean	151	line:1636	R1002：**4.3(1) 只依赖 §2.4** —— `U^⊥ = N = 0`（`D` 作输入，不依赖完备构造）
+Hyp155	L20261018/Hyp155.lean	Ch4.Step016_corollary_four_four_sec_2_4_only	Ch4/Step016_corollary_four_four_sec_2_4_only.lean	100	line:1648	R1003：**4.4 只依赖 §2.4** —— `D` 作输入（`hK1` 保留为论文假设）
+Hyp156	L20261018/Hyp156.lean	Ch4.Step017_thm_ramified_and_corollary_class_free	Ch4/Step017_thm_ramified_and_corollary_class_free.lean	232	line:1636,line:1648	R1004：**4.3(1) 与 4.4 完全去类**（论文层级：只留 `[Field F] [Fact p.Prime] [μ_p ⊂ F]`）
+Hyp157	L20261018/Hyp157.lean	Ch4.Step018_single_carrier_thm_ramified	Ch4/Step018_single_carrier_thm_ramified.lean	170	line:1636,line:1637	R1005：**单载体化**（论文层级，类无关）—— 4.3(2) 搬到显式载体，与 4.3(1) 合成论文的 `thm:ramified`
+Hyp158	L20261018/Hyp158.lean	Ch2.Brauer.Step035_symbol_algebra_tensor_class	Ch2/Brauer/Step035_symbol_algebra_tensor_class.lean	42	-	R1006：**`D`（符号代数张量积）作为代数对象 —— 第一块：类的可乘性**
+Hyp161	L20261018/Hyp161.lean	Ch2.Hensel.ResidueMap.Step024_delta_two_refined	Ch2/Hensel/ResidueMap/Step024_delta_two_refined.lean	417	line:1050,line:1608,line:1636,line:1648	R1013：`∂₂` 的**精确化** —— 11 字段结构 ⟺ **两条剩余事实**
+Hyp162	L20261018/Hyp162.lean	Ch2.Hensel.Valuation.Step001_residue_valuation_without_completeness	Ch2/Hensel/Valuation/Step001_residue_valuation_without_completeness.lean	264	label:prop:prelim-kummer-valuation,line:1608,line:1636,line:1648	R1014：§2.4 的**估值层脱离完备性** —— `\bar v` 由 ℤ-值离散赋值 `v` 直接给出
+Hyp163	L20261018/Hyp163.lean	Ch2.Hensel.Valuation.Step002_principal_units_without_completeness	Ch2/Hensel/Valuation/Step002_principal_units_without_completeness.lean	216	line:1017,line:1622	R1015：§2.4 的**主单位层**脱离完备性 ＋ **(R1) 归约到 Kummer 类形态**
+Hyp164	L20261018/Hyp164.lean	Ch2.Hensel.Valuation.Step003_r1_norm_form	Ch2/Hensel/Valuation/Step003_r1_norm_form.lean	123	-	R1016：**(R1) 归约到范数形态**（战役载体版符号–范数判据）
+Hyp167	L20261018/Hyp167.lean	Ch2.Hensel.Valuation.Step004_adjoin_root_degree_p	Ch2/Hensel/Valuation/Step004_adjoin_root_degree_p.lean	101	-	R1020（路径 A · **A1′ 第一小步**）：`[F⟮s⟯ : F] = p`（`s^p = π`，`π` 一致化元）
+Hyp168	L20261018/Hyp168.lean	Ch2.Hensel.Valuation.Step005_eisenstein_uniformizer	Ch2/Hensel/Valuation/Step005_eisenstein_uniformizer.lean	107	-	R1021（路径 A · **A1′·2·a**）：`v` 与赋值环滤过的对接 ＋ `X^p − C π` 在 `𝒪_F` 上 **Eisenstein**
+Hyp169	L20261018/Hyp169.lean	Ch2.Hensel.Valuation.Step006_residue_map_subring	Ch2/Hensel/Valuation/Step006_residue_map_subring.lean	85	-	R1022（路径 A · **A1′·2·b**）：`O_F[s]` 上**模 `s` 的剩余映射**
+Hyp170	L20261018/Hyp170.lean	Ch2.Hensel.Valuation.Step007_integer_clear_denominators	Ch2/Hensel/Valuation/Step007_integer_clear_denominators.lean	76	-	R1023（路径 A · **A1′·2·b·ii**）：整性判据的**系数侧** —— 任意元素乘 `π` 的幂后落在 `𝒪_F` 中
+Hyp171	L20261018/Hyp171.lean	Ch2.Hensel.Valuation.Step008_adjoin_root_model	Ch2/Hensel/Valuation/Step008_adjoin_root_model.lean	61	-	R1024（路径 A · **A1′·2·b·iii 的地基**）：把 `L` 取成 `AdjoinRoot (X^p − π)` 模型
+Hyp172	L20261018/Hyp172.lean	Ch2.Hensel.Valuation.Step009_norm_residue_basic	Ch2/Hensel/Valuation/Step009_norm_residue_basic.lean	48	-	R1025（路径 A · **A1′·2·b·iii（一）**）：范数残差所需的两条范数事实 ＋ 矩阵元入口登记
+Hyp173	L20261018/Hyp173.lean	Infra.Algebra.Step001_norm_monoid_hom	Infra/Algebra/Step001_norm_monoid_hom.lean	76	-	R1026（路径 A · **A1′·2·b·iii（二）**）：范数是幺半同态 ⟹ 乘性／幂性／幂零为零
+Hyp174	L20261018/Hyp174.lean	Ch2.Hensel.Valuation.Step010_power_basis_s	Ch2/Hensel/Valuation/Step010_power_basis_s.lean	75	-	R1027（路径 A · **A1′·2·b·iv 的前提**）：`s^p = π`（模型内）＋ `s^{pn} = π^n` ＋ `gen = s` 的幂基
+Hyp175	L20261018/Hyp175.lean	Ch2.Hensel.Valuation.Step011_uniformizer_clear_denominators	Ch2/Hensel/Valuation/Step011_uniformizer_clear_denominators.lean	58	-	R1028（路径 A · **A1′·2·b·iv（一）**）：一致化元在 `𝒪_F` 中 ＋ 清分母的单调性
+Hyp176	L20261018/Hyp176.lean	Ch2.Hensel.Valuation.Step012_coordinate_decomposition	Ch2/Hensel/Valuation/Step012_coordinate_decomposition.lean	84	-	R1029（路径 A · **A1′·2·b·iv（二）**）：坐标分解 `x = Σ_{i<p} aᵢ sⁱ`
+Hyp177	L20261018/Hyp177.lean	Ch2.Hensel.Valuation.Step013_normalization_integral	Ch2/Hensel/Valuation/Step013_normalization_integral.lean	72	-	R1030（路径 A · **A1′·2·b·iv（三）**）：归一化 —— `∃ n, sⁿx` 的坐标全在 `𝒪_F`
+Hyp178	L20261018/Hyp178.lean	Infra.Algebra.Step002_norm_basis_change_bridge	Infra/Algebra/Step002_norm_basis_change_bridge.lean	51	-	R1031（路径 A · **·b·iii ① 的解锁**）：mathlib 已有范数–基变换桥，`A_𝒪` 的 `Free`/`Finite` 白拿
+Hyp179	L20261018/Hyp179.lean	Ch2.Hensel.Valuation.Step014_reduced_power_formula	Ch2/Hensel/Valuation/Step014_reduced_power_formula.lean	58	-	R1032（路径 A · **·b·iii ②（一）**）：`sᵐ` 的约化公式
+Hyp180	L20261018/Hyp180.lean	Ch2.Hensel.Valuation.Step015_norm_s_eq_zero	Ch2/Hensel/Valuation/Step015_norm_s_eq_zero.lean	55	-	R1033（路径 A · **·b·iii ② 的配套**）：剩余模型是**非平凡环** ⟹ `N(s) = 0`
+Hyp181	L20261018/Hyp181.lean	Ch2.Hensel.Valuation.Step016_explicit_basis_powers	Ch2/Hensel/Valuation/Step016_explicit_basis_powers.lean	52	-	R1034（路径 A · **·b·iii ②（二）预备**）：`Fin p`-索引的显式基 `B i = sⁱ`
+Hyp182	L20261018/Hyp182.lean	Ch2.Hensel.Valuation.Step017_repr_computations	Ch2/Hensel/Valuation/Step017_repr_computations.lean	59	-	R1035（路径 A · **·b·iii ②（二）a**）：`repr` 的两条核心计算
+Hyp183	L20261018/Hyp183.lean	Ch2.Hensel.Valuation.Step018_left_mul_matrix_entrywise	Ch2/Hensel/Valuation/Step018_left_mul_matrix_entrywise.lean	69	-	R1036（路径 A · **·b·iii ②（二）b**）：`leftMulMatrix` 的逐元公式（组装完成）
+Hyp184	L20261018/Hyp184.lean	Ch2.Hensel.Valuation.Step019_left_mul_matrix_sum	Ch2/Hensel/Valuation/Step019_left_mul_matrix_sum.lean	43	-	R1037（路径 A · **·b·iii ②（二）c**）：逐元公式（求和组装完成）
+Hyp185	L20261018/Hyp185.lean	Ch2.Hensel.Valuation.Step020_left_mul_matrix_shape	Ch2/Hensel/Valuation/Step020_left_mul_matrix_shape.lean	118	-	R1038（路径 A · **S28 第 1 步**）：矩阵结构（对角侧 `j ≤ i`）
+Hyp186	L20261018/Hyp186.lean	Witness.Step004_val_filtration_compat_empty	Witness/Step004_val_filtration_compat_empty.lean	51	-	R1039（**自我审查 · 非空性审计**）：`ValFiltrationCompat` 的假设类是**空的**
+Hyp187	L20261018/Hyp187.lean	Ch2.Hensel.Valuation.Step021_val_compat_elementwise	Ch2/Hensel/Valuation/Step021_val_compat_elementwise.lean	108	-	R1040（**修复 R1039 的空假设**）：元素级 `ValCompat` ＋ 重述受影响的定理
+Hyp188	L20261018/Hyp188.lean	Witness.Step005_val_compat_qp	Witness/Step005_val_compat_qp.lean	54	-	R1041（**补 `ValCompat` 的非空见证** · 第一步）：`ℚ_[p]` 上的 ℤ-值赋值 `v`
+Hyp189	L20261018/Hyp189.lean	Witness.Step006_val_compat_complete_field	Witness/Step006_val_compat_complete_field.lean	83	-	R1042（**非空见证第二步**）：`ValCompat` 在完备局部域上成立
+Hyp190	L20261018/Hyp190.lean	Ch2.Hensel.Valuation.Step022_norm_congruence	Ch2/Hensel/Valuation/Step022_norm_congruence.lean	147	-	R1043（路径 A · **S28 第 2 步**）：`N(y) ≡ a₀^p (mod π)`
+Hyp191	L20261018/Hyp191.lean	Ch2.Hensel.Valuation.Step023_maximal_ideal_eq_pi	Ch2/Hensel/Valuation/Step023_maximal_ideal_eq_pi.lean	60	-	R1044（路径 A · **S28 第 3 步的前提**）：`𝔪 = (π)` —— `𝔪` 中元素都被一致化元整除
+Hyp192	L20261018/Hyp192.lean	Ch2.Hensel.Valuation.Step024_normalization_sum_coeff	Ch2/Hensel/Valuation/Step024_normalization_sum_coeff.lean	78	-	R1045（**S29 · ④.0**）：归一化的 `ValCompat` 版（输出 `sumCoeff` 形式）
+Hyp193	L20261018/Hyp193.lean	Ch2.Hensel.Valuation.Step025_norm_smul_uniformizer	Ch2/Hensel/Valuation/Step025_norm_smul_uniformizer.lean	73	-	R1046（**S29 · ④.1 的零件**）：`N(sᵐ · x) = πᵐ · N(x)`
+Hyp194	L20261018/Hyp194.lean	Ch2.Hensel.Valuation.Step026_coefficient_in_maximal_ideal	Ch2/Hensel/Valuation/Step026_coefficient_in_maximal_ideal.lean	77	-	R1047（**S29 · ④.1 第二步**）：`n ≥ 1` 的表示必有 `c 0 ∈ 𝔪`
+Hyp195	L20261018/Hyp195.lean	Ch2.Hensel.Valuation.Step027_leading_term_split	Ch2/Hensel/Valuation/Step027_leading_term_split.lean	69	-	R1048（**S29 · ④.1 第三步的核心重排**）：拆首项 ＋ 提出一个 `s`
+Hyp196	L20261018/Hyp196.lean	Ch2.Hensel.Valuation.Step028_reindex_eliminate_s	Ch2/Hensel/Valuation/Step028_reindex_eliminate_s.lean	167	-	R1049（**S29 · ④.1 第三步的零件**）：消去 `s` ＋ 拆末项 ＋ 下标重排
+Hyp197	L20261018/Hyp197.lean	Ch2.Hensel.Valuation.Step029_integrality_criterion	Ch2/Hensel/Valuation/Step029_integrality_criterion.lean	127	-	R1050（**S29 · ④.1 收口**）：整性判据 —— `N(x) ∈ 𝒪_F ⟹ x ∈ 𝒪_F[s]`
+Hyp198	L20261018/Hyp198.lean	Ch2.Hensel.ResidueMap.Step025_unit_norm_pth_power	Ch2/Hensel/ResidueMap/Step025_unit_norm_pth_power.lean	114	-	R1051（**S29 · ④.2 第一步**）：单位范数是 `p` 次幂（Hensel）
+Hyp199	L20261018/Hyp199.lean	Ch2.Hensel.ResidueMap.Step026_unit_norm_pth_power_from_valuation	Ch2/Hensel/ResidueMap/Step026_unit_norm_pth_power_from_valuation.lean	120	-	R1052（**S29 · ④.2 第二步**）：`v(N y) ≡ 0 (mod p)` ⟹ `N(y)` 是 `p` 次幂
+Hyp200	L20261018/Hyp200.lean	Ch2.Hensel.ResidueMap.Step027_norm_group_form	Ch2/Hensel/ResidueMap/Step027_norm_group_form.lean	64	-	R1053（**S29 · ④.2 第三步**）：范数形态 —— `normGroup` 版
+Hyp201	L20261018/Hyp201.lean	Ch2.Hensel.ResidueMap.Step028_residue_phi_injective	Ch2/Hensel/ResidueMap/Step028_residue_phi_injective.lean	115	-	R1054（**S29 · ④.2 收口 —— (R1) 机检**）：`residuePhi` 单射
+Hyp202	L20261018/Hyp202.lean	Ch2.Hensel.ResidueMap.Step029_model_field_from_hypothesis	Ch2/Hensel/ResidueMap/Step029_model_field_from_hypothesis.lean	69	label:prop:prelim-residue	R1055（**S29 · ④.2 收口（去假设）**）：模型域性从假设变定理
+Hyp203	L20261018/Hyp203.lean	Infra.Cohomology.Step001_coeff_map_scalar_restriction	Infra/Cohomology/Step001_coeff_map_scalar_restriction.lean	63	-	R1059（**载体桥 `hbridge` 的第一块基建**）：`coeffMap` 与「限制纯量」交换
+Hyp204	L20261018/Hyp204.lean	Infra.Cohomology.Step002_map_coefficient_restriction	Infra/Cohomology/Step002_map_coefficient_restriction.lean	56	-	R1060（**载体桥基建 2**）：`map`（群＋系数）与「限制纯量」交换
+Hyp205	L20261018/Hyp205.lean	Ch2.Hensel.ResidueMap.Step030_r1_scaled_bridge	Ch2/Hensel/ResidueMap/Step030_r1_scaled_bridge.lean	157	-	R1061（**S29 · ④.2 收口（缩放版）**）：`(R1)` 只需**缩放**载体桥
+Hyp206	L20261018/Hyp206.lean	Infra.Algebra.Step003_one_dim_linear_maps_scalar	Infra/Algebra/Step003_one_dim_linear_maps_scalar.lean	88	-	R1062（**`(R1-σ)` 的代数内核**）：一维模上两个非零线性映射只差一个非零标量
+Hyp207	L20261018/Hyp207.lean	Ch2.Kummer.Step024_r1_sigma_residual_is_t1_bridge	Ch2/Kummer/Step024_r1_sigma_residual_is_t1_bridge.lean	97	-	R1063（**★ 结构统一**）：`(R1-σ)` 的残余 **就是** R970 的 T1 桥
+Hyp210	L20261018/Hyp210.lean	Infra.Cohomology.Boundary.Step001_acyclicity_short_exact	Infra/Cohomology/Boundary/Step001_acyclicity_short_exact.lean	90	-	R1072（**(R2) 建造 H-5-1**）：短正合列中间项与左项零调 ⟹ 右项零调
+Hyp211	L20261018/Hyp211.lean	Infra.Cohomology.Boundary.Step002_coinduced_embedding	Infra/Cohomology/Boundary/Step002_coinduced_embedding.lean	78	-	R1074（**(R2) 建造 H-5-1c**）：GS 的嵌入 `A ↪ M^G(A)`
+Hyp212	L20261018/Hyp212.lean	Infra.Cohomology.Boundary.Step003_coinduced_quotient	Infra/Cohomology/Boundary/Step003_coinduced_quotient.lean	98	-	R1075（**(R2) 建造 H-5-1d（上半）**）：商 `C := M^G(A) / A` 及其结构
+Hyp213	L20261018/Hyp213.lean	Infra.Cohomology.Boundary.Step004_coinduced_ses_acyclic	Infra/Cohomology/Boundary/Step004_coinduced_ses_acyclic.lean	94	-	R1077（**★ (R2) 建造 H-5-1 完成**）：GS 6.8.5 的短正合列 `0 → A → M^G(A) → C → 0` 与其零调性
+Hyp214	L20261018/Hyp214.lean	Ch2.Kummer.Step025_t1_reduction_factor_separation	Ch2/Kummer/Step025_t1_reduction_factor_separation.lean	94	-	R1079（**T1 的第一个归约：把「任意选基」因子分离出来**）
+Hyp215	L20261018/Hyp215.lean	Ch2.Kummer.Step026_t1_coefficient_iso_composition	Ch2/Kummer/Step026_t1_coefficient_iso_composition.lean	46	-	R1083（**T1 归约：系数同构的复合恒等**）
+Hyp216	L20261018/Hyp216.lean	Ch2.Kummer.Step027_t1_mu_n_rep_factorization	Ch2/Kummer/Step027_t1_mu_n_rep_factorization.lean	268	-	R1085（**T1 第一归约落地：`muNRepH1Equiv` 的因子分解 ＋ T1 化为「两个固定运输的比较」**）
+Hyp218	L20261018/Hyp218.lean	Ch2.Kummer.Step028_t1_explicit_map1_linear	Ch2/Kummer/Step028_t1_explicit_map1_linear.lean	186	-	R1087（**T1 第二轮归约**：`explicitMap1` 对系数映射的标量线性性 ＋ `bridgeKc` 链的第一次望远镜化）
+Hyp219	L20261018/Hyp219.lean	Ch2.Kummer.Step029_t1_group_variable_cancel	Ch2/Kummer/Step029_t1_group_variable_cancel.lean	163	-	R1088（**T1 第三归约：群变元抵消 —— `cohomFpMap` 的群变换被消掉**）
+Hyp220	L20261018/Hyp220.lean	Ch2.Kummer.Step030_t1_bridge_gm_bypass	Ch2/Kummer/Step030_t1_bridge_gm_bypass.lean	209	-	R1089（**T1 第四归约：群变元完全消掉 —— `bridgeKc` 的 `G_m`-绕行被消去**）
+Hyp221	L20261018/Hyp221.lean	Ch2.Kummer.Step031_t1_model_comparison	Ch2/Kummer/Step031_t1_model_comparison.lean	119	-	R1090（**T1 第五归约：模型比对 —— 两侧都写成 `muP.OfDiscrete ∘ explicitMap1`**）
+Hyp222	L20261018/Hyp222.lean	Ch2.Kummer.Step032_t1_bridge_same_shape	Ch2/Kummer/Step032_t1_bridge_same_shape.lean	121	-	R1091（**T1 第六归约：`bridgeKc` 侧也写成 `muP.OfDiscrete ∘ explicitMap1`** —— 两侧同形）
+Hyp223	L20261018/Hyp223.lean	Ch2.Kummer.Step033_t1_closed	Ch2/Kummer/Step033_t1_closed.lean	234	-	R1092（**★ T1 收口**）
+Hyp226	L20261018/Hyp226.lean	Infra.Cohomology.Boundary.Step005_coinduced_invariants_recon	Infra/Cohomology/Boundary/Step005_coinduced_invariants_recon.lean	69	-	R1096（**(R2) 主线的关键侦察：GS 的 `lemma-coinduced-invariants` 在库内「抽象侧」已有，且对任意子群成立**）
+Hyp227	L20261018/Hyp227.lean	Infra.Cohomology.Boundary.Step006_delta_two_dimension_shift	Infra/Cohomology/Boundary/Step006_delta_two_dimension_shift.lean	65	-	R1097（**(R2)：抽象侧 `∂₂` 组装第 1 步 —— 维数平移同构 `H^n(G,C) ≅ H^{n+1}(G,A)`**）
+Hyp228	L20261018/Hyp228.lean	Infra.Cohomology.Boundary.Step007_delta_two_gating	Infra/Cohomology/Boundary/Step007_delta_two_gating.lean	82	-	R1098（**(R2)：抽象侧 `∂₂` 的「门控」—— `H^j(S, C) = 0`**）
+Hyp229	L20261018/Hyp229.lean	Infra.Cohomology.Boundary.Step008_delta_two_inflation_iso	Infra/Cohomology/Boundary/Step008_delta_two_inflation_iso.lean	86	-	R1099（**(R2)：抽象侧 `∂₂` 第 2 段 —— inflation 同构 `H^m(G ⧸ S, C^S) ≅ H^m(G, C)`**）
+Hyp230	L20261018/Hyp230.lean	Infra.Cohomology.Boundary.Step009_delta_two_third_segment	Infra/Cohomology/Boundary/Step009_delta_two_third_segment.lean	70	-	R1100（**(R2)：`∂₂` 第 (3) 段的**可做部分** ＋ 一处库内缺口的精确定位**）
+Hyp231	L20261018/Hyp231.lean	Infra.Cohomology.Boundary.Step010_conj_map	Infra/Cohomology/Boundary/Step010_conj_map.lean	71	-	R1101（**(R2)：`G ⧸ S`-模结构的第一块 —— 抽象侧共轭作用 `conjMap`**）
+Hyp232	L20261018/Hyp232.lean	Infra.Cohomology.Boundary.Step011_conj_coeff_hom	Infra/Cohomology/Boundary/Step011_conj_coeff_hom.lean	68	-	R1102（**(R2)：共轭作用 `conjMap` —— 补上 `conjCoeffHom` ＋ `conjMap`**）
+Hyp233	L20261018/Hyp233.lean	Infra.Cohomology.Boundary.Step012_inner_conj_trivial_hyp	Infra/Cohomology/Boundary/Step012_inner_conj_trivial_hyp.lean	68	-	R1103（**(R2)：把缺口收敛为单条具名假设 `InnerConjTrivial`**）
+Hyp234	L20261018/Hyp234.lean	Infra.Cohomology.Boundary.Step013_inner_conj_trivial_in	Infra/Cohomology/Boundary/Step013_inner_conj_trivial_in.lean	76	-	R1104（**★★ 修正 R1103 的具名假设：`InnerConjTrivial` 只能对 `g ∈ S` 陈述**）
+Hyp235	L20261018/Hyp235.lean	Infra.Cohomology.Boundary.Step014_conj_action_foundations	Infra/Cohomology/Boundary/Step014_conj_action_foundations.lean	67	-	R1105（**共轭作用的地基三条：底层映射公式 ＋ `conjSubtypeHom` 的乘法 ＋ `conjMap` 的因子性方向**）
+Hyp236	L20261018/Hyp236.lean	Infra.Cohomology.Boundary.Step015_rep_quotient_structure	Infra/Cohomology/Boundary/Step015_rep_quotient_structure.lean	174	line:9497	R1107（**★★ (R2)-1 第一块：`Rep k (G ⧸ S)` 结构 —— 由 `innerConjTrivialIn` 导出**）
+Hyp237	L20261018/Hyp237.lean	Infra.Cohomology.Boundary.Step016_delta_zero_naturality	Infra/Cohomology/Boundary/Step016_delta_zero_naturality.lean	164	line:3585	R1108（**★★★ (R2)-1 第二块：`δ₀` 在共轭作用下的自然性 —— GS `lemma-conjugation-long-exact` 的抽象侧**）
+Hyp238	L20261018/Hyp238.lean	Infra.Cohomology.Boundary.Step017_h0_conj_compatibility	Infra/Cohomology/Boundary/Step017_h0_conj_compatibility.lean	136	line:3580	R1109（**★★★ (R2)-1 第三块：`H⁰` 的共轭相容性 —— `∂₂` 最后一条技术障碍清除**）
+Hyp239	L20261018/Hyp239.lean	Infra.Cohomology.Boundary.Step018_delta_two_conditional	Infra/Cohomology/Boundary/Step018_delta_two_conditional.lean	143	line:9498	R1110（**★★★★★ (R2)-1 完成：`∂₂` 成为条件定理**）
+Hyp240	L20261018/Hyp240.lean	Infra.Cohomology.Boundary.Step019_prism_identity_n1	Infra/Cohomology/Boundary/Step019_prism_identity_n1.lean	102	-	R1111（**(R2)-2 开局：解除 `innerConjTrivialIn` —— `n = 1` 的棱柱恒等式**）
+Hyp241	L20261018/Hyp241.lean	Infra.Cohomology.Boundary.Step020_conj_one_cocycle	Infra/Cohomology/Boundary/Step020_conj_one_cocycle.lean	117	-	R1112（**(R2)-2：共轭 1-余圈与「同类」定理**）
+Hyp242	L20261018/Hyp242.lean	Infra.Cohomology.Boundary.Step021_n1_reduction	Infra/Cohomology/Boundary/Step021_n1_reduction.lean	105	-	R1113（**(R2)-2 的 `n = 1` 归结：只剩一条具体等式**）
+Hyp243	L20261018/Hyp243.lean	Infra.Cohomology.Boundary.Step022_coboundary_explicit_fin	Infra/Cohomology/Boundary/Step022_coboundary_explicit_fin.lean	78	-	R1114（**(R2)-2 的 (★)：`d` 在 `Fin 1`／`Fin 2` 处的显式取值公式**）
+Hyp244	L20261018/Hyp244.lean	Infra.Cohomology.Boundary.Step023_compressed_cocycle	Infra/Cohomology/Boundary/Step023_compressed_cocycle.lean	92	-	R1115（**(R2)-2 装配 a1：由 `cycles 1` 的元素榨出「压缩余圈」**）
+Hyp245	L20261018/Hyp245.lean	Infra.Cohomology.Boundary.Step024_prism_identity_on_cycles	Infra/Cohomology/Boundary/Step024_prism_identity_on_cycles.lean	90	-	R1116（**(R2)-2 装配 a2：逐点棱柱恒等式在 `cycles 1` 上的落地**）
+Hyp246	L20261018/Hyp246.lean	Infra.Cohomology.Boundary.Step025_inner_conj_trivial_in_discharged	Infra/Cohomology/Boundary/Step025_inner_conj_trivial_in_discharged.lean	156	-	R1117（**★★★★★ (R2)-2 的 `n = 1` 收口完成 —— `innerConjTrivialIn` 被机检消去**）
+Hyp277	L20261018/Hyp277.lean	Ch4.Step019_single_carrier_statement	Ch4/Step019_single_carrier_statement.lean	91	-	R1153（**第 1 项：单载体合述 —— 4.3(1)(2) ＋ 4.4 在同一载体上一次陈述**）
+Hyp278	L20261018/Hyp278.lean	Ch4.Step020_delta_two_eq_res_carrier	Ch4/Step020_delta_two_eq_res_carrier.lean	83	-	R1154（**第 2 项：`∂₂ = res` 的载体身份在使用域上闭合**）
+Hyp279	L20261018/Hyp279.lean	Ch4.Step021_d_elementary_block	Ch4/Step021_d_elementary_block.lean	145	-	R1155（**第 5 项第一块：一般 Hensel 情形下 `D` 的「初等块」—— 与完备性无关**）
+Hyp280	L20261018/Hyp280.lean	Ch4.Step022_d_residue_field	Ch4/Step022_d_residue_field.lean	117	-	R1156（**第 5 项第二块：`D` 初等块的剩余字段 —— `infl`／`pi`／`split`，仍零完备性**）
+Hyp281	L20261018/Hyp281.lean	Ch4.Step023_tame_residue_facts_reduction	Ch4/Step023_tame_residue_facts_reduction.lean	76	-	R1157（**第 5 项第三块：`tame_pi_u` 冗余 ＋ 一般 Hensel 缺口完全归约为 `TameResidueFacts`**）
+Hyp282	L20261018/Hyp282.lean	Ch4.Step024_tame_residue_facts_class_free	Ch4/Step024_tame_residue_facts_class_free.lean	62	-	R1158（**第 5 项第四块：一般 Hensel 的缺口**精确归约**为 `TameResidueFacts`（类无关）**）
+Hyp283	L20261018/Hyp283.lean	Ch4.Step025_d_class_eq_cup_sum	Ch4/Step025_d_class_eq_cup_sum.lean	78	-	R1159（**第 3 项收尾：`[D] = (a₁)∪(b₁) + (a₂)∪(b₂)` —— `D` 的代数对象与杯积类完全对齐**）
+Hyp284	L20261018/Hyp284.lean	Ch4.Step026_residue_span_bot_reduction	Ch4/Step026_residue_span_bot_reduction.lean	76	-	R1165（**第 5 项组装：`cd ≤ 1` 的 `H²` 零化 ＋ `residueSpan = ⊥` 时的归约**）
+Hyp285	L20261018/Hyp285.lean	Ch4.Step027_residue_span_bot_skeleton	Ch4/Step027_residue_span_bot_skeleton.lean	113	-	R1166（**第 5 项组装第四步：`residueSpan = ⊥` 的逻辑骨架**）
+Hyp286	L20261018/Hyp286.lean	Ch4.Step028_r1_linear_transport	Ch4/Step028_r1_linear_transport.lean	91	-	R1168（**第 5 项路径 1：(R1) 沿线性等价运输 —— 填 `Hyp285.hR1` 的抽象工具**）
+Hyp287	L20261018/Hyp287.lean	Ch4.Step029_r1_two_carriers_wired	Ch4/Step029_r1_two_carriers_wired.lean	217	-	R1170（**残余 A 收口：(R1) 的两载体接线**）
+Hyp288	L20261018/Hyp288.lean	Ch4.Step030_unramified_decomposition_algebraic	Ch4/Step030_unramified_decomposition_algebraic.lean	308	-	R1171（**残余 B 收口：把「不分歧分解」压成一条纯代数陈述**）
+Hyp289	L20261018/Hyp289.lean	Ch4.Step031_ch4_closed_units_cup_vanish	Ch4/Step031_ch4_closed_units_cup_vanish.lean	150	line:1608,line:1636,line:1648	R1172（**第 4 章收口：四条定理的 `hfacts` 已消去，唯一假设 = `UnitsCupVanish`**）
+Hyp290	L20261018/Hyp290.lean	Ch2.Hensel.UnitsCupVanish.Step001_units_cup_vanish_complete	Ch2/Hensel/UnitsCupVanish/Step001_units_cup_vanish_complete.lean	132	-	R1173（**完备档的 `UnitsCupVanish` —— 无条件机检**）
+Hyp292	L20261018/Hyp292.lean	Ch2.Hensel.UnitsCupVanish.Step002_units_cup_vanish_reduction	Ch2/Hensel/UnitsCupVanish/Step002_units_cup_vanish_reduction.lean	119	-	R1175（**路线更正后的第一块：把 `UnitsCupVanish` 归约到两条显式范数计算 ＋ 一条 `𝒪^×` 有限性**）
+Hyp293	L20261018/Hyp293.lean	Ch2.Hensel.UnitsCupVanish.Step003_norm_group_adjoin_root	Ch2/Hensel/UnitsCupVanish/Step003_norm_group_adjoin_root.lean	147	-	R1176（**(N2) 收口：`w ∈ normGroup F (AdjoinRoot (X^p − C w))`，无条件**）
+Hyp294	L20261018/Hyp294.lean	Ch2.Hensel.UnitsCupVanish.Step004_capelli_criterion	Ch2/Hensel/UnitsCupVanish/Step004_capelli_criterion.lean	99	-	R1177（**去掉「不可约」输入：Capelli 判据 ⟹ `X^p − C w` 不可约 ⟺ `w` 不是 `p` 次幂**）
+Hyp295	L20261018/Hyp295.lean	Ch2.Hensel.UnitsCupVanish.Step005_units_cup_vanish_final_form	Ch2/Hensel/UnitsCupVanish/Step005_units_cup_vanish_final_form.lean	126	-	R1178（**`UnitsCupVanish` 的最终形态：唯一假设 = `𝒪^×` 的一条有限性陈述**）
+Hyp296	L20261018/Hyp296.lean	Ch2.Hensel.UnitsCupVanish.Step006_principal_units_pow_hensel	Ch2/Hensel/UnitsCupVanish/Step006_principal_units_pow_hensel.lean	101	-	R1179（**残余 (P) 的第一块：`(1+𝔪)^p = 1+𝔪`（Hensel）**）
+Hyp297	L20261018/Hyp297.lean	Ch2.Hensel.UnitsCupVanish.Step007_units_surject_residue	Ch2/Hensel/UnitsCupVanish/Step007_units_surject_residue.lean	97	-	R1180（**残余 (P) 第二块 (U2)：`𝒪^× ↠ 𝓀^×` 满（Hensel／局部环）**）
+Hyp298	L20261018/Hyp298.lean	Ch2.Hensel.UnitsCupVanish.Step008_residue_field_units_cyclic	Ch2/Hensel/UnitsCupVanish/Step008_residue_field_units_cyclic.lean	66	-	R1181（**残余 (P) 第三块 (U3)：`𝓀^×` 循环 ＋ 阶 `q−1`**）
+Hyp299	L20261018/Hyp299.lean	Ch2.Hensel.UnitsCupVanish.Step009_units_group_lemma	Ch2/Hensel/UnitsCupVanish/Step009_units_group_lemma.lean	80	-	R1183（**残余 (P) 的最后一条群论引理**）
+Hyp300	L20261018/Hyp300.lean	Ch2.Hensel.UnitsCupVanish.Step010_bezout_arithmetic_core	Ch2/Hensel/UnitsCupVanish/Step010_bezout_arithmetic_core.lean	96	-	R1185（**(P) 收口的算术核心：`p ∤ j ⟹ ∃ k, p ∣ i − k·j`**）
+Hyp301	L20261018/Hyp301.lean	Ch2.Hensel.UnitsCupVanish.Step011_units_transport_steps	Ch2/Hensel/UnitsCupVanish/Step011_units_transport_steps.lean	86	-	R1186（**(P) 收口的运输步 1–2：`Fˣ → 𝒪[F]ˣ → 𝓀ˣ`**）
+Hyp302	L20261018/Hyp302.lean	Ch2.Hensel.UnitsCupVanish.Step012_units_cup_vanish_unconditional	Ch2/Hensel/UnitsCupVanish/Step012_units_cup_vanish_unconditional.lean	140	-	R1192（**收口：`UnitsCupVanish` 无条件成立**）
+Hyp303	L20261018/Hyp303.lean	Ch2.Hensel.UnitsCupVanish.Step013_exists_d_and_ch4_unconditional	Ch2/Hensel/UnitsCupVanish/Step013_exists_d_and_ch4_unconditional.lean	143	-	R1193（**收口完成：`UnitsCupVanish` 无条件 ⟹ `∃ D` 与第 4 章三条无条件**）
+Hyp304	L20261018/Hyp304.lean	Ch2.Hensel.Valuation.Step030_val_compat_order_function	Ch2/Hensel/Valuation/Step030_val_compat_order_function.lean	77	-	R1195（`ValCompat` 非完备见证 · 第 1 块：`𝒪[F]` 上的 ℤ-值阶函数）
+Hyp305	L20261018/Hyp305.lean	Ch2.Hensel.Valuation.Step031_val_compat_well_defined	Ch2/Hensel/Valuation/Step031_val_compat_well_defined.lean	82	-	R1196（`ValCompat` 非完备见证 · 第 2 块：`a = x/y` 与阶差的良定义性）
+Hyp306	L20261018/Hyp306.lean	Ch2.Hensel.Valuation.Step032_val_compat_multiplicative	Ch2/Hensel/Valuation/Step032_val_compat_multiplicative.lean	108	-	R1197（`ValCompat` 非完备见证 · 第 3 块：`ℤ`-值函数与它的乘性）
+Hyp307	L20261018/Hyp307.lean	Ch2.Hensel.Valuation.Step033_val_compat_exists	Ch2/Hensel/Valuation/Step033_val_compat_exists.lean	111	-	R1198（`ValCompat` 非完备见证 · **收官**：`∃ v, ValCompat v`）
+Hyp308	L20261018/Hyp308.lean	Ch2.Hensel.Valuation.Step034_discharge_pi_hypotheses	Ch2/Hensel/Valuation/Step034_discharge_pi_hypotheses.lean	85	-	R1199（消 `hπ` 与 `[Fact (Irreducible (X^p − C π))]`）
+Hyp309	L20261018/Hyp309.lean	Ch2.Hensel.Valuation.Step035_uniformizer_constructed	Ch2/Hensel/Valuation/Step035_uniformizer_constructed.lean	59	-	R1200（无条件版的核心输入：构造性的一致化元 `π`）
+Hyp310	L20261018/Hyp310.lean	Ch4.Step032_v_and_d_exists	Ch4/Step032_v_and_d_exists.lean	87	-	R1201（**无条件版装配**：`v` 与 `D` 同时存在）
+Hyp311	L20261018/Hyp311.lean	Ch2.Kummer.Step034_hbridge_scalar_source	Ch2/Kummer/Step034_hbridge_scalar_source.lean	57	-	R1202（`hbridge` 标量化 · **第 1 块：标量的来源**）
+Hyp312	L20261018/Hyp312.lean	Ch2.Kummer.Step035_hbridge_single_equation	Ch2/Kummer/Step035_hbridge_single_equation.lean	62	-	R1203（`hbridge` 归约为**不含 `redEquiv1` 的单一等式**）
+Hyp313	L20261018/Hyp313.lean	Ch2.Kummer.Step036_kc_scalar_from_coefficient	Ch2/Kummer/Step036_kc_scalar_from_coefficient.lean	50	-	R1209（`kc = c • kcCanonical`：标量从系数识别传到 Kummer 类）
+Hyp314	L20261018/Hyp314.lean	Ch2.Kummer.Step037_kc_scalar_transfer	Ch2/Kummer/Step037_kc_scalar_transfer.lean	90	-	R1214（标量传递：完成）
+Hyp315	L20261018/Hyp315.lean	Ch2.Kummer.Step038_bridges_without_completeness	Ch2/Kummer/Step038_bridges_without_completeness.lean	86	-	R1215（`Hyp221` 的两条桥**去掉完备性**）
+Hyp319	L20261018/Hyp319.lean	Ch2.Hensel.ResidueMap.Step031_r1_without_bridge_or_completeness	Ch2/Hensel/ResidueMap/Step031_r1_without_bridge_or_completeness.lean	221	-	R1223–R1225（S34）：**(R1-σ) 与 (R1) 去掉 `hbridge`／完备性**
+Hyp320	L20261018/Hyp320.lean	Ch2.Kummer.Step039_t1_without_completeness	Ch2/Kummer/Step039_t1_without_completeness.lean	240	-	R1224（S34）：**(T1) 去掉完备性** —— `Hyp223` 的收口搬到一般 Hensel 层级
+Hyp321	L20261018/Hyp321.lean	Ch4.Step033_ch4_three_and_exists_d	Ch4/Step033_ch4_three_and_exists_d.lean	182	line:1050,line:1608,line:1636,line:1648	R1226（S34）：**第四章三条 ＋ `∃D` —— 去掉 `hbridge`，且无完备性**
+Hyp322	L20261018/Hyp322.lean	Ch4.Step034_exists_d_unconditional	Ch4/Step034_exists_d_unconditional.lean	73	label:prop:prelim-residue	R1227（S34）：**`∃D` 的完全无条件版 —— `hbridge` 也消去**
+Hyp323	L20261018/Hyp323.lean	Ch2.Hensel.ResidueMap.Step032_hskew_discharged	Ch2/Hensel/ResidueMap/Step032_hskew_discharged.lean	88	label:prop:prelim-residue	R1228（S34）：**`hskew` 也消去** —— `kummerCupPairing` 的斜对称性是库内定理
+Hyp324	L20261018/Hyp324.lean	Witness.Step007_l1_witness_q7	Witness/Step007_l1_witness_q7.lean	159	-	R1230（S34 第 2 轮）：**`L1` 非空见证 —— `F = ℚ_[7]`，`p = 3`**
+Hyp325	L20261018/Hyp325.lean	Witness.Step008_tame_residue_facts_q7	Witness/Step008_tame_residue_facts_q7.lean	180	label:prop:prelim-residue	R1231（S34 第 3 轮）：`∂₂` 面两条 —— 一条**冗余性**（论文的 `tame_pi_u` 可导出）＋ `TameResidueFacts` 的 `ℚ_[7]` 见证
+Hyp326	L20261018/Hyp326.lean	Ch2.Hensel.TameSymbol.Step001_tame_symbol_general_formula	Ch2/Hensel/TameSymbol/Step001_tame_symbol_general_formula.lean	97	label:eq:prelim-tame	R1232（S34 第 4 轮）：**驯符号一般式**（`eq:prelim-tame` 的锁定版本）
+Hyp327	L20261018/Hyp327.lean	Ch2.Hensel.ResidueMap.Step033_residue_sequence_exact_split	Ch2/Hensel/ResidueMap/Step033_residue_sequence_exact_split.lean	109	label:prop:prelim-residue	R1233（S34 第 5 轮）：`prop:prelim-residue`(3) 的**正合／满射／分裂**段
+Hyp328	L20261018/Hyp328.lean	Witness.Step009_q7_non_cube_unit	Witness/Step009_q7_non_cube_unit.lean	82	-	R1234（S34 第 6 轮）：`ℚ_[7]` 的**非立方单位** —— `hne` 的第一步
+Hyp329	L20261018/Hyp329.lean	Witness.Step010_q7_nonzero_cup	Witness/Step010_q7_nonzero_cup.lean	94	-	R1235（S34 第 7 轮）：**`ℚ_[7]` 的非零杯积类**（`hne` 的第二、三块）
+Hyp330	L20261018/Hyp330.lean	Witness.Step011_q7_v_finite_dimensional	Witness/Step011_q7_v_finite_dimensional.lean	84	-	R1236（S34 第 8 轮）：**`FiniteDimensional (ZMod 3) (GaloBase.V ℚ_[7] 3)`** —— `L1` 残余的最后硬缺口
+Hyp331	L20261018/Hyp331.lean	Witness.Step012_q7_exists_nonzero_cup	Witness/Step012_q7_exists_nonzero_cup.lean	117	-	R1237（S34 第 9 轮）：**`ℚ_[7]` 上存在非零杯积**（`hne` 的落地）
+Hyp332	L20261018/Hyp332.lean	Witness.Step013_q7_ramified_vanishing_witness	Witness/Step013_q7_ramified_vanishing_witness.lean	155	-	R1238（S34 第 10 轮）：**论文 4.2 在 `ℚ_[7]`／`p = 3` 上的 `L1` 见证**
+Hyp333	L20261018/Hyp333.lean	Witness.Step014_q7_val_compat	Witness/Step014_q7_val_compat.lean	84	-	R1239（S34 第 11 轮）：**两套赋值桥** —— `ValCompat (normalizedValuation)` at `ℚ_[7]`
+Hyp334	L20261018/Hyp334.lean	Witness.Step015_q7_hk1	Witness/Step015_q7_hk1.lean	89	-	R1240（S34 第 12 轮）：**`hK1`（4.4 的 `L1` 残余）在 `ℚ_[7]` 上机检**
+Hyp338	L20261018/Hyp338.lean	Ch2.Hensel.ResidueMap.Step034_delta_two_replaces_finite_residue	Ch2/Hensel/ResidueMap/Step034_delta_two_replaces_finite_residue.lean	102	-	R1246（S34 第 17 轮）：**用论文的 `∂₂` 两条性质替换 `[Finite (ResidueField)]`**
+Hyp339	L20261018/Hyp339.lean	Ch4.Step035_exists_d_no_finite_residue	Ch4/Step035_exists_d_no_finite_residue.lean	52	-	R1247（S34 第 18 轮）：**无 `[Finite (ResidueField)]` 的 `∃D`**
+Hyp341	L20261018/Hyp341.lean	Ch2.Hensel.ResidueMap.Step035_hens_residue_data_no_finite	Ch2/Hensel/ResidueMap/Step035_hens_residue_data_no_finite.lean	49	-	-
+Hyp342	L20261018/Hyp342.lean	Ch2.Hensel.ResidueMap.Step036_residue_cup_product_interface	Ch2/Hensel/ResidueMap/Step036_residue_cup_product_interface.lean	205	label:lemma-residue-cup-product,line:1608,line:1636,line:1648	R1251（S35 入口 B）：把 `[Finite (ResidueField)]` 换成论文的 `∂₂` 两条性质
+Hyp343	L20261018/Hyp343.lean	Ch2.Hensel.ResidueMap.Step037_exists_d_iff_tame_residue_facts	Ch2/Hensel/ResidueMap/Step037_exists_d_iff_tame_residue_facts.lean	63	-	R1252（S35 入口 A 的第 0 步）：**`∃ d` ⟺ `TameResidueFacts`**
+Hyp344	L20261018/Hyp344.lean	Witness.Step016_d_witness_finite_residue	Witness/Step016_d_witness_finite_residue.lean	60	line:1023	R1253（S35 第 2 轮）：新接口 `d` 的 **`L1` 非空见证**（有限剩余域）
+Hyp347	L20261018/Hyp347.lean	Witness.Step017_laurent_series_valuative_rel	Witness/Step017_laurent_series_valuative_rel.lean	33	-	R1258（S35 C 项第 1 步）：`K((t))` 的 `ValuativeRel` 实例（一般 `K`）
+Hyp348	L20261018/Hyp348.lean	Witness.Step018_f7_valuative_rel	Witness/Step018_f7_valuative_rel.lean	31	-	R1259（S35 C 项第 2 步）：`𝔽₇` 的域实例与具体 `ValuativeRel`
+Hyp349	L20261018/Hyp349.lean	Witness.Step019_f7_two_order_three	Witness/Step019_f7_two_order_three.lean	28	-	R1260（S35 C 项第 3 步）：`𝔽₇` 上 `2` 的阶为 3（算术见证）
+Hyp350	L20261018/Hyp350.lean	Witness.Step020_f7_mu3_primitive_root	Witness/Step020_f7_mu3_primitive_root.lean	41	-	R1261（S35 C 项第 4 步）：`𝔽₇` 的 `μ₃` 与本原根组装
+Hyp351	L20261018/Hyp351.lean	Witness.Step021_f7t_mu3_transport	Witness/Step021_f7t_mu3_transport.lean	59	-	R1262（S36 C 项第 5 步）：把 `μ₃` 从 `𝔽₇` 搬到 `𝔽₇((t))`
+Hyp352	L20261018/Hyp352.lean	Witness.Step022_f7t_hensel_finite_residue	Witness/Step022_f7t_hensel_finite_residue.lean	167	-	R1263（S36 C 项第 6 步）：`𝒪[𝔽₇((t))] ≅ 𝔽₇⟦X⟧` ⟹ Hensel ＋ 有限剩余域
+Hyp353	L20261018/Hyp353.lean	Witness.Step023_f7t_dvr_val_compat	Witness/Step023_f7t_dvr_val_compat.lean	184	-	R1264（S36 C 项第 7 步）：`𝒪[𝔽₇((t))]` 是 DVR、`v`／`ValCompat`、`π = X`
+Hyp354	L20261018/Hyp354.lean	Witness.Step024_f7t_not_cube	Witness/Step024_f7t_not_cube.lean	109	-	R1265（S36 C 项第 8 步之一）：`2` 与 `π` 都不是立方（Capelli 的输入）
+Hyp355	L20261018/Hyp355.lean	Witness.Step025_f7t_hne_hval	Witness/Step025_f7t_hne_hval.lean	198	line:1608	R1266（S36 C 项第 8 步之二）：`𝔽₇((t))` 上的 `hne`／`hval`（照 `Hyp331`／`Hyp332` 逐条搬）
+Hyp356	L20261018/Hyp356.lean	Witness.Step026_f7t_principal_units_cube	Witness/Step026_f7t_principal_units_cube.lean	108	-	R1267（S36 C 项 末步之一）：主单位（`1 + 𝔪`）在 `𝔽₇((t))` 中是立方
+Hyp357	L20261018/Hyp357.lean	Witness.Step027_f7t_unit_cube_from_residue	Witness/Step027_f7t_unit_cube_from_residue.lean	106	-	R1268（S36 C 项 末步之二）：`𝒪[𝔽₇((t))]` 的单位「剩余类为立方 ⟹ 自身为立方」
+Hyp358	L20261018/Hyp358.lean	Witness.Step028_f7t_same_cube_class	Witness/Step028_f7t_same_cube_class.lean	88	-	R1269（S36 C 项 末步之三）：同剩余 ⟹ 同立方类（`Fˣ/(Fˣ)³` 中）
+Hyp359	L20261018/Hyp359.lean	Witness.Step029_f7t_zval_powers	Witness/Step029_f7t_zval_powers.lean	81	-	R1270（S36 C 项 末步之四）：`zval` 的 `ℤ`-幂与「阶 0 ⟹ 是 `𝒪` 的单位」
+Hyp360	L20261018/Hyp360.lean	Witness.Step030_f7t_pi_power_decomposition	Witness/Step030_f7t_pi_power_decomposition.lean	73	-	R1271（S36 C 项 末步之五）：`a = (π^q)³ · (π^i · 𝒪ˣ)` 分解（`i ∈ [0,3)`）
+Hyp361	L20261018/Hyp361.lean	Witness.Step031_f7t_finite_cube_classes	Witness/Step031_f7t_finite_cube_classes.lean	85	-	R1272（S36 C 项 末步之六）：**`Finite (Fˣ/(Fˣ)³)`**
+Hyp362	L20261018/Hyp362.lean	Witness.Step032_f7t_v_finite_dimensional	Witness/Step032_f7t_v_finite_dimensional.lean	87	line:1608	R1273（S36 C 项）：`FiniteDimensional (GaloBase.V 𝔽₇((t)) 3)` ⟹ **4.2 无条件**
+Hyp363	L20261018/Hyp363.lean	Ch2.Kummer.Step040_theta_bridge_without_local_field	Ch2/Kummer/Step040_theta_bridge_without_local_field.lean	57	-	R1274（S36 C 项 基建）：**`θ`-桥去 `[IsNonarchimedeanLocalField]`**
+Hyp364	L20261018/Hyp364.lean	Ch2.Kummer.Step041_theta_bridge_true_hypothesis	Ch2/Kummer/Step041_theta_bridge_true_hypothesis.lean	109	-	R1275（S36 C 项 基建）：θ-桥的**真假设**是 `[LocallyCompactSpace (AbsGal F)]`
+Hyp365	L20261018/Hyp365.lean	Witness.Step033_f7t_mun_rep_cup_nonzero	Witness/Step033_f7t_mun_rep_cup_nonzero.lean	105	-	R1276（S36 C 项）：muNRep 层的 `(kc_T 2) ∪ (kc_T π) ≠ 0`
+Hyp366	L20261018/Hyp366.lean	Witness.Step034_f7t_galo_cup_nonzero	Witness/Step034_f7t_galo_cup_nonzero.lean	97	-	R1277（S36 C 项）：`GaloBase` 层 `(kc 2) ∪ (kc π) ≠ 0`
+Hyp367	L20261018/Hyp367.lean	Witness.Step035_f7t_thm_ramified_witness	Witness/Step035_f7t_thm_ramified_witness.lean	64	-	R1278（S36 C 项）：**论文 4.3(1) 在 `𝔽₇((t))`／`p = 3` 上机检成立**
+Hyp368	L20261018/Hyp368.lean	Witness.Step036_f7t_thm_ramified_witness_paper_objects	Witness/Step036_f7t_thm_ramified_witness_paper_objects.lean	120	line:1636	R1279（S36 C 项）：**论文 4.3(1) 在 `𝔽₇((t))`／`p = 3` 上机检成立**
+Hyp369	L20261018/Hyp369.lean	Witness.Step037_f7t_hval_and_corollary	Witness/Step037_f7t_hval_and_corollary.lean	87	-	R1281（S36 C 项）：4.4 的 `hval` ＋「以 `hK1` 为显式假设」的 4.4
+Hyp370	L20261018/Hyp370.lean	Ch2.Hensel.Valuation.Step036_exists_unit_rep_val_lin	Ch2/Hensel/Valuation/Step036_exists_unit_rep_val_lin.lean	82	-	R1283（S36 C 项 · `hK1` 基建 #1）：`exists_unit_rep` 的 `valLinOf` 层移植
+Hyp371	L20261018/Hyp371.lean	Ch2.Hensel.ResidueMap.Step038_ker_v_finrank_pos	Ch2/Hensel/ResidueMap/Step038_ker_v_finrank_pos.lean	75	-	R1284（S36 C 项 · `hK1` 下界）：`0 < finrank (ker v̄)`
+Hyp372	L20261018/Hyp372.lean	Ch2.Hensel.ResidueMap.Step039_residue_classes_linear_dependent	Ch2/Hensel/ResidueMap/Step039_residue_classes_linear_dependent.lean	76	-	R1285（S36 C 项 · `hK1` 上界 #1）：剩余层「任意两个立方类线性相关」
+Hyp373	L20261018/Hyp373.lean	Ch2.Hensel.ResidueMap.Step040_ker_v_finrank_le_one	Ch2/Hensel/ResidueMap/Step040_ker_v_finrank_le_one.lean	151	line:1648	R1286（S36 C 项 · `hK1` 上界）：**`finrank (ker v̄) ≤ 1`** ⟹ **`hK1`**
+Hyp374	L20261018/Hyp374.lean	Ch2.Hensel.Inertia.Step001_inertia_exact_sequence_first	Ch2/Hensel/Inertia/Step001_inertia_exact_sequence_first.lean	66	-	R1287（S36 · GS §6.8 战役 #1）：惯性子群的**正合序列第一段**
+Hyp375	L20261018/Hyp375.lean	Ch2.Hensel.Inertia.Step002_knr_definition	Ch2/Hensel/Inertia/Step002_knr_definition.lean	65	-	R1288（S36 · GS §6.8 战役 #2）：`K_nr` 的定义（一般 Hensel DVR，不用局部域假设）
+Hyp376	L20261018/Hyp376.lean	Infra.Cohomology.Step003_q_first_acyclicity	Infra/Cohomology/Step003_q_first_acyclicity.lean	61	-	R1289（S36 · GS §6.8 战役 #3）：`ℚ` 的**一阶**连续零调（(G4′) 的基础例）
+Hyp377	L20261018/Hyp377.lean	Infra.Cohomology.Step004_q_discrete_h1_acyclic	Infra/Cohomology/Step004_q_discrete_h1_acyclic.lean	58	-	R1290（S36 · GS §6.8 战役 #4）：`ℚ` 的**离散副本**上的 `H¹` 零调
+Hyp378	L20261018/Hyp378.lean	Ch2.Hensel.Inertia.Step003_knr_galois_quotient	Ch2/Hensel/Inertia/Step003_knr_galois_quotient.lean	218	label:sec:cohomology-complete-dv	R1292（S37 · GS §6.8 战役 **S1**）：`K_nr` 的伽罗瓦性与 `Gal(K_nr/K)` 的商描述
+Hyp379	L20261018/Hyp379.lean	Infra.Cohomology.Step005_cont_integral_dual_shift	Infra/Cohomology/Step005_cont_integral_dual_shift.lean	199	label:sec:cohomology-complete-dv	R1293（S37 · GS §6.8 战役 **S3**）：`H^i_cont(G,ℤ) ≅ H^{i-1}_cont(G,ℚ/ℤ)`
+Hyp380	L20261018/Hyp380.lean	Ch2.Hensel.Inertia.Step004_knr_galois_zhat	Ch2/Hensel/Inertia/Step004_knr_galois_zhat.lean	175	label:sec:cohomology-complete-dv	R1294（S37 · GS §6.8 战役 **S1（局部域，无条件）**）：`K_nr` 的伽罗瓦性与 `Gal(K_nr/K) ≅ Ẑ`
+Hyp381	L20261018/Hyp381.lean	Ch2.Hensel.TameSymbol.Step002_tame_symbol_formula	Ch2/Hensel/TameSymbol/Step002_tame_symbol_formula.lean	175	label:eq:prelim-tame	R1295（S37 第 3 轮 · `prop:prelim-residue` (2)）：**一般驯符号公式** `eq:prelim-tame`
+Hyp382	L20261018/Hyp382.lean	Ch2.Kummer.Step042_mu_p_module_structure	Ch2/Kummer/Step042_mu_p_module_structure.lean	190	-	R1296（S37 第 4 轮 · **S4 的系数对齐**）：`μ_p(F) ≅ ℤ/p` 作为 `G_F`-模
+Hyp383	L20261018/Hyp383.lean	Ch2.Hensel.ResidueMap.Step041_residue_map_single_hypothesis	Ch2/Hensel/ResidueMap/Step041_residue_map_single_hypothesis.lean	170	line:1023	R1297（S37 第 5 轮）：`prop:prelim-residue` (1) 的**单一具名假设**分解
+Hyp385	L20261018/Hyp385.lean	Ch4.Step036_ch4_three_without_finite_residue	Ch4/Step036_ch4_three_without_finite_residue.lean	139	-	R1299（S37 第 7 轮）：**第 4 章三条定理去掉 `[Finite (ResidueField)]`**
+Hyp386	L20261018/Hyp386.lean	Infra.Cohomology.Step006_rv_complex_assembly	Infra/Cohomology/Step006_rv_complex_assembly.lean	138	-	R1300（S37 第 8 轮）：**GS 6.8.1 的 `r_v^i` —— 给定系数正合列时的机检装配**
+Hyp387	L20261018/Hyp387.lean	Infra.Cohomology.Step007_additive_hilbert90	Infra/Cohomology/Step007_additive_hilbert90.lean	200	label:lemma-additive-hilbert90	R1301（S37 第 9 轮）：**加法 Hilbert 90（全次数）** —— GS `lemma-additive-hilbert90` 的有限层
+Hyp388	L20261018/Hyp388.lean	Ch2.Kummer.Step043_kummer_bridge_on_h2	Ch2/Kummer/Step043_kummer_bridge_on_h2.lean	78	-	R1302（S37 第 10 轮）：S4 的落点 —— Kummer 桥在 `H²` 上、以及战役收尾的两个推论
+Hyp389	L20261018/Hyp389.lean	Ch2.Hensel.ResidueMap.Step042_residue_span_subset_ker_res	Ch2/Hensel/ResidueMap/Step042_residue_span_subset_ker_res.lean	181	-	R1303（S37 第 11 轮）：**(R2) 的忠实形态** —— `residueSpan ⊆ ker res`，而非「字面为零」
+Hyp429	L20261018/Hyp429.lean	Ch4.Step037_ch4_without_finite_dimensional_v	Ch4/Step037_ch4_without_finite_dimensional_v.lean	343	line:1636	S39 第 3 轮：**4.2／4.3(1) 去掉 `[FiniteDimensional (ZMod p) (GaloBase.V F p)]` 绑定**
+Hyp430	L20261018/Hyp430.lean	Ch2.Hensel.UnitsCupVanish.Step014_units_cup_vanish_true_statement	Ch2/Hensel/UnitsCupVanish/Step014_units_cup_vanish_true_statement.lean	284	-	S39 第 4 轮：**去掉 `[Finite (ResidueField)]`** —— `UnitsCupVanish` 的真陈述（`Hyp430`）
+Hyp431	L20261018/Hyp431.lean	Ch2.Hensel.UnitsCupVanish.Step015_b_reduced_to_disjoint	Ch2/Hensel/UnitsCupVanish/Step015_b_reduced_to_disjoint.lean	159	-	S39 第 5 轮（B 第 1 步）：**把 B 归约成一条 `Disjoint`**（`Hyp431`）
+Hyp432	L20261018/Hyp432.lean	Ch2.Hensel.UnitsCupVanish.Step016_b_pinned_to_equivalence	Ch2/Hensel/UnitsCupVanish/Step016_b_pinned_to_equivalence.lean	155	-	S39 第 6 轮（B 第 2 步）：**把 B 钉成一条等价**（`Hyp432`）
+Hyp433	L20261018/Hyp433.lean	Ch2.Hensel.UnitsCupVanish.Step017_one_dimensionality_is_the_engine	Ch2/Hensel/UnitsCupVanish/Step017_one_dimensionality_is_the_engine.lean	124	-	S39 第 7 轮（B 第 3 步）：**完备情形的真正引擎是一维性，不是有限性**（`Hyp433`）
+Hyp434	L20261018/Hyp434.lean	Ch2.Hensel.UnitsCupVanish.Step018_b_logical_tension	Ch2/Hensel/UnitsCupVanish/Step018_b_logical_tension.lean	101	-	S39 第 8 轮（B 第 4 步）：把 B 的**逻辑张力**机检（`Hyp434`）
+Hyp435	L20261018/Hyp435.lean	Ch2.Hensel.UnitsCupVanish.Step019_b_tension_resolved	Ch2/Hensel/UnitsCupVanish/Step019_b_tension_resolved.lean	89	-	S39 第 9 轮（B 第 5 步）：**裁决张力 —— (乙) 正确：`ker v̄` 不止「不分歧部分」**（`Hyp435`）
+Hyp436	L20261018/Hyp436.lean	Ch2.Hensel.UnitsCupVanish.Step020_tg_definition	Ch2/Hensel/UnitsCupVanish/Step020_tg_definition.lean	158	-	S39 第 10 轮（B 第 6 步）：**`tg` 的定义层 ＋ NSW 的 (i)(ii)**（`Hyp436`）
+Hyp437	L20261018/Hyp437.lean	Ch2.Hensel.UnitsCupVanish.Step021_tg_compatibility	Ch2/Hensel/UnitsCupVanish/Step021_tg_compatibility.lean	172	-	S39 第 11 轮（B 第 7 步）：**`tg` 的相容条件 (1) ＋ NSW 的 (iii)**（`Hyp437`）
+Hyp438	L20261018/Hyp438.lean	Ch2.Hensel.UnitsCupVanish.Step022_nsw_y_exists	Ch2/Hensel/UnitsCupVanish/Step022_nsw_y_exists.lean	147	-	S39 第 12 轮（B 第 8 步）：**NSW 的 `y` 存在**（`Hyp438`）
+Hyp439	L20261018/Hyp439.lean	Ch2.Hensel.UnitsCupVanish.Step023_partial_y_coset_dependence	Ch2/Hensel/UnitsCupVanish/Step023_partial_y_coset_dependence.lean	97	-	S39 第 13 轮（B 第 9 步）：**`∂y` 的陪集依赖 ＋ `A^H`-值性**（`Hyp439`）
+Hyp440	L20261018/Hyp440.lean	Ch2.Hensel.UnitsCupVanish.Step024_partial_y_ah_valued	Ch2/Hensel/UnitsCupVanish/Step024_partial_y_ah_valued.lean	107	-	S39 第 14 轮（B 第 10 步）：**`∂y` 的 `A^H`-值性**（`Hyp440`）
+Hyp441	L20261018/Hyp441.lean	Ch2.Hensel.UnitsCupVanish.Step025_descent_lemma_well_defined	Ch2/Hensel/UnitsCupVanish/Step025_descent_lemma_well_defined.lean	96	-	S39 第 15 轮（B 第 11 步）：**良定义性的下降引理**（`Hyp441`）
+Hyp442	L20261018/Hyp442.lean	Ch2.Hensel.UnitsCupVanish.Step026_partial_y_descent	Ch2/Hensel/UnitsCupVanish/Step026_partial_y_descent.lean	86	-	S39 第 16 轮（B 第 12 步）：**`∂y` 沿陪集的下降**（`Hyp442`）
+Hyp443	L20261018/Hyp443.lean	Ch2.Hensel.UnitsCupVanish.Step027_tg_additive_component	Ch2/Hensel/UnitsCupVanish/Step027_tg_additive_component.lean	106	-	S39 第 17 轮（B 第 13 步）：**`tg` 的加性组件**（`Hyp443`）
+Hyp444	L20261018/Hyp444.lean	Ch2.Hensel.UnitsCupVanish.Step028_tg_cochain_internal_check	Ch2/Hensel/UnitsCupVanish/Step028_tg_cochain_internal_check.lean	114	-	S39 第 18 轮（B 第 14 步）：**`tg` 余链的内在校验**（`Hyp444`）
+Hyp445	L20261018/Hyp445.lean	Ch2.Hensel.UnitsCupVanish.Step029_first_segment_exactness	Ch2/Hensel/UnitsCupVanish/Step029_first_segment_exactness.lean	92	-	S39 第 19 轮（B 第 15 步）：**第一段正合的机检核心**（`Hyp445`）
+Hyp446	L20261018/Hyp446.lean	Ch2.Hensel.UnitsCupVanish.Step030_tg_well_defined_complete	Ch2/Hensel/UnitsCupVanish/Step030_tg_well_defined_complete.lean	109	-	S39 第 20 轮（B 第 16 步）：**完整良定义性**（`Hyp446`）
+Hyp447	L20261018/Hyp447.lean	Ch2.Hensel.UnitsCupVanish.Step031_tg_normal_form	Ch2/Hensel/UnitsCupVanish/Step031_tg_normal_form.lean	100	-	S39 第 21 轮（B 第 17 步）：**`tg` 的正规映射形式**（`Hyp447`）
+Hyp448	L20261018/Hyp448.lean	Ch2.Hensel.UnitsCupVanish.Step032_tg_section_exists	Ch2/Hensel/UnitsCupVanish/Step032_tg_section_exists.lean	61	-	S39 第 22 轮（B 第 18 步）：**`TgSection` 的存在性**（`Hyp448`）
+Hyp449	L20261018/Hyp449.lean	Ch2.Hensel.TameSymbol.Step003_ch4_tame_symbol_hyp	Ch2/Hensel/TameSymbol/Step003_ch4_tame_symbol_hyp.lean	102	-	S39 第 23 轮（B 第 19 步）：**把 `∂₂` 登记为具名假设**（`Hyp449`）
+Hyp462	L20261018/Hyp462.lean	Ch2.Hensel.ResidueMap.Step043_units_mod_pth_powers_paper_level	Ch2/Hensel/ResidueMap/Step043_units_mod_pth_powers_paper_level.lean	153	label:prop:prelim-kummer-valuation,line:992	S40 R1：`𝒪^×/(𝒪^×)^p ≅ κ^×/(κ^×)^p` 在**论文层级**（Hensel，不要完备性）
+Hyp463	L20261018/Hyp463.lean	Ch2.Hensel.Inertia.Step005_knr_explicit_laurent	Ch2/Hensel/Inertia/Step005_knr_explicit_laurent.lean	226	line:8162,line:8165	S40 R2：`F = K((π))` 的**显式 `K_nr` ＝ `K_s((π))`** —— GS (6.1) 的赋值层（G2 的第一块砖）
+Hyp464	L20261018/Hyp464.lean	Ch2.Hensel.Inertia.Step006_knr_coefficient_action	Ch2/Hensel/Inertia/Step006_knr_coefficient_action.lean	205	line:8156,line:8160	S40 R3：`G = Gal(K_s/K)` 在 `K_s((π))` 上的**系数作用**（G2 的最后一块模层）
+Hyp466	L20261018/Hyp466.lean	Ch2.Hensel.Inertia.Step007_knr_correct_carrier	Ch2/Hensel/Inertia/Step007_knr_correct_carrier.lean	134	line:8152	S40 R5：**正确的 `K_nr` 载体** —— `⋃_{K'} K'((π))`（`RECON-R3` §82.4 第 1–2 步）
+Hyp467	L20261018/Hyp467.lean	Ch2.Hensel.Inertia.Step008_gs61_on_correct_knr	Ch2/Hensel/Inertia/Step008_gs61_on_correct_knr.lean	193	line:8162,line:8163	S40 R6：把 GS (6.1) 搬到**正确的** `K_nr` 载体（`Hyp466.KnrSubfield`）上
+Hyp468	L20261018/Hyp468.lean	Ch2.Hensel.Inertia.Step009_galois_preserves_knr	Ch2/Hensel/Inertia/Step009_galois_preserves_knr.lean	171	line:8156,line:8160	S40 R7：`G = Gal(K_s/K)` **保 `K_nr`**（`RECON-R3` §84.3 第 3 步）
+Hyp469	L20261018/Hyp469.lean	Ch2.Hensel.Inertia.Step010_knr_continuous_smul	Ch2/Hensel/Inertia/Step010_knr_continuous_smul.lean	126	line:8160,line:8162	S40 R8：`ContinuousSMul G ↥K_nr`（`RECON-R3` §85.4 第 4 步）
+Hyp470	L20261018/Hyp470.lean	Ch2.Hensel.ResidueMap.Step044_residue_map_unramified_units	Ch2/Hensel/ResidueMap/Step044_residue_map_unramified_units.lean	291	line:8160,line:8163	S40 R9：装 `S : DiscreteShortExact G U_nr (Additive K_nr^×) (ULift ℤ)` 并喂 `Hyp386.residueMap`
+Hyp471	L20261018/Hyp471.lean	Infra.Cohomology.Step008_recon_availability_lock	Infra/Cohomology/Step008_recon_availability_lock.lean	71	-	S40 R10：**外部/库内侦察的可用性锁定** —— 更正 `RECON-R3` §87.4 的「库内均无」
+Hyp472	L20261018/Hyp472.lean	Ch2.Hensel.Inertia.Step011_kummer_coeff_to_knr	Ch2/Hensel/Inertia/Step011_kummer_coeff_to_knr.lean	128	line:8152,line:8160	S40 R11：Kummer 系数 `μ_p ≅ KummerCoeff K p` **打到 `K_nr^×`** 的系数映射
+Hyp473	L20261018/Hyp473.lean	Ch2.Hensel.Inertia.Step012_kummer_coeff_equivariant	Ch2/Hensel/Inertia/Step012_kummer_coeff_equivariant.lean	112	line:8176	S40 R12：Kummer 系数映射的 `G`-等变性 ＋ `ofDiscreteModule` 包装 ⟹ **`∂₂`-候选**
+Hyp474	L20261018/Hyp474.lean	Ch2.Kummer.Step044_kummer_coeff_category_entry	Ch2/Kummer/Step044_kummer_coeff_category_entry.lean	67	-	S40 R14：**系数范畴桥的入口** —— `KummerCoeff` 是 `ZMod p`-模 ＋ 桥的可用性锁定
+Hyp475	L20261018/Hyp475.lean	Ch2.Kummer.Step045_kummer_coeff_zmod_instance	Ch2/Kummer/Step045_kummer_coeff_zmod_instance.lean	60	-	S40 R15：系数范畴桥的两块 — `ZMod p`-模结构 ＋ **环变更件已在库**
+Hyp476	L20261018/Hyp476.lean	Ch2.Kummer.Step046_zmod_equiv_kummer_coeff	Ch2/Kummer/Step046_zmod_equiv_kummer_coeff.lean	57	-	S40 R16：系数桥 ① —— `ZMod p ≃+ KummerCoeff F p`（`μ_p ⊂ F`）
+Hyp477	L20261018/Hyp477.lean	Ch2.Kummer.Step047_kummer_coeff_bridge_chain_known	Ch2/Kummer/Step047_kummer_coeff_bridge_chain_known.lean	75	-	S40 R17：★★ **系数桥链已全部在战役内**（侦察定案）
+Hyp478	L20261018/Hyp478.lean	Ch2.Kummer.Step048_kummer_coeff_bridge_closed	Ch2/Kummer/Step048_kummer_coeff_bridge_closed.lean	83	-	S40 R18：★ **桥链闭合** —— `KummerCoeff F p ≅ μ_p(F)` 系数同构 ＋ `H^i` 层同构
+Hyp479	L20261018/Hyp479.lean	Ch2.Kummer.Step049_two_cup_formulas_remaining	Ch2/Kummer/Step049_two_cup_formulas_remaining.lean	81	-	S40 R19：★★ **目标钉死** —— 本战役剩下的**唯一**义务是两个杯积公式
+Hyp480	L20261018/Hyp480.lean	Ch2.Hensel.ResidueMap.Step045_residue_prop_two_literal	Ch2/Hensel/ResidueMap/Step045_residue_prop_two_literal.lean	87	line:1052	S40 R20：★ **论文 `prop:prelim-residue`(2) 的逐字读法** ＋ 缺口 (ii) 登记
+Hyp481	L20261018/Hyp481.lean	Ch2.Hensel.ResidueMap.Step046_knr_residue_map_int	Ch2/Hensel/ResidueMap/Step046_knr_residue_map_int.lean	70	-	S40 R21：**动作 A 的前两步** —— `∂₂` 的 `H²(G,ℤ)` 形式（`knrResidueMapInt`）
+Hyp482	L20261018/Hyp482.lean	Ch2.Hensel.ResidueMap.Step047_integral_bockstein_range	Ch2/Hensel/ResidueMap/Step047_integral_bockstein_range.lean	76	-	S40 R22：动作 A 第三段 —— `integralBockstein` 的 range 引理
+Hyp483	L20261018/Hyp483.lean	Ch2.Hensel.ResidueMap.Step048_integral_bockstein_range_complete	Ch2/Hensel/ResidueMap/Step048_integral_bockstein_range_complete.lean	86	-	S40 R23：★ **动作 A 第三段完成** —— `integralBockstein` 的 range 引理
+Hyp484	L20261018/Hyp484.lean	Ch2.Hensel.ResidueMap.Step049_integral_bockstein_usable	Ch2/Hensel/ResidueMap/Step049_integral_bockstein_usable.lean	69	-	S40 R24：`integralBockstein` range 引理的**可用形式**（`n • x = 0`）＋ A4 机件登记
+Hyp485	L20261018/Hyp485.lean	Infra.Cohomology.Step009_h2_p_torsion	Infra/Cohomology/Step009_h2_p_torsion.lean	61	-	S40 R26：`H²(G, μ_p)` 是 `p`-挠（A4a）
+Hyp486	L20261018/Hyp486.lean	Ch2.Kummer.Step050_h2_equiv_h2_z	Ch2/Kummer/Step050_h2_equiv_h2_z.lean	52	-	S40 R28：动作 A4b 第一步 —— **`GaloBase.H2` 到 `H²(ℤ, μ_p)` 的一条 `AddEquiv`**
+Hyp487	L20261018/Hyp487.lean	Ch2.Hensel.ResidueMap.Step050_delta_two_additive	Ch2/Hensel/ResidueMap/Step050_delta_two_additive.lean	218	-	S41 R1：动作 A4b-2 第一段 —— **把 `∂₂` 变成加性映射，落到 `H¹(G, ℤ/p)`**
+Hyp488	L20261018/Hyp488.lean	Ch2.Hensel.ResidueMap.Step051_h1_z_equiv_galo_v	Ch2/Hensel/ResidueMap/Step051_h1_z_equiv_galo_v.lean	225	line:1050	S41 R1（续）：动作 A4b-2 第二段 —— **系数桥 `H¹(ℤ, ℤ/p) ≃+ GaloBase.V`** 与**约化**
+Hyp489	L20261018/Hyp489.lean	Ch2.Hensel.ResidueMap.Step052_delta_two_candidate_zero	Ch2/Hensel/ResidueMap/Step052_delta_two_candidate_zero.lean	143	label:prop-units-cohomology,line:8160	S41 R1（决定性）：★★★ **S40 的「`∂₂`-候选」是零映射** —— 载体张冠李戴的机检症状
+Hyp490	L20261018/Hyp490.lean	Ch2.Hensel.ResidueMap.Step053_exists_d_three_properties	Ch2/Hensel/ResidueMap/Step053_exists_d_three_properties.lean	116	line:1050	S41 R1（收口）：**义务的「一条 `d` ＋ 三条性质」正范式** —— 与 `∃d` 形式**双向等价**
+Hyp491	L20261018/Hyp491.lean	Ch2.Hensel.ResidueMap.Step054_delta_two_candidate_refuted	Ch2/Hensel/ResidueMap/Step054_delta_two_candidate_refuted.lean	216	-	S41 R2（动作 Z0）：**零系数映射的 `coeffMap` 为零** ⟹ **S40 的 `∂₂`-候选恒为零（`✗-refuted`）**
+Hyp492	L20261018/Hyp492.lean	Infra.Cohomology.Boundary.Step026_dimension_shift_from_long_exact	Infra/Cohomology/Boundary/Step026_dimension_shift_from_long_exact.lean	154	-	S41 R3（动作 V2 第一块）：**GS (6.15) 的核心** —— 长正合列给出的维数平移同构
+Hyp493	L20261018/Hyp493.lean	Infra.Cohomology.Boundary.Step027_coinduced_ses_h1_h2	Infra/Cohomology/Boundary/Step027_coinduced_ses_h1_h2.lean	132	-	S41 R4（动作 V2c ＋ V2b→V2a）：**GS (6.14) 的余诱导短正合列** ＋ **`H¹(G,C) ≃+ H²(G,A)`**
+Hyp494	L20261018/Hyp494.lean	Infra.Cohomology.Boundary.Step028_inflation_h1_iso	Infra/Cohomology/Boundary/Step028_inflation_h1_iso.lean	155	-	S41 R5（动作 V2e）：**膨胀在 1 次是同构**（`H¹(N,M) = 0` 时）—— GS (6.15) 的第二个同构
+Hyp495	L20261018/Hyp495.lean	Infra.Cohomology.Boundary.Step029_conj_action_on_hn	Infra/Cohomology/Boundary/Step029_conj_action_on_hn.lean	101	-	S41 R6（动作 V2f 第一块）：**`G` 在 `Hⁿ(H,A)` 上的共轭作用**及其在 `H` 上的平凡性
+Hyp496	L20261018/Hyp496.lean	Infra.Cohomology.Boundary.Step030_conj_action_descends	Infra/Cohomology/Boundary/Step030_conj_action_descends.lean	87	-	S41 R7（动作 V2f 第二块）：**共轭作用下降到 `G ⧸ H`**
+Hyp497	L20261018/Hyp497.lean	Infra.Cohomology.Boundary.Step031_quotient_action_explicit_model	Infra/Cohomology/Boundary/Step031_quotient_action_explicit_model.lean	91	-	S41 R8（动作 V2f 第三块）：**`G ⧸ H` 在显式模型 `H1 ↥H A` 上的作用**
+Hyp498	L20261018/Hyp498.lean	Infra.Cohomology.Boundary.Step032_delta_zero_explicit_model	Infra/Cohomology/Boundary/Step032_delta_zero_explicit_model.lean	70	-	S41 R9（动作 V2f 第四块）：**`δ_0 : C^H → H¹(H,A)` 的显式模型载体**
+Hyp503	L20261018/Hyp503.lean	Ch2.Rost.Step001_cd_p_z_p_le_one	Ch2/Rost/Step001_cd_p_z_p_le_one.lean	182	label:prop-cd-Z-hat,line:9625,line:9627	S42 R1（A.6.9 甲之三）：**`cd_p(ℤ_p) ≤ 1`** —— 全部用库内件
+Hyp504	L20261018/Hyp504.lean	Ch2.Hensel.Inertia.Step013_inertia_pro_p_sylow_data	Ch2/Hensel/Inertia/Step013_inertia_pro_p_sylow_data.lean	157	line:9625,line:9627	S42 R2（A.6.9 群论半）：**具名假设 `InertiaProPSylowData` ＋ `cd_p(I) ≤ 1` 的机检运输**
+Hyp505	L20261018/Hyp505.lean	Ch2.Hensel.Inertia.Step014_cd_p_inertia_instance	Ch2/Hensel/Inertia/Step014_cd_p_inertia_instance.lean	126	label:cons-residue-map-finite-coefficients-2,line:9627	S42 R3：把（★）条件定理**实例化到战役真实载体** —— `I = Gal(K_s/K_nr) = inertiaLoc`
+Hyp508	L20261018/Hyp508.lean	Ch2.Hensel.Inertia.Step015_cd_p_procyclic_criterion	Ch2/Hensel/Inertia/Step015_cd_p_procyclic_criterion.lean	132	line:8	S42 R8（（★）的**最弱充分条件**）：`I` 的 `p`-Sylow **procyclic ＋ 非挠** ⟹ `cd_p(I) ≤ 1`
+Hyp511	L20261018/Hyp511.lean	Ch2.Hensel.Inertia.Step016_inertia_loc_carrier_alignment	Ch2/Hensel/Inertia/Step016_inertia_loc_carrier_alignment.lean	76	line:8	S42 R13（**S1：载体对齐**）：战役 `inertiaLoc` ＝ TauCeti `inertiaSubgroup` 的像
+Hyp512	L20261018/Hyp512.lean	Ch2.Hensel.Inertia.Step017_tame_module_procyclic	Ch2/Hensel/Inertia/Step017_tame_module_procyclic.lean	68	line:8	S42 R15（S3 的**模型层**）：驯模 `∏_{ℓ≠p}ℤ_ℓ` 由一元拓扑生成
+Hyp513	L20261018/Hyp513.lean	Ch2.Hensel.Inertia.Step018_procyclic_l_part_sylow	Ch2/Hensel/Inertia/Step018_procyclic_l_part_sylow.lean	175	line:9626	S43 R19（S3c 的**群论核心**）：procyclic 群的 **ℓ-部分就是它的 ℓ-Sylow**
+Hyp514	L20261018/Hyp514.lean	Ch2.Hensel.Inertia.Step019_tame_module_l_part_infinite	Ch2/Hensel/Inertia/Step019_tame_module_l_part_infinite.lean	168	-	S43 R19（S3c 的第二半）：**驯模 `ℤ̂^{(p')}(1)` 的 ℓ-部分无限**
+Hyp515	L20261018/Hyp515.lean	Ch2.Hensel.Inertia.Step020_inertia_sylow_mod_ramification	Ch2/Hensel/Inertia/Step020_inertia_sylow_mod_ramification.lean	155	-	S43 R20（**S2**）：`I_K` 的 ℓ-Sylow 化到 `I_K/P_K`，且与 `P_K` 交平凡
+Hyp516	L20261018/Hyp516.lean	Ch2.Hensel.Inertia.Step021_inertia_sylow_z_l	Ch2/Hensel/Inertia/Step021_inertia_sylow_z_l.lean	246	-	S43 R21（**S4**）：`I_K` 的 ℓ-Sylow ≅ `ℤ_ℓ` —— **（★）对 `I_K` 本身闭合**
+Hyp517	L20261018/Hyp517.lean	Ch2.Hensel.Inertia.Step022_cd_p_inertia_unconditional	Ch2/Hensel/Inertia/Step022_cd_p_inertia_unconditional.lean	166	line:9627	S43 R22（**去条件化 Hyp505**）：把（★）搬到**战役载体** `inertiaLoc F`
+Hyp518	L20261018/Hyp518.lean	Ch2.Hensel.Inertia.Step023_b1_hom_inertia_mu_p	Ch2/Hensel/Inertia/Step023_b1_hom_inertia_mu_p.lean	164	-	S43 R23（**B1 的前半 ＋ GMS `lemma-7.5` 的机检形态**）
+Hyp519	L20261018/Hyp519.lean	Ch2.Hensel.Inertia.Step024_hom_inertia_tame	Ch2/Hensel/Inertia/Step024_hom_inertia_tame.lean	244	-	S43 R24（**B1 的第二步**）：`Hom(I, μ_p) ≅ Hom(I_t, μ_p)` —— GMS (7.3) 的第一等号
+Hyp520	L20261018/Hyp520.lean	Ch2.Hensel.Inertia.Step025_h1_inertia_finite	Ch2/Hensel/Inertia/Step025_h1_inertia_finite.lean	164	-	S43 R25（**B1 闭合**）：`Finite (H¹(I, μ_p))` —— 目标里的 B1 原话
+Hyp521	L20261018/Hyp521.lean	Ch2.Hensel.Inertia.Step026_hom_inertia_mu_p_eq_zmod	Ch2/Hensel/Inertia/Step026_hom_inertia_mu_p_eq_zmod.lean	260	-	S43 R26（**GMS (7.3) 第二等号**）：`Hom(I, μ_p) ≅ ℤ/p` —— B1 的精确 1 维
+Hyp525	L20261018/Hyp525.lean	Ch2.Hensel.TameSymbol.Step004_tame_symbol_hyp_divisible_residue	Ch2/Hensel/TameSymbol/Step004_tame_symbol_hyp_divisible_residue.lean	107	line:1050	S43 R31：★★★★★★ **`Ch4TameSymbolHyp` 对「`κˣ` `p`-可除」的一般 Hensel 域成立**（**无限剩余域可用**）
+Hyp526	L20261018/Hyp526.lean	Ch2.Hensel.TameSymbol.Step005_tame_symbol_hyp_iff_r1_r2	Ch2/Hensel/TameSymbol/Step005_tame_symbol_hyp_iff_r1_r2.lean	99	-	S43 R34：★★★★★ **终局等价** —— `Ch4TameSymbolHyp` **恰好**等价于两条残数事实 (R1)＋(R2)
+Hyp533	L20261018/Hyp533.lean	Ch2.Hensel.Inertia.Step027_cd_l_inertia_vanishing	Ch2/Hensel/Inertia/Step027_cd_l_inertia_vanishing.lean	95	-	S43 R41：★★★★★ **(★) 直接供给 GS 6.8.5 的输入假设**（`cd_ℓ(I) ≤ 1` ⟹ `H^i(I,·) = 0`, `i ≥ 2`）
+Hyp534	L20261018/Hyp534.lean	Infra.Cohomology.Boundary.Step033_subgroup_acyclicity_gap	Infra/Cohomology/Boundary/Step033_subgroup_acyclicity_gap.lean	93	-	S43 R43：**位①段的核心逻辑** ＋ 缺口收敛到「子群无环性」一件
+Hyp536	L20261018/Hyp536.lean	Infra.Cohomology.Boundary.Step034_hcd_empty_hypothesis	Infra/Cohomology/Boundary/Step034_hcd_empty_hypothesis.lean	89	-	S43 R48：★★★★★ **`∂₂` 的 `hcd` 是空假设** —— `n = 0` 分支上 `∀ i < 0` 无人可用
+Hyp539	L20261018/Hyp539.lean	Infra.Cohomology.Boundary.Step035_delta_two_hypotheses_cleared	Infra/Cohomology/Boundary/Step035_delta_two_hypotheses_cleared.lean	145	-	S44 R1：★★★★★ **`∂₂` 的假设面清零** —— 只剩 `H²(S,A) = 0`，且等变性无条件
+Hyp541	L20261018/Hyp541.lean	Infra.Cohomology.ResidueLES.Step001_f2_delta_zero_vanishes	Infra/Cohomology/ResidueLES/Step001_f2_delta_zero_vanishes.lean	128	label:prop-residue-map-long-exact	S45 R1：★★★★★ **(F2) 完成** —— `δ₀ ∘ (Coind^S ↠ C^S) = 0`（`T` 落在 `δ₀` 的核里）
+Hyp542	L20261018/Hyp542.lean	Infra.Cohomology.ResidueLES.Step002_t_cokernel_constructed	Infra/Cohomology/ResidueLES/Step002_t_cokernel_constructed.lean	113	-	S45 R2：★★★★ **造出 GS 的 `T`** —— `T = coker(A^S ↪ (Coind A)^S)`，`i : T ↪ C^S`
+Hyp543	L20261018/Hyp543.lean	Infra.Cohomology.ResidueLES.Step003_f1_square	Infra/Cohomology/ResidueLES/Step003_f1_square.lean	138	label:prop-residue-map-long-exact	S45 R3：★★★★★ **(F1) 的方块** —— `δ_{Y'} ≫ Inf₂ = i_* ≫ Inf_{C,1} ≫ δ_A`（**无条件**）
+Hyp544	L20261018/Hyp544.lean	Infra.Cohomology.ResidueLES.Step004_i_star_delta_zero_bar	Infra/Cohomology/ResidueLES/Step004_i_star_delta_zero_bar.lean	96	-	S45 R4：★★★★ **`i_* ≫ deltaZeroBar = 0`**（把 (F2) 从 `ModuleCat` 层抬到 `Rep k (G⧸S)` 层）＋ `δ_{Y'}` 单
+Hyp545	L20261018/Hyp545.lean	Infra.Cohomology.ResidueLES.Step005_delta_two_comp_inf_zero	Infra/Cohomology/ResidueLES/Step005_delta_two_comp_inf_zero.lean	126	-	S45 R5：★★★★★ **(d) 完成** —— `∂₂ ∘ Inf = 0`（`Inf₂ ≫ deltaTwo_minimal = 0`）
+Hyp546	L20261018/Hyp546.lean	Infra.Cohomology.ResidueLES.Step006_mu_p_smooth_discrete	Infra/Cohomology/ResidueLES/Step006_mu_p_smooth_discrete.lean	99	-	S45 R6：★★★★ **连续侧载体的机检锁定** ＋ `muP` 是 smooth-discrete（正确的比较假设**可得**）
+Hyp547	L20261018/Hyp547.lean	Infra.Cohomology.ResidueLES.Step007_continuous_615	Infra/Cohomology/ResidueLES/Step007_continuous_615.lean	103	-	S45 R7：★★★★ **连续版 (6.15) 在战役群／模上开火** ＋ 基环对齐的**决定性测度**
+Hyp548	L20261018/Hyp548.lean	Infra.Cohomology.ResidueLES.Step008_base_ring_alignment	Infra/Cohomology/ResidueLES/Step008_base_ring_alignment.lean	87	-	S45 R9：★★★★★ **基环对齐在战役载体上开火** —— `ℤ`-基底 ⟷ `ZMod p`-基底
+Hyp549	L20261018/Hyp549.lean	Infra.Cohomology.ResidueLES.Step009_continuous_dim_shift_ses	Infra/Cohomology/ResidueLES/Step009_continuous_dim_shift_ses.lean	53	-	S45 R11：★★★★ **连续版 `dimShiftSES` ＋ `δ₀`** —— (A) 的步骤 ③
+Hyp550	L20261018/Hyp550.lean	Infra.Cohomology.ResidueLES.Step010_continuous_f2	Infra/Cohomology/ResidueLES/Step010_continuous_f2.lean	45	-	S45 R14：★★★★★ **连续 (F2)** —— `coeffMap(proj) ≫ δ₀ = 0`
+Hyp551	L20261018/Hyp551.lean	Infra.Cohomology.ResidueLES.Step011_continuous_res_delta_square	Infra/Cohomology/ResidueLES/Step011_continuous_res_delta_square.lean	52	-	S45 R16：★★★★ **连续侧 `res`–`δ` 交换方块** —— (A) 的 ⑤（连续 F1）的第一块
+Hyp552	L20261018/Hyp552.lean	Infra.Cohomology.ResidueLES.Step012_continuous_t_carrier	Infra/Cohomology/ResidueLES/Step012_continuous_t_carrier.lean	174	line:9528	S46 R1：★★★★★ **连续侧 (F1) 的载体** —— `T = Bᴵ⧸Aᴵ`（GS (6.16)）与 `iTame`
+Hyp553	L20261018/Hyp553.lean	Infra.Cohomology.ResidueLES.Step013_continuous_f1	Infra/Cohomology/ResidueLES/Step013_continuous_f1.lean	208	label:prop-residue-map-long-exact	S46 R2：★★★★★ **连续 (F1)** —— `δ_T ≫ Inf_A = (i ≫ Inf_C) ≫ δ_Γ`
+Hyp554	L20261018/Hyp554.lean	Infra.Cohomology.ResidueLES.Step014_continuous_d_two_blocks	Infra/Cohomology/ResidueLES/Step014_continuous_d_two_blocks.lean	162	-	S46 R3：★★★★ **(d) 的两块** —— (I) 右端拆分 `map φ fC = i_* ≫ Inf_C`；(III) `δ_Γ` 是同构
+Hyp555	L20261018/Hyp555.lean	Infra.Cohomology.ResidueLES.Step015_vkg_kummer_decomposition	Infra/Cohomology/ResidueLES/Step015_vkg_kummer_decomposition.lean	104	-	S46 R4：★★★★ **`VKG` 的 Kummer 分解 ＋ `kills` 的归约接口**
+Hyp556	L20261018/Hyp556.lean	Infra.Cohomology.ResidueLES.Step016_delta_t_iso	Infra/Cohomology/ResidueLES/Step016_delta_t_iso.lean	77	-	S46 R5：★★★★ **`δ_T` 同构（把剩余义务压成一个 `Subsingleton`）** ＋ `T ≅ CoindQuotient` 的落点说明
+Hyp557	L20261018/Hyp557.lean	Infra.Cohomology.ResidueLES.Step017_delta_t_iso_upper	Infra/Cohomology/ResidueLES/Step017_delta_t_iso_upper.lean	100	-	S46 R5：★★★ **`δ_T` iso 的「上半」** —— 零调性传输 ＋ 余诱导块在 `Γ⧸I` 上零调
+Hyp558	L20261018/Hyp558.lean	Infra.Cohomology.ResidueLES.Step018_cont_inv_b_pointwise	Infra/Cohomology/ResidueLES/Step018_cont_inv_b_pointwise.lean	77	-	S46 R6：★★★ **`contInvB` 的逐点形态** ＋ **下降映射的良定义性**
+Hyp559	L20261018/Hyp559.lean	Infra.Cohomology.ResidueLES.Step019_cont_inv_b_descend	Infra/Cohomology/ResidueLES/Step019_cont_inv_b_descend.lean	92	-	S46 R7：★★★ **下降映射（函数层）** —— `contInvB → (Γ⧸I → μ_p)` 及其单射性
+Hyp560	L20261018/Hyp560.lean	Infra.Cohomology.ResidueLES.Step020_pull_back_map	Infra/Cohomology/ResidueLES/Step020_pull_back_map.lean	101	-	S46 R8：★★ **反向映射 `DiscreteCoind (Γ⧸I) ⊥ μ_p → Bᴵ`**（`h ↦ h ∘ mk`）
+Hyp561	L20261018/Hyp561.lean	Infra.Cohomology.ResidueLES.Step021_descend_pull_inverse	Infra/Cohomology/ResidueLES/Step021_descend_pull_inverse.lean	72	-	S46 R9：★★★ **同构的两条互逆律之一**：`descend ∘ pull = id` ⟹ `pull` 单射
+Hyp562	L20261018/Hyp562.lean	Infra.Cohomology.ResidueLES.Step022_bi_iso_assembly	Infra/Cohomology/ResidueLES/Step022_bi_iso_assembly.lean	120	-	S46 R10：★★★★ **同构的装配（条件于一句 `IsLocallyConstant`）**
+Hyp563	L20261018/Hyp563.lean	Infra.Cohomology.ResidueLES.Step023_is_locally_constant_descend	Infra/Cohomology/ResidueLES/Step023_is_locally_constant_descend.lean	70	-	S46 R11：★★★★★ **`hlc` 已证** —— `IsLocallyConstant (contInvBDescend g)`
+Hyp564	L20261018/Hyp564.lean	Infra.Cohomology.ResidueLES.Step024_top_rep_iso_coind	Infra/Cohomology/ResidueLES/Step024_top_rep_iso_coind.lean	126	-	S46 R12：★★★★★ **`TopRep` 同构** —— `Bᴵ ≅ DiscreteCoind (Γ⧸I) ⊥ μ_p`（作为 `Γ⧸I`-模）
+Hyp565	L20261018/Hyp565.lean	Infra.Cohomology.ResidueLES.Step025_delta_t_iso_usable	Infra/Cohomology/ResidueLES/Step025_delta_t_iso_usable.lean	73	-	S46 R13：★★★ **`δ_T` 同构的可用形态**（`Epi`、`n = 1`、惯性群实例化）
+Hyp566	L20261018/Hyp566.lean	Infra.Cohomology.ResidueLES.Step026_invariants_equiv_self	Infra/Cohomology/ResidueLES/Step026_invariants_equiv_self.lean	83	-	S46 R14：★★ **`Aᴵ ≅ A`**（`μ_p` 上 `Γ`-作用平凡的一个机检推论）＋ 路线更正
+Hyp567	L20261018/Hyp567.lean	Infra.Cohomology.ResidueLES.Step027_invariants_equiv_self_top_rep	Infra/Cohomology/ResidueLES/Step027_invariants_equiv_self_top_rep.lean	71	-	S46 R15：★★★ **`Aᴵ ≅ A` 的 `TopRep` 层完成**
+Hyp568	L20261018/Hyp568.lean	Infra.Cohomology.ResidueLES.Step028_t_equiv_coind_quotient	Infra/Cohomology/ResidueLES/Step028_t_equiv_coind_quotient.lean	63	-	S46 R16：★★★ **右格 `T ≅ CoindQuotient (Γ⧸I) ⊥ μ_p`（商同余，条件于子群对应）**
+Hyp569	L20261018/Hyp569.lean	Infra.Cohomology.ResidueLES.Step029_hk_content_layer	Infra/Cohomology/ResidueLES/Step029_hk_content_layer.lean	74	-	S46 R17：★★★ **`hK` 的内容层**：`e (contInvIncl a) = unit a`
+Hyp570	L20261018/Hyp570.lean	Infra.Cohomology.ResidueLES.Step030_right_square_closed	Infra/Cohomology/ResidueLES/Step030_right_square_closed.lean	71	-	S46 R18：★★★★ **右格收口** —— `hK` 已证 ⟹ `T ≅ CoindQuotient (Γ⧸I) ⊥ μ_p` 无条件
+Hyp571	L20261018/Hyp571.lean	Infra.Cohomology.ResidueLES.Step031_inf_c_inverse_hypothesis	Infra/Cohomology/ResidueLES/Step031_inf_c_inverse_hypothesis.lean	63	-	S46 R19：★★★ **`Inf_C⁻¹` 的假设**：`Subsingleton (H¹(I, C))`
+Hyp572	L20261018/Hyp572.lean	Infra.Cohomology.ResidueLES.Step032_inf_c_inverse_narrowed	Infra/Cohomology/ResidueLES/Step032_inf_c_inverse_narrowed.lean	82	-	S46 R20：★★★ **`Inf_C⁻¹` 的假设面收窄到一件，并给出具名缺口**
+Hyp573	L20261018/Hyp573.lean	Infra.Cohomology.ResidueLES.Step033_restricted_coind_acyclic_nonempty	Infra/Cohomology/ResidueLES/Step033_restricted_coind_acyclic_nonempty.lean	54	-	S46 R21：★★★ **`RestrictedCoindAcyclic` 的非空见证**（KB 规则 L1／L10①）
+Hyp574	L20261018/Hyp574.lean	Infra.Cohomology.Conjugation.Step001_m_conj_equivariant	Infra/Cohomology/Conjugation/Step001_m_conj_equivariant.lean	68	-	S47 R2：★★★ **`M` 的共轭等变性**（`∂₂` 第三因子的等变骨架）
+Hyp575	L20261018/Hyp575.lean	Infra.Cohomology.Conjugation.Step002_m_carrier_bridge_beta	Infra/Cohomology/Conjugation/Step002_m_carrier_bridge_beta.lean	132	-	S47 R3：★★★★ **`M` 的载体桥 β —— 比较同构的共轭等变性**
+Hyp576	L20261018/Hyp576.lean	Infra.Cohomology.Conjugation.Step003_m_body_complete	Infra/Cohomology/Conjugation/Step003_m_body_complete.lean	143	-	S47 R4：★★★★★ **`M` 本体完成** —— `Cᴵ → H¹(I, μ_p)` 的 `Γ`-等变映射
+Hyp577	L20261018/Hyp577.lean	Infra.Cohomology.Conjugation.Step004_gamma_scalar_action	Infra/Cohomology/Conjugation/Step004_gamma_scalar_action.lean	86	-	S47 R5：γ 的第一块 —— `H1` 上 `G ⧸ N`-标量作用（良定义性）
+Hyp578	L20261018/Hyp578.lean	Infra.Cohomology.Conjugation.Step005_gamma_complete	Infra/Cohomology/Conjugation/Step005_gamma_complete.lean	129	-	S47 R6：★★★★ **γ 完成** —— `H1` 上的 `(Γ⧸I)`-`DistribMulAction` 与 `M` 的商群等变性
+Hyp607	L20261018/Hyp607.lean	Ch2.Hensel.ResidueMap.Step055_r2_exact_boundary	Ch2/Hensel/ResidueMap/Step055_r2_exact_boundary.lean	196	-	S49 R14：**唯一缺口 `(R2)` 的精确边界** —— 残余恰为 `dim ker v̄ ≥ 2`
+Hyp608	L20261018/Hyp608.lean	Ch2.Hensel.ResidueMap.Step056_kummer_valuation_abstract_hensel	Ch2/Hensel/ResidueMap/Step056_kummer_valuation_abstract_hensel.lean	232	label:prop:prelim-kummer-valuation	S50 R1：`prop:prelim-kummer-valuation`(1) 的**抽象 Hensel 版**
+Hyp609	L20261018/Hyp609.lean	Infra.Cohomology.Step010_trivial_action_fixed_points	Infra/Cohomology/Step010_trivial_action_fixed_points.lean	79	-	S50 R4：R3 的第一格 —— `ZMod p` 的**平凡作用实例**与固定点系数桥
+Hyp610	L20261018/Hyp610.lean	Ch2.Hensel.ResidueMap.Step057_residue_span_inflation	Ch2/Hensel/ResidueMap/Step057_residue_span_inflation.lean	273	-	S51 R1：**档 ⑥** 的载体 —— `(CI)` ⟹ `residueSpan ≤ range infl₂` ⟹ `(R2)`
+Hyp611	L20261018/Hyp611.lean	Ch4.Step038_ch4_proof_structure_index	Ch4/Step038_ch4_proof_structure_index.lean	177	-	S51 R2：**第 4 章证明结构索引 ＋ 六档归一**（`residueSpan = ⊥` 是唯一正规形）
+Hyp612	L20261018/Hyp612.lean	Ch2.Hensel.ResidueMap.Step058_residue_span_canonical_carrier	Ch2/Hensel/ResidueMap/Step058_residue_span_canonical_carrier.lean	265	-	S51 R3：**档 ⑥ 的规范载体版** —— 库内 `ContinuousCohomology.infl` ＋ `TopPairing.cup_infl`
+Hyp613	L20261018/Hyp613.lean	Ch2.Hensel.ResidueMap.Step059_mu_p_into_residue_units	Ch2/Hensel/ResidueMap/Step059_mu_p_into_residue_units.lean	169	-	S51 R4：`μ_p ↪ κ^×` —— 单位群里的 `p` 次单位根在剩余域中**单射**
+Hyp614	L20261018/Hyp614.lean	Ch2.Hensel.ResidueMap.Step060_h_kappa_h2_zero	Ch2/Hensel/ResidueMap/Step060_h_kappa_h2_zero.lean	204	-	S51 R5：**档 ⑥ 的最终形态** —— `hκ` 就是字面的 `H²(κ, μ_p) = 0`
+Hyp615	L20261018/Hyp615.lean	Ch2.Hensel.ResidueMap.Step061_mu_p_in_residue_field	Ch2/Hensel/ResidueMap/Step061_mu_p_in_residue_field.lean	147	-	S51 R6：`μ_p ⊆ F ⟹ μ_p ⊆ κ`（`isPrimitiveRoot_residue`）＋ 档 ⑦ ＋ 七档索引
+Hyp616	L20261018/Hyp616.lean	Ch2.Hensel.ResidueMap.Step062_mu_p_residue_full_chain	Ch2/Hensel/ResidueMap/Step062_mu_p_residue_full_chain.lean	155	-	S51 R7：**`μ_p ⊆ F ⟹ μ_p ⊆ κ` 的完整链** ＋ 延拓假设的类型锁定
+Hyp617	L20261018/Hyp617.lean	Ch2.Hensel.ResidueMap.Step063_mu_p_residue_instance	Ch2/Hensel/ResidueMap/Step063_mu_p_residue_instance.lean	102	-	S51 R8：`μ_p ⊆ κ` 升格为**可用的 mathlib 实例** ＋ 延拓假设**类型锁定的更正**
+Hyp618	L20261018/Hyp618.lean	Witness.Step038_val_compat_nonempty	Witness/Step038_val_compat_nonempty.lean	120	-	S51 R10：**`ValCompat` 的非空见证** —— 还 `Hyp187` 登记的那笔 L1/L10① 义务
+Hyp619	L20261018/Hyp619.lean	Ch2.Hensel.Valuation.Step037_nu_pth_root_zero	Ch2/Hensel/Valuation/Step037_nu_pth_root_zero.lean	111	-	S51 R11：**`ν(u^{1/p}) = 0` 的引擎** ＋ 延拓假设的**三条锁**（第三步「`Γ_F`-稳定性」入锁）
+Hyp620	L20261018/Hyp620.lean	Ch2.Hensel.Valuation.Step038_valuation_extension_bridge	Ch2/Hensel/Valuation/Step038_valuation_extension_bridge.lean	85	-	S51 R12：`W ↦ w` 桥 ＋ 端到端 `ν(u^{1/p}) = 0`
+Hyp621	L20261018/Hyp621.lean	Ch2.Hensel.Valuation.Step039_integral_closure_stable	Ch2/Hensel/Valuation/Step039_integral_closure_stable.lean	96	-	S51 R14：**`𝒪[F]` 在 `F̄` 中的整闭包是 `Γ_F`-稳定的**（无条件！）⟹ 延拓假设的三条锁降为一条
+Hyp622	L20261018/Hyp622.lean	Ch2.Hensel.Valuation.Step040_integral_closure_value_preserving	Ch2/Hensel/Valuation/Step040_integral_closure_value_preserving.lean	98	-	S51 R15：`𝒪_W` 的 `Γ_F`-稳定性（从 `FbarValuationHyp₃` 导出）＋ **惯性子群需要「值保持」而非仅「环稳定」**
+Hyp623	L20261018/Hyp623.lean	Ch2.Hensel.Inertia.Step028_inertia_subgroup_galois	Ch2/Hensel/Inertia/Step028_inertia_subgroup_galois.lean	126	-	S51 R16：`FbarValuationHyp₄`（加「值保持」）＋ **惯性子群 `I ≤ Γ_F` 机检成立**
+Hyp624	L20261018/Hyp624.lean	Ch2.Hensel.Inertia.Step029_inertia_normal	Ch2/Hensel/Inertia/Step029_inertia_normal.lean	73	-	S51 R17：**惯性子群 `I` 的正规性** —— `Γ_κ = Γ_F/I` 成群的必要条件
+Hyp625	L20261018/Hyp625.lean	Ch2.Hensel.Inertia.Step030_inertia_maximal_ideal	Ch2/Hensel/Inertia/Step030_inertia_maximal_ideal.lean	104	-	S51 R18：惯性子群 `I` 的**极大理想判据** —— `I` 成为某个「剩余作用」的**核**
+Hyp626	L20261018/Hyp626.lean	Ch2.Hensel.Inertia.Step031_residue_action_well_defined	Ch2/Hensel/Inertia/Step031_residue_action_well_defined.lean	95	-	S51 R19：**剩余作用的良定义性** —— `Γ_F` 在 `κ̄ = 𝒪_W/𝔪_W` 上的作用是**构造出来的**
+Hyp627	L20261018/Hyp627.lean	Ch2.Hensel.Inertia.Step032_residue_action_kernel	Ch2/Hensel/Inertia/Step032_residue_action_kernel.lean	218	-	S52 R20：**N1 ＋ N2** —— `φ : Γ_F →* MulAut κ̄` 构造出来，且 `ker φ = I`
+Hyp628	L20261018/Hyp628.lean	Ch2.Rost.Step002_tsen_cd_p_le_one	Ch2/Rost/Step002_tsen_cd_p_le_one.lean	195	-	S52 R21：**L2 桥** —— 把 `hκ` 从「`Subsingleton H²`」降为**已发表的 Tsen 形态** `cd_p(κ) ≤ 1`
+Hyp629	L20261018/Hyp629.lean	Witness.Step039_tsen_hyp_nonempty	Witness/Step039_tsen_hyp_nonempty.lean	106	-	S52 R22：**`TsenHyp` 的非空见证** —— 可分闭 `κ` 时 `hκ` 机检成立（还 L1／L10① 义务）
+Hyp630	L20261018/Hyp630.lean	Ch2.Hensel.UnitsCupVanish.Step033_inertia_fixed_unit_pth_root	Ch2/Hensel/UnitsCupVanish/Step033_inertia_fixed_unit_pth_root.lean	274	-	S52 R22：**N4 的算术核心** —— 惯性群固定单位在 `F̄` 中的 `p` 次根（**免 Hensel**）
+Hyp631	L20261018/Hyp631.lean	Ch2.Hensel.UnitsCupVanish.Step034_n4_paper_form	Ch2/Hensel/UnitsCupVanish/Step034_n4_paper_form.lean	193	-	S52 R23：**N4 的论文形态** —— `u ∈ 𝒪[F]ˣ` 时的算术核心（两条假设全部导出）
+Hyp632	L20261018/Hyp632.lean	Ch2.Hensel.UnitsCupVanish.Step035_kummer_cocycle_properties	Ch2/Hensel/UnitsCupVanish/Step035_kummer_cocycle_properties.lean	126	-	S52 R24：**N4 的余圈层** —— Kummer 余圈 `σ ↦ σα/α` 的三条基本性质
+Hyp633	L20261018/Hyp633.lean	Ch2.Hensel.UnitsCupVanish.Step036_integral_closure_ring_map	Ch2/Hensel/UnitsCupVanish/Step036_integral_closure_ring_map.lean	109	-	S52 R25：**N3 第一块** —— `𝒪[F] → 𝒪_W` 的环同态与剩余域映射 `κ → κ̄`
+Hyp634	L20261018/Hyp634.lean	Ch2.Hensel.UnitsCupVanish.Step037_cocycle_unit_valued	Ch2/Hensel/UnitsCupVanish/Step037_cocycle_unit_valued.lean	141	-	S52 R26：**`c_u` 的单位层形态** —— Kummer 余圈取值在 `↥𝒪_Wˣ` 里
+Hyp635	L20261018/Hyp635.lean	Ch2.Hensel.UnitsCupVanish.Step038_cocycle_constant_on_cosets	Ch2/Hensel/UnitsCupVanish/Step038_cocycle_constant_on_cosets.lean	83	-	S52 R27：**余圈在惯性陪集上恒定** —— `(CI)` 的群论骨架
+Hyp636	L20261018/Hyp636.lean	Ch2.Hensel.UnitsCupVanish.Step039_cocycle_descends	Ch2/Hensel/UnitsCupVanish/Step039_cocycle_descends.lean	71	-	S52 R28：**余圈的下降 `Γ⧸I → F̄`**（`Hyp636`）—— 收 R27 登记的那一格
+Hyp637	L20261018/Hyp637.lean	Ch2.Hensel.UnitsCupVanish.Step040_cocycle_on_quotient	Ch2/Hensel/UnitsCupVanish/Step040_cocycle_on_quotient.lean	248	-	S53 R29：**商群层的余圈** —— `Hyp632` 的两条搬到 `Γ_F ⧸ I` 上（`Hyp637`）
+Hyp638	L20261018/Hyp638.lean	Ch2.Hensel.UnitsCupVanish.Step041_res_inertia_kummer_class_zero	Ch2/Hensel/UnitsCupVanish/Step041_res_inertia_kummer_class_zero.lean	214	-	S53 R30：**N4 的类层收口** —— `res_I(kummerClass u) = 0`（`Hyp638`）
+Hyp680	L20261018/Hyp680.lean	Ch2.Hensel.TameSymbol.Step006_tame_symbol_explicit	Ch2/Hensel/TameSymbol/Step006_tame_symbol_explicit.lean	357	label:eq:prelim-tame,line:1050	S59 R1：**驯符号的显式化 ＋ `(R2)` 严格弱于 `residueSpan = ⊥`**（`Hyp680`）
+Hyp681	L20261018/Hyp681.lean	Ch2.Hensel.TameSymbol.Step007_tame_symbol_triviality	Ch2/Hensel/TameSymbol/Step007_tame_symbol_triviality.lean	89	label:eq:prelim-tame	S59 R2：**`κ` 的两条平凡性** —— `(K1)`（Hensel）＋ `(K2)`（`p` 奇）—— `(R2)` 的 Steinberg 路线的基建
+Hyp682	L20261018/Hyp682.lean	Ch2.Hensel.TameSymbol.Step008_tame_symbol_bilinear	Ch2/Hensel/TameSymbol/Step008_tame_symbol_bilinear.lean	105	label:eq:prelim-tame	S59 R3：**驯符号的点式双线性 ＋ 零点判据 ＋ 必要条件** —— `(R2)` 的 Steinberg 路线的代数层
+Hyp683	L20261018/Hyp683.lean	Ch2.Hensel.TameSymbol.Step009_tame_symbol_factors_descent	Ch2/Hensel/TameSymbol/Step009_tame_symbol_factors_descent.lean	83	-	S59 R4：**A1 的易向 ＋ 求和必要条件** —— `TameSymbolFactors` 的「下降」已压成一条求和判据
+Hyp684	L20261018/Hyp684.lean	Ch2.Hensel.TameSymbol.Step010_tame_symbol_two_chain_criterion	Ch2/Hensel/TameSymbol/Step010_tame_symbol_two_chain_criterion.lean	82	-	S59 R5：**A1 的判据更正** —— 正确形态是「二项链式判据」，不是「点式判据」
+Hyp685	L20261018/Hyp685.lean	Ch2.Hensel.TameSymbol.Step011_tame_sum_condition	Ch2/Hensel/TameSymbol/Step011_tame_sum_condition.lean	77	-	S59 R6：**`res` 构造的正确入口条件** —— `tameSumCond`（带标量的有限和）
+Hyp686	L20261018/Hyp686.lean	Ch2.Hensel.TameSymbol.Step012_tame_symbol_finsupp	Ch2/Hensel/TameSymbol/Step012_tame_symbol_finsupp.lean	87	-	S59 R7：**`res` 构造的两个对象 ＋ 最干净的入口条件**（`Finsupp` 版）
+Hyp687	L20261018/Hyp687.lean	Ch2.Hensel.TameSymbol.Step013_tame_symbol_factors_closed	Ch2/Hensel/TameSymbol/Step013_tame_symbol_factors_closed.lean	113	-	S59 R9：★★★ **A1 收口** —— `ker (cupLC) ≤ ker (tameLC)` ⟹ `TameSymbolFactors`
+Hyp688	L20261018/Hyp688.lean	Ch2.Hensel.TameSymbol.Step014_tame_steinberg_relation	Ch2/Hensel/TameSymbol/Step014_tame_steinberg_relation.lean	411	line:739	S61 R1：**A3 ＝ `tame(a, 1−a) = 0`**（具体载体，四情形）—— `(G2)` 的义务格 A3
+Hyp690	L20261018/Hyp690.lean	Ch2.Kummer.Step051_cup_steinberg_relation	Ch2/Kummer/Step051_cup_steinberg_relation.lean	210	-	S61 R3：**A2 收口** —— `∪(a, 1−a) = 0`（Steinberg 关系，杯积侧）
+Hyp691	L20261018/Hyp691.lean	Ch2.Hensel.TameSymbol.Step015_tame_symbol_hyp_from_merkurjev_suslin	Ch2/Hensel/TameSymbol/Step015_tame_symbol_hyp_from_merkurjev_suslin.lean	344	-	S61 R4：**(G2) 的收口形态** —— `Ch4TameSymbolHyp` 由**论文自引的 Merkurjev–Suslin** 推出
+Hyp692	L20261018/Hyp692.lean	Ch2.Hensel.TameSymbol.Step016_tame_symbol_hyp_merkurjev_suslin	Ch2/Hensel/TameSymbol/Step016_tame_symbol_hyp_merkurjev_suslin.lean	118	line:1050	S61 R5：**(G2) 字面闭合** —— `Ch4TameSymbolHyp` 由 `MerkurjevSuslin` 推出
+Hyp695	L20261018/Hyp695.lean	Ch4.Step039_ch4_four_without_finite_residue	Ch4/Step039_ch4_four_without_finite_residue.lean	192	line:1050,line:1608,line:1636,line:1648	S62 R1：**第 4 章 4 条断言去 `[Finite 𝓀[F]]`** —— 入口改接 `MerkurjevSuslin`
+Hyp710	L20261018/Hyp710.lean	Ch4.Step040_corollary_four_four_paper_level	Ch4/Step040_corollary_four_four_paper_level.lean	93	line:1646	S62 R22：**4.4 的论文假设层级版** —— 第 4 章最后一块「论文口径」的件
+Hyp711	L20261018/Hyp711.lean	Ch4.Step041_thm_ramified_two_rank_barrier	Ch4/Step041_thm_ramified_two_rank_barrier.lean	64	line:1635	S62 R28：**4.3(2)** —— 论文 `thm:ramified` 的**第二条**（`rank Φ ≥ 3`）
+Hyp712	L20261018/Hyp712.lean	Infra.Cohomology.Coinduced.Step001_coind_subgroup_acyclic_hyp	Infra/Cohomology/Coinduced/Step001_coind_subgroup_acyclic_hyp.lean	124	-	S63 R1：把 C2（Hochschild–Serre 跨零）的缺口压成**一条具名假设**
+Hyp713	L20261018/Hyp713.lean	Infra.Cohomology.Coinduced.Step002_coind_subgroup_acyclic_carrier	Infra/Cohomology/Coinduced/Step002_coind_subgroup_acyclic_carrier.lean	104	-	S63 R2：把 `Hyp712` 的 C 步落到**战役载体**上（`G = G_F`、`H = inertiaLoc F`、`A = ZMod ℓ`）
+Hyp714	L20261018/Hyp714.lean	Infra.Cohomology.Coinduced.Step003_coind_subgroup_acyclic_one	Infra/Cohomology/Coinduced/Step003_coind_subgroup_acyclic_one.lean	108	-	S63 R3：零调性缺口再削一层 —— **只需 `j = 1` 那一格**
+Hyp715	L20261018/Hyp715.lean	Infra.Cohomology.Coinduced.Step004_finite_index_coset_decomposition	Infra/Cohomology/Coinduced/Step004_finite_index_coset_decomposition.lean	240	-	S64 R2：`C2-INFRA-1′` —— 有限指数闭子群的**左陪集**分解
+Hyp716	L20261018/Hyp716.lean	Infra.Cohomology.Coinduced.Step005_closed_subgroup_acyclicity	Infra/Cohomology/Coinduced/Step005_closed_subgroup_acyclicity.lean	99	-	S64 R3：**B 步收口** —— 任意闭子群上的零调性（`C2-INFRA-2`）
+Hyp717	L20261018/Hyp717.lean	Infra.Cohomology.Coinduced.Step006_inf_h1_iso_closed_subgroup	Infra/Cohomology/Coinduced/Step006_inf_h1_iso_closed_subgroup.lean	106	-	S64 R4：**C2-D 步** —— `Inf : H¹(G⧸H, C^H) ≅ H¹(G, C)`（C 步之后去假设）
+Hyp718	L20261018/Hyp718.lean	Infra.Cohomology.Coinduced.Step007_delta_zero_quotient_morphism	Infra/Cohomology/Coinduced/Step007_delta_zero_quotient_morphism.lean	102	-	S64 R6：**C2-F 第一半** —— `δ⁰ : C^H → H¹(H,A)` 是 `G⧸H`-模态射
+Hyp719	L20261018/Hyp719.lean	Infra.Cohomology.Coinduced.Step008_delta_two_first_factors	Infra/Cohomology/Coinduced/Step008_delta_two_first_factors.lean	115	-	S64 R7：**`∂²` 的前两因子已装配** —— `H²(G,A) ≃+ H¹(G⧸H, C^H)`
+Hyp722	L20261018/Hyp722.lean	Infra.Cohomology.Coinduced.Step009_c2_f_interface	Infra/Cohomology/Coinduced/Step009_c2_f_interface.lean	77	-	S64 R11：**C2-F 在战役载体上已有机检件**（`Hyp576`／`Hyp578`）—— 本件补最后一块接口
+Hyp723	L20261018/Hyp723.lean	Infra.Cohomology.Coinduced.Step010_delta_two_carrier_assembly	Infra/Cohomology/Coinduced/Step010_delta_two_carrier_assembly.lean	58	-	S64 R12：★★★★★ **战役载体上的 `∂²` 装配完成**
+Hyp724	L20261018/Hyp724.lean	Infra.Cohomology.Coinduced.Step011_hc_inertia_discharged	Infra/Cohomology/Coinduced/Step011_hc_inertia_discharged.lean	85	-	S64 R13：**`hC` 在惯性群上兑现**（`Hyp723` 的第一条假设消失）
+Hyp726	L20261018/Hyp726.lean	Infra.Cohomology.Coinduced.Step012_coinduced_invariants_forward	Infra/Cohomology/Coinduced/Step012_coinduced_invariants_forward.lean	85	-	S64 R18：GS `lemma-coinduced-invariants` 的**前进侧**
+Hyp727	L20261018/Hyp727.lean	Infra.Cohomology.Coinduced.Step013_coinduced_invariants_backward	Infra/Cohomology/Coinduced/Step013_coinduced_invariants_backward.lean	156	-	S65 R1：分片 **4a** —— GS `lemma-coinduced-invariants` 的**反向侧 ＋ 打包**
+Hyp728	L20261018/Hyp728.lean	Infra.Cohomology.Coinduced.Step014_coinduced_invariants	Infra/Cohomology/Coinduced/Step014_coinduced_invariants.lean	122	-	S65 R1：分片 **4b** —— GS `lemma-coinduced-invariants`
+Hyp729	L20261018/Hyp729.lean	Infra.Cohomology.Coinduced.Step015_gs617_compatibility_square	Infra/Cohomology/Coinduced/Step015_gs617_compatibility_square.lean	87	-	S65 R3：分片 **4c-i** —— GS (6.17) 的**兼容方块**（`delta_infl` 的 `T`-变体）
+Hyp730	L20261018/Hyp730.lean	Infra.Cohomology.Coinduced.Step016_gs617_ses1	Infra/Cohomology/Coinduced/Step016_gs617_ses1.lean	121	-	S65 R4：分片 **4c-ii** —— GS (6.17) 的 **SES1** 实体
+Hyp731	L20261018/Hyp731.lean	Infra.Cohomology.Coinduced.Step017_ses1_delta_one_iso	Infra/Cohomology/Coinduced/Step017_ses1_delta_one_iso.lean	163	-	S66 R1：分片 **4c-iii** —— `SES1` 的 `(δ¹)` 是**同构**（GS (6.17) 的中项零调）
+Hyp732	L20261018/Hyp732.lean	Infra.Cohomology.Coinduced.Step018_iota_delta_zero_zero	Infra/Cohomology/Coinduced/Step018_iota_delta_zero_zero.lean	184	-	S66 R2：分片 **4c-iv** —— `ι : T → Cᴵ` 与 `δ⁰ ∘ proj_* = 0`
+Hyp733	L20261018/Hyp733.lean	Infra.Cohomology.Coinduced.Step019_cont_m_iota_zero	Infra/Cohomology/Coinduced/Step019_cont_m_iota_zero.lean	87	-	S66 R2b：分片 **4c-iv 的战役级收口** —— `contM ∘ ι = 0`
+Hyp734	L20261018/Hyp734.lean	Infra.Cohomology.Coinduced.Step020_map_phi_decomposition	Infra/Cohomology/Coinduced/Step020_map_phi_decomposition.lean	68	-	S66 R3：分片 **4c-v（第一格）** —— `map φ fC` 的**分解**
+Hyp735	L20261018/Hyp735.lean	Infra.Cohomology.Coinduced.Step021_h1_bridge_coeff_comm	Infra/Cohomology/Coinduced/Step021_h1_bridge_coeff_comm.lean	94	-	S66 R4：分片 **4c-v（第二格）** —— `h1BridgeQ` 与**系数映射**交换
+Hyp736	L20261018/Hyp736.lean	Infra.Cohomology.Coinduced.Step022_h1_bridge_infl_comm	Infra/Cohomology/Coinduced/Step022_h1_bridge_infl_comm.lean	99	-	S66 R5：分片 **4c-v（第三格，收官）** —— `h1BridgeQ` 与**膨胀**交换
+Hyp737	L20261018/Hyp737.lean	Infra.Cohomology.Coinduced.Step023_cont_m_coeff_map	Infra/Cohomology/Coinduced/Step023_cont_m_coeff_map.lean	70	-	S66 R6：4d 的**代数收尾格** —— `contM_coeffMap` 杀死 `coeffMap ι` 的像
+Hyp739	L20261018/Hyp739.lean	Infra.Cohomology.Coinduced.Step024_explicit_coeff_one_zero	Infra/Cohomology/Coinduced/Step024_explicit_coeff_one_zero.lean	95	-	S66 R8：**补上 `explicitCoeff1_zero`**（库内缺件）—— 4d 代数收尾格**无条件化**
+Hyp740	L20261018/Hyp740.lean	Infra.Cohomology.Coinduced.Step025_square_elimination	Infra/Cohomology/Coinduced/Step025_square_elimination.lean	120	-	S66 R9：4d 第二步 —— **方块消去**：`(δ¹_Γ)⁻¹ ∘ Inf₂ = map φ fC ∘ (δ¹_{SES1})⁻¹`
+Hyp741	L20261018/Hyp741.lean	Infra.Cohomology.Coinduced.Step026_delta_two_inf_two_zero	Infra/Cohomology/Coinduced/Step026_delta_two_inf_two_zero.lean	238	-	S67 R1：分片 **4d 组装收官** —— `∂² ∘ Inf₂ = 0`（C4 的核心）
+Hyp742	L20261018/Hyp742.lean	Infra.Cohomology.Coinduced.Step027_continuous_smul_criterion	Infra/Cohomology/Coinduced/Step027_continuous_smul_criterion.lean	65	-	S67 R1b：**离散码域上的 `ContinuousSMul` 判据**（`ContinuousSMul (G⧸I) (TBI S I)` 的前置）
+Hyp743	L20261018/Hyp743.lean	Infra.Cohomology.Coinduced.Step028_delta_two_carrier_inertia	Infra/Cohomology/Coinduced/Step028_delta_two_carrier_inertia.lean	99	-	S67 R2：**C4 战役级收口** —— `deltaTwoCarrierInertia ∘ Inf₂ = 0`
+Hyp744	L20261018/Hyp744.lean	Ch2.Hensel.Inertia.Step033_unramified_kummer_hyp	Ch2/Hensel/Inertia/Step033_unramified_kummer_hyp.lean	86	-	S67 R9：**具名假设 `UnramifiedKummer`**（不通歧 Kummer 理论）—— C3/C4/F5 共用的唯一未形式化件
+Hyp746	L20261018/Hyp746.lean	Ch2.Hensel.Inertia.Step034_inertia_restriction_res1	Ch2/Hensel/Inertia/Step034_inertia_restriction_res1.lean	136	-	S68 R1：**惯性限制 `res₁` 在战役载体上** —— `UnramifiedKummer` 的第一根支柱
+Hyp747	L20261018/Hyp747.lean	Ch2.Hensel.Inertia.Step035_ker_v_eq_ker_res1	Ch2/Hensel/Inertia/Step035_ker_v_eq_ker_res1.lean	247	-	S68 R2：**`ker v̄ = ker res₁`** —— `UnramifiedKummer` 的代数心
+Hyp748	L20261018/Hyp748.lean	Ch2.Hensel.Inertia.Step036_unramified_kummer_theorem	Ch2/Hensel/Inertia/Step036_unramified_kummer_theorem.lean	331	-	S68 R3：★★★ **`Hyp744.UnramifiedKummer` 由假设变定理**（膨胀-限制正合列的载体搬运）
+Hyp749	L20261018/Hyp749.lean	Ch2.Hensel.Inertia.Step037_unramified_kummer_paper_level	Ch2/Hensel/Inertia/Step037_unramified_kummer_paper_level.lean	230	-	S68 R4：★★★ **`UnramifiedKummer` 在论文口径下（`ValCompat` ＋ `v π = 1`，`v` 任意）**
+Hyp750	L20261018/Hyp750.lean	Infra.Cohomology.Coinduced.Step029_second_carrier_square	Infra/Cohomology/Coinduced/Step029_second_carrier_square.lean	103	-	S68 R5：A-1 —— **二级载体的方阵** `infl2Res ∘ eQ₂ = h2ToGaloBase ∘ explicitMap2`
+Hyp751	L20261018/Hyp751.lean	Infra.Cohomology.Coinduced.Step030_coefficient_bridge_m_inv	Infra/Cohomology/Coinduced/Step030_coefficient_bridge_m_inv.lean	56	-	S68 R8：A-1 第二半 —— 系数桥 `ZMod p → M^I`
+Hyp752	L20261018/Hyp752.lean	Infra.Cohomology.Coinduced.Step031_coefficient_bridge_explicit_model	Infra/Cohomology/Coinduced/Step031_coefficient_bridge_explicit_model.lean	120	-	S68 R9：A-1 第二半 —— **显式模型里的系数桥**（绕开 `TopRep` 系数，见 `S68-HYP744-PLAN.md` §8）
+Hyp753	L20261018/Hyp753.lean	Infra.Cohomology.Coinduced.Step032_a1_last_step	Infra/Cohomology/Coinduced/Step032_a1_last_step.lean	90	-	S68 R11：A-1 最后一步（`S68-HYP744-PLAN.md` §9quater）
+Hyp754	L20261018/Hyp754.lean	Infra.Cohomology.Coinduced.Step033_delta_two_infl_zero_carrier	Infra/Cohomology/Coinduced/Step033_delta_two_infl_zero_carrier.lean	98	-	S68 R12：**`∂² ∘ infl₂ = 0`** 在战役载体上（A-1 收口）
+Hyp755	L20261018/Hyp755.lean	Infra.Cohomology.Coinduced.Step034_delta_two_map_phi_zero	Infra/Cohomology/Coinduced/Step034_delta_two_map_phi_zero.lean	111	-	S69 R1：`Delta` —— **`∂² (map φ (pair φ id) 2 z) = 0`**（A-1 的最后一次装配）
+Hyp756	L20261018/Hyp756.lean	Infra.Cohomology.Coinduced.Step035_delta_two_cup_y_z_zero	Infra/Cohomology/Coinduced/Step035_delta_two_cup_y_z_zero.lean	142	-	S69 R2：**A-2 的代数内核** —— `∂² (cup y z) = 0`（`y z ∈ VKG`）
+Hyp757	L20261018/Hyp757.lean	Ch4.Step042_hd_infl_final_form	Ch4/Step042_hd_infl_final_form.lean	102	-	S69 R3：A-2 **收口** —— `hd_infl` 的最终形态（不再带 `hpq`）
+Hyp758	L20261018/Hyp758.lean	Infra.Cohomology.Coinduced.Step036_res_h1_type_equiv_vkg	Infra/Cohomology/Coinduced/Step036_res_h1_type_equiv_vkg.lean	245	-	S70 R1：`F5` 第二半 —— `ResH1Type ≅ VKG`（膨胀把剩余 `H¹` 送到 `ker v̄`）
+Hyp759	L20261018/Hyp759.lean	Ch2.Hensel.Inertia.Step038_h1_inertia_one_dim	Ch2/Hensel/Inertia/Step038_h1_inertia_one_dim.lean	80	-	S71 R1：墙 1 的第一步 —— **战役载体 `H¹(I,μ_p)` 是一维的**
+Hyp760	L20261018/Hyp760.lean	Infra.Cohomology.Conjugation.Step006_conj_trivial_one_element	Infra/Cohomology/Conjugation/Step006_conj_trivial_one_element.lean	58	-	S72 R1：墙 1 的 **W3 归约** —— 「共轭作用平凡」只需在**一个**非零元素上验证
+Hyp761	L20261018/Hyp761.lean	Infra.Cohomology.Conjugation.Step007_conj_trivial_unconditional	Infra/Cohomology/Conjugation/Step007_conj_trivial_unconditional.lean	99	-	S72 R1：**D80 的「mathlib 无」是假阻断** —— 桥在库内，W3 无条件化
+Hyp762	L20261018/Hyp762.lean	Infra.Cohomology.Conjugation.Step008_conj1_trivial_hyp	Infra/Cohomology/Conjugation/Step008_conj1_trivial_hyp.lean	123	-	S72 R2：W4 的**具名假设登记**（`PROMPT-S72` §0bis 第 4 条授权的回退）
+Hyp763	L20261018/Hyp763.lean	Ch4.Step043_ch4_closure_certificate	Ch4/Step043_ch4_closure_certificate.lean	87	-	S72 R3：**第 4 章闭合证书** —— `raw/L20261018.tex` §4「Hensel 赋值与第一槽分歧」
+Hyp764	L20261018/Hyp764.lean	Ch4.Step044_ch4_hypothesis_deflation_audit	Ch4/Step044_ch4_hypothesis_deflation_audit.lean	116	-	S72 R4：第 4 章**假设去膨胀审计** —— 把 `D` 换成第 2 章 `prop:prelim-residue`
+Hyp765	L20261018/Hyp765.lean	Ch2.Hensel.Inertia.Step039_h1_inertia_zmod	Ch2/Hensel/Inertia/Step039_h1_inertia_zmod.lean	114	-	S72 R5：`F5` 的第一步 —— **`H¹(I,ℤ/p) ≅ ℤ/p` 作为 `ℤ/p`-模**
+Hyp766	L20261018/Hyp766.lean	Infra.Cohomology.Conjugation.Step009_h_conj1_carrier_inputs	Infra/Cohomology/Conjugation/Step009_h_conj1_carrier_inputs.lean	92	-	S72 R7：`H-conj1` 的两个**载体侧**输入（`RECON-tauceti-lcft.md` §5 路线 (c) 的前置）
+Hyp767	L20261018/Hyp767.lean	Infra.Cohomology.Conjugation.Step010_h_conj1_implies_f5	Infra/Cohomology/Conjugation/Step010_h_conj1_implies_f5.lean	114	-	S72 R8：`H-conj1` ⟹ **`F5` 第一半**（系数变换 `H¹(Γ⧸I, H¹(I,ℤ/p)) ≃+ H¹(Γ⧸I, ℤ/p)`）
+Hyp768	L20261018/Hyp768.lean	Infra.Cohomology.Conjugation.Step011_h_conj1_tauceti_interface	Infra/Cohomology/Conjugation/Step011_h_conj1_tauceti_interface.lean	75	-	S72 R11：`H-conj1` 搬进 **TauCeti 的 `H1ConjInvariants` 接口**（解锁路线 (c)）
+Hyp769	L20261018/Hyp769.lean	Infra.Cohomology.Conjugation.Step012_h_conj1_entry	Infra/Cohomology/Conjugation/Step012_h_conj1_entry.lean	167	-	S73 R1：★★★ **共轭兼容自己做**（用户令 2026-11-04）——`H-conj1` 的真正入口
+Hyp770	L20261018/Hyp770.lean	Ch2.Hensel.Inertia.Step040_tame_character_galois_invariant	Ch2/Hensel/Inertia/Step040_tame_character_galois_invariant.lean	230	-	S73 R2：★★★ **驯特征在 `p` 层是 `Γ`-不变的**——`H-conj1` 的**不动向量**来源
+Hyp771	L20261018/Hyp771.lean	Infra.Cohomology.Conjugation.Step013_h_conj1_discharged	Infra/Cohomology/Conjugation/Step013_h_conj1_discharged.lean	127	-	S73 R3：★★★★★ **`H-conj1` 兑现——`F5` 第一半变为无条件**
+Hyp772	L20261018/Hyp772.lean	Infra.Cohomology.Conjugation.Step014_f5_landing	Infra/Cohomology/Conjugation/Step014_f5_landing.lean	142	-	S73 R4：★★★★ **`F5` 的落点**——膨胀的类无分歧 ⟹ `H1 (Γ⧸I, ℤ/p) → VKG` 到手（缺口 ② 的实质一步）
+Hyp773	L20261018/Hyp773.lean	Ch4.Step045_hd_infl_discharged	Ch4/Step045_hd_infl_discharged.lean	87	-	S73 R5：★★★★★ **缺口 ② 收尾**——`hd_infl` 对本战役的 `F5` 成立
+Hyp774	L20261018/Hyp774.lean	Ch2.Hensel.ResidueMap.Step064_delta_two_definition	Ch2/Hensel/ResidueMap/Step064_delta_two_definition.lean	129	-	S73 R6：★★★★★ **`∂₂` 的机检定义 ＋ `prop:prelim-residue` 归约到「恰好一条方程」**
+Hyp775	L20261018/Hyp775.lean	Ch2.Hensel.ResidueMap.Step065_partial_one_inputs	Ch2/Hensel/ResidueMap/Step065_partial_one_inputs.lean	165	-	S74 R1：`∂¹` 的两个输入（`x₀ := res₁((π))` 非零 ＋ 共轭不变）—— ③ 的"归一化"被消掉
+Hyp776	L20261018/Hyp776.lean	Ch2.Hensel.ResidueMap.Step066_finrank_vkg_one_reduction	Ch2/Hensel/ResidueMap/Step066_finrank_vkg_one_reduction.lean	74	-	S74 R2：(甲1) 归约为**一条非零杯积**——`finrank VKG = 1` 只差 `∃ a₁ a₂, cup a₁ a₂ ≠ 0`
+Hyp777	L20261018/Hyp777.lean	Ch2.Hensel.ResidueMap.Step067_finrank_vkg_le_one	Ch2/Hensel/ResidueMap/Step067_finrank_vkg_le_one.lean	133	-	S74 R3：**(甲1) 的"≤"那一半**无条件成立 —— `hne` 从 `finrank VKG ≤ 1` 上摘掉
+Hyp778	L20261018/Hyp778.lean	Ch2.Hensel.ResidueMap.Step068_infl_to_vkg_injective	Ch2/Hensel/ResidueMap/Step068_infl_to_vkg_injective.lean	107	-	S74 R4：**(甲1) 的输入降为「`H¹(Γ⧸I,ℤ/p)` 非零」**——`inflToVKG` 单射
+Hyp779	L20261018/Hyp779.lean	Ch2.Hensel.ResidueMap.Step069_hcup_injectivity	Ch2/Hensel/ResidueMap/Step069_hcup_injectivity.lean	136	-	S74 R5：**`hcup` 的残余被重构为"一条单射性"** —— 线性 `F5` 是自由参数
+Hyp780	L20261018/Hyp780.lean	Ch2.Hensel.ResidueMap.Step070_partial_one_pi_generator	Ch2/Hensel/ResidueMap/Step070_partial_one_pi_generator.lean	88	-	S74 R6：**`∂¹(π)` 是 `H¹(I,ℤ/p)` 的生成元** —— GS `∂¹((−π)) = 1` 的战役形态
+Hyp781	L20261018/Hyp781.lean	Ch2.Hensel.ResidueMap.Step071_delta_two_expansion	Ch2/Hensel/ResidueMap/Step071_delta_two_expansion.lean	111	-	S74 R7：`∂²` 的**展开 API** —— 把 `deltaTwoShift` 拆成 `δ⁻¹` ＋ 桥 ＋ `Infl⁻¹`
+Hyp782	L20261018/Hyp782.lean	Ch2.Hensel.ResidueMap.Step072_delta_two_factors_bijective	Ch2/Hensel/ResidueMap/Step072_delta_two_factors_bijective.lean	95	-	S74 R8：`∂²` 三段因子的双射性 API（`Hyp781` 的补全）
+Hyp783	L20261018/Hyp783.lean	Ch2.Hensel.ResidueMap.Step073_delta_two_injective_reduction	Ch2/Hensel/ResidueMap/Step073_delta_two_injective_reduction.lean	82	-	S74 R9：`∂²` 单射的机检归约 —— **只需 `ker contM_coeffMap = 0`**
+Hyp784	L20261018/Hyp784.lean	Infra.Cohomology.Coinduced.Step037_h0_leibniz_parts	Infra/Cohomology/Coinduced/Step037_h0_leibniz_parts.lean	232	-	S75 R1：**连续模型的 `H⁰`-Leibniz**（GS 6.8.4 的 `p = 0` 支）—— 部件与显式侧机检
+Hyp785	L20261018/Hyp785.lean	Infra.Cohomology.Coinduced.Step038_h0_leibniz	Infra/Cohomology/Coinduced/Step038_h0_leibniz.lean	174	-	S75 R2：**连续模型的 `H⁰`-Leibniz**（`PROMPT-S75` §1.1 的靶子）
+Hyp786	L20261018/Hyp786.lean	Infra.Cohomology.Coinduced.Step039_delta_zero_surjective	Infra/Cohomology/Coinduced/Step039_delta_zero_surjective.lean	81	-	S75 R3：**`(6.15)⁻¹` 的存在性** —— `δ⁰ : H⁰(Γ, C) ↠ H¹(Γ, μ_p)`
+Hyp787	L20261018/Hyp787.lean	Infra.Cohomology.Coinduced.Step040_e_zero_surjective_leibniz	Infra/Cohomology/Coinduced/Step040_e_zero_surjective_leibniz.lean	104	-	S75 R4：`e₀` 满射性 ＋ **连续 `H⁰` 类上的 Leibniz** ＋ **`cup11 π y` 的 `δ¹` 原像存在**
+Hyp788	L20261018/Hyp788.lean	Infra.Cohomology.Coinduced.Step041_infl_inverse_cup	Infra/Cohomology/Coinduced/Step041_infl_inverse_cup.lean	171	-	S76 R1：**`Infl⁻¹` 与杯积的相容**（`GAP3-PLAN` §11.3 的**第 3 步**）
+Hyp789	L20261018/Hyp789.lean	Ch2.Hensel.ResidueMap.Step074_delta_two_pi_cup_inf	Ch2/Hensel/ResidueMap/Step074_delta_two_pi_cup_inf.lean	225	-	S76 R2：**把第 3 步接到 `∂²`** —— `∂²(π ⌣ Inf y) = contM (z₀ ⌣ y)` 的显式取值
+Hyp790	L20261018/Hyp790.lean	Ch2.Hensel.ResidueMap.Step075_cont_m_cup	Ch2/Hensel/ResidueMap/Step075_cont_m_cup.lean	287	-	S76 R3：**第 4 步 —— `contM` 与杯积的相容**（`GAP3-PLAN` §11.3 的第 4 步）
+Hyp791	L20261018/Hyp791.lean	Ch2.Hensel.ResidueMap.Step076_res_bridges_explicit_continuous	Ch2/Hensel/ResidueMap/Step076_res_bridges_explicit_continuous.lean	63	-	S76 R4：**限制的两个桥** —— 显式 `explicitRes1` ↔ 连续 `res`（第 5 步 (a) 的第一块）
+Hyp792	L20261018/Hyp792.lean	Ch2.Hensel.ResidueMap.Step077_cont_delta_res_naturality	Ch2/Hensel/ResidueMap/Step077_cont_delta_res_naturality.lean	65	-	S76 R5：`contDelta_res_naturality` 的**逐点形态**（第 5 步 (a) 的第二块）
+Hyp793	L20261018/Hyp793.lean	Ch2.Hensel.ResidueMap.Step078_res_inertia_infl_image	Ch2/Hensel/ResidueMap/Step078_res_inertia_infl_image.lean	125	-	S77 R1：第 5 步 (a) **第三块** —— `res_I (e₀ (Inf z)) = e₀_I z`
+Hyp794	L20261018/Hyp794.lean	Ch2.Hensel.ResidueMap.Step079_cont_m_eq_explicit_res	Ch2/Hensel/ResidueMap/Step079_cont_m_eq_explicit_res.lean	97	-	S77 R2：第 5 步 (a) **收口** —— `contM z = explicitRes1 x`（进而 `= res₁V(kummerClass π)`）
+Hyp795	L20261018/Hyp795.lean	Ch2.Hensel.ResidueMap.Step080_cont_m_generator	Ch2/Hensel/ResidueMap/Step080_cont_m_generator.lean	108	-	S77 R3：第 5 步 (a) 的**结论** —— `contM z` 是 `H¹(I, μ_p)` 的**生成元**
+Hyp796	L20261018/Hyp796.lean	Ch2.Hensel.ResidueMap.Step081_explicit_cup01	Ch2/Hensel/ResidueMap/Step081_explicit_cup01.lean	177	-	S77 R4：第 5 步 (c) **杯积的载体比较** —— `∂²(cup y π)` 落成 `explicitCup01`
+Hyp797	L20261018/Hyp797.lean	Ch2.Hensel.ResidueMap.Step082_explicit_cup_nonzero	Ch2/Hensel/ResidueMap/Step082_explicit_cup_nonzero.lean	100	-	S77 R5：第 5 步 (b) 的**代数内核** —— 有「左逆系数映射」⟹ `explicitCup01` 非零
+Hyp798	L20261018/Hyp798.lean	Ch2.Hensel.ResidueMap.Step083_left_inverse_coeff_map	Ch2/Hensel/ResidueMap/Step083_left_inverse_coeff_map.lean	109	-	S77 R6：第 5 步 (b) 的**最后一块** —— 为 `explicitCup01` 造左逆系数映射
+Hyp799	L20261018/Hyp799.lean	Ch2.Hensel.ResidueMap.Step084_explicit_cup01_nonzero	Ch2/Hensel/ResidueMap/Step084_explicit_cup01_nonzero.lean	108	-	S77 R7：第 5 步 (b) **完成** —— `explicitCup01` 在 `(contM z, yb)` 上非零
+Hyp800	L20261018/Hyp800.lean	Ch4.Step046_exists_residue_map	Ch4/Step046_exists_residue_map.lean	453	-	S78 R1：把 `prop:prelim-residue`(1) 的 `d` **无条件造出来** —— 第 4 章无条件化的最后一段
+Hyp801	L20261018/Hyp801.lean	Ch4.Step047_ch4_three_d_free	Ch4/Step047_ch4_three_d_free.lean	230	line:1608,line:1636,line:1648	S78 R2：第 4 章 3 条陈述的 **`d`-假设消除**（`prop:prelim-residue`(1) 已无条件）
+Hyp802	L20261018/Hyp802.lean	Witness.Step040_tame_symbol_hyp_witness	Witness/Step040_tame_symbol_hyp_witness.lean	140	-	S78 R3：第 4 章**唯一具名假设** `Ch4TameSymbolHyp` 的**第三个非空见证**（且无 `p ≠ 2`）
+Hyp803	L20261018/Hyp803.lean	Ch4.Step048_r2_infinite_residue_certificate	Ch4/Step048_r2_infinite_residue_certificate.lean	107	-	S78 R5：`(R2)` 无限残域路线的**基建可用性证书**（`L46` 机检化）

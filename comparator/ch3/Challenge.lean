@@ -1,11 +1,4 @@
-import L20261018.A
-import L20261018.Hyp22
-import L20261018.Hyp86
-import L20261018.Hyp23
-import L20261018.Hyp21
-import L20261018.Hyp10
-import L20261018.Hyp12
-import L20261018.Hyp13
+import L20261018
 
 open Lean Elab Command
 

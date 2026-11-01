@@ -92,13 +92,32 @@
 ## 5 交付：仓库要像「库」，不像「战役工作区」
 
 1. **源码自足**：依赖（本项目 TauCeti 子集）vendored，mathlib 用 pin；读者 `lake exe cache get && ./run-comparator.sh` 即可。
-2. **`globs` 只写子模块**（`["X.+"]`），**不要**写裸库名——否则 Lake 找不存在的根模块 `X.lean` 而报
-   `no such file or directory`。
+2. **`globs` 与根模块同在或同不在**：没有根模块 `X.lean` 时写 `["X.+"]`（写裸 `"X"` 会让 Lake 找不存在的
+   根模块而报 `no such file or directory`）；**一旦加了根模块 `X.lean`**，必须写 `["X", "X.+"]`——否则根模块
+   不是构建目标，而任何 `import X` 都会报 `object file 'X.olean' does not exist`（本项目实弹：`ch3u` 组
+   一直红，正是因为根模块从未存在）。
 3. **import 前缀必须与库名一致**：`lean_lib L20261018` ⟹ 模块名 `L20261018.Foo`，文件里写 `import Foo` 解析不了。
 4. **闭包用 `public import` 也算**：只匹配 `^import` 会静默漏掉 vendored 依赖（本项目漏了 53 个 TauCeti 模块）。
 5. **拆脚手架**：探针／`Check*`／台账／计划／日志一律不进交付仓库；
    交付仓库只留 `结果 + 依赖 + 验证 + README + LICENSE`。
 6. **README 短**：三段——怎么验、验的是什么、哪几档口径。读者不需要工具的原理科普。
+7. **库形态：重命名安全，合并不安全。** 战役工作区的 `HypNNN.lean` 是「可编译但不可检索」的形态：
+   文件名不携带内容，GitHub 的目录浏览与文件名检索双双失效。迁移分两条路，风险差一个量级：
+   * **重命名（含改目录）= 零语义风险**：改的是*模块名*，`import` 之外的每一行都逐字不变 ⟹
+     名字解析、`open` 作用域、`namespace` 栈全都不动。**判据**：迁移后
+     `(declaration, line)` 多重集**逐条不变**（改名不改数、不改行）——不要拿「声明总数」当判据，
+     修一次索引器的正则就会让它变。
+   * **合并 = 高语义风险**：拼接改变 `open`／`namespace` 的上下文与候选集，`GaloBase.cup` 这类
+     二级名会解析到别处而报 `Unknown identifier`（本项目实弹，整轮报废）。合并必须逐段重放
+     `open`／`set_option` 并逐批 `lake build`。
+   **文件名必须是合法的标识符分量**：`[A-Za-z0-9_]`，**不得含连字符**（`zz-test-hyphen.lean` 被解析成
+   模块 `zz`，`import` 直接坏），**不得以数字开头** ⟹ `Step017_…` 的前缀不是装饰，它让名字成为标识符。
+   **根模块的 `/-! … -/` 必须放在 `import` 之后**（`import` 只能在文件最前）。
+8. **索引器要能 Ctrl-F**：`DECLARATIONS.md` = `declaration | module | line | paper locator`。
+   正则须允许**前置 attribute**（`@[simp] lemma Foo_apply` —— 只认行首关键字的版本会静默漏掉 29 条，
+   而那恰好是最常被 grep 的 `_apply` 族）；**匿名 `instance : Foo` 无名字可索引**，只能计数，
+   且**必须在表头报出这个数**（本项目 42 条），不许静默丢。
+   迁移后 `DECLARATIONS.md` 与代码**同批提交**。
 
 **工艺**：任何脚本写文件，若内容含非 BMP 字符，**先构造内容并 `encode('utf-8')` 校验，再原子替换**；
 禁先 `open(path,"w")`（会立即截断，随后异常即静默毁件）。
@@ -125,6 +144,8 @@
 写证明: 假卡住先查记法／实例（§2 表）；同错误 3 次 ⟹ 写根因 + 最小复现
 装配:  被消去的假设写成 ∃/def 并构造；符号由自由参数吸收；Prop 槽免搬运
 验证:  官方 comparator + 工具自证（正例＋两条负例）+ 逐件签名扫描（带正例对照）
-交付:  源码自足、globs 带 `.+`、import 前缀一致、闭包含 public import、拆脚手架、README 三段
+交付:  源码自足、globs 与根模块同在、import 前缀一致、闭包含 public import、拆脚手架、README 三段
+库形态: 只重命名不合并（重命名零语义风险；合并要重放 open）；文件名须合法标识符（禁连字符／首数字）；
+       判据 = (declaration, line) 逐条不变；DECLARATIONS.md 带 module+line+paper，且报匿名 instance 数
 收口:  build 0 err 0 warn ｜ axioms 恰三条 ｜ comparator 全绿 ｜ commit（含文档）
 ```

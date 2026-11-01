@@ -14,20 +14,25 @@ rev = "aa35a481e5f0cdb3b04a899ead15d6ca7305a624"
 # The TauCeti modules used by this development are vendored under `TauCeti/`
 # (Apache-2.0, see TauCeti/NOTICE).  Nothing else has to be installed.
 #
-# NOTE on `globs`: these libraries contain only submodules, so the root entry must NOT
-# be listed -- a bare `"TauCeti"` points at the nonexistent root module `TauCeti.lean`
-# and `lake build` then fails with "no such file or directory".
+# NOTE on `globs`: `TauCeti` has no root module (`TauCeti.lean` does not exist), so its
+# bare name must NOT be listed -- it would point at that nonexistent root and `lake build`
+# would fail with "no such file or directory".
 [[lean_lib]]
 name = "TauCeti"
 globs = ["TauCeti.+"]
 
-# The development.  One namespace, one module per proof step (`A`, `Galo`, `Hyp*`).
+# The development: one namespace, one module per proof step, organised by the paper's
+# chapters under `L20261018/`.  The bare `"L20261018"` glob IS listed here, because the
+# root module `L20261018.lean` exists: without it `lake build` would not build the root,
+# and every `import L20261018` (the comparators do exactly that) would fail with
+# "object file '.../L20261018.olean' does not exist".
 [[lean_lib]]
 name = "L20261018"
-globs = ["L20261018.+"]
+globs = ["L20261018", "L20261018.+"]
 
-# Comparator inputs: comparator/{ch3,ch4u}/{Challenge,Solution,config.json}.
-#   ch3   chapter 3, 14 theorems
+# Comparator inputs: comparator/{ch3,ch3u,ch4u}/{Challenge,Solution,config.json}.
+#   ch3   chapter 3, 14 theorems (the general algebraic layer included)
+#   ch3u  chapter 3, 8 theorems, unconditional at the paper's hypothesis level
 #   ch4u  chapter 4, 7 theorems, unconditional (`d` is constructed, not assumed)
 [[lean_lib]]
 name = "comparator"

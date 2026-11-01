@@ -3,3 +3,10 @@
 out/
 *.log
 lake-manifest.json
+
+# python helper scripts (scripts/gen-declarations.py)
+__pycache__/
+*.pyc
+
+# comparator toolchain / smoke cases (scripts/validate-comparator-tools.sh writes here)
+.tools/
