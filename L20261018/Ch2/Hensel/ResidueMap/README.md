@@ -27,9 +27,9 @@ Source items formalised here: `GS2017/lemma-residue-cup-product`, `GS2017/prop-u
 | [`Step019_hens_residue_data_nine_fields`](Step019_hens_residue_data_nine_fields.lean) |  | `henselResidueDataOfKer`, `ramified_vanishing_ker_tame` | 92 |
 | [`Step020_cup_pi_nonzero_injective`](Step020_cup_pi_nonzero_injective.lean) |  | `exists_cup_pi_ne_zero` | 65 |
 | [`Step021_res_and_tame_u_pi_discharged`](Step021_res_and_tame_u_pi_discharged.lean) |  | `cupPi`, `cupPi_apply`, `kerCupPi`, `kerCupPi_apply` (+2 more) | 135 |
-| [`Step022_ramified_vanishing_no_tame_symbol`](Step022_ramified_vanishing_no_tame_symbol.lean) | `lem:ramified-vanishing` | `henselResidueDataOfCup`, `ramified_vanishing_unconditional` | 110 |
+| [`Step022_ramified_vanishing_no_tame_symbol`](Step022_ramified_vanishing_no_tame_symbol.lean) |  | `henselResidueDataOfCup` | 85 |
 | [`Step023_hens_residue_data_transport`](Step023_hens_residue_data_transport.lean) |  | `henselResidueDataTransport` | 91 |
-| [`Step024_delta_two_refined`](Step024_delta_two_refined.lean) | `line:1050`, `line:1608`, `line:1636`, `line:1648` | `residuePhi`, `residuePhi_apply`, `residueSpan`, `cup_mem_residueSpan` (+10 more) | 417 |
+| [`Step024_delta_two_refined`](Step024_delta_two_refined.lean) | `line:1050`, `line:1608` | `residuePhi`, `residuePhi_apply`, `residueSpan`, `cup_mem_residueSpan` (+8 more) | 352 |
 | [`Step025_unit_norm_pth_power`](Step025_unit_norm_pth_power.lean) |  | `normUnits_mem_pow_of_val_eq_zero` | 114 |
 | [`Step026_unit_norm_pth_power_from_valuation`](Step026_unit_norm_pth_power_from_valuation.lean) |  | `toAdd_zpow'`, `toAdd_val_zpow'`, `normUnits_mem_pow_of_valOfUnitOf_eq_zero` | 120 |
 | [`Step027_norm_group_form`](Step027_norm_group_form.lean) |  | `mem_pow_of_mem_normGroup_of_valOfUnitOf_eq_zero` | 64 |

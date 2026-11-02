@@ -340,69 +340,6 @@ theorem orth_eq_bot_paper_route_residue_facts (hp : IsUnit (p : F)) (hp2 : NeZer
       (fun x y => GaloBase.cup_skew (K := F) (p := p) x y) hfacts)
     hp2 hne hval
 
-/-- **4.3(1) 以两条剩余事实为唯一缺口**（完备载体；`D` 由 `henselResidueDataOfFacts` 构造）。 -/
--- @source file=raw/L20261018.tex locator=line:1636 quote="共同正交空间及范数像均消失，即 $U^\perp=N=0$；"
-theorem thm_ramified_1_of_residue_facts (hp : IsUnit (p : F)) (hp2 : p ≠ 2) (Δ : Subgroup Fˣ)
-    [(powMonoidHom p : Fˣ →* Fˣ).range.IsFiniteRelIndex Δ]
-    (hroots : ∀ b ∈ Δ, ∃ x : SeparableClosure F, x ^ p = algebraMap F (SeparableClosure F) (b : F))
-    (hU : IsOpen ((IntermediateField.val (kummerField (SeparableClosure F) p Δ)).fieldRange.fixingSubgroup
-      : Set (AbsoluteGaloisGroup F)))
-    [FiniteDimensional F (Theo352.Efield (F := F) (p := p) Δ)]
-    [IsGalois F (Theo352.Efield (F := F) (p := p) Δ)]
-    {a1 a2 : Fˣ} (ha1 : a1 ∈ Δ) (ha2 : a2 ∈ Δ)
-    (hne : Theo352.cupLin (F := F)
-      (GaloCup.kummerExplicit (F := F) (p := p) hp a1)
-      (GaloCup.kummerExplicit (F := F) (p := p) hp a2) ≠ 0)
-    {π : Fˣ} (hπ : TauCeti.normalizedValuation F π = Multiplicative.ofAdd (1 : ℤ))
-    (hfacts : TameResidueFacts (GaloBase.cup (K := F) (p := p)) (valLin F p hp)
-      (KummerBridge.kummerClass F p hp π))
-    (hval : ∃ u ∈ ResidueCupData.plane (k := ZMod p)
-      (KummerBridge.kummerClass F p hp a1) (KummerBridge.kummerClass F p hp a2),
-      valLin F p hp u ≠ 0)
-    [FiniteDimensional (ZMod p) (GaloBase.V F p)] :
-    (Theo352.Bex (F := F) (p := p) hp hne).Uperp = ⊥ ∧
-      Theo352.Nsub (F := F) (p := p) Δ = ⊥ := by
-  have hpi : valLin F p hp (KummerBridge.kummerClass F p hp π) = 1 :=
-    valLin_pi (F := F) (p := p) hp hπ
-  refine thm_ramified_1_of_D_free (F := F) (p := p)
-    (D := henselResidueDataOfFacts (GaloBase.cup (K := F) (p := p)) (valLin F p hp)
-      (KummerBridge.kummerClass F p hp π) hpi
-      (fun x y => GaloBase.cup_skew (K := F) (p := p) x y) hfacts)
-    hp hp2 Δ hroots hU ha1 ha2 hne ?_
-  rw [henselResidueDataOfFacts_val]
-  exact hval
-
-/-- **4.4 以两条剩余事实为唯一缺口**（完备载体；`hK1` 即论文的 `d_K = 1`）。 -/
--- @source file=raw/L20261018.tex locator=line:1648 quote="特别地，若 $d_K=1$，则 $\rank(\Phi)=2$，这与 $\ind(D)=p^2$ 时的定理~\ref{thm:rank-barrier} 矛盾。"
-theorem corollary_4_4_of_residue_facts (hp : IsUnit (p : F)) {a1 a2 : Fˣ}
-    (hne : Theo352.cupLin (F := F)
-      (GaloCup.kummerExplicit (F := F) (p := p) hp a1)
-      (GaloCup.kummerExplicit (F := F) (p := p) hp a2) ≠ 0)
-    {π : Fˣ} (hπ : TauCeti.normalizedValuation F π = Multiplicative.ofAdd (1 : ℤ))
-    (hfacts : TameResidueFacts (GaloBase.cup (K := F) (p := p)) (valLin F p hp)
-      (KummerBridge.kummerClass F p hp π))
-    (hval : ∃ u ∈ ResidueCupData.plane (k := ZMod p)
-      (GaloCup.kummerExplicit (F := F) (p := p) hp a1)
-      (GaloCup.kummerExplicit (F := F) (p := p) hp a2),
-      valLin F p hp (KummerBridge.h1ToVEquiv F p u) ≠ 0)
-    (hK1 : Module.finrank (ZMod p) ↥(LinearMap.ker (valLin F p hp)) = 1)
-    [FiniteDimensional (ZMod p) (ContCohomology.H1 (TauCeti.AbsoluteGaloisGroup F) (ZMod p))]
-    [NeZero (2 : ZMod p)] :
-    Module.finrank (ZMod p)
-        ↥(ResidueCupData.commonCupMap (Theo352.cupLin (F := F) (p := p))
-          (GaloCup.kummerExplicit (F := F) (p := p) hp a1)
-          (GaloCup.kummerExplicit (F := F) (p := p) hp a2)).range = 2
-      ∧ Module.finrank (ZMod p) (ContCohomology.H1 (TauCeti.AbsoluteGaloisGroup F) (ZMod p)) = 2 := by
-  have hpi : valLin F p hp (KummerBridge.kummerClass F p hp π) = 1 :=
-    valLin_pi (F := F) (p := p) hp hπ
-  refine corollary_4_4_of_D_free (F := F) (p := p)
-    (D := henselResidueDataOfFacts (GaloBase.cup (K := F) (p := p)) (valLin F p hp)
-      (KummerBridge.kummerClass F p hp π) hpi
-      (fun x y => GaloBase.cup_skew (K := F) (p := p) x y) hfacts)
-    hp hne ?_ hK1
-  rw [henselResidueDataOfFacts_val]
-  exact hval
-
 end PaperLevel
 
 end L20261018
@@ -413,5 +350,3 @@ end L20261018
 #print axioms L20261018.nonempty_henselResidueData_iff
 #print axioms L20261018.tameResidueFacts_of_complete
 #print axioms L20261018.orth_eq_bot_paper_route_residue_facts
-#print axioms L20261018.thm_ramified_1_of_residue_facts
-#print axioms L20261018.corollary_4_4_of_residue_facts

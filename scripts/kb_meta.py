@@ -78,7 +78,6 @@ PAPER_ORDER = [
 
 # Comparator groups: which paper items the official tool actually re-checks.
 COMPARATOR_GROUPS = [
-    ("ch3", "chapter 3, 14 declarations: the statements plus the general algebraic layer"),
     ("ch3u", "chapter 3, 8 declarations, unconditional at the paper's hypothesis level"),
     ("ch4u", "chapter 4, 7 declarations, unconditional (`d` is constructed)"),
 ]

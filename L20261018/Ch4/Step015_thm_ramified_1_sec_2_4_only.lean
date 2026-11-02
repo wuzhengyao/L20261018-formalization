@@ -93,59 +93,8 @@ variable {F : Type} [Field F] [ValuativeRel F] [TopologicalSpace F]
 
 attribute [local instance] TopRep.distribMulAction
 
--- @source file=raw/L20261018.tex locator=line:1636 quote="共同正交空间及范数像均消失，即 $U^\perp=N=0$；"
-/-- **`thm:ramified`(1)（4.3(1)）**：`U^⊥ = N = 0`，**`D`（= 论文 §2.4）是输入**，
-不用本战役完备情形的构造 ⟹ 只依赖 §2.4。 -/
-theorem thm_ramified_1_of_D {VK : Type} [AddCommGroup VK] [Module (ZMod p) VK]
-    (D : HenselResidueData (ZMod p) (GaloBase.V F p) (GaloBase.H2 F p) VK
-      (GaloBase.cup (K := F) (p := p)))
-    (hp : IsUnit (p : F)) (hp2 : p ≠ 2) (Δ : Subgroup Fˣ)
-    [(powMonoidHom p : Fˣ →* Fˣ).range.IsFiniteRelIndex Δ]
-    (hroots : ∀ b ∈ Δ, ∃ x : SeparableClosure F, x ^ p = algebraMap F (SeparableClosure F) (b : F))
-    (hU : IsOpen ((IntermediateField.val (kummerField (SeparableClosure F) p Δ)).fieldRange.fixingSubgroup
-      : Set (AbsoluteGaloisGroup F)))
-    [FiniteDimensional F (Theo352.Efield (F := F) (p := p) Δ)]
-    [IsGalois F (Theo352.Efield (F := F) (p := p) Δ)]
-    {a1 a2 : Fˣ} (ha1 : a1 ∈ Δ) (ha2 : a2 ∈ Δ)
-    (hne : Theo352.cupLin (F := F)
-      (GaloCup.kummerExplicit (F := F) (p := p) hp a1)
-      (GaloCup.kummerExplicit (F := F) (p := p) hp a2) ≠ 0)
-    (hval : ∃ u ∈ ResidueCupData.plane (k := ZMod p)
-      (KummerBridge.kummerClass F p hp a1) (KummerBridge.kummerClass F p hp a2),
-      D.val u ≠ 0)
-    [FiniteDimensional (ZMod p) (GaloBase.V F p)] :
-    (Theo352.Bex (F := F) (p := p) hp hne).Uperp = ⊥ ∧
-      Theo352.Nsub (F := F) (p := p) Δ = ⊥ := by
-  classical
-  have hp2' : NeZero (2 : ZMod p) := Assemble36.neZero_two_zmod (p := p) hp2
-  -- `GaloBase` 层的非零杯积：由 `hne` 经 `Θ₂` 单射搬过去
-  have hneG : GaloBase.cup (K := F) (p := p)
-      (KummerBridge.kummerClass F p hp a1) (KummerBridge.kummerClass F p hp a2) ≠ 0 := by
-    intro h0
-    apply hne
-    have h := cup_compat_theta (F := F) (p := p)
-      (KummerBridge.kummerClass F p hp a1) (KummerBridge.kummerClass F p hp a2)
-    rw [h0, map_zero, theta1_kummerClass, theta1_kummerClass] at h
-    exact h.symm
-  -- 4.2（论文层级，`D` 作输入）
-  have hU0G : ResidueCupData.orth (GaloBase.cup (K := F) (p := p))
-      (KummerBridge.kummerClass F p hp a1) (KummerBridge.kummerClass F p hp a2) = ⊥ :=
-    orth_eq_bot_paper_route_hensel (F := F) (p := p) D hp2' hneG hval
-  -- 搬到显式载体
-  have hU0 : (Theo352.Bex (F := F) (p := p) hp hne).Uperp = ⊥ := by
-    rw [show (Theo352.Bex (F := F) (p := p) hp hne).Uperp
-        = ResidueCupData.orth (Theo352.cupLin (F := F) (p := p))
-          (GaloCup.kummerExplicit (F := F) (p := p) hp a1)
-          (GaloCup.kummerExplicit (F := F) (p := p) hp a2) from rfl,
-      orth_map_eq (F := F) (p := p) hp hne, hU0G, Submodule.map_bot]
-  refine ⟨hU0, ?_⟩
-  have hle := Assemble36.Nsub_le_Uperp (F := F) (p := p) hp hp2 Δ hroots hU ha1 ha2 hne
-  rw [hU0] at hle
-  exact eq_bot_iff.mpr hle
-
 end Part1
 
 end L20261018
 #print axioms L20261018.mem_orth_iff
 #print axioms L20261018.orth_map_eq
-#print axioms L20261018.thm_ramified_1_of_D

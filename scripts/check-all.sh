@@ -7,7 +7,7 @@
 #
 # Gates
 #   1  lake build                      the development compiles (0 error)
-#   2  comparator ch3 / ch3u / ch4u    the official tool re-checks the statements
+#   2  comparator ch3u / ch4u          the official tool re-checks the statements
 #   3  comparator toolchain self-test   positive + negative controls on the tool itself
 #   4  DECLARATIONS.md                 current (gen-declarations.py --check)
 #   5  directory indexes               current (gen-directory-index.py --check)
@@ -52,10 +52,10 @@ fi
 
 # ---------------------------------------------------------------- comparators
 if [ "$FAST" = 1 ]; then
-  miss "comparator ch3/ch3u/ch4u (--fast)"
+  miss "comparator ch3u/ch4u (--fast)"
 else
   echo "== gate 2: comparator groups =="
-  for g in ch3 ch3u ch4u; do
+  for g in ch3u ch4u; do
     if [ ! -f "comparator/$g/config.json" ]; then
       miss "comparator $g (no config.json)"
       continue

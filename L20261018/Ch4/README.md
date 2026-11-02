@@ -20,8 +20,8 @@ Source items formalised here: `lem:basis-change`, `lem:ramified-vanishing`, `pro
 | [`Step012_ramified_vanishing_paper_route`](Step012_ramified_vanishing_paper_route.lean) | `line:1608` | `cup_eq_zero_of_mem_orth`, `HenselResidueData.ker_val_eq_range_infl`, `finrank_ker_restrict_plane_eq_one_general`, `orth_eq_bot_paper_route` (+1 more) | 222 |
 | [`Step013_basis_selection_u`](Step013_basis_selection_u.lean) | `line:1596` | `range_pair_eq`, `exists_basis_val_eq` | 114 |
 | [`Step014_ramified_vanishing_hensel_level`](Step014_ramified_vanishing_hensel_level.lean) | `line:1608` | `cup_self_free`, `range_pair_eq_free`, `pair_linearIndependent_free`, `finrank_plane_eq_two_free` (+4 more) | 263 |
-| [`Step015_thm_ramified_1_sec_2_4_only`](Step015_thm_ramified_1_sec_2_4_only.lean) | `line:1636` | `mem_orth_iff`, `orth_map_eq`, `thm_ramified_1_of_D` | 151 |
-| [`Step016_corollary_four_four_sec_2_4_only`](Step016_corollary_four_four_sec_2_4_only.lean) | `line:1648` | `henselResidueData_explicit_of_D`, `henselResidueData_explicit_of_D_val`, `residueCupData_explicit_of_D`, `finrank_eq_finrank_add_one_of_D` (+1 more) | 100 |
+| [`Step015_thm_ramified_1_sec_2_4_only`](Step015_thm_ramified_1_sec_2_4_only.lean) |  | `mem_orth_iff`, `orth_map_eq` | 100 |
+| [`Step016_corollary_four_four_sec_2_4_only`](Step016_corollary_four_four_sec_2_4_only.lean) |  | `henselResidueData_explicit_of_D`, `henselResidueData_explicit_of_D_val`, `residueCupData_explicit_of_D` | 63 |
 | [`Step017_thm_ramified_and_corollary_class_free`](Step017_thm_ramified_and_corollary_class_free.lean) | `line:1636`, `line:1648` | `zmodMulPairing_eq_muPairing_free`, `cup_compat_muP_zmod_free`, `theta1_free`, `theta2_free` (+9 more) | 232 |
 | [`Step018_single_carrier_thm_ramified`](Step018_single_carrier_thm_ramified.lean) | `line:1636`, `line:1637` | `cup_kummerClass_ne_zero_free`, `Bex_Phi_theta_free`, `phi_comp_free`, `phi_range_map_free` (+3 more) | 170 |
 | [`Step019_single_carrier_statement`](Step019_single_carrier_statement.lean) |  | `ch4_single_carrier_combined` | 91 |

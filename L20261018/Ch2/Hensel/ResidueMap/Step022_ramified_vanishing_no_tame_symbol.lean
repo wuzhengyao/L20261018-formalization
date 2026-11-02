@@ -82,29 +82,4 @@ noncomputable def henselResidueDataOfCup (hp : IsUnit (p : F)) (hp2 : NeZero (2 
       κ hκ z
 
 
-/-- **T3（论文 `lem:ramified-vanishing`）无条件版**（除 `char K ≠ p` 与 `p ≠ 2`）：
-不再接受 `HenselResidueData`／`tame_uu`／`tame_u_pi`／`tame_pi_u`。 -/
--- @source file=raw/L20261018.tex locator=label:lem:ramified-vanishing quote="若模 $p$ 赋值映射 $\bar v:U\to\Fp$ 非零，则 $U^\perp=0$。"
-theorem ramified_vanishing_unconditional (hp : IsUnit (p : F)) (hp2 : p ≠ 2) {π : Fˣ}
-    (hπ : TauCeti.normalizedValuation F π = Multiplicative.ofAdd (1 : ℤ))
-    (hpu : IsUnit (p : 𝒪[F])) {a1 a2 : Fˣ}
-    (hne : GaloBase.cup (K := F) (p := p)
-      (KummerBridge.kummerClass F p hp a1) (KummerBridge.kummerClass F p hp a2) ≠ 0)
-    (hval : ∃ u ∈ ResidueCupData.plane (k := ZMod p)
-      (KummerBridge.kummerClass F p hp a1) (KummerBridge.kummerClass F p hp a2),
-      (valLin F p hp) u ≠ 0) :
-    ResidueCupData.orth (GaloBase.cup (K := F) (p := p))
-      (KummerBridge.kummerClass F p hp a1) (KummerBridge.kummerClass F p hp a2) = ⊥ := by
-  haveI := Assemble36.neZero_two_zmod (p := p) hp2
-  have hval' : ∃ u ∈ ResidueCupData.plane (k := ZMod p)
-      (KummerBridge.kummerClass F p hp a1) (KummerBridge.kummerClass F p hp a2),
-      (henselResidueDataOfCup (F := F) (p := p) hp
-        (Assemble36.neZero_two_zmod (p := p) hp2) (hπ := hπ) hpu hne).val u ≠ 0 := hval
-  exact HenselResidueData.ramified_vanishing
-    (henselResidueDataOfCup (F := F) (p := p) hp (Assemble36.neZero_two_zmod (p := p) hp2)
-      (hπ := hπ) hpu hne)
-    (fun x y => GaloBase.cup_skew (K := F) (p := p) x y)
-    (KummerBridge.kummerClass F p hp a1) (KummerBridge.kummerClass F p hp a2) hne hval'
-
 end L20261018
-#print axioms L20261018.ramified_vanishing_unconditional

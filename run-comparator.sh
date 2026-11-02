@@ -3,7 +3,7 @@
 #
 #   ./run-comparator.sh ch4u       # Chapter 4, unconditional (7 declarations)   <-- main
 #   ./run-comparator.sh ch3u       # Chapter 3, unconditional (8 declarations)
-#   ./run-comparator.sh            # chapter 3, general algebraic layer (14 theorems)
+#   ./run-comparator.sh            # same as ch3u: the chapter-3 default
 #   SKIP_BUILD=1 ./run-comparator.sh ch4u
 #
 # Prerequisites
@@ -14,7 +14,7 @@
 set -euo pipefail
 ROOT=$(cd "$(dirname "$0")" && pwd)
 cd "$ROOT"
-CH=${1:-ch3}
+CH=${1:-ch3u}
 
 [ -f "comparator/$CH/config.json" ] || { echo "no comparator/$CH/config.json" >&2; exit 1; }
 

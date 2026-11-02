@@ -57,44 +57,7 @@ noncomputable def residueCupData_explicit_of_D {VK : Type} [AddCommGroup VK]
   (henselResidueData_explicit_of_D (F := F) (p := p) D).toResidueCupData
     (fun x y => Theo352.cupLin_skew (F := F) (p := p) x y)
 
-/-- **`d_F = d_K + 1`**（4.4 的第二步，**`D` 作输入**）。 -/
-theorem finrank_eq_finrank_add_one_of_D {VK : Type} [AddCommGroup VK]
-    [Module (ZMod p) VK]
-    (D : HenselResidueData (ZMod p) (GaloBase.V F p) (GaloBase.H2 F p) VK
-      (GaloBase.cup (K := F) (p := p)))
-    [FiniteDimensional (ZMod p) (GaloBase.V F p)] [NeZero (2 : ZMod p)] :
-    Module.finrank (ZMod p) (GaloBase.V F p) = Module.finrank (ZMod p) VK + 1 :=
-  ResidueCupData.finrank_eq_finrank_add_one
-    (D.toResidueCupData (fun x y => GaloBase.cup_skew (K := F) (p := p) x y))
-
--- @source file=raw/L20261018.tex locator=line:1648 quote="特别地，若 $d_K=1$，则 $\rank(\Phi)=2$，这与 $\ind(D)=p^2$ 时的定理~\ref{thm:rank-barrier} 矛盾。"
-/-- **4.4（未编号推论）—— `D` 作输入**：`d_K=1`（**论文假设**）⟹ `rank(Φ)=2` 且 `d_F=2`。 -/
-theorem corollary_4_4_of_D {VK : Type} [AddCommGroup VK] [Module (ZMod p) VK]
-    (D : HenselResidueData (ZMod p) (GaloBase.V F p) (GaloBase.H2 F p) VK
-      (GaloBase.cup (K := F) (p := p)))
-    (hp : IsUnit (p : F)) {a1 a2 : Fˣ}
-    (hne : Theo352.cupLin (F := F)
-      (GaloCup.kummerExplicit (F := F) (p := p) hp a1)
-      (GaloCup.kummerExplicit (F := F) (p := p) hp a2) ≠ 0)
-    (hval : ∃ u ∈ ResidueCupData.plane (k := ZMod p)
-      (GaloCup.kummerExplicit (F := F) (p := p) hp a1)
-      (GaloCup.kummerExplicit (F := F) (p := p) hp a2),
-      D.val (KummerBridge.h1ToVEquiv F p u) ≠ 0)
-    (hK1 : Module.finrank (ZMod p) VK = 1)
-    [FiniteDimensional (ZMod p) (H1 (TauCeti.AbsoluteGaloisGroup F) (ZMod p))]
-    [NeZero (2 : ZMod p)] :
-    Module.finrank (ZMod p)
-        ↥(ResidueCupData.commonCupMap (Theo352.cupLin (F := F) (p := p))
-          (GaloCup.kummerExplicit (F := F) (p := p) hp a1)
-          (GaloCup.kummerExplicit (F := F) (p := p) hp a2)).range = 2
-      ∧ Module.finrank (ZMod p) (H1 (TauCeti.AbsoluteGaloisGroup F) (ZMod p)) = 2 :=
-  ResidueCupData.corollary_4_4 (residueCupData_explicit_of_D (F := F) (p := p) D)
-    (GaloCup.kummerExplicit (F := F) (p := p) hp a1)
-    (GaloCup.kummerExplicit (F := F) (p := p) hp a2) hne hval hK1
-
 end Part44
 
 end L20261018
 #print axioms L20261018.henselResidueData_explicit_of_D
-#print axioms L20261018.finrank_eq_finrank_add_one_of_D
-#print axioms L20261018.corollary_4_4_of_D

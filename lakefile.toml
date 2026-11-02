@@ -8,8 +8,7 @@ defaultTargets = ["TauCeti", "L20261018", "comparator"]
 # and `lake build` then works fully offline.
 [[require]]
 name = "mathlib"
-git = "https://github.com/leanprover-community/mathlib4"
-rev = "aa35a481e5f0cdb3b04a899ead15d6ca7305a624"
+path = "/home/wuzhengyao/mathlib4"
 
 # The TauCeti modules used by this development are vendored under `TauCeti/`
 # (Apache-2.0, see TauCeti/NOTICE).  Nothing else has to be installed.
